@@ -9,6 +9,10 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
 ### Fetaures
+ - Three components included: 
+	 - Embedded Gallery if you wish to show a gallery of images in your page
+	 - Popup Lightbox for galleries that can be opened from a link or button on your page
+	 - 
  - Various gallery options that can be configured in the back-end without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
@@ -57,6 +61,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODYyMzI4Niw2NDY2MzA1MDUsLTE2Mj
+eyJoaXN0b3J5IjpbMTc4NDE4NzY3Miw2NDY2MzA1MDUsLTE2Mj
 Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
