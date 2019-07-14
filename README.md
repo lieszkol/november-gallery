@@ -1,6 +1,7 @@
 
 ![NovemberGallery Banner](http://www.generalcomputing.com/2019/november-gallery-octobercms-banner.jpg)
 
+Check out the live demo site!
 
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
@@ -78,6 +79,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MjA2MjExMSw2NDY2MzA1MDUsLTE2Mj
-Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTE2NDA3NTkyODUsNjQ2NjMwNTA1LC0xNj
+I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
