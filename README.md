@@ -24,20 +24,20 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 
 ## Requirements
 If you want the plugin to inject the required scripts and CSS, you must have a `{styles}` tag in the head section of your page or layout: 
-```
+```html
 <head>
     ...
     {% styles %}
 </head>
 ```
 as well as a `{scripts}` tag in the body section:
-```
+```html
 <body>
     ...
     {% scripts %}
 </body>
 ```
-For more information see 
+For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
@@ -77,6 +77,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzOTQ2OTI4LDY0NjYzMDUwNSwtMTYyNj
-Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbMjA2MjU4MDMwMSw2NDY2MzA1MDUsLTE2Mj
+Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
