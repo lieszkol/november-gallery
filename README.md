@@ -25,7 +25,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 ### Roadmap
-### Authors and acknowledgment
+### Acknowledgments
 
 Show your appreciation to those who have contributed to the project.
 
@@ -34,6 +34,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNj
-Y0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTc3OTQ1MjExMSwtMTYyNjQ1MTE5NywzMD
+E0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
