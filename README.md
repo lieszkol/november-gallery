@@ -8,10 +8,13 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
  3. Select the folder you uploaded your images to and how you want them displayed
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
-#### Fetaures
-
- - Various gallery options thanks to the versatility of UniteGallery: tiles (arranged in columns, justified, or laid out in a grid), carousel, slider, or as a pop-up lightbox that can be opened from a link/button
- - Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
+### Fetaures
+ - Various gallery options: 
+	 - tiles (arranged in columns, justified, or laid out in a grid)
+	 - carousel
+	 - slider
+	 - pop-up lightbox that can be opened from a link/button
+ - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
 ## Requirements
 ## Installation
@@ -38,7 +41,10 @@ foobar.singularize('phenomena') # returns 'phenomenon'
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-### Roadmap
+### ToDo
+
+ - Support embedded video
+
 ## Credits
 
 Major dependencies:
@@ -50,6 +56,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzE2MDQwMiw2NDY2MzA1MDUsLTE2Mj
+eyJoaXN0b3J5IjpbLTg5ODk4NTYwMiw2NDY2MzA1MDUsLTE2Mj
 Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
