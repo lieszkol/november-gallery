@@ -14,7 +14,7 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 	 - carousel
 	 - slider
 	 - pop-up lightbox that can be opened from a link/button
- - Select the folder 
+ - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
 ## Requirements
@@ -57,6 +57,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTU2NTkyLDY0NjYzMDUwNSwtMTYyNj
-Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbMTUzODYyMzI4Niw2NDY2MzA1MDUsLTE2Mj
+Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
