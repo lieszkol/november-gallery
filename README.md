@@ -18,14 +18,22 @@ foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
-## Contributing
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Support
+
+### Roadmap
+### Authors and acknowledgment
+
+Show your appreciation to those who have contributed to the project.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTgxMzYxMTMzOCwzMDE0MjQ5NTcsLTE2Nj
+Q3MjcwMjRdfQ==
 -->
