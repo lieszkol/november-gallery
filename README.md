@@ -66,13 +66,13 @@ Major dependencies:
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
- - [OctoberCMS](https://octobercms.com)
+ - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
 ### License
-[MIT](https://choosealicense.com/licenses/mit/)
+
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjcwNjAyODAsNjQ2NjMwNTA1LC0xNj
-I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbNDE0ODkzMDksNjQ2NjMwNTA1LC0xNjI2ND
+UxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
