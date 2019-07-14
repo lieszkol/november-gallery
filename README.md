@@ -41,13 +41,11 @@ as well as a `{scripts}` tag in the body section:
 ```
 For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
 ## Installation
-To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to use the plugin on, and then from the backend area of your site use the `Check for updates` button on the **Settings → Updates & Plugins** page.
-
 To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  `November Gallery`.
 
-To install from  [the repository](https://github.com/lieszkol/november-gallery), clone it into  **plugins/luketowers/easyspa**  and then run  `composer update`  from your project root in order to pull in the dependencies.
+To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to use the plugin on, and then from the backend area of your site use the `Check for updates` button on the **Settings → Updates & Plugins** page.
 
-To install it with Composer, run  `composer require luketowers/oc-easyspa-plugin`  from your project root.
+To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root.
 
 ## Usage
 
@@ -80,6 +78,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU2MjE0NTM3LDY0NjYzMDUwNSwtMTYyNj
+eyJoaXN0b3J5IjpbNzMzMzM3MzY0LDY0NjYzMDUwNSwtMTYyNj
 Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
