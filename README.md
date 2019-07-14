@@ -41,9 +41,9 @@ as well as a `{scripts}` tag in the body section:
 ```
 For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
 ## Installation
-To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to install it to, and then from the backend area of your site use the , and then update your project from the back-end.
+To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to use the plugin on, and then from the backend area of your site use the `Check for updates` button on the Settings / Updates & Plugins page.
 
-To install from the backend, go to  **Settings -> Updates & Plugins -> Install Plugins**  and then search for  `LukeTowers.EasySPA`.
+To install from your site "backend": go to  **Settings -> Updates & Plugins -> Install Plugins**  and then search for  `LukeTowers.EasySPA`.
 
 To install from  [the repository](https://github.com/luketowers/oc-easyspa-plugin), clone it into  **plugins/luketowers/easyspa**  and then run  `composer update`  from your project root in order to pull in the dependencies.
 
@@ -80,6 +80,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTU4MDA0LDY0NjYzMDUwNSwtMTYyNj
-Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE5NTEzNjcyNTEsNjQ2NjMwNTA1LC0xNj
+I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
