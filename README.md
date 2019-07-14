@@ -1,6 +1,7 @@
 
 ![NovemberGallery Banner](http://www.generalcomputing.com/2019/november-gallery-octobercms-banner.jpg)
 
+
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
  1. Upload your images using the Media Manager built into OctoberCMS
@@ -77,6 +78,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjU4MDMwMSw2NDY2MzA1MDUsLTE2Mj
+eyJoaXN0b3J5IjpbMTM1MjA2MjExMSw2NDY2MzA1MDUsLTE2Mj
 Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
