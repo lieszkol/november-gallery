@@ -23,6 +23,10 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
 ## Requirements
+You MUST have a `{scripts}` tag in the `<head>...
+    {% styles %}
+</head>
+```` section of your layout as well as a 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
@@ -62,6 +66,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3OTU0MDcsNjQ2NjMwNTA1LC0xNjI2ND
-UxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbMjA0NDY1MTk1Nyw2NDY2MzA1MDUsLTE2Mj
+Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
