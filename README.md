@@ -41,12 +41,13 @@ as well as a `{scripts}` tag in the body section:
 ```
 For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
 ## Installation
+To install from the  [Marketplace](https://octobercms.com/plugins), click "Add to Project" and then select the project you wish to add it to before updating the project to pull in the plugin.
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+To install from the backend, go to  **Settings -> Updates & Plugins -> Install Plugins**  and then search for  `LukeTowers.EasySPA`.
 
-```bash
-pip install foobar
-```
+To install from  [the repository](https://github.com/luketowers/oc-easyspa-plugin), clone it into  **plugins/luketowers/easyspa**  and then run  `composer update`  from your project root in order to pull in the dependencies.
+
+To install it with Composer, run  `composer require luketowers/oc-easyspa-plugin`  from your project root.
 
 ## Usage
 
@@ -79,6 +80,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDA3NTkyODUsNjQ2NjMwNTA1LC0xNj
-I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbLTE0NzY3OTU1LDY0NjYzMDUwNSwtMTYyNj
+Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
