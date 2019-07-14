@@ -58,8 +58,13 @@ To install from [the repository](https://github.com/lieszkol/november-gallery): 
 
 ## Support
 
+Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome. If you wish to contribute, please take a quick look at the  [guidelines](https://github.com/gitpoint/git-point/blob/master/CONTRIBUTING.md)!
+
+If there's anything you'd like to chat about, please feel free to join our  [Gitter chat](https://gitter.im/git-point)!
+
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 
 
 
@@ -76,6 +81,6 @@ Major dependencies:
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg2MDAwMTYsNjQ2NjMwNTA1LC0xNj
-I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbMjEzMTUxNzY2Nyw2NDY2MzA1MDUsLTE2Mj
+Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
