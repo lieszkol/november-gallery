@@ -12,12 +12,13 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - Three components included: 
 	 - Embedded Gallery if you wish to show a gallery of images in your page
 	 - Popup Lightbox for galleries that can be opened from a link or button on your page
-	 - 
- - Various gallery options that can be configured in the back-end without writing a line of code: 
+	 - Image List Only if you want to handle the display of the images yourself
+ - Various options for the Embedded Gallery that can be configured in the back-end without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
 	 - slider
-	 - pop-up lightbox that can be opened from a link/button
+	 - combined (large image + lightbox)
+	 - video
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
@@ -61,6 +62,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDE4NzY3Miw2NDY2MzA1MDUsLTE2Mj
-Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbODk3OTU0MDcsNjQ2NjMwNTA1LC0xNjI2ND
+UxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
