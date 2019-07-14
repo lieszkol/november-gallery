@@ -49,20 +49,13 @@ To install from [the repository](https://github.com/lieszkol/november-gallery): 
 
 ## Usage
 
-```python
-import foobar
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
 
 ## Support
 
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 ### ToDo
 
  - Support embedded video
@@ -71,13 +64,15 @@ Please make sure to update tests as appropriate.
 
 Major dependencies:
 
-Show your appreciation to those who have contributed to the project.
+ - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
+ - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
+ - [OctoberCMS](https://octobercms.com)
 
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzMzM3MzY0LDY0NjYzMDUwNSwtMTYyNj
-Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE0NjcwNjAyODAsNjQ2NjMwNTA1LC0xNj
+I2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
