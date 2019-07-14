@@ -1,4 +1,6 @@
+
 OctoberCMS Media manager + vvvmax/unitegallery + Image Resizer plugin = a highly customizable yet reliable way to display your photos in a gallery. The plugin reads images uploaded using October\'s built-in Media manager, uses the ImageResizer plugin to automatically generate thumbnails, and presents them in a gallery either as tiles (arranged in columns, justified, or laid out in a grid), as a carousel, as a slider, or as a pop-up lightbox that can be opened from a link/button. Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
+## Fetaures
 ## Requirements
 ## Installation
 
@@ -34,6 +36,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTQ1MjExMSwtMTYyNjQ1MTE5NywzMD
-E0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE1NTYwMDU2MjYsLTE2MjY0NTExOTcsMz
+AxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
