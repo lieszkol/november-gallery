@@ -27,7 +27,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 ### Roadmap
-### Acknowledgments
+## Credits
+
+Major dependencies:
 
 Show your appreciation to those who have contributed to the project.
 
@@ -36,6 +38,6 @@ Show your appreciation to those who have contributed to the project.
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTYwMDU2MjYsLTE2MjY0NTExOTcsMz
-AxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMT
+QyNDk1NywtMTY2NDcyNzAyNF19
 -->
