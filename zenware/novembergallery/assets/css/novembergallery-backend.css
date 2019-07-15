@@ -1,0 +1,31 @@
+#novembergallery-layouts-hint > div {
+	background-color: #2C3E50; 
+	border-radius: 5px; 
+	padding: 5px; 
+	float: left; 
+	margin: 10px;
+}
+#novembergallery-layouts-hint > div > img {
+	max-width: 120px;
+}
+#novembergallery-layouts-hint > div > img + div {
+	color: white;
+	text-align: center;
+	font-size: 0.7em;
+}
+@media (min-width:992px){
+	#novembergallery-layouts-hint > div > img {
+		max-width: 140px;
+	}
+	#novembergallery-layouts-hint > div > img + div {
+		font-size: 0.9em;
+	}
+}
+@media (min-width:1200px){
+	#novembergallery-layouts-hint > div > img {
+		max-width: 180px;
+	}
+	#novembergallery-layouts-hint > div > img + div {
+		font-size: 1em;
+	}
+}

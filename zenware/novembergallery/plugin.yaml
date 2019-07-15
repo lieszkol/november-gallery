@@ -1,0 +1,6 @@
+plugin:
+    name: 'zenware.novembergallery::lang.plugin.name'
+    description: 'zenware.novembergallery::lang.plugin.description'
+    author: 'Laszlo Lieszkovszky'
+    icon: oc-icon-th
+    homepage: 'https://www.zenware.io'

@@ -1,0 +1,44 @@
+{% set galleryitems = __SELF__.galleryitems %}
+{% if __SELF__.error %}
+	<div class="alert zen-alert">{{ __SELF__.error }}</div>
+{% endif %}
+
+<div id="gallery" style="display:none;">
+	{% verbatim %}
+	<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
+		<img src="{{ galleryitem | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
+	{% endverbatim %}
+    {% for galleryitem in galleryitems %}
+        <img alt="" src="{{ __SELF__.galleryItemSrc(galleryitem | media) }}"
+		data-image="{{ galleryitem | media }}"
+		data-description="">
+    {% endfor %}
+</div>
+
+{% put scripts %}
+<script type="text/javascript"> 
+    // UniteGallery: https://github.com/vvvmax/unitegallery/
+	jQuery(document).ready(function(){ 
+
+		{% if __SELF__.customgalleryscript %}
+
+		{{ __SELF__.customgalleryscript|raw }}
+		
+		{% else %}
+		
+		jQuery("#gallery").unitegallery({
+
+			{{ __SELF__.defaultgalleryoptions|raw }}
+
+			// Add additional options here!
+			// See: http://unitegallery.net/index.php?page=tiles-columns-options
+			// For example: 
+			// tiles_col_width: 280,                   //column width - exact or base according the settings
+			
+		}); 
+
+		{% endif %}
+	}); 
+
+</script>
+{% endput %}
