@@ -101,8 +101,9 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
  - `Settings` Tab: Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
 - `Thumbnails` Tab: It is recommended to use the image resizer to automatically generate thumbnails of your pictures. For this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
-- `Advanced` Tab: If your theme already 
+- `Advanced` Tab: *Inject UniteGallery Assets* should probably be on. If your theme already includes jQuery, then you can set *Inject jQuery* to OFF.
 
+### (3) Drop t
 
 
 
@@ -134,7 +135,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4NDgyNjg1LC0yMDA3MzMxNjM5LC0xNj
+eyJoaXN0b3J5IjpbMzExOTkzMjEwLC0yMDA3MzMxNjM5LC0xNj
 kxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5
 Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNi
 w2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUx
