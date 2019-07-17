@@ -69,7 +69,7 @@ To install from [the repository](https://github.com/lieszkol/november-gallery): 
 
 For further usage examples and documentation please see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
-### Getting Started
+### (1) Prepare and Upload your Images
 
 You will need to 1) create folders for your images 2) resize your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
 
@@ -96,11 +96,11 @@ A typical screen resolution nowadays is around 1600x1200 pixels - so if you're l
 Finally, upload your pictures using the OctoberCMS Media manager into the folders you created earlier.
 </details>
 
-### Basic Embedded Gallery
-
- 1. Log into your "backend" and go to Settings → November Gallery to configure your defaults. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
- 2. It is recommended to use the image resizer to automatically generate thumbnails of your pictures, for this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
- 3. 
+### (2) Configure The Plugin
+ 1. Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
+ 2. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
+ 3. It is recommended to use the image resizer to automatically generate thumbnails of your pictures, for this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
+ 4. 
 
 
 
@@ -132,7 +132,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTYwNTkzMjQsLTIwMDczMzE2MzksLT
+eyJoaXN0b3J5IjpbLTExMTkyMDk1ODYsLTIwMDczMzE2MzksLT
 E2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1
 NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MT
 E2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0
