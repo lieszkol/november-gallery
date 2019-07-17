@@ -101,7 +101,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 - `Thumbnails` Tab: It is recommended to use the image resizer to automatically generate thumbnails of your pictures. For this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
 - `Advanced` Tab: *Inject UniteGallery Assets* should probably be on. If your theme already includes jQuery, then you can set *Inject jQuery* to OFF.
 
-### (3) Drop the Plugin Onto your Page(s)
+### (3) Drop the Plugin Onto your CMS Page(s)
 
 The plugin provides three components that you can drop onto your CMS pages.
 
@@ -137,10 +137,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjEwMzc1NTYsMjAxMTgzMDA5NiwtMj
-AwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1
-NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMD
-M4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYz
-MDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMj
-RdfQ==
+eyJoaXN0b3J5IjpbMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMD
+A3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3
+MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMz
+g2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMw
+NTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF
+19
 -->
