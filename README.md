@@ -81,10 +81,16 @@ If there's anything you'd like to chat about, please feel free to join our  [Git
 
 ## License
 
+This plugin is available in two editions: 
+
+ 1. The Personal Edition is a free plugin meant for private, not-for-profit use
+ 2. 
+
 You must have purchased this plugin on the OctoberCMS Marketplace in order to use it.
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2ND
-A5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0x
-NjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbNDU3NjA4MDEyLC0xMDEwNjg5NTk2LDIxND
+cyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0
+NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mj
+cwMjRdfQ==
 -->
