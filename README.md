@@ -72,9 +72,8 @@ For further usage examples and documentation please see [The NovemberGallery Man
 You will need to 1) resize your images 2) create folders for your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
 
 <details>
-<summary>E</summary>
-A
-lthough you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
+<summary>Read more...</summary>
+Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
 
 So, your folder structure may look like this:
 
@@ -124,8 +123,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTA5MTUxNywtMzk1NzMwODYzLC0xNT
-U1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcx
-MTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNj
-Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMT
+U1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3
+MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2Mj
+Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
