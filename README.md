@@ -85,7 +85,8 @@ So, your folder structure may look like this:
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Now you're ready to upload your pictures. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .
+Next, prepare your pictures for display on the WWW. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .gif (which is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+
 Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
 
 A typical screen resolution nowadays is around 1600x1200 pixels - so if you're looking to allow your users to see your pictures in decent quality full-screen, then resize them to fit within these constraints. 
@@ -126,9 +127,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3NTY5NiwtMTg3OTEwNzc4NywtMzk1Nz
-MwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4
-NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMD
-UwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRd
-fQ==
+eyJoaXN0b3J5IjpbLTY0ODIxNTQzMSwtMTg3OTEwNzc4NywtMz
+k1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcy
+MDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0Nj
+YzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mjcw
+MjRdfQ==
 -->
