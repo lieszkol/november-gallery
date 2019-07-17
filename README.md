@@ -92,7 +92,8 @@ Now you're ready to upload your pictures. Although the plugin will automatically
 
 Log into your "backend" and go to Settings → November Gallery to configure your defaults.
 
-Select the folder that you created your galleries under from the Base Media Folder drop-down:
+Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
+
 
 
 ## Support
@@ -123,9 +124,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzk3MDQ0NSwtMTg3OTEwNzc4NywtMz
-k1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcy
-MDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0Nj
-YzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mjcw
-MjRdfQ==
+eyJoaXN0b3J5IjpbLTExNTI2NTcyMjMsLTE4NzkxMDc3ODcsLT
+M5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3
+MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2ND
+Y2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3
+MDI0XX0=
 -->
