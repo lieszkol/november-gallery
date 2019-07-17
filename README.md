@@ -12,7 +12,9 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
  3. Select the folder you uploaded your images to and how you want them displayed
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
+
 ## Fetaures:
+
 - Three components included: 
 	 - Embedded Gallery if you wish to show a gallery of images in your page
 	 - Popup Lightbox for galleries that can be opened from a link or button on your page
@@ -25,7 +27,8 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 	 - video
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
- ### Limitations / ToDo:
+
+### Limitations / ToDo:
  
  - [ ] Support titles & captions
  - [ ] Test embedding & linking video
@@ -33,7 +36,9 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [ ] Extensive help docs
 
 ## Deployment
+
 ### Requirements
+
 If you want the plugin to inject the required scripts and CSS, you must have a `{styles}` tag in the head section of your page or layout: 
 ```html
 <head>
@@ -49,7 +54,9 @@ as well as a `{scripts}` tag in the body section:
 </body>
 ```
 For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
+
 ### Installation
+
 To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  `November Gallery`.
 
 To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to use the plugin on, and then from the backend area of your site use the `Check for updates` button on the **Settings → Updates & Plugins** page.
@@ -68,7 +75,7 @@ If there's anything you'd like to chat about, please feel free to join our  [Git
 
 ## Credits
 
-Major dependencies:
+### Major dependencies:
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
@@ -76,10 +83,10 @@ Major dependencies:
 
 ### License
 
-
-### Project Status
+You must have purchased this plugin on the OctoberCMS Marketplace in order to use it.
+Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAxMzUzOTA4LDIxNDcyMDM4NiwzNjQwOT
-cxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYy
-NjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbMTQzMTk4OTA4NywyMTQ3MjAzODYsMzY0MD
+k3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2
+MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
