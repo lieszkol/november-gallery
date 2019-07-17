@@ -81,7 +81,7 @@ So, your folder structure may look like this:
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. 
+Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FSViewer](https://www.faststone.org) (Windows)
 
 ### Basic Embedded Gallery
 
@@ -114,8 +114,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3MTI5MzQ2LC0xNTU1OTc4OTAwLC0xMD
-EwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgs
-LTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0Mj
-Q5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbMTY1ODUwODM2MywtMTU1NTk3ODkwMCwtMT
+AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
+LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
+I0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
