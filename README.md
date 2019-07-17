@@ -103,7 +103,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 ### (3) Drop the Plugin Onto your Page(s)
 
-
+The plugin provides three components that you can drop onto your CMS pages.
 
 ## Support
 
@@ -133,9 +133,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMT
-Y5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1
-OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMT
-YsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1
-MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTEyMTE0NzUxOTEsMjAxMTgzMDA5NiwtMj
+AwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1
+NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMD
+M4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYz
+MDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMj
+RdfQ==
 -->
