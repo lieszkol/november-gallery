@@ -69,7 +69,7 @@ For further usage examples and documentation please see [The NovemberGallery Man
 
 ### Getting Started
 
-You will need to 1) resize your images 2) create folders for your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
+You will need to 1) create folders for your images 2) resize your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
 
 <details>
 <summary>Read more...</summary>
@@ -123,8 +123,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMT
-U1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3
-MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2Mj
-Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbOTE2MzMwNzcsLTE4NzkxMDc3ODcsLTM5NT
+czMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAz
+ODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2Mz
+A1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0
+XX0=
 -->
