@@ -65,7 +65,7 @@ To install from [the repository](https://github.com/lieszkol/november-gallery): 
 
 ## Usage
 
-
+For further usage examples and documentation please see The NovemberGaller
 
 ## Support
 
@@ -95,8 +95,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMj
-E0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQs
-NjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2ND
-cyNzAyNF19
+eyJoaXN0b3J5IjpbMTY5NzAyMTI4MywtMTU1NTk3ODkwMCwtMT
+AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
+LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
+I0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
