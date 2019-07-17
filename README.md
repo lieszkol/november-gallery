@@ -73,20 +73,18 @@ Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues
 
 If there's anything you'd like to chat about, please feel free to join our  [Gitter chat](https://gitter.im/november-gallery/community)!
 
-## Credits
-
-### Major dependencies:
+## Credits / Major Dependencies
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
-### License
+## License
 
 You must have purchased this plugin on the OctoberCMS Marketplace in order to use it.
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTk4OTA4NywyMTQ3MjAzODYsMzY0MD
-k3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2
-MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2ND
+A5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0x
+NjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
