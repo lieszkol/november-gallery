@@ -69,7 +69,7 @@ For further usage examples and documentation please see [The NovemberGallery Man
 
 ### Getting Started
 
-First, you need to upload your images to your website using OctoberCMS's built-in Media
+First, you need to upload your images to your website using OctoberCMS's built-in Media Manager. Although you can use any folder structure that you'd like, we recommend that you create a folder and create various galleries underneath that folder. 
 
 ### Basic Embedded Gallery
 
@@ -102,8 +102,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTM5NDMyMCwtMTU1NTk3ODkwMCwtMT
-AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
-LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
-I0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbOTc0NzAyMjY2LC0xNTU1OTc4OTAwLC0xMD
+EwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgs
+LTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0Mj
+Q5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
