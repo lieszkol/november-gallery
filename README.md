@@ -30,7 +30,8 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 
 ### Limitations / ToDo:
  
- - [ ] Support titles & captions
+ - [ ] Sort the displayed images by file date, date taken, or filename
+ - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
  - [ ] Test embedding & linking video
  - [ ] Get the demo page up and running
  - [ ] Extensive help docs
@@ -130,9 +131,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLT
-M5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3
-MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2ND
-Y2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3
-MDI0XX0=
+eyJoaXN0b3J5IjpbLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLT
+E4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAx
+MDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC
+00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0
+OTU3LC0xNjY0NzI3MDI0XX0=
 -->
