@@ -65,7 +65,10 @@ To install from [the repository](https://github.com/lieszkol/november-gallery): 
 
 ## Usage
 
-For further usage examples and documentation please see The NovemberGaller
+For further usage examples and documentation please see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
+
+### Basic Embedded Gallery
+
 
 ## Support
 
@@ -95,7 +98,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzAyMTI4MywtMTU1NTk3ODkwMCwtMT
+eyJoaXN0b3J5IjpbMTcyNjE0NDg4OCwtMTU1NTk3ODkwMCwtMT
 AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
 LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
 I0OTU3LC0xNjY0NzI3MDI0XX0=
