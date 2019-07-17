@@ -40,18 +40,14 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 ## Deployment
 
 <blockquote>
-<p><strong>Note</strong>: You must have a <code>{% styles %}</code> and <code>{% scripts %}</code> tag in your page header/footer.</p>
+<p><strong>Note</strong>: You must have a <code>{% styles %}</code> and <code>{% scripts %}</code> tag in your page header/footer so that the plugin can inject the required assets.</p>
 </blockquote>
 
-If you want the plugin to inject the required scripts and CSS, you must have a `{styles}` tag in the head section of your page or layout: 
 ```html
 <head>
     ...
     {% styles %}
 </head>
-```
-as well as a `{scripts}` tag in the body section:
-```html
 <body>
     ...
     {% scripts %}
@@ -137,7 +133,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjMzMTA0MiwtMjAwNzMzMTYzOSwtMT
+eyJoaXN0b3J5IjpbMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMT
 Y5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1
 OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMT
 YsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1
