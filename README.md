@@ -69,11 +69,17 @@ For further usage examples and documentation please see [The NovemberGallery Man
 
 ### Getting Started
 
-First, you need to upload your images to your website using OctoberCMS's built-in Media Manager. Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. Although it may work, it is recommended not to use spaces in folder names - it's better to use dashes or underscores instead of spaces. Also, it is custom So, your folder structure may look like this:
+First, you need to upload your images to your website using OctoberCMS's built-in Media Manager. Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. Although it may work, it is recommended not to use spaces in folder names - it's better to use dashes or underscores instead of spaces. Also, it is customary to use lowercase when creating folders for publishing on the web. 
+
+So, your folder structure may look like this:
 
 - my_galleries
 	- my_travels
-		- argentina
+		- 2018-argentina
+		- 2015-vietnam
+		- 2010-hungary
+	- cat_pictures
+	- awesome_vacuum_cleaners
 
 
 ### Basic Embedded Gallery
@@ -107,7 +113,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzA1OTU3NywtMTU1NTk3ODkwMCwtMT
+eyJoaXN0b3J5IjpbMjEwMTM0OTQ1MCwtMTU1NTk3ODkwMCwtMT
 AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
 LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
 I0OTU3LC0xNjY0NzI3MDI0XX0=
