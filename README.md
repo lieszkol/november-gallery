@@ -1,6 +1,7 @@
 
 ![NovemberGallery Banner](http://www.generalcomputing.com/2019/november-gallery-octobercms-banner.jpg)
 
+
 [![Join the chat at https://gitter.im/november-gallery/community](https://badges.gitter.im/november-gallery/community.svg)](https://gitter.im/november-gallery/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Check out the live demo site!
@@ -77,7 +78,7 @@ Major dependencies:
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMD
-UwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRd
-fQ==
+eyJoaXN0b3J5IjpbMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OT
+Q5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0x
+NjY0NzI3MDI0XX0=
 -->
