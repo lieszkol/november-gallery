@@ -83,19 +83,20 @@ If there's anything you'd like to chat about, please feel free to join our  [Git
 
 This plugin is available in two editions: 
 
- A. The Personal Edition is a free plugin meant for non-profit use, such as:
+ 1. The Personal Edition is a free plugin meant for non-profit use, such as:
 	 2. Building a personal website that is not offering a product or services for sale
 	 3. Academic use
 	 4. Use by non-profit organizations
  2. The Professional Edition is meant for commercial use, such as:
-	 1. 
+	 1. A website selling or promoting products or services
+	 2. Use by a for-profit organization
 
 Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDc1MjMxLC0xMDEwNjg5NTk2LDIxND
-cyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0
-NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mj
-cwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMj
+E0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQs
+NjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2ND
+cyNzAyNF19
 -->
