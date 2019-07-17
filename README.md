@@ -26,10 +26,12 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
  ### Limitations / ToDo:
- - Support titles & captions
- - Test embedding & linking video
- - Get the demo page up and running
- - Extensive help docs
+ 
+ - [ ] Support titles & captions
+ - [ ] Test embedding & linking video
+ - [ ] Get the demo page up and running
+ - [ ] Extensive help docs
+
 ## Deployment
 ### Requirements
 If you want the plugin to inject the required scripts and CSS, you must have a `{styles}` tag in the head section of your page or layout: 
@@ -77,7 +79,7 @@ Major dependencies:
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzEzODQwOCwyMTQ3MjAzODYsMzY0MD
-k3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2
-MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbNzAxMzUzOTA4LDIxNDcyMDM4NiwzNjQwOT
+cxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYy
+NjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
