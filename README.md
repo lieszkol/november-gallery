@@ -81,7 +81,7 @@ So, your folder structure may look like this:
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but Macs are evil so you'll have to do your own research.
+Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac you'll have to do your own research.
 
 ### Basic Embedded Gallery
 
@@ -114,8 +114,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDI1NDYzMCwtMTU1NTk3ODkwMCwtMT
-AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
-LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
-I0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTE1NzgzMzgwMzksLTE1NTU5Nzg5MDAsLT
+EwMTA2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcx
+OCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMT
+QyNDk1NywtMTY2NDcyNzAyNF19
 -->
