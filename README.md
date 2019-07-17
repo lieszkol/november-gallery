@@ -87,6 +87,8 @@ Now you're ready to upload your pictures. Although the plugin will automatically
 
 Log into your "backend" and go to Settings → November Gallery to configure your defaults.
 
+Select the 
+
 
 ## Support
 
@@ -116,8 +118,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1NTc2ODg1LC0xNTU1OTc4OTAwLC0xMD
-EwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgs
-LTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0Mj
-Q5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbMTMzNzEyNzM0NCwtMTU1NTk3ODkwMCwtMT
+AxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4
+LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxND
+I0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
