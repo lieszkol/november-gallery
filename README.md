@@ -1,9 +1,7 @@
 
 ![NovemberGallery Banner](http://www.generalcomputing.com/2019/november-gallery-octobercms-banner.jpg)
 
-<div style="float: right;"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
-
-[![Join the chat at https://gitter.im/november-gallery/community](https://badges.gitter.im/november-gallery/community.svg)](https://gitter.im/november-gallery/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
 
 Check out the live demo site!
 
@@ -79,7 +77,7 @@ Major dependencies:
 
 ### Project Status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjM5MzE0NSwyMTQ3MjAzODYsMzY0MD
+eyJoaXN0b3J5IjpbLTY0NzEzODQwOCwyMTQ3MjAzODYsMzY0MD
 k3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2
 MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
