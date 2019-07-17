@@ -1,5 +1,5 @@
 
-![NovemberGallery Banner](http://www.generalcomputing.com/2019/november-gallery-octobercms-banner.jpg)
+![NovemberGallery Banner](/media/november-gallery-octobercms-banner.jpg)
 
 <div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
 
@@ -123,9 +123,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE2MzMwNzcsLTE4NzkxMDc3ODcsLTM5NT
-czMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAz
-ODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2Mz
-A1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0
-XX0=
+eyJoaXN0b3J5IjpbMTAyMzk3MDQ0NSwtMTg3OTEwNzc4NywtMz
+k1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcy
+MDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0Nj
+YzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mjcw
+MjRdfQ==
 -->
