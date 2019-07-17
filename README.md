@@ -90,7 +90,7 @@ Now you're ready to upload your pictures. Although the plugin will automatically
 
 ### Basic Embedded Gallery
 
-Log into your "backend" and go to Settings → November Gallery to configure your defaults. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
+ 1. Log into your "backend" and go to Settings → November Gallery to configure your defaults. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
 
 
 
@@ -122,7 +122,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTQ0NjY2MywtMTg3OTEwNzc4NywtMz
+eyJoaXN0b3J5IjpbMTQ5ODk4MzUxMCwtMTg3OTEwNzc4NywtMz
 k1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcy
 MDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0Nj
 YzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mjcw
