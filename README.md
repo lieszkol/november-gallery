@@ -86,11 +86,14 @@ So, your folder structure may look like this:
 	- awesome_vacuum_cleaners
 
 Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
+
+A typical screen resolution nowadays is around 1600x1200 pixels - so if you're looking to allow your users
 </details>
 
 ### Basic Embedded Gallery
 
  1. Log into your "backend" and go to Settings → November Gallery to configure your defaults. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
+ 2. It is recommended to use the image resizer to automatically 
 
 
 
@@ -122,9 +125,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODk4MzUxMCwtMTg3OTEwNzc4NywtMz
-k1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcy
-MDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0Nj
-YzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3Mjcw
-MjRdfQ==
+eyJoaXN0b3J5IjpbLTIxNTMzMTU4LC0xODc5MTA3Nzg3LC0zOT
+U3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIw
+Mzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2Nj
+MwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAy
+NF19
 -->
