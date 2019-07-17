@@ -71,7 +71,10 @@ For further usage examples and documentation please see [The NovemberGallery Man
 
 You will need to 1) resize your images 2) create folders for your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
 
-Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
+<details>
+<summary>E</summary>
+A
+lthough you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
 
 So, your folder structure may look like this:
 
@@ -84,6 +87,7 @@ So, your folder structure may look like this:
 	- awesome_vacuum_cleaners
 
 Now you're ready to upload your pictures. Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures to a standard size before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
+</details>
 
 ### Basic Embedded Gallery
 
@@ -120,8 +124,8 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc1MDA2OTQsLTM5NTczMDg2MywtMT
-U1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3
-MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2Mj
-Y0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbMTQxMTA5MTUxNywtMzk1NzMwODYzLC0xNT
+U1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcx
+MTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNj
+Q1MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
