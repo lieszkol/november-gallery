@@ -97,9 +97,15 @@ Finally, upload your pictures using the OctoberCMS Media manager into the folder
 </details>
 
 ### (2) Configure The Plugin
- 1. Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
- 2. Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
- 3. It is recommended to use the image resizer to automatically generate thumbnails of your pictures, for this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
+Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
+
+`Settings` Tab: 
+
+ - Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
+
+`Thumbnails` Tab:
+
+ - It is recommended to use the image resizer to automatically generate thumbnails of your pictures. For this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
  4. 
 
 
@@ -132,9 +138,9 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTkyMDk1ODYsLTIwMDczMzE2MzksLT
-E2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1
-NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MT
-E2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0
-NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbMTUwNTUxMjQ0MiwtMjAwNzMzMTYzOSwtMT
+Y5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1
+OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMT
+YsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1
+MTE5NywzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
