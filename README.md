@@ -158,6 +158,8 @@ You can set the thumbnail size on the plugin backend settings page: **Settings �
 
 You can set the thumbnail size for a specific gallery on the component properties page (a.k.a. "Inspector").
 
+** Example 3: Set the gallery dimensions forthe
+
 
 </details>
 
@@ -312,11 +314,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mj
-k4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgz
-MzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MT
-gzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgs
-OTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2Mj
-Y0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0
-LDE3NzYyMjExMjBdfQ==
+eyJoaXN0b3J5IjpbLTE3Mjc0NTI1MTEsLTIwNTg1MjU0NTQsNz
+QyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4
+MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0Nz
+YyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDks
+LTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NT
+A4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgy
+NSwxMDU4MDQzMTE0XX0=
 -->
