@@ -116,7 +116,7 @@ Property | Inspector Name | Description
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 
-## Component: Embedded Gallery
+## Component 1: Embedded Gallery
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
@@ -132,7 +132,7 @@ Property | Inspector Name | Description
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
-## Component: Pop-up Lightbox
+## Component 2: Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
@@ -154,7 +154,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 
-## Component: Image List Only
+## Component 3: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
@@ -266,7 +266,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM0MTE0NTAsLTE1OTI2OTk4MjgsLT
+eyJoaXN0b3J5IjpbLTExMzI4MzMyOTIsLTE1OTI2OTk4MjgsLT
 E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
 MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
 Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
