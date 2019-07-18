@@ -131,7 +131,9 @@ Property | Inspector Name | Description
 `tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
 `additional_gallery_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
-
+`image_resizer_width` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
+`image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
+`image_resizer_mode` | Thumbnail Mode | 
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
@@ -289,11 +291,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzczOTM0NCwtMTg4MjI4MTY2MiwtMT
-EzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0
-Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOT
-gwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwt
-MTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MD
-QzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3
-LDUwMjc4MTI2N119
+eyJoaXN0b3J5IjpbLTEzMzg4OTc2MTgsLTE4ODIyODE2NjIsLT
+ExMzI4MzMyOTIsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgx
+NDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMD
+k4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAs
+LTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1OD
+A0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2
+Nyw1MDI3ODEyNjddfQ==
 -->
