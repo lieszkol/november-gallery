@@ -31,6 +31,8 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 ### Limitations / ToDo:
  
  - [ ] Ability to add to pages (not just CMS)
+ - [ ] Carousels!
+ - [ ] Alternative lightbox gallery script support
  - [ ] Sort the displayed images by file date, date taken, or filename
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
  - [ ] Test embedding & linking video
@@ -107,6 +109,8 @@ The plugin provides three components that you can drop onto your CMS pages.
 
 #### Embedded Gallery
 
+
+
 #### Pop-up Lightbox
 #### Image List Only
 
@@ -114,7 +118,7 @@ The plugin provides three components that you can drop onto your CMS pages.
 
 Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome.
 
-If there's anything you'd like to chat about, please feel free to join our  [Gitter chat](https://gitter.im/november-gallery/community)!
+If there's anything you'd like to chat about, please join the NovemberGallery  [Gitter chat](https://gitter.im/november-gallery/community)!
 
 ## Credits / Major Dependencies
 
@@ -138,10 +142,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTM4NDM1OSwxOTA2Mjk3NDI5LDIwMT
-E4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4Nzkx
-MDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OT
-U5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2
-OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC
-0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMD
+ExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5
+MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2OD
+k1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1
+Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Ny
+wtMTY2NDcyNzAyNF19
 -->
