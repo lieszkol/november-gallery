@@ -146,7 +146,7 @@ You have several options to customize how your gallery looks and behaves, depend
 <details>
 <summary>Read more...</summary>
 
-**Example 1: **
+**Example 1: Customize the size of**
 
 </details>
 
@@ -284,11 +284,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQ0NjQzNTUsLTExMzI4MzMyOTIsLT
-E1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1
-MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NT
-g0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEs
-MTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2Mj
-IxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcs
-LTI2MjIwNjQwOV19
+eyJoaXN0b3J5IjpbMjEzMDYzMTc4MywtMTEzMjgzMzI5MiwtMT
+U5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUy
+MzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1OD
+Q0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwx
+MjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMj
+ExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2Nywt
+MjYyMjA2NDA5XX0=
 -->
