@@ -136,7 +136,7 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 #### GalleryItem Properties
 Property | Type | Description
 --|--|--
-file |
+file | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
 fileName | string | The name of the file, with extension
 
 **Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
@@ -179,7 +179,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzI1MjgzOSwtMTQ2MjY0NzgxMSwxMj
+eyJoaXN0b3J5IjpbMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMj
 Q3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjEx
 MjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMj
 YyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcx
