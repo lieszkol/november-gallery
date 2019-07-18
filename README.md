@@ -135,7 +135,10 @@ For an explanation of page propreties, see [Component: Image List Only](#compone
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
-
+### [Options]
+The following are available in addition to the [Shared Options](#shared-options) described above:
+Property | Inspector Name | Description
+--|--|--
 
 
 
@@ -147,10 +150,7 @@ Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that 
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
-### [Options]
-Property | Inspector Name | Description
---|--|--
-`alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
+The image list component does not have any options other than the [Shared Options](#shared-options) described above.
 
 An example script follows that you can place in your CMS Page/Partial/Layout to display links to each of your images.
 
@@ -229,11 +229,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NzkzMzg1MSwxNDEzMjM3ODQ5LC0xMz
-kzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkz
-NTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMT
-A1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQz
-ODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC
-02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIw
-NTA1OTg0NTNdfQ==
+eyJoaXN0b3J5IjpbLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMT
+M5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5
+MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LD
+EwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0
+Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OC
+wtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0y
+MDUwNTk4NDUzXX0=
 -->
