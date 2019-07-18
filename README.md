@@ -211,16 +211,16 @@ Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
 `fileBasename` | string | [Base name of the file](https://www.php.net/manual/en/splfileinfo.getbasename.php), for example: picture-1.jpg
-`fileATime` | UNIX time | [Gets last access time of the file](https://www.php.net/manual/en/splfileinfo.getatime.php), for example: 1550704585
-`fileCTime` | string | [Gets the inode change time](https://www.php.net/manual/en/splfileinfo.getctime.php), for example: 1550704585
-`fileExtension` | string | [Gets the file extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
-`fileName` | string | [Gets the filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
+`fileATime` | UNIX time | [Last access time of the file](https://www.php.net/manual/en/splfileinfo.getatime.php), for example: 1550704585
+`fileCTime` | string | [Inode change time](https://www.php.net/manual/en/splfileinfo.getctime.php), for example: 1550704585
+`fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
+`fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
 `fileMTime` | string | ![Gets the last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
-`filePath` | string | [Gets the path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1
-`filePathname` | string | [Gets the path to the file](https://www.php.net/manual/en/splfileinfo.getpathname.php), for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
-`fileRealPath` | string | Gets absolute path to file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
-`fileSize` | string | Gets file size, in bytes, for example: 404779
-`fileType` | string | Gets file type, for example: "file"
+`filePath` | string | [Gets the path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
+`filePathname` | string | [Gets the path to the file](https://www.php.net/manual/en/splfileinfo.getpathname.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
+`fileRealPath` | string | [Gets absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
+`fileSize` | string | [Gets file size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
+`fileType` | string | [Gets file type](https://www.php.net/manual/en/splfileinfo.gettype.php), for example: "file"
 `relativeMediaFilePath` | string | Path to file relative to the media folder, for example: /my-galleries/gallery-1/picture-1.jpg
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
@@ -258,7 +258,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkyMzExODQ1LC0xNDUyMzY0NTk1LDE0MT
+eyJoaXN0b3J5IjpbOTE3ODIxODAyLC0xNDUyMzY0NTk1LDE0MT
 MyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4
 NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LD
 cwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4
