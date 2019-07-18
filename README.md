@@ -171,7 +171,7 @@ First, review [what options you have for the various tiled galleries](http://uni
 
 **Example 5: Override the component partial**
 
-It is easy to override the default partial by following the [OctoberCMS documentation](https://octobercms.com/docs/cms/components#overriding-partials).
+It is easy to override the default partial by following the [OctoberCMS documentation](https://octobercms.com/docs/cms/components#overriding-partials). All you have to do is create folder in your  with the same name as the alias of your gallery
 
 </details>
 
@@ -326,11 +326,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3ND
-IxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgx
-NjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3Nj
-IsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwt
-MTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MD
-g5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1
-LDEwNTgwNDMxMTRdfQ==
+eyJoaXN0b3J5IjpbMTE4NTM2MTI5MSwtNjMwMjUwNzY2LC0yMD
+U4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUyOTMy
+NTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1OTI2OTk4Mj
+gsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwx
+NDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0Nj
+MxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0
+Nyw3MDAxMjk4MjVdfQ==
 -->
