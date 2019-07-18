@@ -144,8 +144,11 @@ Property | Type | Description
 `fileExtension` | string | Gets the file extension
 `fileName` | string | The name of the file, with extension
 `fileMTime` | string | Gets the last modified time
-`filePath` | string | The name of the file, with extension
-`fileName` | string | The name of the file, with extension
+`filePath` | string | Gets the path without filename
+`filePathname` | string | Gets the path to the file
+`fileRealPath` | string | Gets absolute path to file
+`fileSize` | string | Gets file size
+`fileType` | string | The name of the file, with extension
 `fileName` | string | The name of the file, with extension
 `fileName` | string | The name of the file, with extension
 
@@ -190,7 +193,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1MjMxOTgwLDIwMzQ2MzE4NDcsMjA2NT
+eyJoaXN0b3J5IjpbMjI2MzQwNzM4LDIwMzQ2MzE4NDcsMjA2NT
 A4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgy
 NSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIzMywtNj
 gyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0ODgzMDIw
