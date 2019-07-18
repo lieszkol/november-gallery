@@ -116,6 +116,7 @@ Property|Inspector Name|Description
 --|--|--
 alias|`Alias`|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 maxItems|Max Images|The maximum number of images to display
+mediaFolder|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the base folder set on the November Gallery settings page are valid.
 
 
 # Component: Pop-up Lightbox
@@ -154,11 +155,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODk1MDcxNSwtMTYyMzcxMjQyNCwtMT
-k2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4
-MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMD
-c3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5
-NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OT
-Q5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0x
-NjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTE5NTA2OTMwNTcsLTE2MjM3MTI0MjQsLT
+E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
+ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
+A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
+OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Nj
+k0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Nywt
+MTY2NDcyNzAyNF19
 -->
