@@ -127,16 +127,14 @@ Property | Inspector Name | Description
 `__SELF__.galleryitems`
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to only display image files that match a certain pattern:
+Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```
-{% for chunk in products.chunk(3) %}
-    <div class="row">
-        {% for product in chunk %}
-            <div class="col-xs-4">{{ product.name }}</div>
-        {% endfor %}
-    </div>
+{% for galleryitem in galleryitems.sortBy('fileName') %}
+   <img  alt=""  src="{{ __SELF__.galleryItemSrc(galleryitem.fileName | media) }}" data-image="{{ galleryitem.fileName | media }}" data-description="">
 {% endfor %}
 ```
+
+To dive into 
 
 # Component: Pop-up Lightbox
 
@@ -176,11 +174,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0OD
-UzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQw
-OSwxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLT
-E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
-ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
-A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
-OTYsMjE0NzIwMzg2XX0=
+eyJoaXN0b3J5IjpbMTQ0OTcxMjAxMywxMDU4MDQzMTE0LDE3Nz
+YyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2
+NywtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMT
+YyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2
+Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNz
+cwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkw
+MCwtMTAxMDY4OTU5Nl19
 -->
