@@ -134,7 +134,8 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 {% endfor %}
 ```
 
-To dive into 
+<blockquote>
+<p><strong>Note</strong>: To dig into all of the methods and properties av
 
 # Component: Pop-up Lightbox
 
@@ -174,7 +175,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTcxMjAxMywxMDU4MDQzMTE0LDE3Nz
+eyJoaXN0b3J5IjpbMTcyNjkwMjUzNSwxMDU4MDQzMTE0LDE3Nz
 YyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2
 NywtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMT
 YyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2
