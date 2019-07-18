@@ -126,7 +126,7 @@ Property | Inspector Name | Description
 
 Variable | Type | Description
 --|--|--
-`__SELF__.galleryitems` | Collection | 
+`__SELF__.galleryitems` | Collection | Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes
 
 # Component: Pop-up Lightbox
 
@@ -166,11 +166,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4OD
-MwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5
-NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5Ni
-wtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4Nywt
-Mzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxND
-cyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0
-NjYzMDUwNV19
+eyJoaXN0b3J5IjpbNDYxNjU5ODA5LDUwMjc4MTI2NywtMjYyMj
+A2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcxMjQy
+NCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LD
+IwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4
+NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMD
+Y4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00
+ODU2OTQ5NF19
 -->
