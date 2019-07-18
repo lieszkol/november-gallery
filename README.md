@@ -254,8 +254,9 @@ Property | Type | Description
 
 <br>
 <blockquote><p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
-
 <br>
+
+**Additional Page Properties**
 
 **`__SELF__.defaultgalleryoptions`**
 Type: string
@@ -308,7 +309,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY1OTE3MzYsNzQyMTE1NjIsLTE4Mj
+eyJoaXN0b3J5IjpbLTE0NjUxMzY4MjEsNzQyMTE1NjIsLTE4Mj
 k4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgz
 MzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MT
 gzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgs
