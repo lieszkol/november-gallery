@@ -13,7 +13,7 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
 
-## Features:
+# Features:
 
 - Three components included: 
 	 - Embedded Gallery if you wish to show a gallery of images in your page
@@ -39,7 +39,7 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [ ] Get the demo page up and running
  - [ ] Extensive help docs
 
-## Deployment
+# Deployment
 
 <blockquote>
 <p><strong>Note</strong>: You must have a <code>{% styles %}</code> and <code>{% scripts %}</code> tag in your page header/footer so that the plugin can inject the required assets.</p>
@@ -65,7 +65,7 @@ To install from the  [Marketplace](https://octobercms.com/plugins): click `Add t
 
 To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root.
 
-## Usage
+# Usage
 
 For further usage examples and documentation please see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
@@ -116,7 +116,7 @@ Property | Inspector Name | Description
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 
-# Component: Embedded Gallery
+## Component: Embedded Gallery
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
@@ -132,7 +132,7 @@ Property | Inspector Name | Description
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
-# Component: Pop-up Lightbox
+## Component: Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
@@ -154,7 +154,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 
-# Component: Image List Only
+## Component: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
@@ -266,11 +266,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzg1NTIzMCwtMTU5MjY5OTgyOCwtMT
-U3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMy
-Mzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4ND
-csMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcw
-MDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OT
-IzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0
-ODgzMDIwNThdfQ==
+eyJoaXN0b3J5IjpbLTIxMzM0MTE0NTAsLTE1OTI2OTk4MjgsLT
+E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
+MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
+Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
+MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzOD
+kyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwx
+NDg4MzAyMDU4XX0=
 -->
