@@ -107,7 +107,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 The plugin provides three components that you can drop onto your CMS Pages/Partials/Layouts.
 
-All components share some...
+
 ### [Shared Options]
 
 Property | Inspector Name | Description
@@ -120,7 +120,8 @@ Property | Inspector Name | Description
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
-### [Additional Options]
+### [Options]
+The following are available in addition to the [Shared Options](#shared-options) described above:
 Property | Inspector Name | Description
 --|--|--
 `galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.
@@ -228,7 +229,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDcyMzkwNywxNDEzMjM3ODQ5LC0xMz
+eyJoaXN0b3J5IjpbMTA2NzkzMzg1MSwxNDEzMjM3ODQ5LC0xMz
 kzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkz
 NTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMT
 A1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQz
