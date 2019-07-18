@@ -210,17 +210,16 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
-`fileName` | string | The name of the file, with extension
-`fileBasename` | string | Base name of the file
-`fileATime` | string | Gets last access time of the file
-`fileCTime` | string | Gets the inode change time
-`fileExtension` | string | Gets the file extension
-`fileName` | string | The name of the file, with extension
-`fileMTime` | string | Gets the last modified time
-`filePath` | string | Gets the path without filename
-`filePathname` | string | Gets the path to the file
-`fileRealPath` | string | Gets absolute path to file
-`fileSize` | string | Gets file size
+`fileBasename` | string | Base name of the file, for example: picture-1.jpg
+`fileATime` | UNIX time | Gets last access time of the file, for example: 1550704585
+`fileCTime` | string | Gets the inode change time, for example: 1550704585
+`fileExtension` | string | Gets the file extension, for example: jpg
+`fileName` | string | Gets the filename, for example: picture-1.jpg
+`fileMTime` | string | Gets the last modified time, for example: 1550704585
+`filePath` | string | Gets the path without filename, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1
+`filePathname` | string | Gets the path to the file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
+`fileRealPath` | string | Gets absolute path to file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
+`fileSize` | string | Gets file size, in bytes, for example: 404779
 `fileType` | string | Gets file type, for example: "file"
 `relativeMediaFilePath` | string | Path to file relative to the media folder, for example: /my-galleries/gallery-1/picture-1.jpg
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
@@ -259,11 +258,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDMwNDY0NDcsLTE0NTIzNjQ1OTUsMT
-QxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYz
-MTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyND
-csNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1
-Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MD
-ksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0x
-OTYzODU5NDY2XX0=
+eyJoaXN0b3J5IjpbMTcyNjg3NDQ5OSwtMTQ1MjM2NDU5NSwxND
+EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
+ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
+w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
+ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
+wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
+NjM4NTk0NjZdfQ==
 -->
