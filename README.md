@@ -134,7 +134,7 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 {% endfor %}
 ```
 
-**Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar.
+**Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Ma
 
 # Component: Pop-up Lightbox
 
@@ -174,11 +174,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1OD
-A0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2
-Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02ND
-kzOTIzNzMsLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIwNTA1
-OTg0NTMsMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3MzMxNj
-M5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMs
-LTE1NTU5Nzg5MDBdfQ==
+eyJoaXN0b3J5IjpbMTM1ODYwMzI5LDEyNDcwMTcyNDcsNzAwMT
+I5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5MjMz
+LC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4OD
+MwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5
+NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5Ni
+wtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4Nywt
+Mzk1NzMwODYzXX0=
 -->
