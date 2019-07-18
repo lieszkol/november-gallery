@@ -221,7 +221,11 @@ Again, we are assuming that your component has the alias "customGallery." The im
 <details>
 <summary>Read more...</summary>
 
-### [Page Properties]
+## Page Properties
+
+**`__SELF__.defaultgalleryoptions`**
+Type: string
+
 
 **`__SELF__.error`**
 Type: string
@@ -292,11 +296,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NT
-I5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5
-OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NT
-k1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIw
-MzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MD
-E3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAs
-MTQ4NTM4OTIzM119
+eyJoaXN0b3J5IjpbMTc2NDg0NzU5MSw3NDIxMTU2MiwtMTgyOT
+g2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMz
+MjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxOD
+MsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5
+NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNj
+Q3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQs
+MTc3NjIyMTEyMF19
 -->
