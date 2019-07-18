@@ -218,30 +218,7 @@ This example assumes that your gallery component has the alias "customGallery". 
 ```
 Again, we are assuming that your component has the alias "customGallery." The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
-<details>
-<summary>Read more...</summary>
-
 ## Page Properties
-
-**`__SELF__.defaultgalleryoptions`**
-Type: string
-Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
-
-**`__SELF__.defaultlightboxoptions`**
-Type: string
-Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: "lightbox"`
-
-**`__SELF__.customgalleryscript`**
-Type: string
-The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
-
-**`__SELF__.customlightboxscript`**
-Type: string
-The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
-
-**`__SELF__.error`**
-Type: string
-If the plugin encounters an error, you can find the error description here.
 
 **`__SELF__.galleryitems`**
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
@@ -252,6 +229,8 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
    <img src="{{ galleryitem.galleryItemSrc }}" />
 {% endfor %}
 ```
+<details>
+<summary>Read more...</summary>
 
 #### GalleryItem Properties
 
@@ -276,6 +255,27 @@ Property | Type | Description
 <br>
 <blockquote><p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
 
+<br>
+
+**`__SELF__.defaultgalleryoptions`**
+Type: string
+Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
+
+**`__SELF__.defaultlightboxoptions`**
+Type: string
+Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: "lightbox"`
+
+**`__SELF__.customgalleryscript`**
+Type: string
+The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
+
+**`__SELF__.customlightboxscript`**
+Type: string
+The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
+
+**`__SELF__.error`**
+Type: string
+If the plugin encounters an error, you can find the error description here.
 </details>
 
 # Support
@@ -308,7 +308,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE3OTAxMjYsNzQyMTE1NjIsLTE4Mj
+eyJoaXN0b3J5IjpbLTE4MzY1OTE3MzYsNzQyMTE1NjIsLTE4Mj
 k4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgz
 MzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MT
 gzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgs
