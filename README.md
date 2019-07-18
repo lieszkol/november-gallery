@@ -134,7 +134,7 @@ Property | Inspector Name | Description
 `additional_gallery_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 `image_resizer_width` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`image_resizer_mode` | Thumbnail Mode | Can be: <br>- Exact: 
+`image_resizer_mode` | Thumbnail Mode | Can be: <br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop<br>- Default (as set in Ima 
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
@@ -292,11 +292,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMT
-EzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0
-Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOT
-gwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwt
-MTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MD
-QzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3
-LDUwMjc4MTI2N119
+eyJoaXN0b3J5IjpbMTg3NzIzOTA2NCwxOTc1MjkzMjU3LC0xOD
+gyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5
+ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNz
+g0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0Nywy
+MDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAwMT
+I5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5MjMz
+LC02ODI0Mzg5NjddfQ==
 -->
