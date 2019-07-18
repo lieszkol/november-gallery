@@ -135,7 +135,7 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 ```
 
 <blockquote>
-<p><strong>Note</strong>: To dig into all of the methods and properties av
+<p><strong>Note</strong>: To dig into all of the methods and properties available, you can either install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(galleryitem) }}`
 
 # Component: Pop-up Lightbox
 
@@ -175,11 +175,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjkwMjUzNSwxMDU4MDQzMTE0LDE3Nz
-YyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2
-NywtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMT
-YyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2
-Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNz
-cwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkw
-MCwtMTAxMDY4OTU5Nl19
+eyJoaXN0b3J5IjpbMTcxMzEyNTI4LDEwNTgwNDMxMTQsMTc3Nj
+IyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3
+LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNj
+IzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYy
+OTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3Nz
+AwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAw
+LC0xMDEwNjg5NTk2XX0=
 -->
