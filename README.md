@@ -130,6 +130,17 @@ Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that 
 
 
 
+
+
+
+
+
+
+# Component: Image List Only
+
+Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. An example script follows that you can place in your CMS Page/Layout/
+<details>
+<summary>Read more...</summary>
 ### [Page Properties]
 
 **`__SELT__.error`**
@@ -168,17 +179,7 @@ Property | Type | Description
 `relativeMediaFilePath` | string | Path to file relative to the media folder
 
 **Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
-
-
-
-
-# Component: Image List Only
-
-Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable.
-<details>
-<summary>Read more...</summary>
-
-
+</details>
 
 ## Support
 
@@ -210,11 +211,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNjAwNzUzLC0xMzkzMDk4MDc4LDk3Mj
-c0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4
-MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNz
-c2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEy
-NjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02NDkzOTIzNzMsLT
-E2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkw
-NjI5NzQyOV19
+eyJoaXN0b3J5IjpbMTIzMzUxMzc3OSwtMTM5MzA5ODA3OCw5Nz
+I3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3
+ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMT
+c3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgx
+MjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC
+0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5
+MDYyOTc0MjldfQ==
 -->
