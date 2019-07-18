@@ -142,12 +142,6 @@ Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues
 
 If there's anything you'd like to chat about, please join the NovemberGallery  [Gitter chat](https://gitter.im/november-gallery/community)!
 
-## Credits / Major Dependencies
-
- - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
- - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
- - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
-
 ## License
 
 This plugin is available in two editions: 
@@ -163,8 +157,16 @@ This plugin is available in two editions:
 Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
+
+## Credits / Major Dependencies
+
+ - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
+ - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
+ - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
+
+Created by [Lieszkovszky László](http://www.lieszkovszky.com/) / ZenSoft Hungary, freelance web designer from Czech Republic.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzkwMDk2NSwtNjQ5MzkyMzczLC0xNj
+eyJoaXN0b3J5IjpbMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNj
 IzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYy
 OTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3Nz
 AwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAw
