@@ -186,6 +186,7 @@ Again, we are assuming that your component has the alias "customGallery." The im
 
 <details>
 <summary>Read more...</summary>
+
 ### [Page Properties]
 
 **`__SELF__.error`**
@@ -198,7 +199,7 @@ Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/col
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```
 {% for galleryitem in galleryitems.sortBy('fileName') %}
-   <img  alt=""  src="{{ __SELF__.galleryItemSrc(galleryitem.fileName | media) }}" data-image="{{ galleryitem.fileName | media }}" data-description="">
+   <img src="{{ galleryitem.galleryItemSrc" data-image="{{ galleryitem.fileName | media }}" data-description="">
 {% endfor %}
 ```
 
@@ -256,11 +257,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzQyOTEwMiwtMTQ1MjM2NDU5NSwxND
-EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
-ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
-w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
-ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
-wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
-NjM4NTk0NjZdfQ==
+eyJoaXN0b3J5IjpbMzg1NjIwNDIsLTE0NTIzNjQ1OTUsMTQxMz
+IzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0
+NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNz
+AwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5
+MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMT
+Q4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYz
+ODU5NDY2XX0=
 -->
