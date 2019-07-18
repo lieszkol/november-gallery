@@ -134,7 +134,7 @@ Property | Inspector Name | Description
 `additional_gallery_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 `image_resizer_width` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`image_resizer_mode` | Thumbnail Mode | Can be: <br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop<br>- Default (as set in ImageResizer) 
+`image_resizer_mode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
@@ -292,11 +292,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMT
-g4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3
-OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMz
-c4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcs
-MjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMD
-EyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIz
-MywtNjgyNDM4OTY3XX0=
+eyJoaXN0b3J5IjpbNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NT
+I5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5
+OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NT
+k1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIw
+MzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MD
+E3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAs
+MTQ4NTM4OTIzM119
 -->
