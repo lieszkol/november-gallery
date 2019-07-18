@@ -151,7 +151,6 @@ Property | Type | Description
 `fileType` | string | Gets file type
 `relativeMediaFilePath` | string | Path to file relative to the media folder
 
-
 **Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
 
 # Component: Pop-up Lightbox
@@ -192,11 +191,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NT
-A4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgy
-NSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIzMywtNj
-gyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0ODgzMDIw
-NTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNCwtMTk2Mzg1OTQ2Ni
-wtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4MzAwOTYsLTIw
-MDczMzE2MzldfQ==
+eyJoaXN0b3J5IjpbLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMz
+Q2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3
+MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMT
+Q4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2
+NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNC
+wtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIw
+MTE4MzAwOTZdfQ==
 -->
