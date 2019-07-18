@@ -160,7 +160,7 @@ Use this if you wish to write your own Twig script for displaying your images, a
 
 The image list component does not have any options other than the [Shared Options](#shared-options) described above.
 
-**Example 1**
+**Example Page 1**
 ```html
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.galleryitems %}
@@ -174,7 +174,7 @@ The image list component does not have any options other than the [Shared Option
 ```
 This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the [Image Resizer Plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
-**Example 2**
+**Example Page 2**
 ```html
 <div class="container-fluid">
 {% for galleryitemchunk in customGallery.galleryitems.sortBy('relativeMediaFilePath').chunk(3) %}
@@ -213,8 +213,6 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 
 #### GalleryItem Properties
 
-
-
 Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
@@ -233,17 +231,18 @@ Property | Type | Description
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
+<br>
 <blockquote><p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
 
 </details>
 
-## Support
+# Support
 
 Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome.
 
 If there's anything you'd like to chat about, please join the NovemberGallery  [Gitter chat](https://gitter.im/november-gallery/community)!
 
-## License
+# License
 
 This plugin is available in two editions: 
 
@@ -267,11 +266,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTk0MTczMDksLTE1OTI2OTk4MjgsLT
-E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
-MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
-Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
-MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzOD
-kyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwx
-NDg4MzAyMDU4XX0=
+eyJoaXN0b3J5IjpbODQzODk0MTU3LC0xNTkyNjk5ODI4LC0xNT
+c5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIz
+Nzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0Ny
+wyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAw
+MTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5Mj
+MzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4
+ODMwMjA1OF19
 -->
