@@ -167,9 +167,9 @@ The thumbnail size you defined using the inspector will control the size of the 
 
 **Example 4: Set the spacing between tiled images**
 
-First, review [what options you have for the various tiled galleries](http://unitegallery.net/index.php?page=tiles-columns-options) on the UniteGallery website. You can see that for the Tiles - Columns layout,  you can control the spacing between the columns with the `tiles_space_between_cols:  3` option -- so add it to the *Script options* component option!
+First, review [what options you have for the various tiled galleries](http://unitegallery.net/index.php?page=tiles-columns-options) on the UniteGallery website. You can see that for the Tiles - Columns layout,  you can control the spacing between the columns with the `tiles_space_between_cols:  3` option -- so add it to the *Script options* NovemberGallery component option!
 
-
+**Example 5: Override the component partial**
 
 </details>
 
@@ -324,7 +324,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODIyODU2MywtMjA1ODUyNTQ1NCw3ND
+eyJoaXN0b3J5IjpbMTk5MDQ1NTA0MywtMjA1ODUyNTQ1NCw3ND
 IxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgx
 NjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3Nj
 IsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwt
