@@ -114,7 +114,7 @@ Use this if you wish to show a gallery of images within your page using various 
 ### Options
 Property|Inspector Name|Description
 --|--|--
-alias|`Alias`|You refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you a
+alias|`Alias`|You refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want * (don't use spaces or special characters though!) Component aliases are required and can contain only Latin symbols, digits, and underscores. The aliases should start with a Latin symbol.
 
 
 # Component: Pop-up Lightbox
@@ -153,7 +153,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY2NjYxMzIsLTE2MjM3MTI0MjQsLT
+eyJoaXN0b3J5IjpbLTIxMTMzNjM0NTYsLTE2MjM3MTI0MjQsLT
 E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
 ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
 A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
