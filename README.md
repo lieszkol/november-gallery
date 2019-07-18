@@ -182,13 +182,13 @@ This example assumes that your gallery component has the alias "customGallery". 
 {% endfor %}
 </div>
 ```
-Again, we are assuming that your component has the alias "customGallery." The images are sorted by filename and "chunked" into groups of 3 images, which are then displayed using tBootstrap grid system.
+Again, we are assuming that your component has the alias "customGallery." The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 <details>
 <summary>Read more...</summary>
 ### [Page Properties]
 
-**`__SELT__.error`**
+**`__SELF__.error`**
 Type: string
 If the plugin encounters an error, you can find the error description here.
 
@@ -256,11 +256,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTc0MjQ4NzEsLTE0NTIzNjQ1OTUsMT
-QxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYz
-MTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyND
-csNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1
-Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MD
-ksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0x
-OTYzODU5NDY2XX0=
+eyJoaXN0b3J5IjpbMTk2NzQyOTEwMiwtMTQ1MjM2NDU5NSwxND
+EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
+ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
+w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
+ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
+wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
+NjM4NTk0NjZdfQ==
 -->
