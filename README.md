@@ -258,7 +258,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 
-## Credits / Major Dependencies
+# Credits / Major Dependencies
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
@@ -266,11 +266,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzODk0MTU3LC0xNTkyNjk5ODI4LC0xNT
-c5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIz
-Nzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0Ny
-wyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAw
-MTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5Mj
-MzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4
-ODMwMjA1OF19
+eyJoaXN0b3J5IjpbMTUwMzg1NTIzMCwtMTU5MjY5OTgyOCwtMT
+U3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMy
+Mzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4ND
+csMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcw
+MDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OT
+IzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0
+ODgzMDIwNThdfQ==
 -->
