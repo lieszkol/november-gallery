@@ -122,11 +122,19 @@ Property | Inspector Name | Description
 `combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid
 `additional_gallery_options`|Script options|Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
+# Component: Pop-up Lightbox
+
+Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
+
+
+
 ### [Page Properties]
 
-`__SELT__.error`
+**`__SELT__.error`**
+Type: string
+If the plugin encounters an error, you can find the error description here.
 
-`__SELF__.galleryitems`
+**`__SELF__.galleryitems`**
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
@@ -159,9 +167,8 @@ Property | Type | Description
 
 **Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
 
-# Component: Pop-up Lightbox
 
-Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
+
 
 # Component: Image List Only
 
@@ -197,7 +204,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NjU2OTk2MiwtMTM5MzA5ODA3OCw5Nz
+eyJoaXN0b3J5IjpbLTQzMzIxNDQyMiwtMTM5MzA5ODA3OCw5Nz
 I3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3
 ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMT
 c3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgx
