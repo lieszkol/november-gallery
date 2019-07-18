@@ -202,7 +202,7 @@ Property | Inspector Name | Description
 
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
-For examples on how to customize the gallery, see (Customize the Gallery
+For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
 ## Component 3: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
@@ -332,11 +332,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MzkwMzE4NywtNjMwMjUwNzY2LC0yMD
-U4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUyOTMy
-NTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1OTI2OTk4Mj
-gsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwx
-NDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0Nj
-MxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0
-Nyw3MDAxMjk4MjVdfQ==
+eyJoaXN0b3J5IjpbLTE3NjIyMzI1NTEsLTYzMDI1MDc2NiwtMj
+A1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1Mjkz
+MjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5OD
+I4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUs
+MTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzND
+YzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcy
+NDcsNzAwMTI5ODI1XX0=
 -->
