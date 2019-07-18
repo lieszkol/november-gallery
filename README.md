@@ -132,6 +132,10 @@ Property | Inspector Name | Description
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
+### [Customizing the Gallery]
+
+You can customize the gallery to some extent through the inspector; for example, you can set the gallery layout. Of course, you can also add some 
+
 ## Component 2: Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
@@ -266,11 +270,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzI4MzMyOTIsLTE1OTI2OTk4MjgsLT
-E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
-MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
-Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
-MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzOD
-kyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwx
-NDg4MzAyMDU4XX0=
+eyJoaXN0b3J5IjpbMjA0Njc2NjkwMCwtMTEzMjgzMzI5MiwtMT
+U5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUy
+MzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1OD
+Q0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwx
+MjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMj
+ExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2Nywt
+MjYyMjA2NDA5XX0=
 -->
