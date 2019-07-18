@@ -122,7 +122,7 @@ Property | Inspector Name | Description
 `combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid
 `additional_gallery_options`|Script options|Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
-For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
+For an explanation of page propreties, see  For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
 # Component: Pop-up Lightbox
 
@@ -206,11 +206,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMDU5NjczLC0xMzkzMDk4MDc4LDk3Mj
-c0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4
-MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNz
-c2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEy
-NjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02NDkzOTIzNzMsLT
-E2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkw
-NjI5NzQyOV19
+eyJoaXN0b3J5IjpbLTE4Mjc4NTAxNTYsLTEzOTMwOTgwNzgsOT
+cyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0
+NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LD
+E3NzYyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4
+MTI2NywtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3My
+wtMTYyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1Mywx
+OTA2Mjk3NDI5XX0=
 -->
