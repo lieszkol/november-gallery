@@ -233,11 +233,11 @@ Used in the lightbox gallery default template, this holds any custom script opti
 
 **`__SELF__.customgalleryscript`**
 Type: string
-The custom gallery script set on the plugin backend settings page.
+The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
 
 **`__SELF__.customlightboxscript`**
 Type: string
-The custom lightbox script set on the plugin backend settings page.
+The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
 
 **`__SELF__.error`**
 Type: string
@@ -308,11 +308,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDIyNzQzNyw3NDIxMTU2MiwtMTgyOT
-g2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMz
-MjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxOD
-MsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5
-NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNj
-Q3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQs
-MTc3NjIyMTEyMF19
+eyJoaXN0b3J5IjpbLTEyMTE3OTAxMjYsNzQyMTE1NjIsLTE4Mj
+k4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgz
+MzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MT
+gzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgs
+OTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2Mj
+Y0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0
+LDE3NzYyMjExMjBdfQ==
 -->
