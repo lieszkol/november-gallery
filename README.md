@@ -106,6 +106,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 The plugin provides three components that you can drop onto your CMS pages.
 
 #### Embedded Gallery
+
 #### Pop-up Lightbox
 #### Image List Only
 
@@ -137,10 +138,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMD
-A3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3
-MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMz
-g2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMw
-NTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF
-19
+eyJoaXN0b3J5IjpbMjEzMTM4NDM1OSwxOTA2Mjk3NDI5LDIwMT
+E4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4Nzkx
+MDc3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OT
+U5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2
+OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC
+0xNjY0NzI3MDI0XX0=
 -->
