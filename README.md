@@ -63,9 +63,9 @@ For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/p
 
 To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  "November Gallery".
 
-To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin. You may also need to fix your permissions (`chown -R www-data:www-data /srv/www/october/plugins/zenware` on Ubuntu).
+To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin.
 
-To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root.
+To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root. You may also need to fix your permissions (`chown -R www-data:www-data /srv/www/october/plugins/zenware` on Ubuntu).
 
 # Usage
 
@@ -332,7 +332,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjIyMzI1NTEsLTYzMDI1MDc2NiwtMj
+eyJoaXN0b3J5IjpbLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMj
 A1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1Mjkz
 MjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5OD
 I4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUs
