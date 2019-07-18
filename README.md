@@ -118,7 +118,7 @@ Property|Inspector Name|Description
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 `galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.
-`tilesLayout`|Tile Layout|
+`tilesLayout`|Tile Layout|Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br>- default<br>- gallery_tiles_columns<br>- gallery_tiles_justified<br>- gallery_tiles_nested<br>- gallery_tiles_grid
 `combinedLayout`|Thumbnails Layout|
 `additional_gallery_options`|Script options|
 
@@ -159,11 +159,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg5ODU3NTEsLTE2MjM3MTI0MjQsLT
-E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
-ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
-A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
-OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Nj
-k0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Nywt
-MTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbOTczMzU5OTUzLC0xNjIzNzEyNDI0LC0xOT
+YzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgz
+MDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNz
+c4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2
+LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5ND
+k0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2
+NjQ3MjcwMjRdfQ==
 -->
