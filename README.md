@@ -134,7 +134,7 @@ For an explanation of page propreties, see [Component: Image List Only](#compone
 
 ### [Customizing the Gallery]
 
-You can customize the gallery to some extent through the inspector; for example, you can set the gallery layout. Of course, you can also add some 
+You have several options to customize how your gallery looks and behaves, depending on how deep dwo can customize the gallery to some extent through the inspector; for example, you can set the gallery layout. Of course, you can also add some CSS 
 
 ## Component 2: Pop-up Lightbox
 
@@ -270,7 +270,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0Njc2NjkwMCwtMTEzMjgzMzI5MiwtMT
+eyJoaXN0b3J5IjpbMTM5MjYwODkzMCwtMTEzMjgzMzI5MiwtMT
 U5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUy
 MzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1OD
 Q0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwx
