@@ -171,6 +171,8 @@ First, review [what options you have for the various tiled galleries](http://uni
 
 **Example 5: Override the component partial**
 
+It is easy to override the default partial by following the [OctoberCMS documentation](https://octobercms.com/docs/cms/components#overriding-partials).
+
 </details>
 
 ## Component 2: Pop-up Lightbox
@@ -324,7 +326,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDQ1NTA0MywtMjA1ODUyNTQ1NCw3ND
+eyJoaXN0b3J5IjpbLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3ND
 IxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgx
 NjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3Nj
 IsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwt
