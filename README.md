@@ -138,14 +138,17 @@ Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that 
 
 # Component: Image List Only
 
-Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. An example script follows that you can place in your CMS Page/Partial/Layout to display links to each of your images.
+Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
-```
-```
 ### [Options]
 Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
+
+An example script follows that you can place in your CMS Page/Partial/Layout to display links to each of your images.
+
+```
+```
 
 <details>
 <summary>Read more...</summary>
@@ -219,11 +222,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc3NjAwMzEsLTEzOTMwOTgwNzgsOT
-cyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0
-NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LD
-E3NzYyMjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4
-MTI2NywtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3My
-wtMTYyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1Mywx
-OTA2Mjk3NDI5XX0=
+eyJoaXN0b3J5IjpbMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5Nz
+I3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3
+ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMT
+c3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgx
+MjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC
+0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5
+MDYyOTc0MjldfQ==
 -->
