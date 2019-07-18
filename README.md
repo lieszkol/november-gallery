@@ -61,7 +61,7 @@ For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/p
 
 To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  "November Gallery".
 
-To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin. You may also need to fix your permissions (`chown www-data:www-data /srv/www/october/plugins/rainlab` on Ubuntu).
+To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin. You may also need to fix your permissions (`chown -R www-data:www-data /srv/www/october/plugins/zenware` on Ubuntu).
 
 To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root.
 
@@ -166,11 +166,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02ND
-kzOTIzNzMsLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIwNTA1
-OTg0NTMsMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3MzMxNj
-M5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMs
-LTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2ND
-A5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0x
-NjI2NDUxMTk3XX0=
+eyJoaXN0b3J5IjpbNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4OD
+MwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5
+NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5Ni
+wtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4Nywt
+Mzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxND
+cyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0
+NjYzMDUwNV19
 -->
