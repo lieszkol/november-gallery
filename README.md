@@ -225,7 +225,7 @@ Property | Type | Description
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
-<p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p>
+<blockquote><p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
 
 </details>
 
@@ -259,11 +259,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzU1NTE2OCwtMTQ1MjM2NDU5NSwxND
-EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
-ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
-w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
-ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
-wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
-NjM4NTk0NjZdfQ==
+eyJoaXN0b3J5IjpbLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMT
+QxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYz
+MTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyND
+csNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1
+Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MD
+ksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0x
+OTYzODU5NDY2XX0=
 -->
