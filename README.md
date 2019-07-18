@@ -133,8 +133,11 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
    <img  alt=""  src="{{ __SELF__.galleryItemSrc(galleryitem.fileName | media) }}" data-image="{{ galleryitem.fileName | media }}" data-description="">
 {% endfor %}
 ```
+#### GalleryItem Properties
+Property | Type | Description
+|---|
 
-**Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Ma
+**Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
 
 # Component: Pop-up Lightbox
 
@@ -174,11 +177,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODYwMzI5LDEyNDcwMTcyNDcsNzAwMT
-I5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5MjMz
-LC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4OD
-MwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5
-NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5Ni
-wtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4Nywt
-Mzk1NzMwODYzXX0=
+eyJoaXN0b3J5IjpbMjEwMTA1MzIyNywxMjQ3MDE3MjQ3LDcwMD
+EyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4OTIz
+MywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0OD
+gzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNCwtMTk2Mzg1
+OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4MzAwOT
+YsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMDc3ODcs
+LTM5NTczMDg2M119
 -->
