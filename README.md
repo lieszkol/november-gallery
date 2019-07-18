@@ -227,6 +227,10 @@ Again, we are assuming that your component has the alias "customGallery." The im
 Type: string
 Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
 
+**`__SELF__.defaultlightboxoptions`**
+Type: string
+Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
+
 **`__SELF__.error`**
 Type: string
 If the plugin encounters an error, you can find the error description here.
@@ -296,7 +300,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDA1NTc4LDc0MjExNTYyLC0xODI5OD
+eyJoaXN0b3J5IjpbNDM4MjQ4NDQxLDc0MjExNTYyLC0xODI5OD
 Y0MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMy
 OTIsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4My
 wtMTQ1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3
