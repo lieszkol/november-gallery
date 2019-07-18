@@ -143,8 +143,13 @@ Property | Inspector Name | Description
 `additional_lightbox_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
+**Example**
+```html
+{% component 'popupLightbox' %}
+<button id="gallery-button">Click me!</button>
+```
 
-
+This is a simple example where you place a button on
 
 
 # Component: Image List Only
@@ -154,7 +159,7 @@ Use this if you wish to write your own Twig script for displaying your images, a
 The image list component does not have any options other than the [Shared Options](#shared-options) described above.
 
 **Example 1**
-```
+```html
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.galleryitems %}
     <div>
@@ -168,7 +173,7 @@ The image list component does not have any options other than the [Shared Option
 This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the [Image Resizer Plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
 **Example 2**
-```
+```html
 <div class="container-fluid">
 {% for galleryitemchunk in customGallery.galleryitems.sortBy('relativeMediaFilePath').chunk(3) %}
     <div class="row">
@@ -198,7 +203,7 @@ If the plugin encounters an error, you can find the error description here.
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
-```
+```html
 {% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
    <img src="{{ galleryitem.galleryItemSrc }}" />
 {% endfor %}
@@ -260,11 +265,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODYyMDk3MDQsLTE4MTQyOTYxODMsLT
-E0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3
-NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3OD
-ExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3
-NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMj
-Y3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0x
-NjIzNzEyNDI0XX0=
+eyJoaXN0b3J5IjpbMTk0NzA0NjkyMywtMTgxNDI5NjE4MywtMT
+Q1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0
+NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MT
+EsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2
+MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNj
+csLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2
+MjM3MTI0MjRdfQ==
 -->
