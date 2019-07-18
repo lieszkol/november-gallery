@@ -164,11 +164,10 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
-||
-|:--:|
+<p style="text-align: center;"> and `</p>`
 |Created by [Lieszkovszky László](http://www.lieszkovszky.com/) ❖ ZenSoft Hungary|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ4MzM2MzgsMTQ4ODMwMjA1OCwtNj
+eyJoaXN0b3J5IjpbLTIwMzI5ODEwNTcsMTQ4ODMwMjA1OCwtNj
 Q5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUw
 NTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMT
 YzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYz
