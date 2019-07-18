@@ -145,7 +145,7 @@ Property | Inspector Name | Description
 `additional_lightbox_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
-**Example**
+**Example Page**
 ```html
 {% component 'popupLightbox' %}
 <button id="gallery-button">Click me!</button>
@@ -267,11 +267,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MzA3NTQ0LC0xNTkyNjk5ODI4LC0xNT
-c5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIz
-Nzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0Ny
-wyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAw
-MTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5Mj
-MzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4
-ODMwMjA1OF19
+eyJoaXN0b3J5IjpbLTE2NTk0MTczMDksLTE1OTI2OTk4MjgsLT
+E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
+MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
+Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
+MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzOD
+kyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwx
+NDg4MzAyMDU4XX0=
 -->
