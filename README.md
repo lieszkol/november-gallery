@@ -111,8 +111,8 @@ The plugin provides three components that you can drop onto your CMS Pages/Parti
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
-### Options
-Property|Inspector Name|Description
+### [Options]
+Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `maxItems`|Max Images|The maximum number of images to display
@@ -122,6 +122,10 @@ Property|Inspector Name|Description
 `combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid
 `additional_gallery_options`|Script options|Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
+### [Page Properties]
+
+Variable | Type | Description
+--|--|--
 
 # Component: Pop-up Lightbox
 
@@ -159,7 +163,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjEyNzQ3NTQsLTE2MjM3MTI0MjQsLT
+eyJoaXN0b3J5IjpbLTExNDIwNDgyMTksLTE2MjM3MTI0MjQsLT
 E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
 ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
 A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
