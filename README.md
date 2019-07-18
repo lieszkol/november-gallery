@@ -126,7 +126,7 @@ Property | Inspector Name | Description
 
 Variable | Type | Description
 --|--|--
-`__SELF__.galleryitems` | 
+`__SELF__.galleryitems` | Collection | 
 
 # Component: Pop-up Lightbox
 
@@ -164,11 +164,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTM5MjM3MywtMTYyMzcxMjQyNCwtMT
-k2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4
-MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMD
-c3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5
-NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OT
-Q5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0x
-NjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbLTM4NzkwMDk2NSwtNjQ5MzkyMzczLC0xNj
+IzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYy
+OTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3Nz
+AwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAw
+LC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1Mz
+I3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5Nywz
+MDE0MjQ5NTddfQ==
 -->
