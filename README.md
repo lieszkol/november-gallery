@@ -125,10 +125,8 @@ Property | Inspector Name | Description
 ### [Page Properties]
 
 `__SELF__.galleryitems`
-Type: October\Rain\Support\Collection
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Wrapping it in a 
-
-For convenience 
+Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)
+Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection enables 
 
 # Component: Pop-up Lightbox
 
@@ -168,7 +166,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM3MjA5MjksNTAyNzgxMjY3LC0yNj
+eyJoaXN0b3J5IjpbLTE0MjAzNTA2MjksNTAyNzgxMjY3LC0yNj
 IyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEy
 NDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0Mj
 ksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywt
