@@ -225,7 +225,7 @@ Again, we are assuming that your component has the alias "customGallery." The im
 
 **`__SELF__.defaultgalleryoptions`**
 Type: string
-Used in the embedded gallery default template, this holds any custom script options set 
+Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (such as gallery_theme, tiles_type, etc.)
 
 **`__SELF__.error`**
 Type: string
@@ -296,7 +296,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDE4MDYzNSw3NDIxMTU2MiwtMTgyOT
+eyJoaXN0b3J5IjpbLTQ2MTg0ODY5MCw3NDIxMTU2MiwtMTgyOT
 g2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMz
 MjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxOD
 MsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5
