@@ -126,7 +126,7 @@ Property | Inspector Name | Description
 
 `__SELF__.galleryitems`
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection enables 
+Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not a
 
 # Component: Pop-up Lightbox
 
@@ -166,11 +166,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjAzNTA2MjksNTAyNzgxMjY3LC0yNj
-IyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEy
-NDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0Mj
-ksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywt
-MTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMD
-EwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgs
-LTQ4NTY5NDk0XX0=
+eyJoaXN0b3J5IjpbMTc5NDU3OTEyOCw1MDI3ODEyNjcsLTI2Mj
+IwNjQwOSwxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0
+MjQsLTE5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOS
+wyMDExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0x
+ODc5MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMT
+A2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwt
+NDg1Njk0OTRdfQ==
 -->
