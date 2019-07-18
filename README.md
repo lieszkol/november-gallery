@@ -160,7 +160,7 @@ You can set the thumbnail size for a specific gallery on the component propertie
 
 **Example 3: Set the gallery dimensions for the "combined" gallery**
 
-In the combined gallery, a large image is displayed along with a row of thumbnails. First, set your thumbnail size using the inspector. Then check the relevant options available for the combined gallery on the UniteGallery plugin page
+In the combined gallery, a large image is displayed along with a row of thumbnails. First, set your thumbnail size using the inspector. Then check the [relevant options available](http://unitegallery.net/index.php?page=default-options) for the combined gallery on the UniteGallery plugin page. You can see that the "gallery_width" and "gallery_height" options 
 
 
 
@@ -317,7 +317,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTU2NzE1NSwtMjA1ODUyNTQ1NCw3ND
+eyJoaXN0b3J5IjpbMTg1ODUwNjg2NCwtMjA1ODUyNTQ1NCw3ND
 IxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgx
 NjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3Nj
 IsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwt
