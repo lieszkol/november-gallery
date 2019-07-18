@@ -107,16 +107,22 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 The plugin provides three components that you can drop onto your CMS Pages/Partials/Layouts.
 
-# Component: Embedded Gallery
+All components share some...
+### [Shared Options]
 
-Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
-
-### [Options]
 Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
+
+# Component: Embedded Gallery
+
+Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
+
+### [Additional Options]
+Property | Inspector Name | Description
+--|--|--
 `galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.
 `tilesLayout`|Tile Layout|Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid
 `combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid
@@ -222,11 +228,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5Nz
-I3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3
-ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMT
-c3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgx
-MjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC
-0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5
-MDYyOTc0MjldfQ==
+eyJoaXN0b3J5IjpbLTEwNDcyMzkwNywxNDEzMjM3ODQ5LC0xMz
+kzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkz
+NTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMT
+A1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQz
+ODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC
+02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLTIw
+NTA1OTg0NTNdfQ==
 -->
