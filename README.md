@@ -124,6 +124,8 @@ Property | Inspector Name | Description
 
 ### [Page Properties]
 
+`__SELT__.error`
+
 `__SELF__.galleryitems`
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
@@ -133,7 +135,11 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
    <img  alt=""  src="{{ __SELF__.galleryItemSrc(galleryitem.fileName | media) }}" data-image="{{ galleryitem.fileName | media }}" data-description="">
 {% endfor %}
 ```
+
 #### GalleryItem Properties
+
+
+
 Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
@@ -191,11 +197,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMz
-Q2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3
-MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMT
-Q4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2
-NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNC
-wtMTk2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIw
-MTE4MzAwOTZdfQ==
+eyJoaXN0b3J5IjpbLTc4NjU2OTk2MiwtMTM5MzA5ODA3OCw5Nz
+I3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3
+ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQsMT
+c3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgx
+MjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC
+0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5
+MDYyOTc0MjldfQ==
 -->
