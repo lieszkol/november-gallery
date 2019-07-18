@@ -59,9 +59,9 @@ For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/p
 
 ### Installation
 
-To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  `November Gallery`.
+To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  "November Gallery".
 
-To install from the  [Marketplace](https://octobercms.com/plugins): click "Add to Project" and select the project you wish to use the plugin on, and then from the backend area of your site use the `Check for updates` button on the **Settings → Updates & Plugins** page.
+To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, and then from the backend area of your site use the `Check for updates` button on the **Settings → Updates & Plugins** page.
 
 To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root.
 
@@ -149,10 +149,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMT
-kwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkx
-Mjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nz
-g5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2
-NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMT
-k3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbMTk2Mzk3MTkzMiwtMTk2Mzg1OTQ2NiwtMj
+A1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDcz
+MzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMD
+g2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYs
+MzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MD
+UsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+
 -->
