@@ -151,9 +151,12 @@ You have several options to customize how your gallery looks and behaves, depend
 <summary>Read more...</summary>
 
 **Example 1: Set the thumbnail size for all galleries**
+
 You can set the thumbnail size on the plugin backend settings page: **Settings → November Gallery → Thumbnails**. If you want more control, go to **Settings → Image Resizer Settings**
 
 **Example 2: Set the thumbnail size for an individual gallery**
+
+You can set the thumbnail size for a specific gallery on t
 
 
 </details>
@@ -309,11 +312,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUxMzY4MjEsNzQyMTE1NjIsLTE4Mj
-k4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgz
-MzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MT
-gzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgs
-OTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2Mj
-Y0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0
-LDE3NzYyMjExMjBdfQ==
+eyJoaXN0b3J5IjpbNDIyNjM2OTM3LDc0MjExNTYyLC0xODI5OD
+Y0MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMy
+OTIsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4My
+wtMTQ1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3
+Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2ND
+c4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwx
+Nzc2MjIxMTIwXX0=
 -->
