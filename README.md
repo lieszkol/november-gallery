@@ -164,7 +164,25 @@ The image list component does not have any options other than the [Shared Option
 {% endfor %}
 </div>
 ```
-This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the Image Resizer Plugin and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
+This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the [Image Resizer Plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
+
+**Example 2**
+```
+<div class="container-fluid">
+{% for galleryitemchunk in customGallery.galleryitems.sortBy('relativeMediaFilePath').chunk(3) %}
+    <div class="row">
+        {% for galleryitem in galleryitemchunk %}
+            <div class="col-xs-4" style="text-align: center;">
+                <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
+                    <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+</div>
+```
+Again, we are assuming that your component has the alias "customGallery." The images are sorted by filename and "chunked" into groups of 3 images, which are then displayed using tBootstrap grid system.
 
 <details>
 <summary>Read more...</summary>
@@ -238,11 +256,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMTQyNTczOSwtMTQ1MjM2NDU5NSwxND
-EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
-ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
-w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
-ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
-wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
-NjM4NTk0NjZdfQ==
+eyJoaXN0b3J5IjpbLTE1NTc0MjQ4NzEsLTE0NTIzNjQ1OTUsMT
+QxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYz
+MTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyND
+csNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1
+Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MD
+ksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0x
+OTYzODU5NDY2XX0=
 -->
