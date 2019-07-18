@@ -114,7 +114,7 @@ Use this if you wish to show a gallery of images within your page using various 
 ### Options
 Property|Inspector Name|Description
 --|--|--
-|`Alias`|  
+alias|`Alias`|  
 
 
 # Component: Pop-up Lightbox
@@ -153,11 +153,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNjE1MDEyOCwtMTYyMzcxMjQyNCwtMT
-k2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4
-MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMD
-c3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5
-NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OT
-Q5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0x
-NjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbOTIzMjQxMjY4LC0xNjIzNzEyNDI0LC0xOT
+YzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgz
+MDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNz
+c4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2
+LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5ND
+k0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2
+NjQ3MjcwMjRdfQ==
 -->
