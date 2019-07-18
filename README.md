@@ -135,7 +135,7 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 ```
 
 <blockquote>
-<p><strong>Note</strong>: To dig into all of the methods and properties available, you can either install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(galleryitem) }}`
+<p><strong>Note</strong>: To dig into all of the methods and properties available, you can either install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add {{ debug(galleryitem) }} to your page, 
 
 # Component: Pop-up Lightbox
 
@@ -175,7 +175,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzEyNTI4LDEwNTgwNDMxMTQsMTc3Nj
+eyJoaXN0b3J5IjpbNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3Nj
 IyMTEyMCwxNDg1Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3
 LC0yNjIyMDY0MDksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNj
 IzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYy
