@@ -117,7 +117,7 @@ Property|Inspector Name|Description
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
-`galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel<br>- gallery_combined<br>- gallery_slider<br>- gallery_video
+`galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.
 `tilesLayout`|Tile Layout|
 `combinedLayout`|Thumbnails Layout|
 `additional_gallery_options`|Script options|
@@ -159,11 +159,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyNDY3MzQsLTE2MjM3MTI0MjQsLTE5Nj
-M4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDExODMw
-MDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nz
-g3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYs
-MjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OT
-QsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2
-NDcyNzAyNF19
+eyJoaXN0b3J5IjpbLTE3Mzg5ODU3NTEsLTE2MjM3MTI0MjQsLT
+E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
+ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
+A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
+OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Nj
+k0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Nywt
+MTY2NDcyNzAyNF19
 -->
