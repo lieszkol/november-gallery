@@ -75,6 +75,7 @@ You will need to 1) create folders for your images 2) resize your images and 3) 
 
 <details>
 <summary>Read more...</summary>
+
 Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
 
 So, your folder structure may look like this:
@@ -138,7 +139,15 @@ You have several options to customize how your gallery looks and behaves, depend
 
  1. You can customize the gallery to some extent through the inspector; for example, you can set the gallery layout
  2. You can also add some CSS to control how the thumbnails are displayed
- 3. You can add some custom options to t
+ 3. You can add some custom options that will be passed onto the UniteGallery script via the inspector
+ 4. You can override the component partial
+
+<details>
+<summary>Read more...</summary>
+
+** Customize
+
+</details>
 
 ## Component 2: Pop-up Lightbox
 
@@ -274,11 +283,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTI1MzQ2OSwtMTEzMjgzMzI5MiwtMT
-U5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUy
-MzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1OD
-Q0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwx
-MjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMj
-ExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2Nywt
-MjYyMjA2NDA5XX0=
+eyJoaXN0b3J5IjpbLTExMDcwOTc4NzksLTExMzI4MzMyOTIsLT
+E1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1
+MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NT
+g0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEs
+MTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2Mj
+IxMTIwLDE0ODUzODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcs
+LTI2MjIwNjQwOV19
 -->
