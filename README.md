@@ -225,7 +225,7 @@ Again, we are assuming that your component has the alias "customGallery." The im
 
 **`__SELF__.defaultgalleryoptions`**
 Type: string
-Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (such as gallery_theme, tiles_type, etc.)
+Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
 
 **`__SELF__.error`**
 Type: string
@@ -296,11 +296,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTg0ODY5MCw3NDIxMTU2MiwtMTgyOT
-g2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMz
-MjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxOD
-MsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5
-NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUwLC0xNDYyNj
-Q3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LDEwNTgwNDMxMTQs
-MTc3NjIyMTEyMF19
+eyJoaXN0b3J5IjpbLTI1MDA1NTc4LDc0MjExNTYyLC0xODI5OD
+Y0MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMy
+OTIsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4My
+wtMTQ1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3
+Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2ND
+c4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwx
+Nzc2MjIxMTIwXX0=
 -->
