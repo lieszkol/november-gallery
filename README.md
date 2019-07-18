@@ -109,7 +109,7 @@ The plugin provides three components that you can drop onto your CMS pages.
 
 #### Embedded Gallery
 
-
+Drop this component onto your CMS Page/Partial/Layout to show a gallery
 
 #### Pop-up Lightbox
 #### Image List Only
@@ -142,10 +142,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMD
-ExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5
-MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2OD
-k1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1
-Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Ny
-wtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbLTUxMDAzMDA3MCwtMjA1MDU5ODQ1MywxOT
+A2Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEy
+NzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3OD
+kwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0
+NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOT
+csMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
