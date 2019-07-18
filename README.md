@@ -165,6 +165,10 @@ Then check the [relevant options available](http://unitegallery.net/index.php?pa
 
 The thumbnail size you defined using the inspector will control the size of the generated thumbnails, it will also automatically add a "thumb_height" option to the gallery. You can override this if you wish by manually adding a "thumb_height" option under *Script options*, but this should not be necessary. The `thumb_fixed_size:false` setting enables dynamically sized thumbnails.
 
+**Example 4: Set the spacing between tiled images**
+
+First, review what options you have 
+
 
 
 </details>
@@ -320,11 +324,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTc2MDQ3NCwtMjA1ODUyNTQ1NCw3ND
-IxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgx
-NjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3Nj
-IsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwt
-MTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MD
-g5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1
-LDEwNTgwNDMxMTRdfQ==
+eyJoaXN0b3J5IjpbLTIwODkzMjI1NjMsLTIwNTg1MjU0NTQsNz
+QyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4
+MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0Nz
+YyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDks
+LTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NT
+A4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LDcwMDEyOTgy
+NSwxMDU4MDQzMTE0XX0=
 -->
