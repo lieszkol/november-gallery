@@ -4,8 +4,10 @@ namespace ZenWare\NovemberGallery\Components;
 use Cms\Classes\ComponentBase;
 use ZenWare\NovemberGallery\Models\Settings;
 use ToughDeveloper\ImageResizer\Classes\Image;
-use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
-
+// use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+use ZenWare\NovemberGallery\Classes\GalleryItem;
+use October\Rain\Support\Collection;
+use Config;
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
     public $galleryitems;
@@ -39,7 +41,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
                  'default'           => 100,
                  'type'              => 'string',
                  'validationPattern' => '^[0-9]+$',
-                 'validationMessage' => 'The Max Images property can contain only numeric symbols'
+                 'validationMessage' => 'The Max Images property can only contain numbers!'
             ]
         ];
     }
@@ -49,6 +51,11 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     public function onRun() {
         $this->addCss('assets/css/novembergallery.css');
+		
+		if (Settings::instance()->inject_jquery) 
+		{
+	    	$this->addJs('//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js');
+		}
 
         $this->allowedExtensions = array();
         if (Settings::instance()->allowed_extensions_jpg)
@@ -64,7 +71,10 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
         {
             $this->allowedExtensions[] = 'png';
         }
-        Debugbar::info("NovemberGallery allowed extensions is: " . \implode('|', $this->allowedExtensions));
+		// Debugbar::info("NovemberGallery allowed extensions is: " . \implode('|', $this->allowedExtensions));
+		// Debugbar::info("Config::get('cms.storage.uploads.path') = " . Config::get('cms.storage.uploads.path'));
+		// Debugbar::info("Config::get('cms.storage.media.path') = " . Config::get('cms.storage.media.path'));
+		// Debugbar::info("url(Config::get('cms.storage.media.path')) = " . url(Config::get('cms.storage.media.path')));
         
 		$this->galleryitems = $this->loadMedia();
 		
@@ -81,11 +91,13 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		{
 			$this->customlightboxscript = Settings::instance()->custom_lightbox_script;
 		}
-    }
+	}
 
      /**
      * Retrieve the full path to the gallery taking into account the base folder selected 
      * in the backend NovemberGallery settings page.
+	 * 
+	 * This can be called from the front-end with: {{ __SELF__.galleryPath() }}
      * 
      * @return string Path to the gallery of images to display
      */
@@ -102,39 +114,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 
         return $galleryPath;
 	}
-	
-	/**
-	 * If plugin is configured to resize images, then return the URL of the resized image; otherwise, return the passed argument unchanged.
-	 * 
-	 * This is used in the \components\embeddedgallery\default.htm template.
-	 */
-    function getGalleryItemSrc($galleryItemUrl) 
-    {
-        //galleryitem | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' })
-        Debugbar::info("NovemberGallery image: " . $galleryItemUrl);
-        if (Settings::instance()->use_image_resizer) 
-        {
-            $image = new Image($galleryItemUrl);
-            // https://github.com/toughdeveloper/oc-imageresizer-plugin/blob/master/classes/Image.php
-            $options = [];
-            if (!empty(Settings::instance()->image_resizer_mode))
-            {
-                $options['mode'] = Settings::instance()->image_resizer_mode;
-            }
-            if (!empty(Settings::instance()->image_resizer_quality))
-            {
-                $options['quality'] = Settings::instance()->image_resizer_quality;
-            }
-            return $image->resize(
-                Settings::instance()->image_resizer_width ? Settings::instance()->image_resizer_width : false,
-                Settings::instance()->image_resizer_height ? Settings::instance()->image_resizer_height : false,
-                $options);
-        }
-        else 
-        {
-            return $galleryItemUrl;
-        }
-    }
 	
 	/**
      * Get default options used in the default.htm layout for initialising the gallery.
@@ -156,26 +135,39 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			case 'gallery_tiles':
 				switch($this->getTilesLayout()) 
 				{
-					case 'gallery_tiles_columns': 
+					case 'gallery_tiles_columns':
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tiles_col_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
 						return 'gallery_theme: "tiles",' . $additionalOptions;
 					case 'gallery_tiles_justified': 
+						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tiles_justified_row_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "tiles",	tiles_type: "justified",' . $additionalOptions;
 					case 'gallery_tiles_nested': 
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tiles_nested_optimal_tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
 						return 'gallery_theme: "tiles",	tiles_type: "nested",' . $additionalOptions;
 					case 'gallery_tiles_grid':
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
+						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tile_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "tilesgrid",' . $additionalOptions;
 				}
 				break;
 			case 'gallery_carousel':
+				if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
+				if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tile_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 				return 'gallery_theme: "carousel",' . $additionalOptions;
 			case 'gallery_combined':
 				switch($this->getCombinedLayout()) 
 				{
 					case 'gallery_combined_default': 
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
+						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 						return  $additionalOptions;
 					case 'gallery_combined_compact': 
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
+						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "compact",' . $additionalOptions;
 					case 'gallery_combined_grid':
+						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
+						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "grid",' . $additionalOptions;
 				}
 				break;
@@ -200,7 +192,39 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		$additionalOptions = rtrim($additionalOptions, ',');
 		$additionalOptions = $additionalOptions . ',';
 
-		'gallery_theme: "carousel",' . $additionalOptions;
+		return 'gallery_theme: "lightbox",' . $additionalOptions;
+	}
+
+	/** 
+	 * Get the width of the thumbnails for this gallery.
+	 */
+	public function getThumbnailWidth() {
+		$width = false;
+		if (!empty($this->property('image_resizer_width'))) 
+		{
+			$width = $this->property('image_resizer_width');
+		} 
+		elseif (empty($this->property('image_resizer_height')) && !empty(Settings::instance()->image_resizer_width))
+		{
+			$width = Settings::instance()->image_resizer_width;
+		}
+		return $width;
+	}
+
+	/** 
+	 * Get the height of the thumbnails for this gallery.
+	 */
+	public function getThumbnailHeight() {
+		$height = false;
+		if (!empty($this->property('image_resizer_height'))) 
+		{
+			$height = $this->property('image_resizer_height');
+		} 
+		elseif (empty($this->property('image_resizer_width')) && !empty(Settings::instance()->image_resizer_height)) 
+		{
+			$height = Settings::instance()->image_resizer_height;
+		}
+		return $height;
 	}
 
     /**
@@ -211,7 +235,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
     function loadMedia()
     {
         $galleryPath = $this->getGalleryPath();
-        Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
+        // Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
 
         if (!\File::exists($galleryPath)) {
             $this->error = "NovemberGallery error: cannot find the path " . $galleryPath;
@@ -223,13 +247,13 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
         // end of options!    
         
         $files     = \File::allFiles($galleryPath);
-        Debugbar::info("NovemberGallery found files: " . count($files));
-        $images     = [ ];
+        // Debugbar::info("NovemberGallery found files: " . count($files));
+        $images     = new Collection();
         $i = 1;
         foreach ($files as $file) {
             if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
                 // List of methods available: http://php.net/manual/en/splfileinfo.getfilename.php
-                $images[] = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
+                $images->push(new GalleryItem($file, $this));
             }
             if ($i >= $maxImages) break;
             $i++;

@@ -2,7 +2,7 @@
     'plugin' => [
         'name' => 'November Gallery',
         'long_name' => 'UniteGallery.js + OctoberCMS Media Manager + Image Resizer = NovemberGallery',
-        'description' => 'Upload your photos using the October Media manager and display them on your page using UniteGallery!',
+        'description' => 'Upload your photos using the October Media manager and display them on your page as an embedded gallery or a pop-up lightbox!',
         'long_description' => 'OctoberCMS Media manager + vvvmax/unitegallery + Image Resizer plugin = a highly customizable yet reliable way to display your photos in a gallery. The plugin reads images uploaded using October\'s built-in Media manager, uses the ImageResizer plugin to automatically generate thumbnails, and presents them in a gallery either as tiles (arranged in columns, justified, or laid out in a grid), as a carousel, as a slider, or as a pop-up lightbox that can be opened from a link/button. Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.',
         'embedded_gallery_component_name' => 'Embedded Gallery',
         'embedded_gallery_component_description' => 'Show a gallery of images in your page using various layouts, with optional full-screen (lightbox-style) viewing.',
@@ -83,7 +83,9 @@
         'allowed_extensions_comment' => 'Refer to WikiPedia for a discussion of <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support" target="_blank">which browser supports which media format</a>.',
 
 		'inject_unitegallery_assets' => 'Inject UniteGallery Assets',
-		'inject_unitegallery_assets_comment' => 'Automatically inject UniteGallery JS and CSS into the page when required (make sure you have a {% scripts %} AS WELL as a {% styles %} somewhere in your layout/page!)'
+		'inject_unitegallery_assets_comment' => 'Automatically inject UniteGallery JS and CSS into the page when required (make sure you have a {% scripts %} AS WELL as a {% styles %} somewhere in your layout/page!)',
+		'inject_jquery' => 'Inject jQuery',
+		'inject_jquery_comment' => 'Automatically inject jQuery into the page (select only if your theme/layout doesn\'t already do so)'
     ],
     'component_properties' => [
 		'gallery_layout_label' => 'Gallery Layout',
@@ -101,7 +103,13 @@
 		'additional_lightbox_options' => 'Script options',
 		'additional_lightbox_options_hint' => 'Additional JS options that you want passed onto the UniteGallery script, for example: theme_panel_position: "bottom"',
 		'attach_to' => 'Attach to',
-		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.'
+		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.',
+		'image_resizer_mode_label' => 'Thumbnail Mode',
+        'image_resizer_width_label' => 'Thumbnail Width',
+        'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
+        'image_resizer_height_label' => 'Thumbnail Height',
+        'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
+        'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.'
 	],
     'permission' => [
         'tab' => 'November Gallery',

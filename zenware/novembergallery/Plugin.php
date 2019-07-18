@@ -3,7 +3,6 @@
 use System\Classes\PluginBase;
 use App;
 use Event;
-use Debugbar;
 use BackendMenu;
 
 class Plugin extends PluginBase

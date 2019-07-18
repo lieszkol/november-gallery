@@ -6,11 +6,12 @@
 <div id="gallery" style="display:none;">
 	{% verbatim %}
 	<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
-		<img src="{{ galleryitem | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
+		<img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
 	{% endverbatim %}
-    {% for galleryitem in galleryitems %}
-        <img alt="" src="{{ __SELF__.galleryItemSrc(galleryitem | media) }}"
-		data-image="{{ galleryitem | media }}"
+	{% for galleryitem in galleryitems.sortBy('fileName') %}
+		<!-- {{ galleryitem.galleryItemSrc }} -->
+        <img alt="" src="{{ galleryitem.galleryItemSrc }}"
+		data-image="{{ galleryitem.relativeMediaFilePath | media }}"
 		data-description="">
     {% endfor %}
 </div>

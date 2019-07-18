@@ -296,6 +296,18 @@ tabs:
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
             containerAttributes: 
                 style: 'clear: left;'
+        inject_jquery:
+            tab: zenware.novembergallery::lang.settings.tab_advanced
+            label: zenware.novembergallery::lang.settings.inject_jquery
+            comment: zenware.novembergallery::lang.settings.inject_jquery_comment
+            type: switch
+            on: zenware.novembergallery::lang.settings.switch_on
+            off: zenware.novembergallery::lang.settings.switch_off
+            default: true
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
 
         ##
         #   Help

@@ -3,7 +3,6 @@ namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
 use ToughDeveloper\ImageResizer\Classes\Image;
-use Debugbar;
 
 class PopupGallery extends NovemberGalleryComponentBase {
 
