@@ -164,7 +164,7 @@ The image list component does not have any options other than the [Shared Option
 {% endfor %}
 </div>
 ```
-This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using  are displayed in a flexbox, 
+This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the Image Resizer Plugin and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
 <details>
 <summary>Read more...</summary>
@@ -238,7 +238,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTc0NjgwMCwtMTQ1MjM2NDU5NSwxND
+eyJoaXN0b3J5IjpbLTUxMTQyNTczOSwtMTQ1MjM2NDU5NSwxND
 EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
 ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
 w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
