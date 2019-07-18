@@ -125,7 +125,7 @@ Property | Inspector Name | Description
 ### [Page Properties]
 
 `__SELF__.galleryitems`
-Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection), which extends  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection]
+Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection), which extends  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection]()
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to only display image files that match a certain pattern:
 ```
 {% for chunk in products.chunk(3) %}
@@ -175,11 +175,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQyNzI3MDUsMTQ4NTM4OTIzMywtNj
-gyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LDE0ODgzMDIw
-NTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNCwtMTk2Mzg1OTQ2Ni
-wtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4MzAwOTYsLTIw
-MDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLTM5NT
-czMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAz
-ODYsMzY0MDk3MTE2XX0=
+eyJoaXN0b3J5IjpbMTc3NjIyMTEyMCwxNDg1Mzg5MjMzLC02OD
+I0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1
+OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC
+0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5NiwtMjAw
+NzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1Nz
+MwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4
+NiwzNjQwOTcxMTZdfQ==
 -->
