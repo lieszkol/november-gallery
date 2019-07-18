@@ -152,9 +152,17 @@ Use this if you wish to write your own Twig script for displaying your images, a
 
 The image list component does not have any options other than the [Shared Options](#shared-options) described above.
 
-An example script follows that you can place in your CMS Page/Partial/Layout to display links to each of your images.
-
+**Example 1**
 ```
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+{% for galleryitem in customGallery.galleryitems %}
+    <div>
+        <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
+            <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
+        </a>
+    </div>
+{% endfor %}
+</div>
 ```
 
 <details>
@@ -229,11 +237,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMT
-M5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5
-MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyNDcsNzAwMTI5ODI1LD
-EwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1Mzg5MjMzLC02ODI0
-Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MDksMTQ4ODMwMjA1OC
-wtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0y
-MDUwNTk4NDUzXX0=
+eyJoaXN0b3J5IjpbLTk2Mzc5NzMzNSwtMTQ1MjM2NDU5NSwxND
+EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
+ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
+w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
+ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
+wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
+NjM4NTk0NjZdfQ==
 -->
