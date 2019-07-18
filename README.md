@@ -122,8 +122,9 @@ Use this if you wish to show a gallery of images within your page using various 
 
 ### [Options]
 The following are available in addition to the [Shared Options](#shared-options) described above:
+
 Property | Inspector Name | Description
---|--|--
+-- | -- | --
 `galleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.</small>
 `tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
@@ -265,11 +266,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMT
-gxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkz
-MDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNT
-AsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1
-ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzODkyMzMsLTY4MjQzOD
-k2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwxNDg4MzAyMDU4LC02
-NDkzOTIzNzNdfQ==
+eyJoaXN0b3J5IjpbLTIwNzkxOTM3MzQsLTE1OTI2OTk4MjgsLT
+E1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEz
+MjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxOD
+Q3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Nyw3
+MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUzOD
+kyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOSwx
+NDg4MzAyMDU4XX0=
 -->
