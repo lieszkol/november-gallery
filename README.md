@@ -107,17 +107,17 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 The plugin provides three components that you can drop onto your CMS Pages/Partials/Layouts.
 
-# Embedded Gallery
+# Component: Embedded Gallery
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
 The component provides the following options:
 
-#### Pop-up Lightbox
+# Component: Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
-#### Image List Only
+# Component: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable.
 
@@ -149,7 +149,7 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQxNjc0NTEsLTE5NjM4NTk0NjYsLT
+eyJoaXN0b3J5IjpbLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLT
 IwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3
 MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3Mz
 A4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2
