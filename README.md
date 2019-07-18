@@ -124,9 +124,9 @@ Use this if you wish to show a gallery of images within your page using various 
 The following are available in addition to the [Shared Options](#shared-options) described above:
 Property | Inspector Name | Description
 --|--|--
-`galleryLayout`|Gallery Layout|Select a gallery layout.<br>Possible values are:<br>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.
-`tilesLayout`|Tile Layout|Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid
-`combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid
+`galleryLayout`|Gallery Layout|Select a gallery layout. Possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.</small>
+`tilesLayout`|Tile Layout|Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
+`combinedLayout`|Thumbnails Layout|Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
 `additional_gallery_options`|Script options|Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
@@ -259,11 +259,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMT
-QxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYz
-MTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcyND
-csNzAwMTI5ODI1LDEwNTgwNDMxMTQsMTc3NjIyMTEyMCwxNDg1
-Mzg5MjMzLC02ODI0Mzg5NjcsNTAyNzgxMjY3LC0yNjIyMDY0MD
-ksMTQ4ODMwMjA1OCwtNjQ5MzkyMzczLC0xNjIzNzEyNDI0LC0x
-OTYzODU5NDY2XX0=
+eyJoaXN0b3J5IjpbNTA5MTQ3ODQ2LC0xODE0Mjk2MTgzLC0xND
+UyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1
+ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMS
+wxMjQ3MDE3MjQ3LDcwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYy
+MjExMjAsMTQ4NTM4OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2Ny
+wtMjYyMjA2NDA5LDE0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYy
+MzcxMjQyNF19
 -->
