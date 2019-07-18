@@ -117,7 +117,7 @@ Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that 
 
 #### Image List Only
 
-Use this if you wish to only load a list of images without render
+Use this if you wish to write your own Twig script for displaying your images, and only need a list of images t that can be found in a given folder. 
 
 ## Support
 
@@ -147,10 +147,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjEwMTMzNiwtMjA1MDU5ODQ1MywxOT
-A2Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEy
-NzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3OD
-kwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0
-NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOT
-csMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
+eyJoaXN0b3J5IjpbMTY0NzI1ODM0LC0yMDUwNTk4NDUzLDE5MD
+YyOTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3
+NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OT
+AwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1
+MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5Ny
+wzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
 -->
