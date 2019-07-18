@@ -149,7 +149,7 @@ Property | Inspector Name | Description
 <button id="gallery-button">Click me!</button>
 ```
 
-This is a simple example where you place a button on
+This is a simple example where you place a button onto the page. Set the gallery "Attach to" option to `#gallery-button`, and your button should then serve to open a lightbox of your images.
 
 
 # Component: Image List Only
@@ -265,7 +265,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzA0NjkyMywtMTgxNDI5NjE4MywtMT
+eyJoaXN0b3J5IjpbMTEyNTY1NTUwNywtMTgxNDI5NjE4MywtMT
 Q1MjM2NDU5NSwxNDEzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0
 NTg0NCwyMDM0NjMxODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MT
 EsMTI0NzAxNzI0Nyw3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2
