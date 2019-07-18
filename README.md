@@ -105,17 +105,19 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 ### (3) Drop the Plugin Onto your CMS Page(s)
 
-The plugin provides three components that you can drop onto your CMS pages.
+The plugin provides three components that you can drop onto your CMS Pages/Partials/Layouts.
 
 #### Embedded Gallery
 
-Drop this component onto your CMS Page/Partial/Layout to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
+Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
 #### Pop-up Lightbox
 
-Drop this component onto your CMS Page/Partial/Layout to include a lightbox-style 'pop-up' gallery that is only shown when the user clicks on an element (such as a link/button/image).
+Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
 #### Image List Only
+
+Use this if you wish to only load a list of images without render
 
 ## Support
 
@@ -145,10 +147,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4ODY4MDYsLTIwNTA1OTg0NTMsMTkwNj
-I5NzQyOSwyMDExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3
-MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MD
-AsLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUz
-MjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LD
-MwMTQyNDk1NywtMTY2NDcyNzAyNF19
+eyJoaXN0b3J5IjpbLTgwMjEwMTMzNiwtMjA1MDU5ODQ1MywxOT
+A2Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2MzksLTE2OTEy
+NzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2MywtMTU1NTk3OD
+kwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0
+NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2MjY0NTExOT
+csMzAxNDI0OTU3LC0xNjY0NzI3MDI0XX0=
 -->
