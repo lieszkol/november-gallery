@@ -215,17 +215,18 @@ Property | Type | Description
 `fileCTime` | string | [Inode change time](https://www.php.net/manual/en/splfileinfo.getctime.php), for example: 1550704585
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
-`fileMTime` | string | ![Gets the last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
-`filePath` | string | [Gets the path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
-`filePathname` | string | [Gets the path to the file](https://www.php.net/manual/en/splfileinfo.getpathname.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-`fileRealPath` | string | [Gets absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-`fileSize` | string | [Gets file size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`fileType` | string | [Gets file type](https://www.php.net/manual/en/splfileinfo.gettype.php), for example: "file"
+`fileMTime` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
+`filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
+`filePathname` | string | [Path to the file](https://www.php.net/manual/en/splfileinfo.getpathname.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
+`fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
+`fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
+`fileType` | string | [Gile type](https://www.php.net/manual/en/splfileinfo.gettype.php), for example: "file"
 `relativeMediaFilePath` | string | Path to file relative to the media folder, for example: /my-galleries/gallery-1/picture-1.jpg
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
-**Hint:** To dig into the `galleryItems` (or any other) variable/collection, you have two optoins. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
+<p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two optoins. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p>
+
 </details>
 
 ## Support
@@ -258,11 +259,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3ODIxODAyLC0xNDUyMzY0NTk1LDE0MT
-MyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4
-NDcsMjA2NTA4OTM1MCwtMTQ2MjY0NzgxMSwxMjQ3MDE3MjQ3LD
-cwMDEyOTgyNSwxMDU4MDQzMTE0LDE3NzYyMjExMjAsMTQ4NTM4
-OTIzMywtNjgyNDM4OTY3LDUwMjc4MTI2NywtMjYyMjA2NDA5LD
-E0ODgzMDIwNTgsLTY0OTM5MjM3MywtMTYyMzcxMjQyNCwtMTk2
-Mzg1OTQ2Nl19
+eyJoaXN0b3J5IjpbLTU5NzU1NTE2OCwtMTQ1MjM2NDU5NSwxND
+EzMjM3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMx
+ODQ3LDIwNjUwODkzNTAsLTE0NjI2NDc4MTEsMTI0NzAxNzI0Ny
+w3MDAxMjk4MjUsMTA1ODA0MzExNCwxNzc2MjIxMTIwLDE0ODUz
+ODkyMzMsLTY4MjQzODk2Nyw1MDI3ODEyNjcsLTI2MjIwNjQwOS
+wxNDg4MzAyMDU4LC02NDkzOTIzNzMsLTE2MjM3MTI0MjQsLTE5
+NjM4NTk0NjZdfQ==
 -->
