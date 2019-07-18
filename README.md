@@ -164,14 +164,13 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
-<p style="text-align: center;"> and `</p>`
-|Created by [Lieszkovszky László](http://www.lieszkovszky.com/) ❖ ZenSoft Hungary|
+<p style="text-align: center;">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">Lieszkovszky László</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzI5ODEwNTcsMTQ4ODMwMjA1OCwtNj
-Q5MzkyMzczLC0xNjIzNzEyNDI0LC0xOTYzODU5NDY2LC0yMDUw
-NTk4NDUzLDE5MDYyOTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMT
-YzOSwtMTY5MTI3NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYz
-LC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNj
-QwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwt
-MTYyNjQ1MTE5N119
+eyJoaXN0b3J5IjpbNzgzMzk0NTE1LDE0ODgzMDIwNTgsLTY0OT
+M5MjM3MywtMTYyMzcxMjQyNCwtMTk2Mzg1OTQ2NiwtMjA1MDU5
+ODQ1MywxOTA2Mjk3NDI5LDIwMTE4MzAwOTYsLTIwMDczMzE2Mz
+ksLTE2OTEyNzcwMDMsLTE4NzkxMDc3ODcsLTM5NTczMDg2Mywt
+MTU1NTk3ODkwMCwtMTAxMDY4OTU5NiwyMTQ3MjAzODYsMzY0MD
+k3MTE2LDY0NTMyNzE4LC00ODU2OTQ5NCw2NDY2MzA1MDUsLTE2
+MjY0NTExOTddfQ==
 -->
