@@ -111,7 +111,11 @@ The plugin provides three components that you can drop onto your CMS Pages/Parti
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
-The component provides the following options:
+### Options
+|Property|Inspector Name|
+|--|--|
+|  |  |
+
 
 # Component: Pop-up Lightbox
 
@@ -149,11 +153,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjM3MTI0MjQsLTE5NjM4NTk0NjYsLT
-IwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3
-MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3Mz
-A4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2
-LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNT
-A1LC0xNjI2NDUxMTk3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
-
+eyJoaXN0b3J5IjpbLTQwODgyNzQzMCwtMTYyMzcxMjQyNCwtMT
+k2Mzg1OTQ2NiwtMjA1MDU5ODQ1MywxOTA2Mjk3NDI5LDIwMTE4
+MzAwOTYsLTIwMDczMzE2MzksLTE2OTEyNzcwMDMsLTE4NzkxMD
+c3ODcsLTM5NTczMDg2MywtMTU1NTk3ODkwMCwtMTAxMDY4OTU5
+NiwyMTQ3MjAzODYsMzY0MDk3MTE2LDY0NTMyNzE4LC00ODU2OT
+Q5NCw2NDY2MzA1MDUsLTE2MjY0NTExOTcsMzAxNDI0OTU3LC0x
+NjY0NzI3MDI0XX0=
 -->
