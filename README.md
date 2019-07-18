@@ -114,7 +114,7 @@ Use this if you wish to show a gallery of images within your page using various 
 ### Options
 Property|Inspector Name|Description
 --|--|--
-alias|`Alias`|  
+alias|`Alias`|You refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you a
 
 
 # Component: Pop-up Lightbox
@@ -153,11 +153,11 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzMjQxMjY4LC0xNjIzNzEyNDI0LC0xOT
-YzODU5NDY2LC0yMDUwNTk4NDUzLDE5MDYyOTc0MjksMjAxMTgz
-MDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3NzAwMywtMTg3OTEwNz
-c4NywtMzk1NzMwODYzLC0xNTU1OTc4OTAwLC0xMDEwNjg5NTk2
-LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1MzI3MTgsLTQ4NTY5ND
-k0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5NywzMDE0MjQ5NTcsLTE2
-NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE0OTY2NjYxMzIsLTE2MjM3MTI0MjQsLT
+E5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMTkwNjI5NzQyOSwyMDEx
+ODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkxMjc3MDAzLC0xODc5MT
+A3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nzg5MDAsLTEwMTA2ODk1
+OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2NDUzMjcxOCwtNDg1Nj
+k0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMTk3LDMwMTQyNDk1Nywt
+MTY2NDcyNzAyNF19
 -->
