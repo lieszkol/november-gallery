@@ -111,13 +111,15 @@ The plugin provides three components that you can drop onto your CMS Pages/Parti
 
 Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
 
+The component provides the following options:
+
 #### Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
 #### Image List Only
 
-Use this if you wish to write your own Twig script for displaying your images, and only need a list of images t that can be found in a given folder. 
+Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable.
 
 ## Support
 
@@ -147,10 +149,10 @@ Both versions are available from the OctoberCMS Marketplace.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NzI1ODM0LC0yMDUwNTk4NDUzLDE5MD
-YyOTc0MjksMjAxMTgzMDA5NiwtMjAwNzMzMTYzOSwtMTY5MTI3
-NzAwMywtMTg3OTEwNzc4NywtMzk1NzMwODYzLC0xNTU1OTc4OT
-AwLC0xMDEwNjg5NTk2LDIxNDcyMDM4NiwzNjQwOTcxMTYsNjQ1
-MzI3MTgsLTQ4NTY5NDk0LDY0NjYzMDUwNSwtMTYyNjQ1MTE5Ny
-wzMDE0MjQ5NTcsLTE2NjQ3MjcwMjRdfQ==
+eyJoaXN0b3J5IjpbLTE5NjM4NTk0NjYsLTIwNTA1OTg0NTMsMT
+kwNjI5NzQyOSwyMDExODMwMDk2LC0yMDA3MzMxNjM5LC0xNjkx
+Mjc3MDAzLC0xODc5MTA3Nzg3LC0zOTU3MzA4NjMsLTE1NTU5Nz
+g5MDAsLTEwMTA2ODk1OTYsMjE0NzIwMzg2LDM2NDA5NzExNiw2
+NDUzMjcxOCwtNDg1Njk0OTQsNjQ2NjMwNTA1LC0xNjI2NDUxMT
+k3LDMwMTQyNDk1NywtMTY2NDcyNzAyNF19
 -->
