@@ -1,8 +1,8 @@
 
+
 ![NovemberGallery Banner](/media/november-gallery-octobercms-banner.jpg)
 
 <div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
-
 
 Check out the live demo site!
 
@@ -66,7 +66,29 @@ To install from your site "backend": go to  **Settings → Updates & Plugins →
 
 To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin.
 
-To install from [the repository](https://github.com/lieszkol/november-gallery): clone it into the **/plugins/** folder of your site and then run  `sudo php artisan plugin:refresh zenware.novembergallery`  from your project root. You may also need to fix your permissions (`chown -R www-data:www-data /srv/www/october/plugins/zenware` on Ubuntu).
+To install from [the repository](https://github.com/lieszkol/november-gallery) (not recommended), you'd have to first install the imageresizer plugin.
+
+<details>
+<summary>Read more...</summary>
+
+Here's an actual transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
+
+```bash
+root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
+Cloning into 'plugins/toughdeveloper/imageresizer'...
+remote: Enumerating objects: 299, done.
+remote: Total 299 (delta 0), reused 0 (delta 0), pack-reused 299
+Receiving objects: 100% (299/299), 509.13 KiB | 1.34 MiB/s, done.
+Resolving deltas: 100% (118/118), done.
+```
+
+
+ 1. 
+ 2. clone or upload it into the **/plugins/** folder of your site  `git clone https://github.com/lieszkol/november-gallery.git`
+ 3. make sure your permissions are OK (`chown -R www-data:www-data /PATH_TO_YOUR_PLUGIN_DIRECTORY`)
+ 4. run  `sudo -u www-data php artisan plugin:refresh zenware.novembergallery`  from your project root.
+
+</details>
 
 # Usage
 
@@ -333,11 +355,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02Mz
-AyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQw
-NjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5Mi
-wtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0x
-NDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNz
-Q1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0Nzgx
-MSwxMjQ3MDE3MjQ3XX0=
+eyJoaXN0b3J5IjpbMTA0MjA1NDc5NCw2NjMxNDgwNjEsLTE2Mz
+IwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2
+MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC
+0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4
+MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5Mz
+A5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUw
+LC0xNDYyNjQ3ODExXX0=
 -->
