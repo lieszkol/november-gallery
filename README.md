@@ -71,15 +71,18 @@ To install from [the repository](https://github.com/lieszkol/november-gallery) (
 <details>
 <summary>Read more...</summary>
 
-Here's an actual transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
+Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
 
 ```bash
 root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
 Cloning into 'plugins/toughdeveloper/imageresizer'...
-remote: Enumerating objects: 299, done.
-remote: Total 299 (delta 0), reused 0 (delta 0), pack-reused 299
-Receiving objects: 100% (299/299), 509.13 KiB | 1.34 MiB/s, done.
-Resolving deltas: 100% (118/118), done.
+...
+root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
+Cloning into 'plugins/zenware/novembergallery'...
+...
+Receiving objects: 100% (964/964), 655.98 KiB | 1.71 MiB/s, done.
+Resolving deltas: 100% (729/729), done.
+
 ```
 
 
@@ -355,7 +358,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MjA1NDc5NCw2NjMxNDgwNjEsLTE2Mz
+eyJoaXN0b3J5IjpbMTM3OTgwOTU3NCw2NjMxNDgwNjEsLTE2Mz
 IwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2
 MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC
 0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4
