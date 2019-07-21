@@ -80,8 +80,6 @@ Cloning into 'plugins/toughdeveloper/imageresizer'...
 root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
 Cloning into 'plugins/zenware/novembergallery'...
 ...
-Receiving objects: 100% (964/964), 655.98 KiB | 1.71 MiB/s, done.
-Resolving deltas: 100% (729/729), done.
 
 ```
 
@@ -358,7 +356,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3OTgwOTU3NCw2NjMxNDgwNjEsLTE2Mz
+eyJoaXN0b3J5IjpbLTQ5NTE1OTEwNCw2NjMxNDgwNjEsLTE2Mz
 IwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2
 MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC
 0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4
