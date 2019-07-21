@@ -87,18 +87,12 @@ Rolled back: ToughDeveloper.ImageResizer
 Reinstalling plugin...
 ToughDeveloper.ImageResizer
 ...
-root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
 Rolled back: ZenWare.NovemberGallery
 Reinstalling plugin...
 ZenWare.NovemberGallery
 - v1.0.1:  First version of NovemberGallery
 ```
-
-
- 1. 
- 2. clone or upload it into the **/plugins/** folder of your site  `git clone https://github.com/lieszkol/november-gallery.git`
- 3. make sure your permissions are OK (`chown -R www-data:www-data /PATH_TO_YOUR_PLUGIN_DIRECTORY`)
- 4. run  `sudo -u www-data php artisan plugin:refresh zenware.novembergallery`  from your project root.
 
 </details>
 
@@ -367,11 +361,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODkwMjc4MCw2NjMxNDgwNjEsLTE2Mz
-IwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2
-MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC
-0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4
-MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0OSwtMTM5Mz
-A5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0NywyMDY1MDg5MzUw
-LC0xNDYyNjQ3ODExXX0=
+eyJoaXN0b3J5IjpbLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNj
+MyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1
+NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2Mi
+wtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0x
+ODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOT
+MwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1
+MCwtMTQ2MjY0NzgxMV19
 -->
