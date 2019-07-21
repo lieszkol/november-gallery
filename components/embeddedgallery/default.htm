@@ -3,7 +3,7 @@
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
 {% endif %}
 
-<div id="gallery" style="display:none;">
+<div id="{{__SELF__.id}}" style="display:none;">
 	{% verbatim %}
 	<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
 		<img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
@@ -27,7 +27,7 @@
 		
 		{% else %}
 		
-		jQuery("#gallery").unitegallery({
+		jQuery("#{{__SELF__.id}}").unitegallery({
 
 			{{ __SELF__.defaultgalleryoptions|raw }}
 

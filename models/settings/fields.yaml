@@ -167,6 +167,7 @@ tabs:
             type: switch
             on: zenware.novembergallery::lang.settings.switch_on
             off: zenware.novembergallery::lang.settings.switch_off
+            default: true
         image_resizer_width:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.image_resizer_width_label

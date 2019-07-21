@@ -57,6 +57,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	    	$this->addJs('//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js');
 		}
 
+		$this->InjectScripts();
+
         $this->allowedExtensions = array();
         if (Settings::instance()->allowed_extensions_jpg)
         {
@@ -91,6 +93,12 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		{
 			$this->customlightboxscript = Settings::instance()->custom_lightbox_script;
 		}
+	}
+
+	/**
+	 * Inject gallery scripts and styles. This should be overridden on the component implementation level.
+	 */
+	public function InjectScripts() {
 	}
 
      /**
@@ -160,14 +168,20 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 					case 'gallery_combined_default': 
 						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
 						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
+						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
+						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
 						return  $additionalOptions;
 					case 'gallery_combined_compact': 
 						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
 						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
+						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
+						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "compact",' . $additionalOptions;
 					case 'gallery_combined_grid':
 						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
 						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
+						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
+						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
 						return 'gallery_theme: "grid",' . $additionalOptions;
 				}
 				break;
@@ -224,6 +238,30 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		{
 			$height = Settings::instance()->image_resizer_height;
 		}
+		return $height;
+	}
+
+	/** 
+	 * Get the height of the thumbnails for this gallery.
+	 */
+	public function getGalleryWidth() {
+		$width = false;
+		if (!empty($this->property('gallery_width'))) 
+		{
+			$width = $this->property('gallery_width');
+		} 
+		return $width;
+	}
+
+	/** 
+	 * Get the height of the thumbnails for this gallery.
+	 */
+	public function getGalleryHeight() {
+		$height = false;
+		if (!empty($this->property('gallery_height'))) 
+		{
+			$height = $this->property('gallery_height');
+		} 
 		return $height;
 	}
 

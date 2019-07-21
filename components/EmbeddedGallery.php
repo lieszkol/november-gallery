@@ -78,7 +78,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 				'type'              => 'string',
 				'validationPattern' => '^[0-9]+$',
 				'validationMessage' => 'The Thumbnail Width property can only contain numbers!',
-				'group' 			=> 'Thumbnails'
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_thumbnails_label')
 			],
 			'image_resizer_height' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_height_label'),
@@ -87,7 +87,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 				'type'              => 'string',
 				'validationPattern' => '^[0-9]+$',
 				'validationMessage' => 'The Thumbnail Width property can only contain numbers!',
-				'group' 			=> 'Thumbnails'
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_thumbnails_label')
 			],
 			'image_resizer_mode' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_mode_label'),
@@ -102,7 +102,25 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 					'landscape'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_landscape'),
 					'crop'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_crop'),
 				],
-				'group' 			=> 'Thumbnails'
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_thumbnails_label')
+			],
+			'gallery_width' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_label'),
+                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_comment'),
+				'default'           => '',
+				'type'              => 'string',
+				'validationPattern' => '^[0-9]+$',
+				'validationMessage' => 'The Gallery Width property can only contain numbers!',
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
+			],
+			'gallery_height' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_label'),
+                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_comment'),
+				'default'           => '',
+				'type'              => 'string',
+				'validationPattern' => '^[0-9]+$',
+				'validationMessage' => 'The Gallery Height property can only contain numbers!',
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			]
         ]);
     }
@@ -110,7 +128,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
     /**
      * Load CSS and JS assets
      */
-    public function onRun() {
+    public function InjectScripts() {
 		if (Settings::instance()->inject_unitegallery_assets) 
 		{
 	        $this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
@@ -160,7 +178,6 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 					break;
 			}
 		}
-        parent::onRun();
 	}
 
 	// Could inject variables into the page this way: https://stackoverflow.com/questions/48180951/octobercms-how-to-pass-variable-from-page-to-component

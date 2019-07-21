@@ -56,7 +56,7 @@ class PopupGallery extends NovemberGalleryComponentBase {
     /**
      * Load CSS and JS assets
      */
-    public function onRun() {
+    public function InjectScripts() {
 		if (Settings::instance()->inject_unitegallery_assets) 
 		{
 	        $this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
@@ -87,7 +87,9 @@ class PopupGallery extends NovemberGalleryComponentBase {
 			
 			$this->addJs('assets/unitegallery/source/unitegallery/themes/lightbox/ug-theme-lightbox.js');
 		}
-
+	}
+		
+	public function onRun() {
 		if (!empty($this->property('attach_to'))) 
 		{
 			$this->attachto = $this->property('attach_to');

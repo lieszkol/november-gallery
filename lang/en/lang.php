@@ -104,12 +104,18 @@
 		'additional_lightbox_options_hint' => 'Additional JS options that you want passed onto the UniteGallery script, for example: theme_panel_position: "bottom"',
 		'attach_to' => 'Attach to',
 		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.',
+		'group_thumbnails_label' => 'Thumbnails',
 		'image_resizer_mode_label' => 'Thumbnail Mode',
         'image_resizer_width_label' => 'Thumbnail Width',
         'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
         'image_resizer_height_label' => 'Thumbnail Height',
         'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
-        'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.'
+		'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.',
+		'group_gallery_dimensions_label' => 'Gallery Dimensions',
+		'gallery_width_label' => 'Gallery Width',
+        'gallery_width_comment' => 'Only applies to "Combined" galleries! Leave empty to fall back on the values set on the backend plugin configuration page',
+        'gallery_height_label' => 'Gallery Height',
+        'gallery_height_comment' => 'Only applies to "Combined" galleries! Leave empty to fall back on the values set on the backend plugin configuration page'
 	],
     'permission' => [
         'tab' => 'November Gallery',
