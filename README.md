@@ -74,13 +74,24 @@ To install from [the repository](https://github.com/lieszkol/november-gallery) (
 Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
 
 ```bash
-root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
 Cloning into 'plugins/toughdeveloper/imageresizer'...
 ...
-root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
 Cloning into 'plugins/zenware/novembergallery'...
 ...
-
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo chown -R www-data:www-data plugins/toughdeveloper/
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo chown -R www-data:www-data plugins/zenware/
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer
+Rolled back: ToughDeveloper.ImageResizer
+Reinstalling plugin...
+ToughDeveloper.ImageResizer
+...
+root@zensoft:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
+Rolled back: ZenWare.NovemberGallery
+Reinstalling plugin...
+ZenWare.NovemberGallery
+- v1.0.1:  First version of NovemberGallery
 ```
 
 
@@ -356,7 +367,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTE1OTEwNCw2NjMxNDgwNjEsLTE2Mz
+eyJoaXN0b3J5IjpbMTcxODkwMjc4MCw2NjMxNDgwNjEsLTE2Mz
 IwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2
 MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC
 0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4
