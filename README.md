@@ -3,6 +3,7 @@
 
 <div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
 
+
 Check out the live demo site!
 
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
@@ -332,11 +333,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMj
-A1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1Mjkz
-MjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5OD
-I4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUs
-MTQxMzIzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzND
-YzMTg0NywyMDY1MDg5MzUwLC0xNDYyNjQ3ODExLDEyNDcwMTcy
-NDcsNzAwMTI5ODI1XX0=
+eyJoaXN0b3J5IjpbNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02Mz
+AyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQw
+NjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5Mi
+wtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0x
+NDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgwNzgsOTcyNz
+Q1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1MCwtMTQ2MjY0Nzgx
+MSwxMjQ3MDE3MjQ3XX0=
 -->
