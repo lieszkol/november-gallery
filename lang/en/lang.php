@@ -113,9 +113,9 @@
 		'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.',
 		'group_gallery_dimensions_label' => 'Gallery Dimensions',
 		'gallery_width_label' => 'Gallery Width',
-        'gallery_width_comment' => 'Only applies to "Combined" galleries! Leave empty to fall back on the values set on the backend plugin configuration page',
+        'gallery_width_comment' => 'Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page',
         'gallery_height_label' => 'Gallery Height',
-        'gallery_height_comment' => 'Only applies to "Combined" galleries! Leave empty to fall back on the values set on the backend plugin configuration page'
+        'gallery_height_comment' => 'Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page'
 	],
     'permission' => [
         'tab' => 'November Gallery',

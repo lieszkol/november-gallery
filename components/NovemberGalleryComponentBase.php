@@ -7,6 +7,7 @@ use ToughDeveloper\ImageResizer\Classes\Image;
 // use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 use ZenWare\NovemberGallery\Classes\GalleryItem;
 use October\Rain\Support\Collection;
+use Illuminate\Support\Str;
 use Config;
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
@@ -16,7 +17,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	public $customgalleryscript;
 	public $customlightboxscript;
     public $allowedExtensions = array();
-    public $error;
+	public $error;
+	
 
     /**
      * Please override this!
@@ -127,70 +129,77 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      * Get default options used in the default.htm layout for initialising the gallery.
      */
     public function getDefaultGalleryOptions() {
-		$additionalOptions = '';
-
-		if (!empty($this->property('additional_gallery_options'))) 
-		{
-			$additionalOptions = $this->property('additional_gallery_options');
-		}
-		$additionalOptions = rtrim($additionalOptions, ',');
-		if (!empty($additionalOptions)) {
-			$additionalOptions = $additionalOptions . ',';
-		}
-
+		$additionalOptions = new Collection();
 		switch($this->getGalleryLayout()) 
 		{
 			case 'gallery_tiles':
 				switch($this->getTilesLayout()) 
 				{
 					case 'gallery_tiles_columns':
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tiles_col_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						return 'gallery_theme: "tiles",' . $additionalOptions;
+						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_col_width',  $this->getThumbnailWidth());
+						$additionalOptions->put('gallery_theme', '"tiles"');
+						break;
 					case 'gallery_tiles_justified': 
-						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tiles_justified_row_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-						return 'gallery_theme: "tiles",	tiles_type: "justified",' . $additionalOptions;
+						if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tiles_justified_row_height', $this->getThumbnailHeight());
+						$additionalOptions->put('gallery_theme', '"tiles"');
+						$additionalOptions->put('tiles_type', '"justified"');
+						break;
 					case 'gallery_tiles_nested': 
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tiles_nested_optimal_tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						return 'gallery_theme: "tiles",	tiles_type: "nested",' . $additionalOptions;
+						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_nested_optimal_tile_width', $this->getThumbnailWidth());
+						$additionalOptions->put('gallery_theme', '"tiles"');
+						$additionalOptions->put('tiles_type', '"nested"');
+						break;
 					case 'gallery_tiles_grid':
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tile_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-						return 'gallery_theme: "tilesgrid",' . $additionalOptions;
+						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tile_width', $this->getThumbnailWidth());
+						if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tile_height', $this->getThumbnailHeight());
+						$additionalOptions->put('gallery_theme', '"tilesgrid"');
+						break;
 				}
+				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
 				break;
 			case 'gallery_carousel':
-				if ($this->getThumbnailWidth() !== false) $additionalOptions = 'tile_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-				if ($this->getThumbnailHeight() !== false) $additionalOptions = 'tile_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-				return 'gallery_theme: "carousel",' . $additionalOptions;
+				if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tile_width', $this->getThumbnailWidth());
+				if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tile_height', $this->getThumbnailHeight());
+				$additionalOptions->put('gallery_theme', '"carousel"');
+				break;
 			case 'gallery_combined':
 				switch($this->getCombinedLayout()) 
 				{
 					case 'gallery_combined_default': 
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
-						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
-						return  $additionalOptions;
+						break;
 					case 'gallery_combined_compact': 
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
-						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
-						return 'gallery_theme: "compact",' . $additionalOptions;
+						$additionalOptions->put('gallery_theme', '"compact"');
+						break;
 					case 'gallery_combined_grid':
-						if ($this->getThumbnailWidth() !== false) $additionalOptions = 'thumb_width: ' . $this->getThumbnailWidth() . ',' . $additionalOptions;
-						if ($this->getThumbnailHeight() !== false) $additionalOptions = 'thumb_height: ' . $this->getThumbnailHeight() . ',' . $additionalOptions;
-						if ($this->getGalleryWidth() !== false) $additionalOptions = 'gallery_width: ' . $this->getGalleryWidth() . ',' . $additionalOptions;
-						if ($this->getGalleryHeight() !== false) $additionalOptions = 'gallery_height: ' . $this->getGalleryHeight() . ',' . $additionalOptions;
-						return 'gallery_theme: "grid",' . $additionalOptions;
+						$additionalOptions->put('gallery_theme', '"grid"');
+						break;
 				}
+				if ($this->getThumbnailWidth() !== false) $additionalOptions->put('thumb_width', $this->getThumbnailWidth());
+				if ($this->getThumbnailHeight() !== false) $additionalOptions->put('thumb_height', $this->getThumbnailHeight());
+				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
+				if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
 				break;
 			case 'gallery_slider':
-				return 'gallery_theme: "slider",' . $additionalOptions;
+				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
+				if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
+				$additionalOptions->put('gallery_theme', '"slider"');
+				break;
 			case 'gallery_video':
-				return 'gallery_theme: "video",' . $additionalOptions;
+				$additionalOptions->put('gallery_theme', '"video"');
+				break;
 		}
-		return '';
+
+		$additionalOptions = $additionalOptions->map(function ($item, $key) {
+			return $key . ':' . $item;
+		})->implode(', '); 
+
+		if (!empty($this->property('additional_gallery_options'))) 
+		{
+			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
+			$additionalOptions = $additionalOptions . rtrim($this->property('additional_gallery_options'), ', \t\n\r');
+		}
+
+		return $additionalOptions ?? '';
 	}
 
 	/**
@@ -250,6 +259,10 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		{
 			$width = $this->property('gallery_width');
 		} 
+		if (Str::contains($width, '%')) 
+		{
+			$width = '"' . $width . '"';
+		}
 		return $width;
 	}
 
@@ -262,6 +275,10 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		{
 			$height = $this->property('gallery_height');
 		} 
+		if (Str::contains($height, '%')) 
+		{
+			$height = '"' . $height . '"';
+		}
 		return $height;
 	}
 

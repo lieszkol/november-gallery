@@ -109,8 +109,8 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_comment'),
 				'default'           => '',
 				'type'              => 'string',
-				'validationPattern' => '^[0-9]+$',
-				'validationMessage' => 'The Gallery Width property can only contain numbers!',
+				'validationPattern' => '^[0-9\%]+$',
+				'validationMessage' => 'The Gallery Width property can only contain numbers and an optional percent sign!',
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			],
 			'gallery_height' => [
@@ -118,8 +118,8 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_comment'),
 				'default'           => '',
 				'type'              => 'string',
-				'validationPattern' => '^[0-9]+$',
-				'validationMessage' => 'The Gallery Height property can only contain numbers!',
+				'validationPattern' => '^[0-9\%]+$',
+				'validationMessage' => 'The Gallery Height property can only contain numbers and an optional percent sign!',
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			]
         ]);
