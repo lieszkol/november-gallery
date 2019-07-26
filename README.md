@@ -161,7 +161,7 @@ Property | Inspector Name | Description
 `tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
-`image_resizer_width` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
+`imageResizerWidth` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_mode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
 
@@ -361,11 +361,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNDI2MTgsLTExNTg2Njg2MjAsNjYzMT
-Q4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0
-NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMT
-g4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3
-OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMz
-c4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcs
-MjA2NTA4OTM1MF19
+eyJoaXN0b3J5IjpbLTE2ODIwMDQ2NDQsLTExNTg2Njg2MjAsNj
+YzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1
+MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1Ny
+wtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwt
+MTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MT
+MyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4
+NDcsMjA2NTA4OTM1MF19
 -->
