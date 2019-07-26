@@ -40,12 +40,12 @@ class PopupGallery extends NovemberGalleryComponentBase {
                 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
                 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
             ],
-			'attach_to' => [
+			'attachTo' => [
                 'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to'),
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to_hint'),
                 'default'           => '#gallery-button'
 			],
-			'additional_lightbox_options' => [
+			'additionalLightboxOptions' => [
                 'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.additional_lightbox_options'),
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.additional_lightbox_options_hint'),
                 'default'           => ''
@@ -90,9 +90,9 @@ class PopupGallery extends NovemberGalleryComponentBase {
 	}
 		
 	public function onRun() {
-		if (!empty($this->property('attach_to'))) 
+		if (!empty($this->property('attachTo'))) 
 		{
-			$this->attachto = $this->property('attach_to');
+			$this->attachto = $this->property('attachTo');
 		}
 
         parent::onRun();

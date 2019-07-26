@@ -11,12 +11,17 @@ use Illuminate\Support\Str;
 use Config;
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
-    public $galleryitems;
+	public $galleryitems;
+	
 	public $defaultgalleryoptions;
 	public $defaultlightboxoptions;
+	public $defaultvideogalleryoptions;
+
 	public $customgalleryscript;
 	public $customlightboxscript;
-    public $allowedExtensions = array();
+	public $customvideogalleryscript;
+	
+	public $allowedExtensions = array();
 	public $error;
 	
 
@@ -83,17 +88,22 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		$this->galleryitems = $this->loadMedia();
 		
 		$this->defaultgalleryoptions = $this->getDefaultGalleryOptions();
-
 		$this->defaultlightboxoptions = $this->getDefaultLightboxOptions();
+		$this->defaultvideogalleryoptions = $this->getDefaultVideoGalleryOptions();
 
-		if (Settings::instance()->custom_gallery_script && !empty(Settings::instance()->default_gallery_options))
+		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options))
 		{
-			$this->customgalleryscript = Settings::instance()->default_gallery_options;
+			$this->customgalleryscript = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
 		}
 
 		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script))
 		{
-			$this->customlightboxscript = Settings::instance()->custom_lightbox_script;
+			$this->customlightboxscript = str_replace("#gallery", $this->id, Settings::instance()->custom_lightbox_script);
+		}
+
+		if (Settings::instance()->custom_video_gallery_script_enabled && !empty(Settings::instance()->custom_video_gallery_script))
+		{
+			$this->customvideogalleryscript = str_replace("#gallery", $this->id, Settings::instance()->custom_video_gallery_script);
 		}
 	}
 
@@ -193,10 +203,10 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			return $key . ':' . $item;
 		})->implode(', '); 
 
-		if (!empty($this->property('additional_gallery_options'))) 
+		if (!empty($this->property('additionalGalleryOptions'))) 
 		{
 			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
-			$additionalOptions = $additionalOptions . rtrim($this->property('additional_gallery_options'), ', \t\n\r');
+			$additionalOptions = $additionalOptions . rtrim($this->property('additionalGalleryOptions'), ', \t\n\r');
 		}
 
 		return $additionalOptions ?? '';
@@ -208,9 +218,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
     public function getDefaultLightboxOptions() {
 		$additionalOptions = '';
 
-		if (!empty($this->property('additional_lightbox_options'))) 
+		if (!empty($this->property('additionalLightboxOptions'))) 
 		{
-			$additionalOptions = $this->property('additional_lightbox_options');
+			$additionalOptions = $this->property('additionalLightboxOptions');
 		}
 		$additionalOptions = rtrim($additionalOptions, ',');
 		$additionalOptions = $additionalOptions . ',';
@@ -218,16 +228,32 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		return 'gallery_theme: "lightbox",' . $additionalOptions;
 	}
 
+	/**
+     * Get default options used in the default.htm layout for initialising the lightbox.
+     */
+    public function getDefaultVideoGalleryOptions() {
+		$additionalOptions = '';
+
+		if (!empty($this->property('additionalVideoGalleryOptions'))) 
+		{
+			$additionalOptions = $this->property('additionalVideoGalleryOptions');
+		}
+		$additionalOptions = rtrim($additionalOptions, ',');
+		$additionalOptions = $additionalOptions . ',';
+
+		return 'gallery_theme: "video",' . $additionalOptions;
+	}
+
 	/** 
 	 * Get the width of the thumbnails for this gallery.
 	 */
 	public function getThumbnailWidth() {
 		$width = false;
-		if (!empty($this->property('image_resizer_width'))) 
+		if (!empty($this->property('imageResizerWidth'))) 
 		{
-			$width = $this->property('image_resizer_width');
+			$width = $this->property('imageResizerWidth');
 		} 
-		elseif (empty($this->property('image_resizer_height')) && !empty(Settings::instance()->image_resizer_width))
+		elseif (empty($this->property('imageResizerHeight')) && !empty(Settings::instance()->image_resizer_width))
 		{
 			$width = Settings::instance()->image_resizer_width;
 		}
@@ -239,11 +265,11 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	 */
 	public function getThumbnailHeight() {
 		$height = false;
-		if (!empty($this->property('image_resizer_height'))) 
+		if (!empty($this->property('imageResizerHeight'))) 
 		{
-			$height = $this->property('image_resizer_height');
+			$height = $this->property('imageResizerHeight');
 		} 
-		elseif (empty($this->property('image_resizer_width')) && !empty(Settings::instance()->image_resizer_height)) 
+		elseif (empty($this->property('imageResizerWidth')) && !empty(Settings::instance()->image_resizer_height)) 
 		{
 			$height = Settings::instance()->image_resizer_height;
 		}
@@ -255,9 +281,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	 */
 	public function getGalleryWidth() {
 		$width = false;
-		if (!empty($this->property('gallery_width'))) 
+		if (!empty($this->property('galleryWidth'))) 
 		{
-			$width = $this->property('gallery_width');
+			$width = $this->property('galleryWidth');
 		} 
 		if (Str::contains($width, '%')) 
 		{
@@ -271,9 +297,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	 */
 	public function getGalleryHeight() {
 		$height = false;
-		if (!empty($this->property('gallery_height'))) 
+		if (!empty($this->property('galleryHeight'))) 
 		{
-			$height = $this->property('gallery_height');
+			$height = $this->property('galleryHeight');
 		} 
 		if (Str::contains($height, '%')) 
 		{

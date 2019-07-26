@@ -130,9 +130,9 @@ class GalleryItem
             $image = new Image($this->relativeFilePath);
             // https://github.com/toughdeveloper/oc-imageresizer-plugin/blob/master/classes/Image.php
             $options = [];
-			if (!empty($this->component->property('image_resizer_mode')) && $this->component->property('image_resizer_mode') !== 'default') 
+			if (!empty($this->component->property('imageResizerMode')) && $this->component->property('imageResizerMode') !== 'default') 
 			{
-				$options['mode'] = $this->component->property('image_resizer_mode');
+				$options['mode'] = $this->component->property('imageResizerMode');
 			}
 			elseif (!empty(Settings::instance()->image_resizer_mode))
             {

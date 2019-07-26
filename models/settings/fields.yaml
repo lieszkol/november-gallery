@@ -4,8 +4,11 @@
 
 tabs: 
     stretch: true
-    defaultTab: zenware.novembergallery::lang.settings.tab_default
+    defaultTab: zenware.novembergallery::lang.settings.tab_embeddedgallery
     fields:
+        ##
+        #   Embedded Gallery Settings
+        #
         base_folder:
             label: zenware.novembergallery::lang.settings.base_folder_label
             comment: zenware.novembergallery::lang.settings.base_folder_comment
@@ -76,12 +79,12 @@ tabs:
                 action: show
                 field: default_gallery
                 condition: value[gallery_combined]
-        custom_gallery_script:
-            label: zenware.novembergallery::lang.settings.custom_gallery_script_label
-            comment: zenware.novembergallery::lang.settings.custom_gallery_script_comment
+        custom_gallery_script_enabled:
+            label: zenware.novembergallery::lang.settings.custom_gallery_script_enabled_label
+            comment: zenware.novembergallery::lang.settings.custom_gallery_script_enabled_comment
             type: switch
-            on: zenware.novembergallery::lang.settings.switch_on
-            off: zenware.novembergallery::lang.settings.switch_off
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
             default: off
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
@@ -89,17 +92,17 @@ tabs:
                 style: 'clear: left;'
         default_gallery_options_hint:
             type: hint
-            path: $/zenware/novembergallery/models/settings/_default_gallery_options_hint.html
+            path: $/zenware/novembergallery/models/settings/_custom_gallery_script_hint.html
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
             containerAttributes: 
                 style: 'margin-top: 23px; clear: left;'
             trigger:
                 action: show
-                field: custom_gallery_script
+                field: custom_gallery_script_enabled
                 condition: checked
         default_gallery_options:
-            label: zenware.novembergallery::lang.settings.default_gallery_options_label
+            label: zenware.novembergallery::lang.settings.custom_gallery_script_label
             type: codeeditor
             size: large
             language: js
@@ -110,24 +113,30 @@ tabs:
                 style: 'clear: left;'
             trigger:
                 action: show
-                field: custom_gallery_script
+                field: custom_gallery_script_enabled
                 condition: checked
 
+        ##
+        #   Pop-up Lightbox Gallery Settings
+        #
         lightbox_defaults_section:
+            tab: zenware.novembergallery::lang.settings.tab_lightbox
             label: zenware.novembergallery::lang.settings.section_lightbox_defaults_label
             type: section
         custom_lightbox_script_enabled:
+            tab: zenware.novembergallery::lang.settings.tab_lightbox
             label: zenware.novembergallery::lang.settings.custom_lightbox_script_enabled_label
             comment: zenware.novembergallery::lang.settings.custom_lightbox_script_enabled_comment
             type: switch
-            on: zenware.novembergallery::lang.settings.switch_on
-            off: zenware.novembergallery::lang.settings.switch_off
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
             default: off
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
             containerAttributes: 
                 style: 'clear: left;'
         custom_lightbox_script_hint:
+            tab: zenware.novembergallery::lang.settings.tab_lightbox
             type: hint
             path: $/zenware/novembergallery/models/settings/_custom_lightbox_script_hint.html
             span: storm
@@ -139,6 +148,7 @@ tabs:
                 field: custom_lightbox_script_enabled
                 condition: checked
         custom_lightbox_script:
+            tab: zenware.novembergallery::lang.settings.tab_lightbox
             label: zenware.novembergallery::lang.settings.custom_lightbox_script_label
             type: codeeditor
             size: large
@@ -153,6 +163,71 @@ tabs:
                 field: custom_lightbox_script_enabled
                 condition: checked
         
+
+        ##
+        #   Video Gallery Settings
+        #
+        videogallery_defaults_section:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            label: zenware.novembergallery::lang.settings.section_videogallery_defaults_label
+            type: section
+        default_video_gallery_layout:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            label: zenware.novembergallery::lang.settings.default_video_gallery_label
+            comment: zenware.novembergallery::lang.settings.default_video_gallery_comment
+            commentHtml: true,
+            type: dropdown
+            options:
+                'video_gallery_right_thumb': zenware.novembergallery::lang.settings.video_gallery_right_thumb
+                'video_gallery_right_title_only': zenware.novembergallery::lang.settings.video_gallery_right_title_only
+                'video_gallery_right_no_thumb': zenware.novembergallery::lang.settings.video_gallery_right_no_thumb
+            default: 'video_gallery_right_thumb'
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
+            required: true
+        custom_video_gallery_script_enabled:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            label: zenware.novembergallery::lang.settings.custom_video_gallery_script_enabled_label
+            comment: zenware.novembergallery::lang.settings.custom_video_gallery_script_enabled_comment
+            type: switch
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
+            default: off
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
+        custom_video_gallery_script_hint:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            type: hint
+            path: $/zenware/novembergallery/models/settings/_custom_video_gallery_script_hint.html
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'margin-top: 23px; clear: left;'
+            trigger:
+                action: show
+                field: custom_video_gallery_script_enabled
+                condition: checked
+        custom_video_gallery_script:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            label: zenware.novembergallery::lang.settings.custom_video_gallery_script_label
+            type: codeeditor
+            size: large
+            language: js
+            default: 'jQuery("#gallery").unitegallery({});'
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
+            trigger:
+                action: show
+                field: custom_video_gallery_script_enabled
+                condition: checked
+        
+
         ##
         #   Image Resizer Settings
         #
@@ -165,8 +240,8 @@ tabs:
             label: zenware.novembergallery::lang.settings.use_image_resizer_label
             comment: zenware.novembergallery::lang.settings.use_image_resizer_comment
             type: switch
-            on: zenware.novembergallery::lang.settings.switch_on
-            off: zenware.novembergallery::lang.settings.switch_off
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
             default: true
         image_resizer_width:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
@@ -290,8 +365,8 @@ tabs:
             label: zenware.novembergallery::lang.settings.inject_unitegallery_assets
             comment: zenware.novembergallery::lang.settings.inject_unitegallery_assets_comment
             type: switch
-            on: zenware.novembergallery::lang.settings.switch_on
-            off: zenware.novembergallery::lang.settings.switch_off
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
             default: true
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
@@ -302,8 +377,8 @@ tabs:
             label: zenware.novembergallery::lang.settings.inject_jquery
             comment: zenware.novembergallery::lang.settings.inject_jquery_comment
             type: switch
-            on: zenware.novembergallery::lang.settings.switch_on
-            off: zenware.novembergallery::lang.settings.switch_off
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
             default: true
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5

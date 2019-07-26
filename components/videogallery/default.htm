@@ -13,6 +13,13 @@
 			<img alt="" src="{{ galleryitem.galleryItemSrc }}"
 			data-image="{{ galleryitem.relativeMediaFilePath | media }}"
 			data-description="">
+			<div 	data-type="html5video"
+					data-image="http://video-js.zencoder.com/oceans-clip.png"
+					data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
+					data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
+					data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
+					data-title="Birds"
+					data-description="html5 video description"></div>
 		{% endfor %}
 	</div>
 </div>
@@ -22,15 +29,15 @@
     // UniteGallery: https://github.com/vvvmax/unitegallery/
 	jQuery(document).ready(function(){ 
 
-		{% if __SELF__.customlightboxscript %}
+		{% if __SELF__.customvideogalleryscript %}
 
-		{{ __SELF__.customlightboxscript|raw }}
+		{{ __SELF__.customvideogalleryscript|raw }}
 		
-		{% else %}
+		{% elseif __SELF__.attachto %}
 		
-		uniteGalleryApi = jQuery("#{{__SELF__.id}}").unitegallery({
+		uniteGalleryApi = jQuery("#{{__SELF__.attachto}}").unitegallery({
 
-			{{ __SELF__.defaultlightboxoptions|raw }}
+			{{ __SELF__.defaultvideogalleryoptions|raw }}
 
 			// Add additional options here!
 			// See: http://unitegallery.net/index.php?page=tiles-columns-options
@@ -38,10 +45,19 @@
 			// tiles_col_width: 280,                   //column width - exact or base according the settings
 			
 		}); 
+		
+		{% else %}
+		
+		uniteGalleryApi = jQuery("#{{__SELF__.id}}").unitegallery({
 
-		jQuery("{{ __SELF__.attachto|raw }}").click(function() {
-			uniteGalleryApi.openLightbox(0);
-		});
+			{{ __SELF__.defaultvideogalleryoptions|raw }}
+
+			// Add additional options here!
+			// See: http://unitegallery.net/index.php?page=tiles-columns-options
+			// For example: 
+			// tiles_col_width: 280,                   //column width - exact or base according the settings
+			
+		}); 
 
 		{% endif %}
 	}); 
