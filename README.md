@@ -162,7 +162,7 @@ Property | Inspector Name | Description
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 `imageResizerWidth` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
+`imageResizerHeight` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_mode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
@@ -361,11 +361,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODIwMDQ2NDQsLTExNTg2Njg2MjAsNj
-YzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1
-MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1Ny
-wtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwt
-MTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MT
-MyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4
-NDcsMjA2NTA4OTM1MF19
+eyJoaXN0b3J5IjpbOTA0NzQ1OTUwLC0xMTU4NjY4NjIwLDY2Mz
+E0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC0yMDU4NTI1
+NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUyOTMyNTcsLT
+E4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1OTI2OTk4MjgsLTE1
+Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5NSwxNDEzMj
+M3ODQ5LC0xMzkzMDk4MDc4LDk3Mjc0NTg0NCwyMDM0NjMxODQ3
+LDIwNjUwODkzNTBdfQ==
 -->
