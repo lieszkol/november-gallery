@@ -164,6 +164,8 @@ Property | Inspector Name | Description
 `imageResizerWidth` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `imageResizerHeight` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `imageResizerMode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
+`galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
+`galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 
 For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
 
@@ -361,11 +363,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTcxOTAwNCwtMTE1ODY2ODYyMCw2Nj
-MxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUy
-NTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC
-0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0x
-NTc5ODQ3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMz
-IzNzg0OSwtMTM5MzA5ODA3OCw5NzI3NDU4NDQsMjAzNDYzMTg0
-NywyMDY1MDg5MzUwXX0=
+eyJoaXN0b3J5IjpbLTE2NDQyOTA3MjEsLTExNTg2Njg2MjAsNj
+YzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1
+MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1Ny
+wtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwt
+MTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MT
+MyMzc4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4
+NDcsMjA2NTA4OTM1MF19
 -->
