@@ -160,7 +160,7 @@ Property | Inspector Name | Description
 `galleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>- `gallery_video` / Video<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.</small>
 `tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
-`additional_gallery_options` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 `image_resizer_width` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_height` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
 `image_resizer_mode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
@@ -361,11 +361,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNj
-MyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1
-NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2Mi
-wtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0x
-ODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOT
-MwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcsMjA2NTA4OTM1
-MCwtMTQ2MjY0NzgxMV19
+eyJoaXN0b3J5IjpbNzgzNDI2MTgsLTExNTg2Njg2MjAsNjYzMT
+Q4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0
+NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMT
+g4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3
+OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMz
+c4NDksLTEzOTMwOTgwNzgsOTcyNzQ1ODQ0LDIwMzQ2MzE4NDcs
+MjA2NTA4OTM1MF19
 -->
