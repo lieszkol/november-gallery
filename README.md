@@ -31,14 +31,14 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 
 ### Limitations / ToDo:
  
+ - [X] Test embedding & linking video
+ - [X] Get the demo page up and running
  - [ ] Add example for "dynamic" gallery via path variables
  - [ ] Add link to default component templates
  - [ ] Ability to add to pages (not just CMS)
  - [ ] Alternative lightbox/carousel gallery script support
  - [ ] Sort the displayed images by file date, date taken, or filename
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
- - [X] Test embedding & linking video
- - [ ] Get the demo page up and running
  - [ ] Extensive help docs
 
 # Deployment
@@ -364,11 +364,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTE2NjA5MSwxNzMwMTEzMTIzLDMyMD
-Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
-NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
-0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
-OTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1OTI2OT
-k4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5
-NSwxNDEzMjM3ODQ5XX0=
+eyJoaXN0b3J5IjpbNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
+g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
+MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
+IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
+MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OT
+gyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1
+LDE0MTMyMzc4NDldfQ==
 -->
