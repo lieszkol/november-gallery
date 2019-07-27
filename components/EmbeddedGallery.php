@@ -49,7 +49,6 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 					'gallery_carousel'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_carousel'),
 					'gallery_combined'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_combined'),
 					'gallery_slider'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_slider'),
-					'gallery_video'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_video'),
 				]
 			],
 			'tilesLayout' => [

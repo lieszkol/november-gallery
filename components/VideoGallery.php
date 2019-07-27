@@ -5,7 +5,7 @@ use ZenWare\NovemberGallery\Models\Settings;
 
 class VideoGallery extends NovemberGalleryComponentBase {
 
-	public $attachto;
+	public $videogalleryitemsselector;
 
     /**
      * Name and description to display for this component in the backend "CMS" section in the 
@@ -39,12 +39,12 @@ class VideoGallery extends NovemberGalleryComponentBase {
                 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
                 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
             ],
-			'attachTo' => [
-                'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to_hint'),
-                'default'           => '#gallery-button'
+			'videoGalleryItemsSelector' => [
+                'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.video_gallery_items_selector'),
+                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.video_gallery_items_selector_hint'),
+                'default'           => '#videos'
 			],
-			'galleryLayout' => [
+			'videoGalleryLayout' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_layout_label'),
 				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_layout_hint'),
                 'type'        => 'dropdown',
@@ -93,6 +93,24 @@ class VideoGallery extends NovemberGalleryComponentBase {
 					'crop'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_crop'),
 				],
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_thumbnails_label')
+			],
+			'galleryWidth' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_label'),
+                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_comment'),
+				'default'           => '',
+				'type'              => 'string',
+				'validationPattern' => '^[0-9\%]+$',
+				'validationMessage' => 'The Gallery Width property can only contain numbers and an optional percent sign!',
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
+			],
+			'galleryHeight' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_label'),
+                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_comment'),
+				'default'           => '',
+				'type'              => 'string',
+				'validationPattern' => '^[0-9\%]+$',
+				'validationMessage' => 'The Gallery Height property can only contain numbers and an optional percent sign!',
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			]
         ]);
     }
@@ -107,41 +125,43 @@ class VideoGallery extends NovemberGalleryComponentBase {
 			
 			$this->addJs('assets/unitegallery/dist/js/unitegallery.min.js');
 			
-			$this->addJs('assets/unitegallery/source/unitegallery/themes/video/ug-theme-video.js');
+			$this->addJs('assets/unitegallery/dist/themes/video/ug-theme-video.js');
 
-			switch($this->getGalleryLayout()) 
+			switch($this->getVideoGalleryLayout()) 
 			{
 				case 'video_gallery_right_thumb':
-					$this->addCss('assets/unitegallery/dist/themes/video/skin-right-no-thumb.css');
-					break;
-				case 'video_gallery_right_title_only':
 					$this->addCss('assets/unitegallery/dist/themes/video/skin-right-thumb.css');
 					break;
-				case 'video_gallery_right_no_thumb':
+				case 'video_gallery_right_title_only':
 					$this->addCss('assets/unitegallery/dist/themes/video/skin-right-title-only.css');
+					break;
+				case 'video_gallery_right_no_thumb':
+					$this->addCss('assets/unitegallery/dist/themes/video/skin-right-no-thumb.css');
+					break;
+				default:
+					$this->addCss('assets/unitegallery/dist/themes/video/skin-right-thumb.css');
 					break;
 			}
 		}
 	}
 
-	public function getGalleryLayout() 
+	public function getVideoGalleryLayout() 
 	{
-		$galleryLayout = 'video_gallery_right_thumb';
-		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') 
+		if (!empty($this->property('videoGalleryLayout')) && $this->property('videoGalleryLayout') !== 'not_applicable' && $this->property('videoGalleryLayout') !== 'default') 
 		{
-			$galleryLayout = $this->property('galleryLayout');
+			return $this->property('videoGalleryLayout');
 		}
 		elseif (!empty(Settings::instance()->default_video_gallery_layout))
 		{
-			$galleryLayout = Settings::instance()->default_video_gallery_layout;
+			return Settings::instance()->default_video_gallery_layout;
 		}
-		return $galleryLayout;
+		return '';
 	}
 		
 	public function onRun() {
-		if (!empty($this->property('attachTo'))) 
+		if (!empty($this->property('videoGalleryItemsSelector'))) 
 		{
-			$this->attachto = $this->property('attachTo');
+			$this->videogalleryitemsselector = $this->property('videoGalleryItemsSelector');
 		}
 
         parent::onRun();

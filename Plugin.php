@@ -19,7 +19,8 @@ class Plugin extends PluginBase
         return [
             'ZenWare\NovemberGallery\Components\EmbeddedGallery' => 'embeddedGallery',
             'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
-            'ZenWare\NovemberGallery\Components\CustomGallery' => 'customGallery'
+            'ZenWare\NovemberGallery\Components\CustomGallery' => 'customGallery',
+            'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
         ];
     }
 

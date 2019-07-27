@@ -14,7 +14,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	public $galleryitems;
 	
 	public $defaultgalleryoptions;
-	public $defaultlightboxoptions;
 	public $defaultvideogalleryoptions;
 
 	public $customgalleryscript;
@@ -88,7 +87,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		$this->galleryitems = $this->loadMedia();
 		
 		$this->defaultgalleryoptions = $this->getDefaultGalleryOptions();
-		$this->defaultlightboxoptions = $this->getDefaultLightboxOptions();
 		$this->defaultvideogalleryoptions = $this->getDefaultVideoGalleryOptions();
 
 		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options))
@@ -194,9 +192,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 				if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
 				$additionalOptions->put('gallery_theme', '"slider"');
 				break;
-			case 'gallery_video':
-				$additionalOptions->put('gallery_theme', '"video"');
-				break;
 		}
 
 		$additionalOptions = $additionalOptions->map(function ($item, $key) {
@@ -213,35 +208,39 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	}
 
 	/**
-     * Get default options used in the default.htm layout for initialising the lightbox.
-     */
-    public function getDefaultLightboxOptions() {
-		$additionalOptions = '';
-
-		if (!empty($this->property('additionalLightboxOptions'))) 
-		{
-			$additionalOptions = $this->property('additionalLightboxOptions');
-		}
-		$additionalOptions = rtrim($additionalOptions, ',');
-		$additionalOptions = $additionalOptions . ',';
-
-		return 'gallery_theme: "lightbox",' . $additionalOptions;
-	}
-
-	/**
-     * Get default options used in the default.htm layout for initialising the lightbox.
+     * Get default options used in the default.htm layout for initialising the video gallery.
      */
     public function getDefaultVideoGalleryOptions() {
-		$additionalOptions = '';
+		$additionalOptions = new Collection();
+
+		$additionalOptions->put('gallery_theme', '"video"');
+		
+		switch($this->getVideoGalleryLayout()) 
+		{
+			case 'video_gallery_right_thumb':
+				$additionalOptions->put('theme_skin', '"right-thumb"');
+				break;
+			case 'video_gallery_right_title_only':
+				$additionalOptions->put('theme_skin', '"right-title-only"');
+				break;
+			case 'video_gallery_right_no_thumb':
+				$additionalOptions->put('theme_skin', '"right-no-thumb"');
+				break;
+		}
+		if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
+		if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
+
+		$additionalOptions = $additionalOptions->map(function ($item, $key) {
+			return $key . ':' . $item;
+		})->implode(', '); 
 
 		if (!empty($this->property('additionalVideoGalleryOptions'))) 
 		{
-			$additionalOptions = $this->property('additionalVideoGalleryOptions');
+			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
+			$additionalOptions = $additionalOptions . rtrim($this->property('additionalVideoGalleryOptions'), ', \t\n\r');
 		}
-		$additionalOptions = rtrim($additionalOptions, ',');
-		$additionalOptions = $additionalOptions . ',';
 
-		return 'gallery_theme: "video",' . $additionalOptions;
+		return $additionalOptions ?? '';
 	}
 
 	/** 
@@ -413,27 +412,26 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 
 	public function getGalleryLayout() 
 	{
-		$galleryLayout = 'gallery_tiles';
 		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') 
 		{
-			$galleryLayout = $this->property('galleryLayout');
+			return $this->property('galleryLayout');
 		}
 		elseif (!empty(Settings::instance()->default_gallery))
 		{
-			$galleryLayout = Settings::instance()->default_gallery;
+			return Settings::instance()->default_gallery;
 		}
-		return $galleryLayout;
+		return 'gallery_tiles';
 	}
 
 	public function getTilesLayout() 
 	{
 		if (!empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') 
 		{
-			return $tilesLayout = $this->property('tilesLayout');
+			return $this->property('tilesLayout');
 		}
-		elseif (!empty(Settings::instance()->gallery_tiles_layout))
+		elseif (!empty(Settings::instance()->default_gallery_tiles_layout))
 		{
-			return Settings::instance()->gallery_tiles_layout;
+			return Settings::instance()->default_gallery_tiles_layout;
 		}
 		return 'gallery_tiles_columns';
 	}
@@ -449,5 +447,18 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			return Settings::instance()->gallery_combined_layout;
 		}
 		return 'gallery_combined_default';
+	}
+
+	public function getVideoGalleryLayout() 
+	{
+		if (!empty($this->property('videoGalleryLayout')) && $this->property('videoGalleryLayout') !== 'not_applicable' && $this->property('videoGalleryLayout') !== 'default') 
+		{
+			return $this->property('videoGalleryLayout');
+		}
+		elseif (!empty(Settings::instance()->default_video_gallery_layout))
+		{
+			return Settings::instance()->default_video_gallery_layout;
+		}
+		return 'video_gallery_right_thumb';
 	}
 }

@@ -39,7 +39,6 @@
         'default_gallery_carousel' => 'Carousel',
         'default_gallery_combined' => 'Combined',
         'default_gallery_slider' => 'Slider',
-        'default_gallery_video' => 'Video',
         
 		// Custom Gallery Script
 		'custom_gallery_script_enabled_label' => 'Custom Embedded Gallery Script',
@@ -127,6 +126,12 @@
         'gallery_combined_layout_label' => 'Thumbnails Layout',
         'gallery_combined_layout_hint' => 'Only applicable if the gallery layout is set to "combined". Select "default" to use the thumbnails layout set on the plugin settings page.',
 		
+		// Lihtbox Type
+		'lightbox_type_label' => 'Lightbox Type',
+		'lightbox_type_hint' => 'Select the lightbox type or leave empty to use the default type ("Wide"). "Wide" is full screen with black background, "Compact" is a smaller image with a border and a transparent gray background.',
+		'lightbox_type_wide' => 'Wide',
+		'lightbox_type_compact' => 'Compact',
+
 		// Media Folder
 		'folder_label' => 'Media Folder',
 		'folder_label_hint' => 'Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the base folder set on the November Gallery settings page are valid.',
@@ -151,6 +156,8 @@
         'image_resizer_height_label' => 'Thumbnail Height',
         'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
 		'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.',
+		'video_gallery_items_selector' => 'Gallery Selector/ID',
+		'video_gallery_items_selector_hint' => 'Enter the jQuery selector that identifies the <div> that contains your gallery item definitions, for example: #videos. Leave blank if you are selecting a Media Folder instead.',
 		
 		// Gallery Dimensions
 		'group_gallery_dimensions_label' => 'Gallery Dimensions',

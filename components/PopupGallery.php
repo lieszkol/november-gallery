@@ -3,10 +3,12 @@ namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
 use ToughDeveloper\ImageResizer\Classes\Image;
+use October\Rain\Support\Collection;
 
 class PopupGallery extends NovemberGalleryComponentBase {
 
 	public $attachto;
+	public $defaultlightboxoptions;
 
     /**
      * Name and description to display for this component in the backend "CMS" section in the 
@@ -40,6 +42,17 @@ class PopupGallery extends NovemberGalleryComponentBase {
                 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
                 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
             ],
+			'lightboxType' => [
+				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.lightbox_type_label'),
+				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.lightbox_type_hint'),
+                'type'        => 'dropdown',
+				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
+				'options'     => [
+					'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
+					'lightbox_type_wide' => \Lang::get('zenware.novembergallery::lang.component_properties.lightbox_type_wide'),
+					'lightbox_type_compact'=> \Lang::get('zenware.novembergallery::lang.component_properties.lightbox_type_compact'),
+				]
+			],
 			'attachTo' => [
                 'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to'),
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to_hint'),
@@ -95,6 +108,48 @@ class PopupGallery extends NovemberGalleryComponentBase {
 			$this->attachto = $this->property('attachTo');
 		}
 
+		$this->defaultlightboxoptions = $this->getDefaultLightboxOptions();
+
         parent::onRun();
+	}
+
+	/**
+     * Get default options used in the default.htm layout for initialising the lightbox.
+     */
+    public function getDefaultLightboxOptions() {		
+		$additionalOptions = new Collection();
+
+		$additionalOptions->put('gallery_theme', '"lightbox"');
+
+		switch($this->getLightboxType()) 
+		{
+			case 'lightbox_type_wide':
+				$additionalOptions->put('lightbox_type', '"wide"');
+				break;
+			case 'lightbox_type_compact': 
+				$additionalOptions->put('lightbox_type', '"compact"');
+				break;
+		}
+
+		$additionalOptions = $additionalOptions->map(function ($item, $key) {
+			return $key . ':' . $item;
+		})->implode(', '); 
+
+		if (!empty($this->property('additionalLightboxOptions'))) 
+		{
+			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
+			$additionalOptions = $additionalOptions . rtrim($this->property('additionalLightboxOptions'), ', \t\n\r');
+		}
+
+		return $additionalOptions ?? '';
+	}
+
+	public function getLightboxType() 
+	{
+		if (!empty($this->property('lightboxType')) && $this->property('lightboxType') !== 'not_applicable' && $this->property('lightboxType') !== 'default') 
+		{
+			return $this->property('lightboxType');
+		}
+		return '';
 	}
 }

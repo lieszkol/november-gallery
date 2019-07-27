@@ -12,7 +12,7 @@
 		
 		switch ($('#Form-field-Settings-default_gallery').val()) {
 			case 'gallery_tiles':
-				switch ($('#Form-field-Settings-gallery_tiles_layout').val()) {
+				switch ($('#Form-field-Settings-default_gallery_tiles_layout').val()) {
 					case 'gallery_tiles_columns':
 						editor.setValue('jQuery("#gallery").unitegallery({});');
 						break;
@@ -61,12 +61,36 @@
 					'	gallery_theme: "slider"',
 					'});'].join('\n'));
 				break;
-			case 'gallery_video':
+		}
+	}
+
+	function updateVideoEditor() {
+	
+		var editor = ace.edit('CodeEditor-formCustomVideoGalleryScript-custom_video_gallery_script-code');
+		var oldValue = editor.getValue();
+		
+		switch ($('#Form-field-Settings-default_video_gallery_layout').val()) {
+			case 'video_gallery_right_thumb':
 				editor.setValue([
 					'jQuery("#gallery").unitegallery({',
-					'	gallery_theme: "video"',
+					'	gallery_theme: "video",',
+					'	theme_skin: "right-thumb"',
 					'});'].join('\n'));
 				break;
+				case 'video_gallery_right_title_only':
+					editor.setValue([
+						'jQuery("#gallery").unitegallery({',
+						'	gallery_theme: "video",',
+						'	theme_skin: "right-title-only"',
+						'});'].join('\n'));
+					break;
+				case 'video_gallery_right_no_thumb':
+					editor.setValue([
+						'jQuery("#gallery").unitegallery({',
+						'	gallery_theme: "video",',
+						'	theme_skin: "right-no-thumb"',
+						'});'].join('\n'));
+					break;
 		}
 	}
 
@@ -74,12 +98,25 @@
 		$('#Form-field-Settings-default_gallery').change(function() {
 			updateEditor();
 		});
-		$('#Form-field-Settings-gallery_tiles_layout').change(function() {
+		$('#Form-field-Settings-default_gallery_tiles_layout').change(function() {
 			updateEditor();
 		});
 		$('#Form-field-Settings-gallery_combined_layout').change(function() {
 			updateEditor();
 		});
+		$('#Form-field-Settings-default_video_gallery_layout').change(function() {
+			updateVideoEditor();
+		});
+
+		if (!ace.edit('CodeEditor-formDefaultGalleryOptions-default_gallery_options-code').getValue())
+		{
+			updateEditor();
+		}
+
+		if (!ace.edit('CodeEditor-formCustomVideoGalleryScript-custom_video_gallery_script-code').getValue())
+		{
+			updateVideoEditor();
+		}
 	});
 
 }(window.NovemberGallerySettings = window.NovemberGallerySettings || {}, jQuery));

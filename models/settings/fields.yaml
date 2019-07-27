@@ -37,14 +37,13 @@ tabs:
                 'gallery_carousel': zenware.novembergallery::lang.settings.default_gallery_carousel
                 'gallery_combined': zenware.novembergallery::lang.settings.default_gallery_combined
                 'gallery_slider': zenware.novembergallery::lang.settings.default_gallery_slider
-                'gallery_video': zenware.novembergallery::lang.settings.default_gallery_video
             default: 'default_gallery_tiles'
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
             containerAttributes: 
                 style: 'clear: left;'
             required: true
-        gallery_tiles_layout:
+        default_gallery_tiles_layout:
             label: zenware.novembergallery::lang.settings.gallery_tiles_layout_label
             type: dropdown
             options:
@@ -178,6 +177,7 @@ tabs:
             commentHtml: true,
             type: dropdown
             options:
+                'video_gallery_default': zenware.novembergallery::lang.miscellanous.default
                 'video_gallery_right_thumb': zenware.novembergallery::lang.settings.video_gallery_right_thumb
                 'video_gallery_right_title_only': zenware.novembergallery::lang.settings.video_gallery_right_title_only
                 'video_gallery_right_no_thumb': zenware.novembergallery::lang.settings.video_gallery_right_no_thumb
