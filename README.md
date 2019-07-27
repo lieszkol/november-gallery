@@ -18,10 +18,10 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 
 - Four components included: 
 	 - Embedded Gallery if you wish to show a gallery of images in your page
-	 - Popup Lightbox for galleries that can be opened from a link or button on your page, with several available s
-	 - Video Gallery for...videos, again, with several "styles" available
-	 - Image List Only if you want to handle the display of the images yourself
- - Various options for the Embedded Gallery that can be configured in the back-end without writing a line of code: 
+	 - Popup Lightbox for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
+	 - Video Gallery for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
+	 - Image List Only if you want to handle the display of the images yourself and only need a list of image objects that you uploaded to a specific folder using the OctoberCMS Media Manager
+ - Various options for the Embedded Gallery that can be configured in the back-end or overridden in the component inspector without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
 	 - slider
@@ -365,11 +365,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxNDM3ODAxLDE3MzAxMTMxMjMsMzIwND
-g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
-MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
-IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
-MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OT
-gyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1
-LDE0MTMyMzc4NDldfQ==
+eyJoaXN0b3J5IjpbMTYyMzA2MzA5NSwxNzMwMTEzMTIzLDMyMD
+Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
+NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
+0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
+OTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1OTI2OT
+k4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4MywtMTQ1MjM2NDU5
+NSwxNDEzMjM3ODQ5XX0=
 -->
