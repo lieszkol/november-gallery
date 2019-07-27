@@ -17,10 +17,10 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 # Features:
 
 - Four components included: 
-	 - Embedded Gallery if you wish to show a gallery of images in your page
-	 - Popup Lightbox for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
-	 - Video Gallery for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
-	 - Image List Only if you want to handle the display of the images yourself and only need a list of image objects that you uploaded to a specific folder using the OctoberCMS Media Manager
+	 - **Embedded Gallery** if you wish to show a gallery of images in your page
+	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
+	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
+	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects that you uploaded to a specific folder using the OctoberCMS Media Manager
  - Various options for the Embedded Gallery that can be configured in the back-end or overridden in the component inspector without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
@@ -34,11 +34,10 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [ ] Add example for "dynamic" gallery via path variables
  - [ ] Add link to default component templates
  - [ ] Ability to add to pages (not just CMS)
- - [ ] Carousels!
- - [ ] Alternative lightbox gallery script support
+ - [ ] Alternative lightbox/carousel gallery script support
  - [ ] Sort the displayed images by file date, date taken, or filename
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
- - [ ] Test embedding & linking video
+ - [X] Test embedding & linking video
  - [ ] Get the demo page up and running
  - [ ] Extensive help docs
 
@@ -365,7 +364,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzA2MzA5NSwxNzMwMTEzMTIzLDMyMD
+eyJoaXN0b3J5IjpbMjA0NTE2NjA5MSwxNzMwMTEzMTIzLDMyMD
 Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
 NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
 0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
