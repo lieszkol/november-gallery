@@ -272,6 +272,8 @@ This example assumes that your gallery component has the alias "customGallery". 
 ```
 Again, we are assuming that your component has the alias "customGallery." The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
+Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
+
 ## Page Properties
 
 **`__SELF__.galleryitems`**
@@ -363,11 +365,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
-QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
-NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLT
-E4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEz
-MjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mj
-k2MTgzLC0xNDUyMzY0NTk1LDE0MTMyMzc4NDksLTEzOTMwOTgw
-NzgsOTcyNzQ1ODQ0XX0=
+eyJoaXN0b3J5IjpbMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
+U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
+NjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NC
+w3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgy
+MjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5OD
+Q3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0
+OSwtMTM5MzA5ODA3OF19
 -->
