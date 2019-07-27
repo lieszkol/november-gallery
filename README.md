@@ -16,16 +16,16 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 
 # Features:
 
-- Three components included: 
+- Four components included: 
 	 - Embedded Gallery if you wish to show a gallery of images in your page
-	 - Popup Lightbox for galleries that can be opened from a link or button on your page
+	 - Popup Lightbox for galleries that can be opened from a link or button on your page, with several available s
+	 - Video Gallery for...videos, again, with several "styles" available
 	 - Image List Only if you want to handle the display of the images yourself
  - Various options for the Embedded Gallery that can be configured in the back-end without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
 	 - slider
 	 - combined (large image + lightbox)
-	 - video
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
@@ -365,11 +365,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
-U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
-NjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NC
-w3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgy
-MjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5OD
-Q3NjIsLTE4MTQyOTYxODMsLTE0NTIzNjQ1OTUsMTQxMzIzNzg0
-OSwtMTM5MzA5ODA3OF19
+eyJoaXN0b3J5IjpbODcxNDM3ODAxLDE3MzAxMTMxMjMsMzIwND
+g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
+MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
+IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
+MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OT
+gyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1
+LDE0MTMyMzc4NDldfQ==
 -->
