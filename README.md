@@ -245,8 +245,11 @@ Property | Inspector Name | Description
 -- | -- | --
 `videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the element that holds the video items; for example: `#videos`
 `videoGalleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `video_gallery_right_thumb` / Thumbnails <br>- `video_gallery_right_title_only` / Titles Only<br>- `video_gallery_right_no_thumb` / No Thumbnails<br>Check out <a href="https://novembergallery.zenware.io/demo/video-gallery" target="_blank">the demo site</a> for live examples of each layout.</small>
-`additionalVideoGalleryOptions` | Script  | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
-
+`additionalVideoGalleryOptions` | Script Options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_autoplay: true`
+`imageResizerHeight` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
+`imageResizerMode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
+`galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
+`galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 
 **Example Page**
 ```html
@@ -389,11 +392,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjYyNDk4Miw0MzA3NTY4MTksMTczMD
-ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
-MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
-YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
-NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMj
-kyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMs
-LTE0NTIzNjQ1OTVdfQ==
+eyJoaXN0b3J5IjpbLTE5MDQ4NzMwMzMsNDMwNzU2ODE5LDE3Mz
+AxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3
+MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC
+02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4
+NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMz
+I5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgz
+LC0xNDUyMzY0NTk1XX0=
 -->
