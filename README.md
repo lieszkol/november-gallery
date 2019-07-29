@@ -156,7 +156,7 @@ The following are available in addition to the [Shared Options](#shared-options)
 
 Property | Inspector Name | Description
 -- | -- | --
-`galleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.</small>
+`galleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>Check out <a href="http://unitegallery.net" target="_blank">the demo site</a> for live examples of each layout.</small>
 `tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
 `combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
@@ -392,11 +392,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ4NzMwMzMsNDMwNzU2ODE5LDE3Mz
-AxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3
-MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC
-02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4
-NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMz
-I5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgz
-LC0xNDUyMzY0NTk1XX0=
+eyJoaXN0b3J5IjpbNjgzODk5MTc2LDQzMDc1NjgxOSwxNzMwMT
+EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
+LC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNj
+MwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0
+MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOT
+IsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4Mywt
+MTQ1MjM2NDU5NV19
 -->
