@@ -243,7 +243,7 @@ The following are available in addition to the [Shared Options](#shared-options)
 
 Property | Inspector Name | Description
 -- | -- | --
-`attachTo` | Attach to | JQuery selector for the element(s) that the user can click on to open the lightbox; for example: `#gallery-button`
+`videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the ; for example: `#videos`
 `additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
@@ -388,11 +388,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4MjU4MzAzLDQzMDc1NjgxOSwxNzMwMT
-EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
-LC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNj
-MwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0
-MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOT
-IsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4Mywt
-MTQ1MjM2NDU5NV19
+eyJoaXN0b3J5IjpbLTI1NzIwMTY3NCw0MzA3NTY4MTksMTczMD
+ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
+MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
+YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
+NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMj
+kyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMs
+LTE0NTIzNjQ1OTVdfQ==
 -->
