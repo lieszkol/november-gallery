@@ -243,8 +243,9 @@ The following are available in addition to the [Shared Options](#shared-options)
 
 Property | Inspector Name | Description
 -- | -- | --
-`videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the ; for example: `#videos`
-`additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the element that holds the video items; for example: `#videos`
+`videoGalleryLayout` | Gallery Layout | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`videoGalleryLayout` | Gallery Layout | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
 **Example Page**
@@ -388,7 +389,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzIwMTY3NCw0MzA3NTY4MTksMTczMD
+eyJoaXN0b3J5IjpbLTkxNjcxOTU5Myw0MzA3NTY4MTksMTczMD
 ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
 MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
 YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
