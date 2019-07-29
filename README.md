@@ -244,8 +244,8 @@ The following are available in addition to the [Shared Options](#shared-options)
 Property | Inspector Name | Description
 -- | -- | --
 `videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the element that holds the video items; for example: `#videos`
-`videoGalleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `video_gallery_right_thumb` / Thumbnails <br>- `video_gallery_right_title_only` / Titles Only<br>- `video_gallery_right_no_thumb` / Combined<br>- `gallery_slider` / Slider<br>Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each layout.</small>
-`videoGalleryLayout` | Gallery Layout | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`videoGalleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `video_gallery_right_thumb` / Thumbnails <br>- `video_gallery_right_title_only` / Titles Only<br>- `video_gallery_right_no_thumb` / No Thumbnails<br>Check out <a href="https://novembergallery.zenware.io/demo/video-gallery" target="_blank">the demo site</a> for live examples of each layout.</small>
+`additionalVideoGalleryOptions` | Script  | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
 **Example Page**
@@ -389,11 +389,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTg4NzQzLDQzMDc1NjgxOSwxNzMwMT
-EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
-LC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNj
-MwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0
-MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOT
-IsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4Mywt
-MTQ1MjM2NDU5NV19
+eyJoaXN0b3J5IjpbMTM1NjYyNDk4Miw0MzA3NTY4MTksMTczMD
+ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
+MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
+YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
+NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNjYyLC0xMTMyODMzMj
+kyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIsLTE4MTQyOTYxODMs
+LTE0NTIzNjQ1OTVdfQ==
 -->
