@@ -233,7 +233,31 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
-## Component 3: Image List Only
+
+## Component 3: Video Gallery
+
+Use this gallery to display videos inline. You can choose to upload your videos to your website or to show videos hosted on YouTube/Vimeo/Wistia.
+
+### [Options]
+The following are available in addition to the [Shared Options](#shared-options) described above:
+
+Property | Inspector Name | Description
+-- | -- | --
+`attachTo` | Attach to | JQuery selector for the element(s) that the user can click on to open the lightbox; for example: `#gallery-button`
+`additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+
+
+**Example Page**
+```html
+{% component 'popupLightbox' %}
+<button id="gallery-button">Click me!</button>
+```
+
+This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
+
+For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+
+## Component 4: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
@@ -364,11 +388,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
-g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
-MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
-IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
-MzI1NywtMTg4MjI4MTY2MiwtMTEzMjgzMzI5MiwtMTU5MjY5OT
-gyOCwtMTU3OTg0NzYyLC0xODE0Mjk2MTgzLC0xNDUyMzY0NTk1
-LDE0MTMyMzc4NDldfQ==
+eyJoaXN0b3J5IjpbNDI4MjU4MzAzLDQzMDc1NjgxOSwxNzMwMT
+EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
+LC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNj
+MwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0
+MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOT
+IsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2MiwtMTgxNDI5NjE4Mywt
+MTQ1MjM2NDU5NV19
 -->
