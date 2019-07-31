@@ -147,6 +147,7 @@ Property | Inspector Name | Description
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 <br>
+<br>
 
 ## Component 1: Embedded Gallery
 
@@ -212,6 +213,7 @@ Image List Only | /plugins/zenware/novembergallery/components/customgallery/defa
 
 </details>
 <br>
+<br>
 
 ## Component 2: Pop-up Lightbox
 
@@ -235,6 +237,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+<br>
 <br>
 
 ## Component 3: Video Gallery
@@ -263,6 +266,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+<br>
 <br>
 
 ## Component 4: Image List Only
@@ -397,11 +401,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNz
-U2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYs
-LTE2NDQyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNj
-MyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1
-NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2Mi
-wtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0x
-ODE0Mjk2MTgzXX0=
+eyJoaXN0b3J5IjpbLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMz
+c2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMs
+LTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2Nj
+MxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUy
+NTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC
+0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0x
+NTc5ODQ3NjJdfQ==
 -->
