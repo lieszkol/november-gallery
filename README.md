@@ -146,6 +146,7 @@ Property | Inspector Name | Description
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
+<br>
 
 ## Component 1: Embedded Gallery
 
@@ -210,6 +211,7 @@ Pop-up Lightbox | /plugins/zenware/novembergallery/components/popupgallery/defau
 Image List Only | /plugins/zenware/novembergallery/components/customgallery/default.htm
 
 </details>
+<br>
 
 ## Component 2: Pop-up Lightbox
 
@@ -233,6 +235,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+<br>
 
 ## Component 3: Video Gallery
 
@@ -260,6 +263,7 @@ Property | Inspector Name | Description
 This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+<br>
 
 ## Component 4: Image List Only
 
@@ -393,11 +397,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjcwOTI1MDgsLTczMzc2NDk0Myw0Mz
-A3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5
-NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLT
-E2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIx
-MTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNj
-YyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIs
-LTE4MTQyOTYxODNdfQ==
+eyJoaXN0b3J5IjpbMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNz
+U2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYs
+LTE2NDQyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNj
+MyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1
+NjIsLTE4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2Mi
+wtMTEzMjgzMzI5MiwtMTU5MjY5OTgyOCwtMTU3OTg0NzYyLC0x
+ODE0Mjk2MTgzXX0=
 -->
