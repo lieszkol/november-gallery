@@ -4,7 +4,7 @@
 
 <div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
 
-Check out the live demo site!
+Check out the [live demo site](https://novembergallery.zenware.io)!
 
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
@@ -33,6 +33,7 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  
  - [X] Test embedding & linking video
  - [X] Get the demo page up and running
+ - [ ] Gallery of videos uploaded to the site
  - [ ] Add example for "dynamic" gallery via path variables
  - [ ] Add link to default component templates
  - [ ] Ability to add to pages (not just CMS)
@@ -401,11 +402,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMz
-c2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMs
-LTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2Nj
-MxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUy
-NTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC
-0xODgyMjgxNjYyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0x
-NTc5ODQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTYzNDExMTUzNywtODQwODY3OTgwLDM0OT
+I1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIz
+LDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMT
+U4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUw
+NzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLD
+E5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1
+OTI2OTk4MjhdfQ==
 -->
