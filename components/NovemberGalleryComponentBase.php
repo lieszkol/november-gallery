@@ -12,17 +12,8 @@ use Config;
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
 	public $galleryitems;
-	
-	public $defaultgalleryoptions;
-	public $defaultvideogalleryoptions;
-
-	public $customgalleryscript;
-	public $customlightboxscript;
-	public $customvideogalleryscript;
-	
 	public $allowedExtensions = array();
 	public $error;
-	
 
     /**
      * Please override this!
@@ -30,6 +21,11 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      * @return array ['name' => '...', 'description' => '...']
      */
     abstract public function componentDetails();
+
+	/**
+	 * Inject gallery scripts and styles. This should be overridden on the component implementation level.
+	 */
+	abstract public function InjectScripts();
 
     /**
      * Configuration options that can be set on the component properties page after 
@@ -85,30 +81,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		// Debugbar::info("url(Config::get('cms.storage.media.path')) = " . url(Config::get('cms.storage.media.path')));
         
 		$this->galleryitems = $this->loadMedia();
-		
-		$this->defaultgalleryoptions = $this->getDefaultGalleryOptions();
-		$this->defaultvideogalleryoptions = $this->getDefaultVideoGalleryOptions();
-
-		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options))
-		{
-			$this->customgalleryscript = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
-		}
-
-		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script))
-		{
-			$this->customlightboxscript = str_replace("#gallery", $this->id, Settings::instance()->custom_lightbox_script);
-		}
-
-		if (Settings::instance()->custom_video_gallery_script_enabled && !empty(Settings::instance()->custom_video_gallery_script))
-		{
-			$this->customvideogalleryscript = str_replace("#gallery", $this->id, Settings::instance()->custom_video_gallery_script);
-		}
-	}
-
-	/**
-	 * Inject gallery scripts and styles. This should be overridden on the component implementation level.
-	 */
-	public function InjectScripts() {
 	}
 
      /**
@@ -131,116 +103,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		}
 
         return $galleryPath;
-	}
-	
-	/**
-     * Get default options used in the default.htm layout for initialising the gallery.
-     */
-    public function getDefaultGalleryOptions() {
-		$additionalOptions = new Collection();
-		switch($this->getGalleryLayout()) 
-		{
-			case 'gallery_tiles':
-				switch($this->getTilesLayout()) 
-				{
-					case 'gallery_tiles_columns':
-						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_col_width',  $this->getThumbnailWidth());
-						$additionalOptions->put('gallery_theme', '"tiles"');
-						break;
-					case 'gallery_tiles_justified': 
-						if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tiles_justified_row_height', $this->getThumbnailHeight());
-						$additionalOptions->put('gallery_theme', '"tiles"');
-						$additionalOptions->put('tiles_type', '"justified"');
-						break;
-					case 'gallery_tiles_nested': 
-						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_nested_optimal_tile_width', $this->getThumbnailWidth());
-						$additionalOptions->put('gallery_theme', '"tiles"');
-						$additionalOptions->put('tiles_type', '"nested"');
-						break;
-					case 'gallery_tiles_grid':
-						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tile_width', $this->getThumbnailWidth());
-						if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tile_height', $this->getThumbnailHeight());
-						$additionalOptions->put('gallery_theme', '"tilesgrid"');
-						break;
-				}
-				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
-				break;
-			case 'gallery_carousel':
-				if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tile_width', $this->getThumbnailWidth());
-				if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tile_height', $this->getThumbnailHeight());
-				$additionalOptions->put('gallery_theme', '"carousel"');
-				break;
-			case 'gallery_combined':
-				switch($this->getCombinedLayout()) 
-				{
-					case 'gallery_combined_default': 
-						break;
-					case 'gallery_combined_compact': 
-						$additionalOptions->put('gallery_theme', '"compact"');
-						break;
-					case 'gallery_combined_grid':
-						$additionalOptions->put('gallery_theme', '"grid"');
-						break;
-				}
-				if ($this->getThumbnailWidth() !== false) $additionalOptions->put('thumb_width', $this->getThumbnailWidth());
-				if ($this->getThumbnailHeight() !== false) $additionalOptions->put('thumb_height', $this->getThumbnailHeight());
-				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
-				if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
-				break;
-			case 'gallery_slider':
-				if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
-				if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
-				$additionalOptions->put('gallery_theme', '"slider"');
-				break;
-		}
-
-		$additionalOptions = $additionalOptions->map(function ($item, $key) {
-			return $key . ':' . $item;
-		})->implode(', '); 
-
-		if (!empty($this->property('additionalGalleryOptions'))) 
-		{
-			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
-			$additionalOptions = $additionalOptions . rtrim($this->property('additionalGalleryOptions'), ', \t\n\r');
-		}
-
-		return $additionalOptions ?? '';
-	}
-
-	/**
-     * Get default options used in the default.htm layout for initialising the video gallery.
-     */
-    public function getDefaultVideoGalleryOptions() {
-		$additionalOptions = new Collection();
-
-		$additionalOptions->put('gallery_theme', '"video"');
-		
-		switch($this->getVideoGalleryLayout()) 
-		{
-			case 'video_gallery_right_thumb':
-				$additionalOptions->put('theme_skin', '"right-thumb"');
-				break;
-			case 'video_gallery_right_title_only':
-				$additionalOptions->put('theme_skin', '"right-title-only"');
-				break;
-			case 'video_gallery_right_no_thumb':
-				$additionalOptions->put('theme_skin', '"right-no-thumb"');
-				break;
-		}
-		if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
-		if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
-
-		$additionalOptions = $additionalOptions->map(function ($item, $key) {
-			return $key . ':' . $item;
-		})->implode(', '); 
-
-		if (!empty($this->property('additionalVideoGalleryOptions'))) 
-		{
-			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
-			$additionalOptions = $additionalOptions . rtrim($this->property('additionalVideoGalleryOptions'), ', \t\n\r');
-		}
-
-		return $additionalOptions ?? '';
 	}
 
 	/** 
@@ -352,9 +214,15 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     public function getMediaFolderOptions()
     {
+        return getSubdirectories(Settings::instance()->base_folder);
+	}
+	
+	
+    public function getSubdirectories($baseFolder)
+    {
         $mediaPath = Settings::instance()->mediaPath;
-        if (!empty(Settings::instance()->base_folder)) {
-            $mediaPath .= Settings::instance()->base_folder;
+        if (!empty($baseFolder)) {
+            $mediaPath .= $baseFolder;
         }
 
         // https://laravel.com/api/5.7/Illuminate/Contracts/Filesystem/Filesystem.html#method_allDirectories
@@ -376,89 +244,4 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
         }
         return $matches;
     }
-
-	public function getTilesLayoutOptions()
-	{
-		if (\Request::input('galleryLayout') === 'gallery_tiles') {
-			return [
-				'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
-				'gallery_tiles_columns'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_columns'),
-                'gallery_tiles_justified'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_justified'),
-                'gallery_tiles_nested'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_nested'),
-                'gallery_tiles_grid'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_grid')
-			];
-		}
-		
-		return [
-			'not_applicable' => \Lang::get('zenware.novembergallery::lang.miscellanous.not_applicable')
-		];
-	}
-
-	public function getCombinedLayoutOptions()
-	{
-		if (\Request::input('galleryLayout') === 'gallery_combined') {
-			return [
-				'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
-				'gallery_combined_default'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_default'),
-                'gallery_combined_compact'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_compact'),
-                'gallery_combined_grid'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_grid')
-			];
-		}
-		
-		return [
-			'not_applicable' => \Lang::get('zenware.novembergallery::lang.miscellanous.not_applicable')
-		];
-	}
-
-	public function getGalleryLayout() 
-	{
-		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') 
-		{
-			return $this->property('galleryLayout');
-		}
-		elseif (!empty(Settings::instance()->default_gallery))
-		{
-			return Settings::instance()->default_gallery;
-		}
-		return 'gallery_tiles';
-	}
-
-	public function getTilesLayout() 
-	{
-		if (!empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') 
-		{
-			return $this->property('tilesLayout');
-		}
-		elseif (!empty(Settings::instance()->default_gallery_tiles_layout))
-		{
-			return Settings::instance()->default_gallery_tiles_layout;
-		}
-		return 'gallery_tiles_columns';
-	}
-
-	public function getCombinedLayout() 
-	{
-		if (!empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default') 
-		{
-			return $this->property('combinedLayout');
-		}
-		elseif (!empty(Settings::instance()->gallery_combined_layout))
-		{
-			return Settings::instance()->gallery_combined_layout;
-		}
-		return 'gallery_combined_default';
-	}
-
-	public function getVideoGalleryLayout() 
-	{
-		if (!empty($this->property('videoGalleryLayout')) && $this->property('videoGalleryLayout') !== 'not_applicable' && $this->property('videoGalleryLayout') !== 'default') 
-		{
-			return $this->property('videoGalleryLayout');
-		}
-		elseif (!empty(Settings::instance()->default_video_gallery_layout))
-		{
-			return Settings::instance()->default_video_gallery_layout;
-		}
-		return 'video_gallery_right_thumb';
-	}
 }

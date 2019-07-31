@@ -31,4 +31,10 @@ class CustomGallery extends NovemberGalleryComponentBase {
             ]
         ]);
     }
+
+    /**
+     * Load CSS and JS assets
+     */
+    public function InjectScripts() {
+	}
 }

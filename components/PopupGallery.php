@@ -9,6 +9,7 @@ class PopupGallery extends NovemberGalleryComponentBase {
 
 	public $attachto;
 	public $defaultlightboxoptions;
+	public $customlightboxscript;
 
     /**
      * Name and description to display for this component in the backend "CMS" section in the 
@@ -109,6 +110,11 @@ class PopupGallery extends NovemberGalleryComponentBase {
 		}
 
 		$this->defaultlightboxoptions = $this->getDefaultLightboxOptions();
+
+		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script))
+		{
+			$this->customlightboxscript = str_replace("#gallery", $this->id, Settings::instance()->custom_lightbox_script);
+		}
 
         parent::onRun();
 	}

@@ -166,6 +166,14 @@ tabs:
         ##
         #   Video Gallery Settings
         #
+        base_video_folder:
+            tab: zenware.novembergallery::lang.settings.tab_videogallery
+            label: zenware.novembergallery::lang.settings.base_video_folder_label
+            comment: zenware.novembergallery::lang.settings.base_video_folder_comment
+            type: dropdown
+            span: left
+            emptyOption: zenware.novembergallery::lang.settings.base_folder_emptyoption
+            required: true
         videogallery_defaults_section:
             tab: zenware.novembergallery::lang.settings.tab_videogallery
             label: zenware.novembergallery::lang.settings.section_videogallery_defaults_label

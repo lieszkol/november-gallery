@@ -2,10 +2,13 @@
 namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
+use October\Rain\Support\Collection;
 
 class VideoGallery extends NovemberGalleryComponentBase {
 
 	public $videogalleryitemsselector;
+	public $defaultvideogalleryoptions;
+	public $customvideogalleryscript;
 
     /**
      * Name and description to display for this component in the backend "CMS" section in the 
@@ -30,7 +33,7 @@ class VideoGallery extends NovemberGalleryComponentBase {
     public function defineProperties()
     {
         return array_merge(parent::defineProperties(), [
-            'mediaFolder' => [
+            'videoFolder' => [
                 'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label'),
                 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_hint'),
                 'default'           => '',
@@ -113,7 +116,59 @@ class VideoGallery extends NovemberGalleryComponentBase {
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			]
         ]);
-    }
+	}
+	
+	/**
+     * Retrieve a list of folders under the "Base Media Folder" as set on the 
+     * plugin backend settings page. The user can select from this list of folders 
+     * in the component properties page after being dropped into a CMS page.
+     * 
+	 * See "Dropdown properties" in https://octobercms.com/docs/plugin/components#component-properties
+	 * 
+     * @return array List of folders
+     */
+    public function getVideoFolderOptions()
+    {
+        return getSubdirectories(Settings::instance()->base_video_folder);
+	}
+
+	/**
+	* Retrieve the full path to the gallery taking into account the base folder selected 
+	* in the backend NovemberGallery settings page.
+	* 
+	* This can be called from the front-end with: {{ __SELF__.galleryPath() }}
+	* 
+	* @return string Path to the gallery of images to display
+	*/
+   protected function getGalleryPath() {
+	   $galleryPath = Settings::instance()->mediaPath;
+	   
+	   if (!empty(Settings::instance()->base_video_folder)) {
+		   $galleryPath .= Settings::instance()->base_video_folder;
+	   }
+	   
+	   if (!empty($this->property('videoFolder'))) {
+		   $galleryPath .= DIRECTORY_SEPARATOR . $this->property('videoFolder');
+	   }
+
+	   return $galleryPath;
+   }
+		
+	public function onRun() {
+		if (!empty($this->property('videoGalleryItemsSelector'))) 
+		{
+			$this->videogalleryitemsselector = $this->property('videoGalleryItemsSelector');
+		}
+		
+		$this->defaultvideogalleryoptions = $this->getDefaultVideoGalleryOptions();
+
+		if (Settings::instance()->custom_video_gallery_script_enabled && !empty(Settings::instance()->custom_video_gallery_script))
+		{
+			$this->customvideogalleryscript = str_replace("#gallery", $this->id, Settings::instance()->custom_video_gallery_script);
+		}
+
+        parent::onRun();
+	}
 
     /**
      * Load CSS and JS assets
@@ -145,6 +200,42 @@ class VideoGallery extends NovemberGalleryComponentBase {
 		}
 	}
 
+	/**
+     * Get default options used in the default.htm layout for initialising the video gallery.
+     */
+    public function getDefaultVideoGalleryOptions() {
+		$additionalOptions = new Collection();
+
+		$additionalOptions->put('gallery_theme', '"video"');
+		
+		switch($this->getVideoGalleryLayout()) 
+		{
+			case 'video_gallery_right_thumb':
+				$additionalOptions->put('theme_skin', '"right-thumb"');
+				break;
+			case 'video_gallery_right_title_only':
+				$additionalOptions->put('theme_skin', '"right-title-only"');
+				break;
+			case 'video_gallery_right_no_thumb':
+				$additionalOptions->put('theme_skin', '"right-no-thumb"');
+				break;
+		}
+		if ($this->getGalleryWidth() !== false) $additionalOptions->put('gallery_width', $this->getGalleryWidth());
+		if ($this->getGalleryHeight() !== false) $additionalOptions->put('gallery_height', $this->getGalleryHeight());
+
+		$additionalOptions = $additionalOptions->map(function ($item, $key) {
+			return $key . ':' . $item;
+		})->implode(', '); 
+
+		if (!empty($this->property('additionalVideoGalleryOptions'))) 
+		{
+			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
+			$additionalOptions = $additionalOptions . rtrim($this->property('additionalVideoGalleryOptions'), ', \t\n\r');
+		}
+
+		return $additionalOptions ?? '';
+	}
+
 	public function getVideoGalleryLayout() 
 	{
 		if (!empty($this->property('videoGalleryLayout')) && $this->property('videoGalleryLayout') !== 'not_applicable' && $this->property('videoGalleryLayout') !== 'default') 
@@ -156,14 +247,5 @@ class VideoGallery extends NovemberGalleryComponentBase {
 			return Settings::instance()->default_video_gallery_layout;
 		}
 		return '';
-	}
-		
-	public function onRun() {
-		if (!empty($this->property('videoGalleryItemsSelector'))) 
-		{
-			$this->videogalleryitemsselector = $this->property('videoGalleryItemsSelector');
-		}
-
-        parent::onRun();
 	}
 }

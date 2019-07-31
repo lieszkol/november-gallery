@@ -68,8 +68,13 @@
 		'custom_lightbox_script_hint' => 'For available options, see <a href="http://unitegallery.net/index.php?page=carousel-options" target="_blank">UniteGallery.net, Carousel - Including and Options</a>.<br>The gallery ID will be the alias of the component, since we cannot know this beforehand, refer to "#gallery" in your script and it will be replaced with the component alias. So your script might look something like this (setting the width to 100% as an example option): <br><pre>jQuery("#gallery").unitegallery({<br>&nbsp;&nbsp;&nbsp;lightbox_type: "wide"<br>});</pre>',
 		'custom_lightbox_script_label' => 'Custom Popup Lightbox Script',
 
-		// Video Gallery:
-        'section_videogallery_defaults_label' => 'Video Gallery Defaults',
+		// Base Video Folder
+        'base_video_folder_label' => 'Base Videos Folder',
+        'base_video_folder_comment' => 'Video component will only show subfolders of the folder you select here.',
+        'base_video_folder_emptyoption' => '-- Media Root --',
+
+        // Video Gallery:
+		'section_videogallery_defaults_label' => 'Video Gallery Defaults',
 
 	   	'default_video_gallery_label' => 'Video Gallery Layout',
 	   	'default_video_gallery_comment' => 'Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each',

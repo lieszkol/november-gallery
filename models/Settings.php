@@ -66,7 +66,12 @@ class Settings extends Model
             $allDirectories[$relativePath] = $relativePath;
             return $allDirectories;
         }, collect())->sort(); //->prepend('Library', '/');
-    }
+	}
+	
+	public function getBaseVideoFolderOptions($value, $formData)
+    {
+		return $this->getBaseFolderOptions($value, $formData);
+	}
 
     /*
     protected $casts = [
