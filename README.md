@@ -304,7 +304,8 @@ Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-onl
 ### Page Properties
 
 **`__SELF__.galleryitems`**<br>
-Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
+Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
+also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```html
@@ -392,11 +393,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMTIzOTAxMiwtNzMzNzY0OTQzLDQzMD
-c1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2
-LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMT
-YzMjA5OTc5MywtNjMwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjEx
-NTYyLC0xODI5ODY0MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2Nj
-IsLTExMzI4MzMyOTIsLTE1OTI2OTk4MjgsLTE1Nzk4NDc2Miwt
-MTgxNDI5NjE4M119
+eyJoaXN0b3J5IjpbLTE5MjcwOTI1MDgsLTczMzc2NDk0Myw0Mz
+A3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5
+NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLT
+E2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIx
+MTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgyMjgxNj
+YyLC0xMTMyODMzMjkyLC0xNTkyNjk5ODI4LC0xNTc5ODQ3NjIs
+LTE4MTQyOTYxODNdfQ==
 -->
