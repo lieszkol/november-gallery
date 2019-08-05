@@ -13,6 +13,10 @@ class GalleryItem
 {
 	private $component;
 
+	public $title;
+
+	public $description;
+
     public $file;
 
 	/**
@@ -96,24 +100,40 @@ class GalleryItem
      */
 	public $url;
 	
-	public function __construct($file, $component)
+	private function __construct($component)
     {
 		$this->component = $component;
-		$this->file = $file;
-		$this->fileBasename = $file->getBasename();
-		$this->fileATime = $file->getATime();
-		$this->fileCTime = $file->getCTime();
-		$this->fileExtension = $file->getExtension();
-		$this->fileName = $file->getFilename();
-		$this->fileMTime = $file->getMTime();
-		$this->filePath = $file->getPath();
-		$this->filePathname = $file->getPathname();
-		$this->fileRealPath = $file->getRealPath();
-		$this->fileSize = $file->getSize();
-		$this->fileType = $file->getType();
-		$this->relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
-		$this->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $this->relativeMediaFilePath;
-		$this->url = url(Config::get('cms.storage.media.path') . '/' . $this->relativeMediaFilePath);
+	}
+
+	// https://stackoverflow.com/questions/2169448/why-cant-i-overload-constructors-in-php
+	public static function createFromFile($component, $file)
+    {
+		$galleryItem = new GalleryItem($component);
+		$galleryItem->file = $file;
+		$galleryItem->fileBasename = $file->getBasename();
+		$galleryItem->fileATime = $file->getATime();
+		$galleryItem->fileCTime = $file->getCTime();
+		$galleryItem->fileExtension = $file->getExtension();
+		$galleryItem->fileName = $file->getFilename();
+		$galleryItem->fileMTime = $file->getMTime();
+		$galleryItem->filePath = $file->getPath();
+		$galleryItem->filePathname = $file->getPathname();
+		$galleryItem->fileRealPath = $file->getRealPath();
+		$galleryItem->fileSize = $file->getSize();
+		$galleryItem->fileType = $file->getType();
+		$galleryItem->relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
+		$galleryItem->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $galleryItem->relativeMediaFilePath;
+		$galleryItem->url = url(Config::get('cms.storage.media.path') . '/' . $galleryItem->relativeMediaFilePath);
+		return $galleryItem;
+	}
+
+	public static function createFromMetadata($component, $filePath, $title, $description)
+    {
+		$galleryItem = new GalleryItem($component);
+		$galleryItem->filePath = $filePath;
+		$galleryItem->title = $title;
+		$galleryItem->description = $description;
+		return $galleryItem;
 	}
 
 	/**

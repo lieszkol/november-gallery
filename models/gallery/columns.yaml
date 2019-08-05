@@ -1,0 +1,43 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+    
+    id:
+        label: zenware.novembergallery::lang.entities.common.id_label
+        searchable: true
+        invisible: true
+
+    published:
+        label: zenware.novembergallery::lang.entities.gallery.published_label
+        type: switch_extended
+        cssClass: text-center
+        sortable: true
+        width: 60px
+
+    name:
+        label: zenware.novembergallery::lang.entities.gallery.name_label
+        searchable: true
+        type: strong
+
+    images:
+        label: zenware.novembergallery::lang.entities.gallery.attached_images_count_label
+        type: attached_images_count
+        sortable: false
+
+    created_at:
+        label: zenware.novembergallery::lang.entities.gallery.created_at_label
+        type: datetime
+        invisible: true
+
+    updated_at:
+        label: zenware.novembergallery::lang.entities.gallery.updated_at_label
+        type: datetime
+        invisible: true
+
+    preview_image:
+        label: zenware.novembergallery::lang.entities.gallery.preview_image_label
+        type: record_image_preview
+        width: 30px
+        cssClass: text-center

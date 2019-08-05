@@ -3,8 +3,9 @@ namespace ZenWare\NovemberGallery\Components;
 
 use Cms\Classes\ComponentBase;
 use ZenWare\NovemberGallery\Models\Settings;
+use ZenWare\NovemberGallery\Models\Gallery as Galleries;
 use ToughDeveloper\ImageResizer\Classes\Image;
-// use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+ use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 use ZenWare\NovemberGallery\Classes\GalleryItem;
 use October\Rain\Support\Collection;
 use Illuminate\Support\Str;
@@ -80,29 +81,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		// Debugbar::info("Config::get('cms.storage.media.path') = " . Config::get('cms.storage.media.path'));
 		// Debugbar::info("url(Config::get('cms.storage.media.path')) = " . url(Config::get('cms.storage.media.path')));
         
-		$this->galleryitems = $this->loadMedia();
-	}
-
-     /**
-     * Retrieve the full path to the gallery taking into account the base folder selected 
-     * in the backend NovemberGallery settings page.
-	 * 
-	 * This can be called from the front-end with: {{ __SELF__.galleryPath() }}
-     * 
-     * @return string Path to the gallery of images to display
-     */
-    protected function getGalleryPath() {
-		$galleryPath = Settings::instance()->mediaPath;
-		
-        if (!empty(Settings::instance()->base_folder)) {
-            $galleryPath .= Settings::instance()->base_folder;
-        }
-		
-        if (!empty($this->property('mediaFolder'))) {
-            $galleryPath .= DIRECTORY_SEPARATOR . $this->property('mediaFolder');
-		}
-
-        return $galleryPath;
+		$this->galleryitems = $this->page['galleryitems'] = $this->loadMedia();
 	}
 
 	/** 
@@ -169,6 +148,21 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		return $height;
 	}
 
+	function endsWith($string, $endString) 
+	{ 
+		$len = strlen($endString); 
+		if ($len == 0) { 
+			return true; 
+		} 
+		return (substr($string, -$len) === $endString); 
+	} 
+
+	function startsWith ($string, $startString) 
+	{ 
+		$len = strlen($startString); 
+		return (substr($string, 0, $len) === $startString); 
+	} 
+
     /**
      * Retrieve a list of all gallery items (images and videos) under the gallery path.
      * 
@@ -176,32 +170,70 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     function loadMedia()
     {
-        $galleryPath = $this->getGalleryPath();
-        // Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
+		$extensions = $this->allowedExtensions;
+		$maxImages = $this->property('maxItems', 100);
+		$images     = new Collection();
 
-        if (!\File::exists($galleryPath)) {
-            $this->error = "NovemberGallery error: cannot find the path " . $galleryPath;
-            return array();
-        }
+		if (!empty($this->property('mediaFolder')) && $this->startsWith($this->property('mediaFolder'), '[') && $this->endsWith($this->property('mediaFolder'), ']')) {
+			// We have a gallery uploaded using the NovemberGallery backend menu
+			
+			$gallery = Galleries::find(substr($this->property('mediaFolder'), 1, strlen($this->property('mediaFolder')) - 2));
+			if ($gallery && $gallery->count() == 1)
+			{
+				foreach($gallery->images->take($maxImages) as $image) {
+					//Debugbar::info($image);
+					$images->push(GalleryItem::createFromMetadata($this, $image->getPath(), $image->title, $image->description));
+				}
+			}
+		} 
+		else 
+		{
+			// We have a gallery uploaded using the MediaManager
 
-        $extensions = $this->allowedExtensions;
-        $maxImages = $this->property('maxItems', 100);
-        // end of options!    
-        
-        $files     = \File::allFiles($galleryPath);
-        // Debugbar::info("NovemberGallery found files: " . count($files));
-        $images     = new Collection();
-        $i = 1;
-        foreach ($files as $file) {
-            if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
-                // List of methods available: http://php.net/manual/en/splfileinfo.getfilename.php
-                $images->push(new GalleryItem($file, $this));
-            }
-            if ($i >= $maxImages) break;
-            $i++;
-        }    
+			$galleryPath = $this->getGalleryPath();
+			// Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
+
+			if (!\File::exists($galleryPath)) {
+				$this->error = "NovemberGallery error: cannot find the path " . $galleryPath;
+				return array();
+			}
+			
+			$files     = \File::allFiles($galleryPath);
+			// Debugbar::info("NovemberGallery found files: " . count($files));
+			$i = 1;
+			foreach ($files as $file) {
+				if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
+					// List of methods available: http://php.net/manual/en/splfileinfo.getfilename.php
+					$images->push(GalleryItem::createFromFile($this, $file));
+				}
+				if ($i >= $maxImages) break;
+				$i++;
+			}    
+		}
         return $images; 
     }
+
+	/**
+	* Retrieve the full path to the gallery taking into account the base folder selected 
+	* in the backend NovemberGallery settings page.
+	* 
+	* This can be called from the front-end with: {{ __SELF__.galleryPath() }}
+	* 
+	* @return string Path to the gallery of images to display
+	*/
+   protected function getGalleryPath() {
+	   $galleryPath = Settings::instance()->mediaPath;
+	   
+	   if (!empty(Settings::instance()->base_folder)) {
+		   $galleryPath .= Settings::instance()->base_folder;
+	   }
+	   
+	   if (!empty($this->property('mediaFolder'))) {
+		   $galleryPath .= DIRECTORY_SEPARATOR . $this->property('mediaFolder');
+	   }
+
+	   return $galleryPath;
+   }
 
     /**
      * Retrieve a list of folders under the "Base Media Folder" as set on the 
@@ -214,7 +246,17 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     public function getMediaFolderOptions()
     {
-        return getSubdirectories(Settings::instance()->base_folder);
+		$options = $this->getSubdirectories(Settings::instance()->base_folder);
+		// Debugbar::info(Galleries::select('id', 'name')->orderBy('name')->get()->pluck('name', 'id'));
+
+		// Re-key the collection: https://adamwathan.me/2016/07/14/customizing-keys-when-mapping-collections/
+		$galleries = Galleries::select('id', 'name')->orderBy('name')->get()->reduce(function ($galleries, $gallery) {
+			$galleries->put('[' . $gallery->id . ']', $gallery->name);
+			return $galleries;
+		}, new Collection());
+		$options = $options->merge($galleries); //->pluck('name', 'id'));
+
+		return $options->toArray();
 	}
 	
 	
@@ -232,15 +274,15 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
         // https://hotexamples.com/site/file?hash=0xbf04831db113aec866fc4024ff9bb7faaa2503700d9125560cc67bea8cd6b2cb&fullName=src/MediaManager.php&project=talv86/easel
         $matches = collect($directories)->reduce(function ($allDirectories, $directory) use ($mediaPath) {
             $relativePath = str_replace(@"{$mediaPath}" . DIRECTORY_SEPARATOR, '', $directory);
-            $allDirectories[$relativePath] = $relativePath;
+            $allDirectories[$relativePath] = '/' . $relativePath;
             return $allDirectories;
-        }, collect())->sort()->toArray();
+        }, collect())->sort();
 
-        if (count($matches) == 0) {
+        if ($matches->count() == 0) {
             if (!empty(Settings::instance()->base_folder)) {
-                return [DIRECTORY_SEPARATOR => "Your base folder (" . Settings::instance()->base_folder . ") does not contain any subfolders!"];
+                return collect([DIRECTORY_SEPARATOR => "Your base folder (" . Settings::instance()->base_folder . ") does not contain any subfolders!"]);
             }
-            return [DIRECTORY_SEPARATOR => "Create folders for your media first!"];
+            return collect([DIRECTORY_SEPARATOR => "Create folders for your media first!"]);
         }
         return $matches;
     }

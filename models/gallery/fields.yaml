@@ -1,0 +1,76 @@
+fields:
+    name:
+        span: storm
+        cssClass: col-xs-12 col-md-6 col-lg-4
+        require: true
+        type: text
+        label: zenware.novembergallery::lang.entities.gallery.name_label
+        placeholder: zenware.novembergallery::lang.entities.gallery.name_placeholder
+        attributes:
+            autofocus: ''
+
+    slug:
+        label: zenware.novembergallery::lang.entities.gallery.slug_label
+        span: storm
+        cssClass: col-xs-12 col-md-6 col-lg-4
+        type: text
+        require: true
+        placeholder: zenware.novembergallery::lang.entities.gallery.slug_placeholder
+        preset:
+            field: name
+            type: slug
+
+    published:
+        label: zenware.novembergallery::lang.entities.gallery.published_label
+        type: switch
+        default: true
+        span: storm
+        cssClass: col-xs-12
+
+tabs:
+    fields:
+
+        images:
+            label: zenware.novembergallery::lang.entities.gallery.images_label
+            type: fileupload
+            mode: image
+            #imageHeight: 1200
+            #imageWidth: 1000
+            span: full
+            tab: zenware.novembergallery::lang.forms.tabs.items_label
+
+        # categories:
+        #     commentAbove: zenware.novembergallery::lang.entities.gallery.categories
+        #     type: relation
+        #     tab: zenware.novembergallery::lang.forms.tabs.advanced_label
+
+        description:
+            label: zenware.novembergallery::lang.entities.gallery.description_label
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-lg-6
+            type: textarea
+            size: small
+            tab: zenware.novembergallery::lang.forms.tabs.advanced_label
+            placeholder: zenware.novembergallery::lang.entities.gallery.description_placeholder
+
+        published_at:
+            label: zenware.novembergallery::lang.entities.gallery.published_at_label
+            type: datepicker
+            mode: date
+            span: storm
+            cssClass: col-xs-8 col-sm-4 col-lg-3
+            tab: zenware.novembergallery::lang.forms.tabs.advanced_label
+            trigger:
+                action: enable
+                field: published
+                condition: checked
+
+        preview_image:
+            label: 'zenware.novembergallery::lang.entities.gallery.preview_image_label'
+            type: fileupload
+            mode: image
+            span: storm
+            cssClass: col-xs-12
+            imageHeight: 260
+            imageWidth: 260
+            tab: zenware.novembergallery::lang.forms.tabs.advanced_label

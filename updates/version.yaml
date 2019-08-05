@@ -1,2 +1,5 @@
 1.0.1:
     - First version of NovemberGallery
+1.0.2:
+    - Add "Galleries" menu in back-end
+    - create_gallery_table.php

@@ -14,7 +14,59 @@
         'video_gallery_component_description' => 'Show a gallery of YouTube/Vimeo/Wistia videos, or ogv/webm/mp4 videos uploaded to your site.',
         'custom_gallery_component_name' => 'Image List Only',
         'custom_gallery_component_description' => 'Load the list of image files only, without rendering a gallery. Use this if you wish to write your own code for displaying the images.'
-    ],
+	],
+	
+	'menu' => [
+		'bacendmenuitem_label' => 'Galleries',
+		'galleries' => [
+			'sidemenu' => [
+				'galleries_label' => 'Galleries'
+			]
+		]
+	],
+
+	'entities' => [
+		'common' => [
+			'id_label' => 'ID'
+		],
+		'gallery_label' => 'Gallery',
+		'gallery_new_button' => 'New Gallery',
+		'gallery_update_button' => 'Update Gallery',
+		'gallery_return_to' => 'Back to Galleries',
+		'gallery_confirm_delete' => 'Are you sure you wish to delete this gallery?',
+		'gallery' => [
+			'name_label' => 'Gallery Name',
+			'name_placeholder' => 'Enter Name',
+			'slug_label' => 'Slug',
+			'slug_placeholder' => 'Enter Slug',
+			'images_label' => 'Images',
+			'description_label' => 'Description',
+			'description_placeholder' => 'Enter Description',
+			'published_label' => 'Active',
+			'published_at_label' => 'Published On',
+			'attached_images_count_label' => '# of Images',
+			'created_at_label' => 'Created',
+			'updated_at_label' => 'Updated',
+			'preview_image_label' => 'Preview Image'
+		]
+	],
+
+	'lists' => [
+		'no_records' => 'Nothing to see here!',
+		'delete_selected' => 'Delete Selected',
+		'confirm_delete_selected' => 'Are you sure you wish to delete the selected the records?'
+	],
+
+	'forms' => [
+		'create_label' => 'Create',
+		'update_label' => 'Update',
+		'preview_label' => 'Preview',
+		'tabs' => [
+			'items_label' => 'Items',
+			'advanced_label' => 'Advanced'
+		]
+	],
+
     'settings' => [
 		// Tabs
         'tab_embeddedgallery' => 'Embedded Gallery',
@@ -138,7 +190,7 @@
 		'lightbox_type_compact' => 'Compact',
 
 		// Media Folder
-		'folder_label' => 'Media Folder',
+		'folder_label' => 'Media Folder or Gallery',
 		'folder_label_hint' => 'Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the base folder set on the November Gallery settings page are valid.',
 		'folder_label_placeholder' => 'Select gallery folder',
 		'folder_label_validation_message' => 'The Media Folder can contain only letters, numbers, or the following URL-safe characters: $-_.+!*\'(),/',
@@ -173,7 +225,8 @@
 	],
     'permission' => [
         'tab' => 'November Gallery',
-        'label' => 'Manage Settings'
+		'label' => 'Manage Settings',
+		'access_galleries' => 'Manage Galleries'
 	],
 	'miscellanous' => [
         'switch_on' => 'On',

@@ -40,8 +40,8 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
                 'default'           => '',
                 'type'              => 'dropdown',
                 'placeholder'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_placeholder'),
-                'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
-                'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
+                // 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
+                // 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
             ],
 			'galleryLayout' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_layout_label'),
@@ -262,7 +262,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 
 		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options))
 		{
-			$this->customgalleryscript = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
+			$this->customgalleryscript = $this->page['customgalleryscript'] = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
 		}
 
 		parent::onRun();

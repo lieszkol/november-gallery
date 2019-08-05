@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: zenware.novembergallery::lang.entities.gallery_label
+
+# Model Form Field configuration
+form: ~/plugins/zenware/novembergallery/models/gallery/fields.yaml
+
+# Model Class name
+modelClass: ZenWare\NovemberGallery\Models\Gallery
+
+# Default redirect location
+defaultRedirect: zenware/novembergallery/galleries
+
+# Create page
+create:
+    title: zenware.novembergallery::lang.entities.gallery_new_button
+    redirect: zenware/novembergallery/galleries/update/:id
+    redirectClose: zenware/novembergallery/galleries
+
+# Update page
+update:
+    title: zenware.novembergallery::lang.entities.gallery_update_button
+    redirect: zenware/novembergallery/galleries
+    redirectClose: zenware/novembergallery/galleries
+
+# Preview page
+preview:
+    title: zenware.novembergallery::lang.forms.preview_label

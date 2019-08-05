@@ -129,7 +129,7 @@ class VideoGallery extends NovemberGalleryComponentBase {
      */
     public function getVideoFolderOptions()
     {
-        return getSubdirectories(Settings::instance()->base_video_folder);
+        return getSubdirectories(Settings::instance()->base_video_folder)->toArray();
 	}
 
 	/**
