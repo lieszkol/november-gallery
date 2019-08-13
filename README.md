@@ -330,14 +330,13 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
-`fileBasename` | string | [Base name of the file](https://www.php.net/manual/en/splfileinfo.getbasename.php), for example: picture-1.jpg
+`fileNameWithoutExtension` | string | F(https://www.php.net/manual/en/splfileinfo.getbasename.php), for example: picture-1.jpg
 `fileATime` | UNIX time | [Last access time of the file](https://www.php.net/manual/en/splfileinfo.getatime.php), for example: 1550704585
 `fileCTime` | string | [Inode change time](https://www.php.net/manual/en/splfileinfo.getctime.php), for example: 1550704585
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
 `fileMTime` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
 `filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
-`filePathname` | string | [Path to the file](https://www.php.net/manual/en/splfileinfo.getpathname.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
 `fileType` | string | [Gile type](https://www.php.net/manual/en/splfileinfo.gettype.php), for example: "file"
@@ -402,11 +401,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDExMTUzNywtODQwODY3OTgwLDM0OT
-I1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIz
-LDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMT
-U4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUw
-NzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLD
-E5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTExMzI4MzMyOTIsLTE1
-OTI2OTk4MjhdfQ==
+eyJoaXN0b3J5IjpbLTEwNTA2MjkwMjcsLTYzNDExMTUzNywtOD
+QwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1Njgx
+OSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNj
+Q0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5
+OTc5MywtNjMwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjExNTYyLC
+0xODI5ODY0MDYzLDE5NzUyOTMyNTcsLTE4ODIyODE2NjIsLTEx
+MzI4MzMyOTJdfQ==
 -->
