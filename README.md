@@ -330,18 +330,15 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 Property | Type | Description
 --|--|--
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
-`fileATime` | UNIX time | [Last access time of the file](https://www.php.net/manual/en/splfileinfo.getatime.php), for example: 1550704585
-`fileCTime` | string | [Inode change time](https://www.php.net/manual/en/splfileinfo.getctime.php), for example: 1550704585
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
 `fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
-`fileMTime` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
 `filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
 `fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`fileType` | string | [Gile type](https://www.php.net/manual/en/splfileinfo.gettype.php), for example: "file"
 `relativeMediaFilePath` | string | Path to file relative to the media folder, for example: <small>/my-galleries/gallery-1/picture-1.jpg</small>
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
+`uploaded` | string | [Inode change time] (https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
 <br>
@@ -401,11 +398,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
-A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
-LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
-QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
-NzkzLC02MzAyNTA3NjYsLTIwNTg1MjU0NTQsNzQyMTE1NjIsLT
-E4Mjk4NjQwNjMsMTk3NTI5MzI1NywtMTg4MjI4MTY2MiwtMTEz
-MjgzMzI5Ml19
+eyJoaXN0b3J5IjpbMTI2NDY5MjAyNCwxNzI5MzA4OTA3LC02Mz
+QxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0
+Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
+U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
+NjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NC
+w3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgy
+MjgxNjYyXX0=
 -->
