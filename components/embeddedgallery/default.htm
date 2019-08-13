@@ -7,13 +7,14 @@
 <div id="{{__SELF__.id}}" style="display:none;">
 	{% verbatim %}
 	<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
-		<img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
+		<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
 	{% endverbatim %}
 	{% for galleryitem in galleryitems.sortBy('fileName') %}
 		<!-- {{ galleryitem.galleryItemSrc }} -->
-        <img alt="" src="{{ galleryitem.galleryItemSrc }}"
-		data-image="{{ galleryitem.relativeMediaFilePath | media }}"
-		data-description="">
+        <img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
+			data-image="{{ galleryitem.url }}"
+			data-description="{{ galleryitem.description }}"
+			data-title="{{ galleryitem.title }}" />
     {% endfor %}
 </div>
 

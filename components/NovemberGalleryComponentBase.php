@@ -181,8 +181,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			if ($gallery && $gallery->count() == 1)
 			{
 				foreach($gallery->images->take($maxImages) as $image) {
-					//Debugbar::info($image);
-					$images->push(GalleryItem::createFromMetadata($this, $image->getPath(), $image->title, $image->description));
+					// Debugbar::info($image);
+					$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 				}
 			}
 		} 
@@ -203,8 +203,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			$i = 1;
 			foreach ($files as $file) {
 				if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
-					// List of methods available: http://php.net/manual/en/splfileinfo.getfilename.php
-					$images->push(GalleryItem::createFromFile($this, $file));
+					$images->push(GalleryItem::createFromPhpFile($this, $file));
 				}
 				if ($i >= $maxImages) break;
 				$i++;

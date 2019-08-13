@@ -4,11 +4,29 @@ namespace ZenWare\NovemberGallery\Classes;
 use ZenWare\NovemberGallery\Models\Settings;
 use ToughDeveloper\ImageResizer\Classes\Image;
 use Config;
-// use Debugbar;
+//  use Debugbar;
 
 /**
  * GalleryItem Model
+ * 
+ * System\Models\File {#2420
  */
+//   +attributes: array:14 [
+//     "id" => 404
+//     "disk_name" => "5d484a03960a1707954439.jpg"
+//     "file_name" => "1014D165M.jpg"
+//     "file_size" => 297070
+//     "content_type" => "image/jpeg"
+//     "title" => null
+//     "description" => null
+//     "field" => "images"
+//     "attachment_id" => "1"
+//     "attachment_type" => "ZenWare\NovemberGallery\Models\Gallery"
+//     "is_public" => 1
+//     "sort_order" => 1
+//     "created_at" => "2019-08-05 15:23:47"
+//     "updated_at" => "2019-08-05 15:40:31"
+//   ]
 class GalleryItem
 {
 	private $component;
@@ -17,25 +35,14 @@ class GalleryItem
 
 	public $description;
 
-    public $file;
+	public $file;
+	
+	public $octoberImageFile;
 
 	/**
-     * @var string Base name of the file, for example: picture-1.jpg
-	 * See: https://www.php.net/manual/en/splfileinfo.getbasename.php
+     * @var string Base name of the file without extension, for example: picture-1
      */
-	public $fileBasename;
-
-	/**
-     * @var string Gets last access time of the file, for example: 1550704585
-	 * See: https://www.php.net/manual/en/splfileinfo.getatime.php
-     */
-	public $fileATime;
-
-	/**
-     * @var string Gets the inode change time, for example: 1550704585
-	 * See: https://www.php.net/manual/en/splfileinfo.getctime.php
-     */
-	public $fileCTime;
+	public $fileNameWithoutExtension;
 
 	/**
      * @var string Gets the file extension, for example: jpg
@@ -50,22 +57,10 @@ class GalleryItem
 	public $fileName;
 
 	/**
-     * @var string Gets the last modified time, for example: 1550704585
-	 * See: https://www.php.net/manual/en/splfileinfo.getmtime.php
-     */
-	public $fileMTime;
-
-	/**
      * @var string Gets the path without filename, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1
 	 * See: https://www.php.net/manual/en/splfileinfo.getpath.php
      */
 	public $filePath;
-
-	/**
-     * @var string Gets the path to the file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
-	 * See: https://www.php.net/manual/en/splfileinfo.getpathname.php
-     */
-	public $filePathname;
 
 	/**
      * @var string Gets absolute path to file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
@@ -74,26 +69,27 @@ class GalleryItem
 	public $fileRealPath;
 
 	/**
+     * @var string Gets the path to the file, for example: /var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg
+	 * See: https://www.php.net/manual/en/splfileinfo.getpathname.php
+     */
+	// public $filePathname; -- Redundant!
+
+	/**
      * @var string Gets file size, in bytes, for example: 404779
 	 * See: https://www.php.net/manual/en/splfileinfo.getsize.php
      */
 	public $fileSize;
 
 	/**
-     * @var string Gets file type, for example: "file"
-	 * See: https://www.php.net/manual/en/splfileinfo.gettype.php
-     */
-	public $fileType;
-
-	/**
-     * @var string Path to file relative to the media folder, for example: /my-galleries/gallery-1/picture-1.jpg
-     */
-	public $relativeMediaFilePath;
-
-	/**
      * @var string Path to file relative to the website, for example: /storage/app/media/my-galleries/gallery-1/picture-1.jpg
      */
 	public $relativeFilePath;
+
+	/**
+     * @var string Gets the time the file was uploaded (or last changed) using filemtime as a PHP DateTime object, you can then: $currentTime->format( 'c' );
+	 * See: https://www.php.net/manual/en/splfileinfo.getctime.php
+     */
+	public $uploaded;
 
 	/**
      * @var string URL to file, for example: https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg
@@ -106,33 +102,71 @@ class GalleryItem
 	}
 
 	// https://stackoverflow.com/questions/2169448/why-cant-i-overload-constructors-in-php
-	public static function createFromFile($component, $file)
+	public static function createFromPhpFile($component, $file)
     {
+		// List of methods available: http://php.net/manual/en/splfileinfo.getfilename.php
 		$galleryItem = new GalleryItem($component);
 		$galleryItem->file = $file;
-		$galleryItem->fileBasename = $file->getBasename();
-		$galleryItem->fileATime = $file->getATime();
-		$galleryItem->fileCTime = $file->getCTime();
+		$galleryItem->fileNameWithoutExtension = $file->getBasename('.'.$file->getExtension());
 		$galleryItem->fileExtension = $file->getExtension();
 		$galleryItem->fileName = $file->getFilename();
-		$galleryItem->fileMTime = $file->getMTime();
 		$galleryItem->filePath = $file->getPath();
-		$galleryItem->filePathname = $file->getPathname();
 		$galleryItem->fileRealPath = $file->getRealPath();
 		$galleryItem->fileSize = $file->getSize();
-		$galleryItem->fileType = $file->getType();
-		$galleryItem->relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
-		$galleryItem->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $galleryItem->relativeMediaFilePath;
-		$galleryItem->url = url(Config::get('cms.storage.media.path') . '/' . $galleryItem->relativeMediaFilePath);
+		$relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
+		$galleryItem->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath;
+		$galleryItem->uploaded = \DateTime::createFromFormat('U', $file->getMTime());
+		$galleryItem->url = url(Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath);
+		// $galleryItem->title = $octoberImageFile->title;
+		// $galleryItem->description = $octoberImageFile->description;
 		return $galleryItem;
 	}
 
-	public static function createFromMetadata($component, $filePath, $title, $description)
+	
+	/*
+	 * https://github.com/octobercms/library/blob/master/src/Database/Attach/File.php
+	 * Also see: https://octobercms.com/docs/database/attachments
+	 * https://octobercms.com/docs/database/model#file-attachments
+	 * 
+	 * System\Models\File {#2747
+	 * 	#table: "system_files"
+	 * 	+attributes: array:14 [
+	 * 		"id" => 404
+	 * 		"disk_name" => "5d484a03960a1707954439.jpg"
+	 * 		"file_name" => "1014D165M.jpg"
+	 * 		"file_size" => 297070
+	 * 		"content_type" => "image/jpeg"
+	 * 		"title" => "Ki nem élvez egy kis hintózást? És a nagy nap közepén az út egy percnyi pihenést nyújthat a lagzi kezdete előtt."
+	 * 		"description" => ""
+	 * 		"field" => "images"
+	 * 		"attachment_id" => "1"
+	 * 		"attachment_type" => "ZenWare\NovemberGallery\Models\Gallery"
+	 * 		"is_public" => 1
+	 * 		"sort_order" => 1
+	 * 		"created_at" => "2019-08-05 15:23:47"
+	 * 		"updated_at" => "2019-08-13 20:24:27"
+	 * 	]
+	 * 	}
+	 */
+	public static function createFromOctoberImageFile($component, $octoberImageFile)
     {
 		$galleryItem = new GalleryItem($component);
-		$galleryItem->filePath = $filePath;
-		$galleryItem->title = $title;
-		$galleryItem->description = $description;
+		$galleryItem->octoberImageFile = $octoberImageFile;
+		$galleryItem->fileNameWithoutExtension = substr($octoberImageFile->disk_name, 0, strlen($octoberImageFile->disk_name) - strlen($octoberImageFile->getExtension()) - 1);
+		$galleryItem->fileExtension = $octoberImageFile->getExtension();	// "jpg"
+		$galleryItem->fileName = $octoberImageFile->disk_name;
+		$galleryItem->filePath = substr($octoberImageFile->getLocalPath(), 0, strlen($octoberImageFile->getLocalPath()) - strlen($octoberImageFile->disk_name) - 1);
+		$galleryItem->fileRealPath = $octoberImageFile->getLocalPath();	// "/var/www/yesinbudapest.com/public_html/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
+		$galleryItem->fileSize = $octoberImageFile->file_size;
+		$galleryItem->relativeFilePath = Config::get('cms.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')));	// /storage/app/media/my-galleries/gallery-1/picture-1.jpg
+		$galleryItem->uploaded = new \DateTime($octoberImageFile->created_at->toDateTimeString());	// created_at is "Argon": https://octobercms.com/docs/api/october/rain/argon/argon
+		$galleryItem->url = $octoberImageFile->getPath();		// "https://www.yesinbudapest.com/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
+		$galleryItem->title = $octoberImageFile->title;
+		$galleryItem->description = $octoberImageFile->description;
+		//Debugbar::info(storage_path());	// /var/www/yesinbudapest.com/public_html/storage
+		//Debugbar::info(storage_path('app/uploads/'));	// /var/www/yesinbudapest.com/public_html/storage/app/uploads/
+		//Debugbar::info(Config::get('cms.storage.uploads.path'));	// /storage/app/uploads
+		// Debugbar::info(new \DateTime($octoberImageFile->created_at->toDateTimeString()));
 		return $galleryItem;
 	}
 
@@ -169,7 +203,11 @@ class GalleryItem
 				$this->component->getThumbnailHeight(),
                 $options);
         }
-        else 
+		elseif (isset($this->octoberImageFile))
+		{
+			return $this->octoberImageFile->getThumb($this->component->getThumbnailWidth(), $this->component->getThumbnailHeight(), ['mode' => 'crop']);
+		}
+		else 
         {
             return $this->relativeFilePath;
         }

@@ -7,19 +7,20 @@
 	<div id="{{__SELF__.id}}" style="display:none;">
 		{% verbatim %}
 		<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
-			<img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
+			<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
 		{% endverbatim %}
 		{% for galleryitem in galleryitems.sortBy('fileName') %}
-			<img alt="" src="{{ galleryitem.galleryItemSrc }}"
-			data-image="{{ galleryitem.relativeMediaFilePath | media }}"
-			data-description="">
-			<div 	data-type="html5video"
-					data-image="http://video-js.zencoder.com/oceans-clip.png"
-					data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
-					data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
-					data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
-					data-title="Birds"
-					data-description="html5 video description"></div>
+		<img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
+			data-image="{{ galleryitem.url }}"
+			data-description="{{ galleryitem.description }}"
+			data-title="{{ galleryitem.title }}" />
+		<div 	data-type="html5video"
+				data-image="http://video-js.zencoder.com/oceans-clip.png"
+				data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
+				data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
+				data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
+				data-title="Birds"
+				data-description="html5 video description"></div>
 		{% endfor %}
 	</div>
 </div>
