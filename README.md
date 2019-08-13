@@ -338,7 +338,7 @@ Property | Type | Description
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
 `relativeMediaFilePath` | string | Path to file relative to the media folder, for example: <small>/my-galleries/gallery-1/picture-1.jpg</small>
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-`uploaded` | string | [Inode change time] (https://www.php.net/manual/en/splfileinfo.getmtime.php), for example: 1550704585
+`uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: $currentTime->format( 'c' );
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
 <br>
@@ -398,7 +398,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDY5MjAyNCwxNzI5MzA4OTA3LC02Mz
+eyJoaXN0b3J5IjpbMTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02Mz
 QxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0
 Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
 U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
