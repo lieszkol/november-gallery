@@ -42,7 +42,8 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [ ] Alternative lightbox/carousel gallery script support
  - [ ] Sort the displayed images by file date, date taken, or filename
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
- - [ ] Extensive help docs
+ - [ ] Extensive help docs / cookbook
+ - [ ] Cache image data in database instead of reading it all in from the filesystem every time
 
 # Deployment
 
@@ -412,11 +413,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5ND
-EzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUz
-NywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMD
-c1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2
-LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMT
-YzMjA5OTc5MywtNjMwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjEx
-NTYyXX0=
+eyJoaXN0b3J5IjpbMTYzMjM3MzY1NSwxNDMwNDgxNDEzLDEyND
+kyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4MDEsMTcyOTMwODkw
+NywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0LC03Mz
+M3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEz
+LC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2MjAsNj
+YzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1
+MjU0NTRdfQ==
 -->
