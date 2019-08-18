@@ -322,7 +322,7 @@ also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collec
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```html
 {% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
-   <img src="{{ galleryitem.galleryItemSrc }}" />
+   <img src="{{ galleryitem.url }}" />
 {% endfor %}
 ```
 <details>
@@ -412,11 +412,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
-kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
-NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMD
-Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
-NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
-0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
-OTMyNTddfQ==
+eyJoaXN0b3J5IjpbMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3Mz
+ExOTgwMSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4
+MCwzNDkyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMD
+ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
+MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
+YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
+NDA2M119
 -->
