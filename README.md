@@ -9,8 +9,10 @@ Check out the [live demo site](https://novembergallery.zenware.io)!
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
  1. Upload your images using the Media Manager built into OctoberCMS
- 2. Drop November Gallery onto your page or partial
+ 2. Drop November Gallery onto your page or partial*
  3. Select the folder you uploaded your images to and how you want them displayed
+
+*please read 
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
 
@@ -398,11 +400,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02Mz
-QxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0
-Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
-U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
-NjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2NiwtMjA1ODUyNTQ1NC
-w3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1MjkzMjU3LC0xODgy
-MjgxNjYyXX0=
+eyJoaXN0b3J5IjpbLTI3NDE3MjcxMSwxNDczMTE5ODAxLDE3Mj
+kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
+NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMD
+Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
+NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
+0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
+OTMyNTddfQ==
 -->
