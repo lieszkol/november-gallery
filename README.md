@@ -374,7 +374,7 @@ If the plugin encounters an error, you can find the error description here.
 # Known Issues
 
 ### Issue including CSS when used in a partial
-OctoberCMS has a known issue where if a component is dropped into a partial, th
+OctoberCMS has a known issue where if a component is dropped into a partial then any CSS that is added to the page by the partial is never actually rendered. This only occurs if the partial is directly inside of a layout, and if the  that is included in a layout, and that partial attempts to add CSS, then tha
 
 # Support
 
@@ -406,11 +406,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQwNTk0ODUsMTQ3MzExOTgwMSwxNz
-I5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMx
-NjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMj
-A0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2
-ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1MDc2Ni
-wtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2NDA2MywxOTc1
-MjkzMjU3XX0=
+eyJoaXN0b3J5IjpbODU2NjE5ODQ0LDE0NzMxMTk4MDEsMTcyOT
+MwODkwNywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0
+LC03MzM3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
+g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
+MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
+IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
+MzI1N119
 -->
