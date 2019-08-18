@@ -371,6 +371,11 @@ Type: string
 If the plugin encounters an error, you can find the error description here.
 </details>
 
+# Known Issues
+
+### Issue including CSS when used in a partial
+OctoberCMS has a known issue where if a component is dropped into a partial, th
+
 # Support
 
 Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome.
@@ -401,7 +406,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTkyODM1NzcsMTQ3MzExOTgwMSwxNz
+eyJoaXN0b3J5IjpbLTE4MDQwNTk0ODUsMTQ3MzExOTgwMSwxNz
 I5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMx
 NjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMj
 A0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2
