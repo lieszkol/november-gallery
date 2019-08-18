@@ -374,11 +374,13 @@ If the plugin encounters an error, you can find the error description here.
 # Known Issues
 
 ### Issue including CSS when used in a partial
-OctoberCMS has a known issue where if a component is dropped into a partial then any CSS that is added to the page by the partial is never actually rendered. This only occurs if the partial is directly inside of a layout, and if the `{% styles %}` tag is included before the partial.
+OctoberCMS has a [known issue](https://stackoverflow.com/questions/53815815/on-octobercms-inject-css-from-partial) where if a component is dropped into a partial then any CSS that is added to the page by the partial is never actually rendered. This only occurs if the partial is directly inside of a layout, and if the `{% styles %}` tag is included before the partial.
 
 Workarounds:
 
- - Add your `{% styles %}` *after* your `{% partial "..." %}
+ - Add your `{% styles %}` *after* your `{% partial "..." %}`
+ - OR Put your partial inside of a page, and include the page in the layout
+ - OR Manually add the required CSS to your layout
 
 # Support
 
@@ -410,11 +412,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2NTcwOTkwLDE0NzMxMTk4MDEsMTcyOT
-MwODkwNywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0
-LC03MzM3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
-g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
-MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLT
-IwNTg1MjU0NTQsNzQyMTE1NjIsLTE4Mjk4NjQwNjMsMTk3NTI5
-MzI1N119
+eyJoaXN0b3J5IjpbMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
+kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
+NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMD
+Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
+NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUwNzY2LC
+0yMDU4NTI1NDU0LDc0MjExNTYyLC0xODI5ODY0MDYzLDE5NzUy
+OTMyNTddfQ==
 -->
