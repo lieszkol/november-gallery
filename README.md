@@ -100,7 +100,7 @@ ZenWare.NovemberGallery
 
 # Usage
 
-For further usage examples and documentation please see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
+For further usage examples and documentation please see [The NovemberGallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
 
 ### (1) Prepare and Upload your Images
 
@@ -172,7 +172,7 @@ Property | Inspector Name | Description
 `galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 `galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 
-For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Manual](https://its.zensoft.hu/books/november-gallery-for-octobercms)
+For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
 
 ### [Customizing the Gallery]
 
@@ -412,11 +412,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3Mz
-ExOTgwMSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4
-MCwzNDkyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMD
-ExMzEyMywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcy
-MSwtMTE1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLT
-YzMDI1MDc2NiwtMjA1ODUyNTQ1NCw3NDIxMTU2MiwtMTgyOTg2
-NDA2M119
+eyJoaXN0b3J5IjpbMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5ND
+EzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUz
+NywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMD
+c1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2
+LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMT
+YzMjA5OTc5MywtNjMwMjUwNzY2LC0yMDU4NTI1NDU0LDc0MjEx
+NTYyXX0=
 -->
