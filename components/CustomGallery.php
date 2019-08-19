@@ -26,8 +26,8 @@ class CustomGallery extends NovemberGalleryComponentBase {
                 'default'           => '',
                 'type'              => 'dropdown',
                 'placeholder'       => 'Select gallery folder',
-                'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
-                'validationMessage' => 'The Media Folder can contain only letters, numbers, or the following URL-safe characters: $-_.+!*\'(),/'
+                // 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
+                // 'validationMessage' => 'The Media Folder can contain only letters, numbers, or the following URL-safe characters: $-_.+!*\'(),/'
             ]
         ]);
     }

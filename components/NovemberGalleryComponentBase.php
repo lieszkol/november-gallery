@@ -178,7 +178,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			// We have a gallery uploaded using the NovemberGallery backend menu
 			
 			$gallery = Galleries::find(substr($this->property('mediaFolder'), 1, strlen($this->property('mediaFolder')) - 2));
-			if ($gallery && $gallery->count() == 1)
+			if ($gallery) // && $gallery->count() == 1 does not work for some reason, I am getting "2"??
 			{
 				foreach($gallery->images->take($maxImages) as $image) {
 					// Debugbar::info($image);

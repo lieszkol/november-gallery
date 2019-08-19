@@ -37,6 +37,21 @@ class Plugin extends PluginBase
             'ZenWare\NovemberGallery\Components\CustomGallery' => 'customGallery',
             'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
         ];
+	}
+	
+	/**
+	 * Registers components as snippets. For the life of me I cannot find any documentation on this - but this seems to be the way to do it.
+	 * We don't include the customGallery since there's not much a user could do with it on a "Pages page".
+     *
+     * @return array Component path => component name
+	 */
+    public function registerPageSnippets()
+    {
+        return [
+            'ZenWare\NovemberGallery\Components\EmbeddedGallery' => 'embeddedGallery',
+            'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
+            'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
+        ];
     }
 
      /**

@@ -40,6 +40,26 @@ class GalleryItem
 	public $octoberImageFile;
 
 	/**
+     * @var string Image width, see https://www.php.net/manual/en/function.getimagesize.php
+     */
+	public $width;
+
+	/**
+     * @var string Image height, see https://www.php.net/manual/en/function.getimagesize.php
+     */
+	public $height;
+
+	/**
+     * @var string Image type, see https://www.php.net/manual/en/function.getimagesize.php
+     */
+	public $type;
+
+	/**
+     * @var string Will be "horizontal", "vertical", or "square" depending on whether the image is wider than it is tall
+     */
+	public $orientation;
+
+	/**
      * @var string Base name of the file without extension, for example: picture-1
      */
 	public $fileNameWithoutExtension;
@@ -113,12 +133,28 @@ class GalleryItem
 		$galleryItem->filePath = $file->getPath();
 		$galleryItem->fileRealPath = $file->getRealPath();
 		$galleryItem->fileSize = $file->getSize();
-		$relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPathname());
+		$relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getRealPath());
 		$galleryItem->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath;
 		$galleryItem->uploaded = \DateTime::createFromFormat('U', $file->getMTime());
 		$galleryItem->url = url(Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath);
 		// $galleryItem->title = $octoberImageFile->title;
+		// $galleryItem->title = $octoberImageFile->title;
+		// $galleryItem->title = $octoberImageFile->title;
+		// $galleryItem->title = $octoberImageFile->title;
+		
+		
 		// $galleryItem->description = $octoberImageFile->description;
+		list($galleryItem->width, $galleryItem->height, $galleryItem->type, $attr) = getimagesize($galleryItem->fileRealPath);
+		if ($galleryItem->width == $galleryItem->height) 
+		{
+			$galleryItem->orientation = 'square';
+		} elseif ($galleryItem->width > $galleryItem->height) 
+		{
+			$galleryItem->orientation = 'horizontal';
+		} else {
+			$galleryItem->orientation = 'vertical';
+		}
+
 		return $galleryItem;
 	}
 
@@ -167,6 +203,18 @@ class GalleryItem
 		//Debugbar::info(storage_path('app/uploads/'));	// /var/www/yesinbudapest.com/public_html/storage/app/uploads/
 		//Debugbar::info(Config::get('cms.storage.uploads.path'));	// /storage/app/uploads
 		// Debugbar::info(new \DateTime($octoberImageFile->created_at->toDateTimeString()));
+
+		list($galleryItem->width, $galleryItem->height, $galleryItem->type, $attr) = getimagesize($galleryItem->fileRealPath);
+		if ($galleryItem->width == $galleryItem->height) 
+		{
+			$galleryItem->orientation = 'square';
+		} elseif ($galleryItem->width > $galleryItem->height) 
+		{
+			$galleryItem->orientation = 'horizontal';
+		} else {
+			$galleryItem->orientation = 'vertical';
+		}
+
 		return $galleryItem;
 	}
 
