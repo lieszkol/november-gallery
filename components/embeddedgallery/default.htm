@@ -10,8 +10,7 @@
 		<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
 	{% endverbatim %}
 	{% for galleryitem in galleryitems.sortBy('fileName') %}
-		<!-- {{ galleryitem.galleryItemSrc }} -->
-        <img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
+		<img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
 			data-image="{{ galleryitem.url }}"
 			data-description="{{ galleryitem.description }}"
 			data-title="{{ galleryitem.title }}" />

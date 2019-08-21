@@ -168,7 +168,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
     public function InjectScripts() {
 		if (Settings::instance()->inject_unitegallery_assets) 
 		{
-	        $this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
+			$this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
 			$this->addJs('assets/unitegallery/dist/js/unitegallery.min.js');
 			switch($this->getGalleryLayout()) 
 			{

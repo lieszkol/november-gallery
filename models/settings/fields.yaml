@@ -115,6 +115,27 @@ tabs:
                 field: custom_gallery_script_enabled
                 condition: checked
 
+        section_swiper_defaults:
+            label: zenware.novembergallery::lang.settings.section_swiper_defaults_label
+            type: section
+        default_swiper_effect:
+            label: zenware.novembergallery::lang.settings.default_swiper_effect_label
+            comment: zenware.novembergallery::lang.settings.default_swiper_effect_comment
+            commentHtml: true,
+            type: dropdown
+            options:
+                'slide': zenware.novembergallery::lang.settings.swiper_effect_slide
+                'fade': zenware.novembergallery::lang.settings.swiper_effect_fade
+                'cube': zenware.novembergallery::lang.settings.swiper_effect_cube
+                'coverflow': zenware.novembergallery::lang.settings.swiper_effect_coverflow
+                'flip': zenware.novembergallery::lang.settings.swiper_effect_flip
+            default: 'slide'
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
+            required: true
+
         ##
         #   Pop-up Lightbox Gallery Settings
         #
@@ -170,6 +191,7 @@ tabs:
             tab: zenware.novembergallery::lang.settings.tab_videogallery
             label: zenware.novembergallery::lang.settings.base_video_folder_label
             comment: zenware.novembergallery::lang.settings.base_video_folder_comment
+            default: '<inherit>'
             type: dropdown
             span: left
             emptyOption: zenware.novembergallery::lang.settings.base_folder_emptyoption
@@ -235,6 +257,19 @@ tabs:
                 field: custom_video_gallery_script_enabled
                 condition: checked
         
+
+        ##
+        #   Blog Component Settings
+        #
+        base_blogmedia_folder:
+            tab: zenware.novembergallery::lang.settings.tab_blogcomponent
+            label: zenware.novembergallery::lang.settings.base_blogmedia_folder_label
+            comment: zenware.novembergallery::lang.settings.base_blogmedia_folder_comment
+            default: '<inherit>'
+            type: dropdown
+            span: left
+            emptyOption: zenware.novembergallery::lang.settings.base_blogmedia_folder_emptyoption
+            required: true
 
         ##
         #   Image Resizer Settings
@@ -372,6 +407,18 @@ tabs:
             tab: zenware.novembergallery::lang.settings.tab_advanced
             label: zenware.novembergallery::lang.settings.inject_unitegallery_assets
             comment: zenware.novembergallery::lang.settings.inject_unitegallery_assets_comment
+            type: switch
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
+            default: true
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
+            containerAttributes: 
+                style: 'clear: left;'
+        inject_swiper_assets:
+            tab: zenware.novembergallery::lang.settings.tab_advanced
+            label: zenware.novembergallery::lang.settings.inject_swiper_assets
+            comment: zenware.novembergallery::lang.settings.inject_swiper_assets_comment
             type: switch
             on: zenware.novembergallery::lang.miscellanous.switch_on
             off: zenware.novembergallery::lang.miscellanous.switch_off

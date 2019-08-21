@@ -8,6 +8,8 @@
 		// Components
 		'embedded_gallery_component_name' => 'Embedded Gallery',
         'embedded_gallery_component_description' => 'Show a gallery of images in your page using various layouts, with optional full-screen (lightbox-style) viewing.',
+        'swiper_gallery_component_name' => 'Swiper Gallery',
+        'swiper_gallery_component_description' => 'Show a modern, responsive gallery where the images can be swiped left and right on any device.',
         'popup_gallery_component_name' => 'Popup Lightbox',
         'popup_gallery_component_description' => 'Include a lightbox-style "pop-up" gallery that is only shown when the user clicks on an element (such as a link/button/image).',
         'video_gallery_component_name' => 'Video Gallery',
@@ -67,35 +69,39 @@
 		]
 	],
 
+	'rainlab_blog_post' => [
+		'gallery_selector_hint' => 'Which galleries would you like to add to this post?',
+		'tab_label' => 'Galleries',
+		'folder_label' => 'Media Folder',
+	],
+
     'settings' => [
 		// Tabs
-        'tab_embeddedgallery' => 'Embedded Gallery',
+        'tab_embeddedgallery' => 'Image Gallery',
         'tab_lightbox' => 'Popup Lightbox',
         'tab_videogallery' => 'Video Gallery',
+        'tab_blogcomponent' => 'Blog Integration',
         'tab_imageresizer' => 'Thumbnails',
         'tab_advanced' => 'Advanced',
         'tab_documentation' => 'Help!',
 
+		// Image Gallery Options
 		// Base Media Folder
         'base_folder_label' => 'Base Media Folder',
         'base_folder_comment' => 'Gallery components will only show subfolders of the folder you select here.',
         'base_folder_emptyoption' => '-- Media Root --',
-
 		// Section Embedded Gallery Defaults
         'section_gallery_defaults_label' => 'Embedded Gallery Defaults',
-        
 		// Gallery Layout
         'default_gallery_label' => 'Gallery Layout',
         'default_gallery_comment' => 'Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each',
         'default_gallery_tiles' => 'Tiles',
         'default_gallery_carousel' => 'Carousel',
         'default_gallery_combined' => 'Combined',
-        'default_gallery_slider' => 'Slider',
-        
+		'default_gallery_slider' => 'Slider',
 		// Custom Gallery Script
 		'custom_gallery_script_enabled_label' => 'Custom Embedded Gallery Script',
         'custom_gallery_script_enabled_comment' => 'Set your own initialization script and options for the "Embedded Gallery" component (disables setting various options above)',
-        
 		'custom_gallery_script_label' => 'Custom Embedded Gallery Script',
 		'custom_gallery_script_hint' => 'You can find information about the plethora of options available at <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a>. You can also insert any custom javascript to run before or after the gallery initialization here.<br>The gallery ID will be the alias of the component, since we cannot know this beforehand, refer to "#gallery" in your script and it will be replaced with the component alias. So your script might look something like this (setting the width to 100% as an example option): <br><pre>jQuery("#gallery").unitegallery({<br>&nbsp;&nbsp;&nbsp;gallery_width:"100%"<br>});</pre>',        
 		// Tiles Layout
@@ -104,50 +110,70 @@
         'gallery_tiles_layout_justified' => 'Justified',
         'gallery_tiles_layout_nested' => 'Nested',
         'gallery_tiles_layout_grid' => ' Grid',
-
 		// Combined Layout
         'gallery_combined_layout_label' => 'Thumbnails Layout',
         'gallery_combined_layout_default' => 'Normal (default)',
         'gallery_combined_layout_compact' => 'Compact',
-        'gallery_combined_layout_grid' => 'Grid',
+		'gallery_combined_layout_grid' => 'Grid',
+		
+		// Section Embedded Gallery Defaults
+        'section_swiper_defaults_label' => 'Swiper Defaults',
+		// Swiper Effects
+		'swiper' => 'Swiper',
+        'default_swiper_effect_label' => 'Default Swiper Effect',
+        'default_swiper_effect_comment' => 'Check out <a href="https://idangero.us/swiper/demos/" target="_blank">igangero.us/swiper</a> for live demos of each',
+		'swiper_effect_slide' => 'Slide',
+        'swiper_effect_fade' => 'Fade',
+        'swiper_effect_cube' => 'Cube',
+        'swiper_effect_coverflow' => 'Coverflow',
+        'swiper_effect_flip' => 'Flip',
 
-		// Lightbox
+
+
+		// Popup-Lightbox Options
         'section_lightbox_defaults_label' => 'Lightbox Defaults',
-
 		'custom_lightbox_script_enabled_label' => 'Custom Popup Lightbox Script',
         'custom_lightbox_script_enabled_comment' => 'Set your own initialization script and options for the "Popup Lightbox" component',
-                
 		'custom_lightbox_script_hint' => 'For available options, see <a href="http://unitegallery.net/index.php?page=carousel-options" target="_blank">UniteGallery.net, Carousel - Including and Options</a>.<br>The gallery ID will be the alias of the component, since we cannot know this beforehand, refer to "#gallery" in your script and it will be replaced with the component alias. So your script might look something like this (setting the width to 100% as an example option): <br><pre>jQuery("#gallery").unitegallery({<br>&nbsp;&nbsp;&nbsp;lightbox_type: "wide"<br>});</pre>',
 		'custom_lightbox_script_label' => 'Custom Popup Lightbox Script',
 
-		// Base Video Folder
+
+
+		// Video Gallery Options
         'base_video_folder_label' => 'Base Videos Folder',
         'base_video_folder_comment' => 'Video component will only show subfolders of the folder you select here.',
         'base_video_folder_emptyoption' => '-- Media Root --',
-
+        'base_video_folder_sameasimagegalleryoption' => '-- Image Gallery Base Media Folder --',
         // Video Gallery:
 		'section_videogallery_defaults_label' => 'Video Gallery Defaults',
-
 	   	'default_video_gallery_label' => 'Video Gallery Layout',
 	   	'default_video_gallery_comment' => 'Check out <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a> for live examples of each',
 		'video_gallery_right_thumb' => 'Thumbnails',
         'video_gallery_right_title_only' => 'Titles Only',
         'video_gallery_right_no_thumb' => 'No Thumbnails',
-
 		'custom_video_gallery_script_enabled_label' => 'Custom Video Gallery Script',
         'custom_video_gallery_script_enabled_comment' => 'Set your own initialization script and options for the "Video Gallery" component',
-	
 		'custom_video_gallery_script_label' => 'Custom Video Gallery Script',
 		'custom_video_gallery_script_hint' => 'You can find information about the plethora of options available at <a href="http://unitegallery.net" target="_blank">UniteGallery.net</a>. You can also insert any custom javascript to run before or after the gallery initialization here.<br>The gallery ID will be the alias of the component, since we cannot know this beforehand, refer to "#gallery" in your script and it will be replaced with the component alias. So your script might look something like this (setting the width to 100% as an example option): <br><pre>jQuery("#gallery").unitegallery({<br>&nbsp;&nbsp;&nbsp;gallery_theme: "video",<br>&nbsp;&nbsp;&nbsp;theme_skin: "right-thumb"<br>});</pre>',
         
+
+
+		// Blog Integration Options
+        'base_blogmedia_folder_label' => 'Base Media Folder',
+        'base_blogmedia_folder_comment' => 'Blog component will only show subfolders of the folder you select here.',
+        'base_blogmedia_folder_emptyoption' => '-- Media Root --',
+        'base_blogmedia_folder_sameasimagegalleryoption' => '-- Image Gallery Base Media Folder --',
+
+
+
 		// Image Resizer Settings
 		'section_imager_resizer_label' => 'Image Resizer Settings',
-        'use_image_resizer_label' => 'Use Image Resizer',
+        'use_image_resizer_label' => 'Use Image Resizer for image galleries',
         'use_image_resizer_comment' => 'Use the October Image Resizer plugin, which automatically creates a resized and compressed thumbnail of your original image.',
         'image_resizer_width_label' => 'Width',
-        'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height',
+        'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height; you can override this in the component inspector',
         'image_resizer_height_label' => 'Height',
-        'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width',
+        'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; you can override this in the component inspector',
         
         'image_resizer_mode_label' => 'Mode',
         'image_resizer_mode_exact' => 'Exact',
@@ -161,6 +187,8 @@
         'image_resizer_quality_comment' => 'The quality of compression *requires cache clear',
         'image_resizer_hint' => 'Please set other options, such as sharpening and compression, on the Image Resizer plugin settings page!',
 
+
+
 		// Media Formats
         'allowed_extensions_label' => 'Media Formats',
         'allowed_extensions_comment' => 'Refer to WikiPedia for a discussion of <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support" target="_blank">which browser supports which media format</a>.',
@@ -168,6 +196,8 @@
 		// Inject Assets
 		'inject_unitegallery_assets' => 'Inject UniteGallery Assets',
 		'inject_unitegallery_assets_comment' => 'Automatically inject UniteGallery JS and CSS into the page when required (make sure you have a {% scripts %} AS WELL as a {% styles %} somewhere in your layout/page!)',
+		'inject_swiper_assets' => 'Inject Swiper Assets',
+		'inject_swiper_assets_comment' => 'Automatically inject Swiper JS and CSS into the page when required (make sure you have a {% scripts %} AS WELL as a {% styles %} somewhere in your layout/page!)',
 		'inject_jquery' => 'Inject jQuery',
 		'inject_jquery_comment' => 'Automatically inject jQuery into the page (select only if your theme/layout doesn\'t already do so)'
 
@@ -175,36 +205,29 @@
 	
     'component_properties' => [
 
-		// Gallery Layout
+		// Image gallery options:
 		'gallery_layout_label' => 'Gallery Layout',
         'gallery_layout_hint' => 'Select a gallery layout, or select "default" to use the gallery layout set on the plugin settings page.',
         'gallery_tiles_layout_label' => 'Tile Layout',
         'gallery_tiles_layout_hint' => 'Only applicable if the gallery layout is set to "tiles". Select "default" to use the gallery layout set on the plugin settings page.',
         'gallery_combined_layout_label' => 'Thumbnails Layout',
         'gallery_combined_layout_hint' => 'Only applicable if the gallery layout is set to "combined". Select "default" to use the thumbnails layout set on the plugin settings page.',
-		
 		// Lihtbox Type
 		'lightbox_type_label' => 'Lightbox Type',
 		'lightbox_type_hint' => 'Select the lightbox type or leave empty to use the default type ("Wide"). "Wide" is full screen with black background, "Compact" is a smaller image with a border and a transparent gray background.',
 		'lightbox_type_wide' => 'Wide',
 		'lightbox_type_compact' => 'Compact',
-
 		// Media Folder
 		'folder_label' => 'Media Folder or Gallery',
 		'folder_label_hint' => 'Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the base folder set on the November Gallery settings page are valid.',
 		'folder_label_placeholder' => 'Select gallery folder',
 		'folder_label_validation_message' => 'The Media Folder can contain only letters, numbers, or the following URL-safe characters: $-_.+!*\'(),/',
-		
+		'folder_type_post' => '> Take from RainLab Post',
 		// Script options
 		'additional_gallery_options' => 'Script options',
 		'additional_gallery_options_hint' => 'Additional JS options that you want passed onto the UniteGallery script, for example: theme_panel_position: "bottom"',
 		'additional_lightbox_options' => 'Script options',
 		'additional_lightbox_options_hint' => 'Additional JS options that you want passed onto the UniteGallery script, for example: theme_panel_position: "bottom"',
-		
-		// Attach to
-		'attach_to' => 'Attach to',
-		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.',
-		
 		// Thumbnails
 		'group_thumbnails_label' => 'Thumbnails',
 		'image_resizer_mode_label' => 'Thumbnail Mode',
@@ -213,6 +236,38 @@
         'image_resizer_height_label' => 'Thumbnail Height',
         'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; leave both width and height empty to fall back on the values set on the backend plugin configuration page',
 		'image_resizer_mode_hint' => 'Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page.',
+		
+		// Pop-up lightbox-specific options:
+		'attach_to' => 'Attach to',
+		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.',
+
+		// Swiper-specific options:
+		'effect_label' => 'Transition Effect',
+		'effect_hint' => 'Tranisition effect. Can be "slide", "fade", "cube", "coverflow" or "flip"',
+		'effect_validation_message' => 'Transition effect can only contain characters!',
+		'swiper_direction_label' => 'Direction',
+		'swiper_direction_hint' => 'Can be "horizontal" or "vertical"',
+		'swiper_direction_option_horizontal' => 'horizontal',
+		'swiper_direction_option_vertical' => 'vertical',
+		'swiper_direction_validation_message' => 'Swipe direction can only contain characters!',
+		'swiper_speed_label' => 'Transition Speed',
+		'swiper_speed_hint' => 'How long the transition effect lasts, in milliseconds. 1000 = 1 seconds.',
+		'swiper_speed_validation_message' => 'The Autoplay Delay property can only contain numbers!',
+		'lazyload_label' => 'Lazy-load images?',
+		'lazyload_hint' => 'Toggle ON to only load the images the user is looking at. Previous and next images are set to pre-load automatically.',
+		'addpagination_label' => 'Add pagination?',
+		'addpagination_hint' => 'Toggle ON to show bullets (or anything else) that enable to user to jump to any specific slide.',
+		'addnavigation_label' => 'Add navigation?',
+		'addnavigation_hint' => 'Toggle ON to show previous-slide and next-slide navigational arrows.',
+		'autoplay_label' => 'Auto-play?',
+		'autoplay_hint' => 'Toggle ON to enable automatic advance on the slides. Set the delay below.',
+		'autoplaydelay_label' => 'Auto-play Delay',
+		'autoplaydelay_hint' => 'How long each image is shown for, in milliseconds. 1000 = 1 seconds.',
+		'autoplaydelay_validation_message' => 'The Autoplay Delay property can only contain numbers!',
+		'additional_swiper_options' => 'Additional Swiper Options',
+		'additional_swiper_options_hint' => 'Additional JS options that you want passed onto the Swiper script, for example: fadeEffect: {crossFade: true}',
+
+		// Video-gallery-specific options: 
 		'video_gallery_items_selector' => 'Gallery Selector/ID',
 		'video_gallery_items_selector_hint' => 'Enter the jQuery selector that identifies the <div> that contains your gallery item definitions, for example: #videos. Leave blank if you are selecting a Media Folder instead.',
 		

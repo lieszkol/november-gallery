@@ -3,3 +3,9 @@
 1.0.2:
     - Add "Galleries" menu in back-end
     - create_gallery_table.php
+1.0.3:
+    - Rainlab Blog integration
+    - create_galleries_of_post_table.php
+1.0.4:
+    - Extend Rainlab Blog integration with support for images in media folders
+    - create_blog_fields_table.php

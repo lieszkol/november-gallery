@@ -1,5 +1,6 @@
 <?php 
 namespace ZenWare\NovemberGallery\Models;
+use October\Rain\Support\Collection;
 
 use Model;
 
@@ -70,7 +71,18 @@ class Settings extends Model
 	
 	public function getBaseVideoFolderOptions($value, $formData)
     {
-		return $this->getBaseFolderOptions($value, $formData);
+		$options     = new Collection();
+		$options->put('<inherit>', \Lang::get('zenware.novembergallery::lang.settings.base_video_folder_sameasimagegalleryoption'));
+		$options = $options->merge($this->getBaseFolderOptions($value, $formData));
+		return $options->toArray();
+	}
+	
+	public function getBaseBlogmediaFolderOptions($value, $formData)
+    {
+		$options     = new Collection();
+		$options->put('<inherit>', \Lang::get('zenware.novembergallery::lang.settings.base_blogmedia_folder_sameasimagegalleryoption'));
+		$options = $options->merge($this->getBaseFolderOptions($value, $formData));
+		return $options->toArray();
 	}
 
     /*

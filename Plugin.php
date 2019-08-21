@@ -5,20 +5,12 @@ namespace ZenWare\NovemberGallery;
 use System\Classes\PluginBase;
 use App;
 use Event;
-use BackendMenu;
+use System\Classes\PluginManager;
 use Backend;
+
 // use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
-
-
-use BackendAuth;
-use Controller;
-use Config;
-use System\Classes\PluginManager;
-use JanVince\SmallRecords\Models\Settings;
-use JanVince\SmallRecords\Models\Area;
-use JanVince\SmallRecords\Models\Record;
-use JanVince\SmallRecords\Controllers\Records;
+use ZenWare\NovemberGallery\Models\Settings;
 
 class Plugin extends PluginBase
 {
@@ -33,6 +25,7 @@ class Plugin extends PluginBase
     {
         return [
             'ZenWare\NovemberGallery\Components\EmbeddedGallery' => 'embeddedGallery',
+            'ZenWare\NovemberGallery\Components\SwiperGallery' => 'swiperGallery',
             'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
             'ZenWare\NovemberGallery\Components\CustomGallery' => 'customGallery',
             'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
@@ -49,6 +42,7 @@ class Plugin extends PluginBase
     {
         return [
             'ZenWare\NovemberGallery\Components\EmbeddedGallery' => 'embeddedGallery',
+            'ZenWare\NovemberGallery\Components\SwiperGallery' => 'swiperGallery',
             'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
             'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
         ];
@@ -98,7 +92,7 @@ class Plugin extends PluginBase
 				'url'         => Backend::url('zenware/novembergallery/galleries'),
 				'icon'        => 'icon-camera-retro',
 				'permissions' => ['zenware.novembergallery.*'],
-				'order'       => 99,
+				'order'       => 200,
 				// 'sideMenu' => [
 				// 	'galleries' => [
 				// 		'label'       => 'zenware.novembergallery::lang.menu.galleries.sidemenu.galleries_label',
@@ -156,17 +150,100 @@ class Plugin extends PluginBase
      * https://octobercms.com/forum/post/how-to-add-javascript-file-to-backend-pages
      */
     public function boot()
-    {
-        // Check if we are currently in backend module.
-        if (!App::runningInBackend()) {
-            return;
-        }
+    {		
+		// Check for Rainlab.Blog plugin
+		$pluginManager = PluginManager::instance()->findByIdentifier('Rainlab.Blog');
+		if ($pluginManager && !$pluginManager->disabled) {
+			// Rainlab Blog Posts integration
 
-        // Listen for `backend.page.beforeDisplay` event and inject js to current controller instance.
-        Event::listen('backend.page.beforeDisplay', function($controller, $action, $params) {
-            if ($controller instanceof \System\Controllers\Settings && is_array($params) && implode('.', $params) === 'zenware.novembergallery.settings') {
-                $controller->addJs('/plugins/zenware/novembergallery/assets/js/novembergallery-backend.js');
-            }    
-        });
+			\RainLab\Blog\Models\Post::extend(function($model) {
+				$model->hasOne['novembergalleryfields'] = [
+					'ZenWare\NovemberGallery\Models\BlogFields', 
+					'delete' => 'true', 
+					'key' => 'rainlab_blog_posts_id', 
+					'otherKey' => 'id'
+				];
+
+				/*
+				* From: https://github.com/jan-vince/smallextensions/blob/master/Plugin.php
+				* Thsanks jan-vince for making if open-source!
+				*/
+				$model->bindEvent('model.afterSave', function() use ($model) {
+					$model->novembergalleryfields->rainlab_blog_posts_id = $model->id;
+					$model->novembergalleryfields->save();
+				});
+
+				$model->belongsToMany['novembergalleries'] = [
+					'ZenWare\NovemberGallery\Models\Gallery',
+					'table'    => 'zenware_novembergallery_galleries_of_post',
+					'key'      => 'rainlab_blog_posts_id',
+					'otherKey' => 'zenware_novembergallery_gallery_id'
+				];
+			});
+
+			\RainLab\Blog\Controllers\Posts::extendFormFields(function($form, $model){
+				if (!$model instanceof \RainLab\Blog\Models\Post
+					|| !$model->exists)
+				{
+					return;
+				}
+			});
+
+			Event::listen('backend.form.extendFields', function($form) {
+				if (!$form->getController() instanceof \RainLab\Blog\Controllers\Posts) {
+				  return;
+				}
+				if (!$form->model instanceof \RainLab\Blog\Models\Post) {
+				  return;
+				}
+				if( $form->isNested ) {
+					return;
+				}
+				/*
+				* Custom fields model deferred bind
+				*/
+				if (!$form->model->novembergalleryfields) {
+				  $sessionKey = uniqid('session_key', true);
+				  $form->model->novembergalleryfields = new \ZenWare\NovemberGallery\Models\BlogFields;
+				}
+				$options = null;
+				if (Settings::instance()->base_blogmedia_folder == '<inherit>') {
+					$options = NovemberHelper::getSubdirectories(Settings::instance()->base_folder);
+				} else {
+					$options = NovemberHelper::getSubdirectories(Settings::instance()->base_blogmedia_folder);
+				}
+				$options = $options->toArray();
+
+				$form->addSecondaryTabFields([
+					'novembergalleries' => [
+						'label' => 'zenware.novembergallery::lang.rainlab_blog_post.gallery_selector_hint',
+						'tab' => 'zenware.novembergallery::lang.rainlab_blog_post.tab_label',
+						'type' => 'relation',
+						'span'				=> 'left',
+					],
+					'novembergalleryfields[media_folder]' => [
+						'label'             => \Lang::get('zenware.novembergallery::lang.rainlab_blog_post.folder_label'),
+						'tab' 				=> 'zenware.novembergallery::lang.rainlab_blog_post.tab_label',
+						// 'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_hint'),
+						'default'           => '',
+						'span'				=> 'left',
+						'type'              => 'dropdown',
+						'deferredBinding' => 'true',
+						'placeholder'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_placeholder'),
+						'options'		     => $options
+					],
+				]);
+			});
+		}
+		
+        // Check if we are currently in backend module.
+        if (App::runningInBackend()) {
+			// Listen for `backend.page.beforeDisplay` event and inject js to current controller instance.
+			Event::listen('backend.page.beforeDisplay', function($controller, $action, $params) {
+				if ($controller instanceof \System\Controllers\Settings && is_array($params) && implode('.', $params) === 'zenware.novembergallery.settings') {
+					$controller->addJs('/plugins/zenware/novembergallery/assets/js/novembergallery-backend.js');
+				}    
+			});
+		}
     }
 }

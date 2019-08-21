@@ -2,14 +2,16 @@
 namespace ZenWare\NovemberGallery\Components;
 
 use Cms\Classes\ComponentBase;
+use ZenWare\NovemberGallery\NovemberHelper;
 use ZenWare\NovemberGallery\Models\Settings;
 use ZenWare\NovemberGallery\Models\Gallery as Galleries;
-use ToughDeveloper\ImageResizer\Classes\Image;
- use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+use System\Classes\PluginManager;
 use ZenWare\NovemberGallery\Classes\GalleryItem;
 use October\Rain\Support\Collection;
 use Illuminate\Support\Str;
-use Config;
+
+use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
 	public $galleryitems;
@@ -148,21 +150,6 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 		return $height;
 	}
 
-	function endsWith($string, $endString) 
-	{ 
-		$len = strlen($endString); 
-		if ($len == 0) { 
-			return true; 
-		} 
-		return (substr($string, -$len) === $endString); 
-	} 
-
-	function startsWith ($string, $startString) 
-	{ 
-		$len = strlen($startString); 
-		return (substr($string, 0, $len) === $startString); 
-	} 
-
     /**
      * Retrieve a list of all gallery items (images and videos) under the gallery path.
      * 
@@ -170,13 +157,52 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     function loadMedia()
     {
-		$extensions = $this->allowedExtensions;
 		$maxImages = $this->property('maxItems', 100);
-		$images     = new Collection();
 
-		if (!empty($this->property('mediaFolder')) && $this->startsWith($this->property('mediaFolder'), '[') && $this->endsWith($this->property('mediaFolder'), ']')) {
+		if (	!empty($this->property('mediaFolder')) 
+			&& 	$this->property('mediaFolder') == '<post>') 
+		{
+			// We need to get the gallery from the post object
+			// Could also go this route: Debugbar::info($this->page->components['blogPost']); 
+			// but then we'd need to figure out the actual component alias instead of "blogPost"
+			// In any case the RainLab posts component injects the "post" variable into the page se we can use that:
+			$pluginManager = PluginManager::instance()->findByIdentifier('Rainlab.Blog');
+			if (	$pluginManager
+				&& 	!$pluginManager->disabled
+				&& 	$this->page 
+				&& 	$this->page->post
+			)
+			{
+				$images     = new Collection();
+				if ($this->page->post->novembergalleries) 
+				{
+					foreach ($this->page->post->novembergalleries as $gallery) 
+					{
+						foreach($gallery->images->take($maxImages) as $image) {
+							$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
+						}
+					}
+				}
+				if (	$this->page->post->novembergalleryfields
+					&&	$this->page->post->novembergalleryfields->media_folder)
+				{
+					Debugbar::info($this->page->post->novembergalleryfields->media_folder);
+					$baseMediaFolder = Settings::instance()->base_folder;
+					if (Settings::instance()->base_blogmedia_folder != '<inherit>') {
+						$baseMediaFolder = Settings::instance()->base_blogmedia_folder;
+					}
+					$images = $images->merge($this->getImagesInMediaFolder($this->getGalleryPath($baseMediaFolder, $this->page->post->novembergalleryfields->media_folder), $maxImages));
+				}
+				return $images;
+			}
+		}
+		elseif (	!empty($this->property('mediaFolder')) 
+			&& NovemberHelper::startsWith($this->property('mediaFolder'), '[') 
+			&& NovemberHelper::endsWith($this->property('mediaFolder'), ']')) 
+		{
 			// We have a gallery uploaded using the NovemberGallery backend menu
 			
+			$images     = new Collection();
 			$gallery = Galleries::find(substr($this->property('mediaFolder'), 1, strlen($this->property('mediaFolder')) - 2));
 			if ($gallery) // && $gallery->count() == 1 does not work for some reason, I am getting "2"??
 			{
@@ -185,32 +211,26 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 					$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 				}
 			}
+			return $images;
 		} 
 		else 
 		{
 			// We have a gallery uploaded using the MediaManager
 
-			$galleryPath = $this->getGalleryPath();
-			// Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
-
-			if (!\File::exists($galleryPath)) {
-				$this->error = "NovemberGallery error: cannot find the path " . $galleryPath;
-				return array();
-			}
-			
-			$files     = \File::allFiles($galleryPath);
-			// Debugbar::info("NovemberGallery found files: " . count($files));
-			$i = 1;
-			foreach ($files as $file) {
-				if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
-					$images->push(GalleryItem::createFromPhpFile($this, $file));
-				}
-				if ($i >= $maxImages) break;
-				$i++;
-			}    
+			return $this->getImagesInMediaFolder($this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder()), $maxImages);
 		}
-        return $images; 
-    }
+        return new Collection();
+	}
+
+	protected function getBaseMediaFolder()
+	{
+		return Settings::instance()->base_folder;
+	}
+
+	protected function getRelativeMediaFolder()
+	{
+		return $this->property('mediaFolder');
+	}
 
 	/**
 	* Retrieve the full path to the gallery taking into account the base folder selected 
@@ -220,19 +240,43 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 	* 
 	* @return string Path to the gallery of images to display
 	*/
-   protected function getGalleryPath() {
+   protected function getGalleryPath($baseMediaFolder, $relativeMediaFolder) {
 	   $galleryPath = Settings::instance()->mediaPath;
 	   
-	   if (!empty(Settings::instance()->base_folder)) {
-		   $galleryPath .= Settings::instance()->base_folder;
+	   if (!empty($baseMediaFolder)) {
+		   $galleryPath .= $baseMediaFolder;
 	   }
 	   
-	   if (!empty($this->property('mediaFolder'))) {
-		   $galleryPath .= DIRECTORY_SEPARATOR . $this->property('mediaFolder');
+	   if (!empty($relativeMediaFolder)) {
+		   $galleryPath .= DIRECTORY_SEPARATOR . $relativeMediaFolder;
 	   }
 
 	   return $galleryPath;
    }
+	
+	protected function getImagesInMediaFolder($galleryPath, $maxImages)
+	{
+		$extensions = $this->allowedExtensions;
+		$images     = new Collection();
+		// Debugbar::info("NovemberGallery MediaPath is: {$galleryPath}");
+
+		if (!\File::exists($galleryPath)) {
+			$this->error = "NovemberGallery error: cannot find the path " . $galleryPath;
+			return array();
+		}
+		
+		$files     = \File::allFiles($galleryPath);
+		// Debugbar::info("NovemberGallery found files: " . count($files));
+		$i = 1;
+		foreach ($files as $file) {
+			if ($file->isFile() && $file->isReadable() && in_array ($file->getExtension(), $extensions)) {
+				$images->push(GalleryItem::createFromPhpFile($this, $file));
+			}
+			if ($i >= $maxImages) break;
+			$i++;
+		}   
+		return $images;
+	}
 
     /**
      * Retrieve a list of folders under the "Base Media Folder" as set on the 
@@ -245,7 +289,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
      */
     public function getMediaFolderOptions()
     {
-		$options = $this->getSubdirectories(Settings::instance()->base_folder);
+		$options = NovemberHelper::getSubdirectories(Settings::instance()->base_folder);
 		// Debugbar::info(Galleries::select('id', 'name')->orderBy('name')->get()->pluck('name', 'id'));
 
 		// Re-key the collection: https://adamwathan.me/2016/07/14/customizing-keys-when-mapping-collections/
@@ -253,13 +297,19 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			$galleries->put('[' . $gallery->id . ']', $gallery->name);
 			return $galleries;
 		}, new Collection());
+
+		$pluginManager = PluginManager::instance()->findByIdentifier('Rainlab.Blog');
+		if ($pluginManager && !$pluginManager->disabled) {
+			$galleries->put('<post>', \Lang::get('zenware.novembergallery::lang.component_properties.folder_type_post'));
+		}
+
 		$options = $options->merge($galleries); //->pluck('name', 'id'));
 
 		return $options->toArray();
 	}
 	
 	
-    public function getSubdirectories($baseFolder)
+    public static function getSubdirectories($baseFolder)
     {
         $mediaPath = Settings::instance()->mediaPath;
         if (!empty($baseFolder)) {

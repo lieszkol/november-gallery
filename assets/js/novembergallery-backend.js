@@ -61,6 +61,19 @@
 					'	gallery_theme: "slider"',
 					'});'].join('\n'));
 				break;
+			case 'gallery_swiper':
+				editor.setValue([
+					'var swiper = new Swiper("#gallery", {',
+					'	effect: "fade",',
+					'	pagination: {',
+					'		el: "#gallery .swiper-pagination",',
+					'	},',
+					'	navigation: {',
+					'		nextEl: "#gallery .swiper-button-next",',
+					'		prevEl: "#gallery .swiper-button-prev",',
+					'	},',
+					'});'].join('\n'));
+				break;
 		}
 	}
 

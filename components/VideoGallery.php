@@ -129,30 +129,25 @@ class VideoGallery extends NovemberGalleryComponentBase {
      */
     public function getVideoFolderOptions()
     {
-        return getSubdirectories(Settings::instance()->base_video_folder)->toArray();
+		return ZenWare\NovemberGallery\NovemberHelper::getSubdirectories(Settings::instance()->base_video_folder)->toArray();
 	}
 
-	/**
-	* Retrieve the full path to the gallery taking into account the base folder selected 
-	* in the backend NovemberGallery settings page.
-	* 
-	* This can be called from the front-end with: {{ __SELF__.galleryPath() }}
-	* 
-	* @return string Path to the gallery of images to display
-	*/
-   protected function getGalleryPath() {
-	   $galleryPath = Settings::instance()->mediaPath;
-	   
-	   if (!empty(Settings::instance()->base_video_folder)) {
-		   $galleryPath .= Settings::instance()->base_video_folder;
-	   }
-	   
-	   if (!empty($this->property('videoFolder'))) {
-		   $galleryPath .= DIRECTORY_SEPARATOR . $this->property('videoFolder');
-	   }
+	protected function getBaseMediaFolder()
+	{
+		if (Settings::instance()->base_video_folder == '<inherit>') {
+			if (!empty(Settings::instance()->base_folder)) {
+				return Settings::instance()->base_folder;
+			}
+		} else {
+			return Settings::instance()->base_video_folder;
+		}
+		return null;
+	}
 
-	   return $galleryPath;
-   }
+	protected function getRelativeMediaFolder()
+	{
+		return $this->property('videoFolder');
+	}
 		
 	public function onRun() {
 		if (!empty($this->property('videoGalleryItemsSelector'))) 
@@ -177,9 +172,7 @@ class VideoGallery extends NovemberGalleryComponentBase {
 		if (Settings::instance()->inject_unitegallery_assets) 
 		{
 	        $this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
-			
 			$this->addJs('assets/unitegallery/dist/js/unitegallery.min.js');
-			
 			$this->addJs('assets/unitegallery/dist/themes/video/ug-theme-video.js');
 
 			switch($this->getVideoGalleryLayout()) 
