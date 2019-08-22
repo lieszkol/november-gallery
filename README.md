@@ -14,12 +14,13 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
 <small>*please read the Known Issues section regarding usage in partials!</small>
 
-Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
+Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
 # Features:
 
-- Four components included: 
-	 - **Embedded Gallery** if you wish to show a gallery of images in your page
+- ~~Four~~ Five components included: 
+	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page
+	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects that you uploaded to a specific folder using the OctoberCMS Media Manager
@@ -413,7 +414,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc4OTgzMywxNjMyMzczNjU1LDE0Mz
+eyJoaXN0b3J5IjpbMjExOTc4MzI1NywxNjMyMzczNjU1LDE0Mz
 A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
 MSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzND
 kyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEy
