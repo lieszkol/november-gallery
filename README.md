@@ -128,7 +128,7 @@ Although the plugin will automatically generate thumbnails of your pictures, the
 
 A typical screen resolution nowadays is around 1600x1200 pixels - so if you're looking to allow your users to see your pictures in decent quality full-screen, then resize them to fit within these constraints.
 
-Finally, upload your pictures using the OctoberCMS Media manager into the folders you created earlier.
+Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 </details>
 
 ### (2) Configure The Plugin
@@ -441,11 +441,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODc0MTI0NjUsMTQyMTE3NzE5LC0xMj
-AyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0
-MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2Mz
-IzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2
-MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUzNywtOD
-QwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1Njgx
-OV19
+eyJoaXN0b3J5IjpbLTc3OTAzNjQ5LDE0MjExNzcxOSwtMTIwMj
+I4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEw
+LDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNjMyMz
+czNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMs
+MTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MD
+g2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTld
+fQ==
 -->
