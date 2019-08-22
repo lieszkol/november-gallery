@@ -211,6 +211,7 @@ It is easy to override the default partial by following the [OctoberCMS document
 Gallery Type | Default Component Partial Path
 -- | --
 Embedded Gallery | /plugins/zenware/novembergallery/components/embeddedgallery/default.htm
+Swiper | 
 Pop-up Lightbox | /plugins/zenware/novembergallery/components/popupgallery/default.htm
 Image List Only | /plugins/zenware/novembergallery/components/customgallery/default.htm
 
@@ -437,11 +438,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMD
-A5NjQxMCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcs
-MTYzMjM3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MT
-M4MjYzLDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3
-LC04NDA4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNz
-U2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTZd
+eyJoaXN0b3J5IjpbMTM3MzkxNDY3NywtMzAwNzY1NDE3LDIwNT
+M5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYx
+LDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OT
+IwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3
+LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMz
+c2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTNd
 fQ==
 -->
