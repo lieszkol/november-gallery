@@ -243,7 +243,7 @@ For examples on how to customize the gallery, see [Customize the Gallery](#custo
 <br>
 <br>
 
-## Component 3: Video Gallery
+## Component 4: Video Gallery
 
 Use this gallery to display videos inline. You can choose to upload your videos to your website or to show videos hosted on YouTube/Vimeo/Wistia.
 
@@ -411,11 +411,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3OD
-Y2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcs
-MTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzND
-ExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQz
-LDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NT
-YzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2
-MV19
+eyJoaXN0b3J5IjpbLTE5MzIwMDU3ODgsODg1OTQxMDI3LDEwMT
+I1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQx
+MywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
+kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
+NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMD
+Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
+NjIwXX0=
 -->
