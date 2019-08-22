@@ -297,7 +297,7 @@ For examples on how to customize the gallery, see [Customize the Gallery](#custo
 <br>
 <br>
 
-## Component 4: Image List Only
+## Component 5: Image List Only
 
 Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
 
@@ -436,11 +436,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNT
-k3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMs
-MTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5Mz
-A4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQs
-LTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0OD
-gyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYy
-MF19
+eyJoaXN0b3J5IjpbMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OT
+QxMDI3LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUs
+MTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMT
+E5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgw
+LDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMT
+EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
+XX0=
 -->
