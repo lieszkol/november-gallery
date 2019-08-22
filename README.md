@@ -20,6 +20,7 @@ This README is an abridged version of the full documentation that we call [The N
 
 # Features:
 
+- Works in Pages, Partials, "Static" Pages, and Blog Posts!
 - ~~Four~~ Five components included: 
 	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts: **tiles** (arranged in columns, justified, or laid out in a grid "masonry style"), **carousel**, **slider**, or **combined** (large image + lightbox)
 	 - **Swiper Gallery** for responsive, multi-platform galleries
@@ -435,11 +436,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMD
-IyODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQx
-MCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
-M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
-LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
-A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
+eyJoaXN0b3J5IjpbMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMTQyMT
+E3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1
+MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3OD
+Y2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcs
+MTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzND
+ExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQz
 XX0=
 -->
