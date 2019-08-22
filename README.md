@@ -105,6 +105,8 @@ For further usage examples and documentation please see [The NovemberGallery Coo
 
 ### (1) Prepare and Upload your Images
 
+You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager. 
+
 You will need to 1) create folders for your images 2) resize your images and 3) upload them to your website using OctoberCMS's built-in Media Manager. 
 
 <details>
@@ -441,11 +443,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMD
-A3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3
-LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMD
-Q4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAx
-LDE3MjkzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OT
-I1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIz
+eyJoaXN0b3J5IjpbMTg3MzQ1MzY1OSwxNDIxMTc3MTksLTEyMD
+IyODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQx
+MCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
+M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
+LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
+A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
 XX0=
 -->
