@@ -110,9 +110,7 @@ For further usage examples and documentation please see [The NovemberGallery Coo
 <details>
 <summary>Read more...</summary>
 
-Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. You can optionally create a "root" folder to store (subfolders of) images, and a separate "root" folder to store videos, and even a third "root" folder to store images for your blog. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
-
-So, your folder structure may look like this:
+Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
 
 - my_galleries
 	- my_travels
@@ -122,7 +120,7 @@ So, your folder structure may look like this:
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Next, prepare your pictures for display on the WWW. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .gif (which is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+Next, prepare your pictures for display on the WWW. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
 
 Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's also a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
 
@@ -441,11 +439,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTAzNjQ5LDE0MjExNzcxOSwtMTIwMj
-I4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEw
-LDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNjMyMz
-czNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMs
-MTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MD
-g2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTld
-fQ==
+eyJoaXN0b3J5IjpbMTM0NTEzMzg4MiwxNDIxMTc3MTksLTEyMD
+IyODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQx
+MCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
+M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
+LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
+A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
+XX0=
 -->
