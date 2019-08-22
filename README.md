@@ -12,7 +12,7 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
  3. Drop November Gallery onto your page or partial* or static page
  4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
 
-<small>*please read the Known Issues section regarding usage in partials!</small>
+<small><i>*please read the Known Issues section regarding usage in partials!</i></small>
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
@@ -138,9 +138,9 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 ### (3) Drop the Plugin Onto your CMS Page(s)
 
-The plugin provides four components that you can drop onto your CMS Pages/Partials*/Layouts, it also works as a .
+The plugin provides four components that you can drop onto your CMS Pages/Partials*/Layouts, it also works as a "Snippet" in static pages.
 
-**please read the Known Issues section regarding usage in partials!*
+<small><i>*please read the Known Issues section regarding usage in partials!</i></small>
 
 ### [Shared Options]
 
@@ -411,11 +411,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NTY1MjY1OCwxMDEyNTk3NTYxLDcyNz
-g2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3
-LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02Mz
-QxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0
-Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
-U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
-NjFdfQ==
+eyJoaXN0b3J5IjpbODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3OD
+Y2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcs
+MTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzND
+ExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQz
+LDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NT
+YzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2
+MV19
 -->
