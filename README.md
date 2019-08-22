@@ -110,7 +110,7 @@ You will need to 1) create folders for your images 2) resize your images and 3) 
 <details>
 <summary>Read more...</summary>
 
-Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
+Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. You can optionally create a "root" folder to store (subfolders of) images, and a separate "root" folder to store videos, and even a third "root" folder to store images for your blog. We also recommend not to use spaces in folder names - it's better to use dashes or underscores instead. Also, it is customary to use lowercase when creating folders for publishing on the web. 
 
 So, your folder structure may look like this:
 
@@ -413,11 +413,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjM3MzY1NSwxNDMwNDgxNDEzLDEyND
-kyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4MDEsMTcyOTMwODkw
-NywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0LC03Mz
-M3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEz
-LC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2MjAsNj
-YzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAyNTA3NjYsLTIwNTg1
-MjU0NTRdfQ==
+eyJoaXN0b3J5IjpbMjAyMTczMDM5MSwxNjMyMzczNjU1LDE0Mz
+A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
+MSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzND
+kyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEy
+MywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMT
+E1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1
+MDc2Nl19
 -->
