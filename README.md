@@ -218,7 +218,32 @@ Image List Only | /plugins/zenware/novembergallery/components/customgallery/defa
 <br>
 <br>
 
-## Component 2: Pop-up Lightbox
+## Component 2: Swiper
+
+Use this component to create a modern, responsive "swiper" that can be controlled easily from any device. Note that you can control any of the galleries by touch (or click-and-swipe using a mouse). Various transitions are available: "fade", "slide", "flip", "cube", etc..
+
+### [Options]
+The following are available in addition to the [Shared Options](#shared-options) described above:
+
+Property | Inspector Name | Description
+-- | -- | --
+`attachTo` | Attach to | JQuery selector for the element(s) that the user can click on to open the lightbox; for example: `#gallery-button`
+`additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+
+
+**Example Page**
+```html
+{% component 'popupLightbox' %}
+<button id="gallery-button">Click me!</button>
+```
+
+This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
+
+For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
+<br>
+<br>
+
+## Component 3: Pop-up Lightbox
 
 Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
 
@@ -403,11 +428,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzA5Njg5MTYsODg1OTQxMDI3LDEwMT
-I1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQx
-MywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
-kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
-NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMD
-Q4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4
-NjIwXX0=
+eyJoaXN0b3J5IjpbMzM2NzA5NTUsODg1OTQxMDI3LDEwMTI1OT
+c1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywx
+MjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMD
+g5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwt
+NzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4OD
+IxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIw
+XX0=
 -->
