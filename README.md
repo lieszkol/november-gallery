@@ -138,7 +138,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 ### (3) Drop the Plugin Onto your CMS Page(s)
 
-The plugin provides three components that you can drop onto your CMS Pages/Partials*/Layouts.
+The plugin provides four components that you can drop onto your CMS Pages/Partials*/Layouts, it also works as a .
 
 **please read the Known Issues section regarding usage in partials!*
 
@@ -411,11 +411,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
-M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
-LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
-A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
-LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
-QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
-NzkzXX0=
+eyJoaXN0b3J5IjpbLTg0NTY1MjY1OCwxMDEyNTk3NTYxLDcyNz
+g2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3
+LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02Mz
+QxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMzc2NDk0
+Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTMsLTMyOT
+U2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYyMCw2NjMxNDgw
+NjFdfQ==
 -->
