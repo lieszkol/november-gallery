@@ -23,27 +23,22 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 		 - tiles - arranged in columns, justified, or laid out in a grid "masonry style"
 		 - carousel
 		 - slider 
-		 - 
+		 - combined (large image + lightbox)
 	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects
- - Various options can be configured in the back-end or overridden in the component inspector without writing a line of code: 
-	 - tiles (arranged in columns, justified, or laid out in a grid)
-	 - carousel
-	 - slider, swiper
-	 - combined (large image + lightbox)
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable OR set it in your RainLab blog entry
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
 ### Limitations / ToDo:
  
- - [X] Test embedding & linking video
  - [X] Get the demo page up and running
- - [ ] Gallery of videos uploaded to the site
- - [ ] Add example for "dynamic" gallery via path variables
+ - [X] Ability to add to static pages (not just CMS)
+ - [ ] Handle gallery of videos uploaded to the site
+ - [ ] Expand docs with example for "dynamic" gallery via path variables
  - [ ] Add link to default component templates
- - [ ] Ability to add to pages (not just CMS)
+
  - [ ] Alternative lightbox/carousel gallery script support
  - [ ] Sort the displayed images by file date, date taken, or filename
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
@@ -418,11 +413,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTcwMTMxOCw3Mjc4NjYwMDcsMTYzMj
-M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
-LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
-A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
-LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
-QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
-NzkzXX0=
+eyJoaXN0b3J5IjpbLTE1NTA0NDk2MzgsNzI3ODY2MDA3LDE2Mz
+IzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2
+MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUzNywtOD
+QwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1Njgx
+OSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNj
+Q0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5
+OTc5M119
 -->
