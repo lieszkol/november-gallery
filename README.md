@@ -431,16 +431,17 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 # Credits / Major Dependencies
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
+ - [Swiper](https://idangero.us/swiper/)
  - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OT
-QxMDI3LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUs
-MTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMT
-E5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgw
-LDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMT
-EzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIx
-XX0=
+eyJoaXN0b3J5IjpbLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMD
+A5NjQxMCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcs
+MTYzMjM3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MT
+M4MjYzLDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3
+LC04NDA4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNz
+U2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTZd
+fQ==
 -->
