@@ -10,9 +10,9 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
  3. Drop November Gallery onto your page or partial* or static page
- 4. Select the folder you uploaded your images to and how you want them displayed
+ 4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
 
-**please read the Known Issues section regarding usage in partials!*
+<small>*please read the Known Issues section regarding usage in partials!</small>
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery). 
 
@@ -413,11 +413,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI0MzIxMjcsMTYzMjM3MzY1NSwxND
-MwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4
-MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04NDA4Njc5ODAsMz
-Q5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMx
-MjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLT
-ExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5NzkzLC02MzAy
-NTA3NjZdfQ==
+eyJoaXN0b3J5IjpbLTE3MDc4OTgzMywxNjMyMzczNjU1LDE0Mz
+A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
+MSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzND
+kyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEy
+MywzMjA0ODgyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMT
+E1ODY2ODYyMCw2NjMxNDgwNjEsLTE2MzIwOTk3OTMsLTYzMDI1
+MDc2Nl19
 -->
