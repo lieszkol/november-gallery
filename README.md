@@ -40,8 +40,7 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [ ] Expand this README with links to default component templates
  - [ ] Add alternative lightbox/carousel gallery script support
  - [ ] Add option to sort the displayed images by file date, date taken, or filename (this is currently possible by overriding the partial)
- - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploadi
- - [ ] Extensive help docs / cookbook
+ - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploading through the backend "Gallery" page)
  - [ ] Cache image data in database instead of reading it all in from the filesystem every time
 
 # Deployment
@@ -412,7 +411,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTkxMTAxNCw3Mjc4NjYwMDcsMTYzMj
+eyJoaXN0b3J5IjpbMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
 M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
 LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
 A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
