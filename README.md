@@ -230,7 +230,12 @@ Property | Inspector Name | Description
 `effect` | Transition Effect | Tranisition effect. Can be "slide", "fade", "cube", "coverflow" or "flip"
 `direction` | Direction | Can be "horizontal" or "vertical"
 `speed` | Transition Speed | How long the transition effect lasts, in milliseconds. 1000 = 1 seconds.
-`additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`lazyLoad` | Lazy-load images? | Toggle ON to only load the images the user is looking at. Previous and next images are set to pre-load automatically.
+`addPagination`
+`addNavigation`
+`autoplay`
+`autoplayDelay`
+`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
 
 
 **Example Page**
@@ -430,11 +435,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNjg5MTQ5LDg4NTk0MTAyNywxMDEyNT
-k3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMs
-MTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5Mz
-A4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQs
-LTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0OD
-gyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYy
-MF19
+eyJoaXN0b3J5IjpbLTgxMTMxNjgwNSw4ODU5NDEwMjcsMTAxMj
+U5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxNDMwNDgxNDEz
+LDEyNDkyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4MDEsMTcyOT
+MwODkwNywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0
+LC03MzM3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
+g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
+MjBdfQ==
 -->
