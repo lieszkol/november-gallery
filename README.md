@@ -124,7 +124,7 @@ So, your folder structure may look like this:
 
 Next, prepare your pictures for display on the WWW. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .gif (which is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
 
-Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's also a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/) (Windows). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
+Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's also a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
 
 A typical screen resolution nowadays is around 1600x1200 pixels - so if you're looking to allow your users to see your pictures in decent quality full-screen, then resize them to fit within these constraints.
 
@@ -413,7 +413,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTczMDM5MSwxNjMyMzczNjU1LDE0Mz
+eyJoaXN0b3J5IjpbMTIxODcxMjU1MywxNjMyMzczNjU1LDE0Mz
 A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
 MSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzND
 kyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEy
