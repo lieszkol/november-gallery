@@ -240,11 +240,12 @@ Property | Inspector Name | Description
 
 **Example Page**
 ```html
-{% component 'popupLightbox' %}
-<button id="gallery-button">Click me!</button>
+<div style="width: 100%; height: calc(100vh - 70px);">
+	{% component 'swiperGallery' %}
+</div>
 ```
 
-This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
+The swiper component by default fills whatever space it is in, in this case we set the container DIV to take up 100% of the viewport and be 100vh tall.
 
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
 <br>
@@ -435,11 +436,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2MTQzOTUsODg1OTQxMDI3LDEwMTI1OT
-c1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywx
-MjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMD
-g5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwt
-NzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4OD
-IxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIw
-XX0=
+eyJoaXN0b3J5IjpbMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNT
+k3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMs
+MTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5Mz
+A4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQs
+LTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0OD
+gyMTMsLTMyOTU2MzI5NiwtMTY0NDI5MDcyMSwtMTE1ODY2ODYy
+MF19
 -->
