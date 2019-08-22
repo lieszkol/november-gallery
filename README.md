@@ -37,11 +37,10 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
  - [X] Ability to add to static pages (not just CMS)
  - [ ] Handle gallery of videos uploaded to the site
  - [ ] Expand docs with example for "dynamic" gallery via path variables
- - [ ] Add link to default component templates
-
- - [ ] Alternative lightbox/carousel gallery script support
- - [ ] Sort the displayed images by file date, date taken, or filename
- - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages)
+ - [ ] Expand this README with links to default component templates
+ - [ ] Add alternative lightbox/carousel gallery script support
+ - [ ] Add option to sort the displayed images by file date, date taken, or filename (this is currently possible by overriding the partial)
+ - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploadi
  - [ ] Extensive help docs / cookbook
  - [ ] Cache image data in database instead of reading it all in from the filesystem every time
 
@@ -413,11 +412,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTA0NDk2MzgsNzI3ODY2MDA3LDE2Mz
-IzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2
-MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzNDExMTUzNywtOD
-QwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQzLDQzMDc1Njgx
-OSwxNzMwMTEzMTIzLDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNj
-Q0MjkwNzIxLC0xMTU4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5
-OTc5M119
+eyJoaXN0b3J5IjpbMTk5MTkxMTAxNCw3Mjc4NjYwMDcsMTYzMj
+M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
+LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
+A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
+LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
+QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
+NzkzXX0=
 -->
