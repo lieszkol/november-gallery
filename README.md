@@ -231,11 +231,11 @@ Property | Inspector Name | Description
 `direction` | Direction | Can be "horizontal" or "vertical"
 `speed` | Transition Speed | How long the transition effect lasts, in milliseconds. 1000 = 1 seconds.
 `lazyLoad` | Lazy-load images? | Toggle ON to only load the images the user is looking at. Previous and next images are set to pre-load automatically.
-`addPagination`
-`addNavigation`
-`autoplay`
-`autoplayDelay`
-`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
+`addPagination` | Add pagination? | Toggle ON to show bullets (or anything else) that enable to user to jump to any specific slide.
+`addNavigation` | Add navigation? | Toggle ON to show previous-slide and next-slide navigational arrows.
+`autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
+`autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
+`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
 
 
 **Example Page**
@@ -435,11 +435,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTMxNjgwNSw4ODU5NDEwMjcsMTAxMj
-U5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxNDMwNDgxNDEz
-LDEyNDkyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4MDEsMTcyOT
-MwODkwNywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0
-LC03MzM3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwND
-g4MjEzLC0zMjk1NjMyOTYsLTE2NDQyOTA3MjEsLTExNTg2Njg2
-MjBdfQ==
+eyJoaXN0b3J5IjpbMjE2MTQzOTUsODg1OTQxMDI3LDEwMTI1OT
+c1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywx
+MjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMD
+g5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwt
+NzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIzLDMyMDQ4OD
+IxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMTU4NjY4NjIw
+XX0=
 -->
