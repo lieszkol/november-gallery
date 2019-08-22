@@ -8,7 +8,7 @@ Check out the [live demo site](https://novembergallery.zenware.io)!
 
 A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
- 1. Upload your images using the Media Manager built into OctoberCMS
+ 1. Upload your images using the Media Manager built into OctoberCMS (or use the dedicated galleries page to manage your galleries)
  2. Drop November Gallery onto your page or partial*
  3. Select the folder you uploaded your images to and how you want them displayed
 
@@ -413,7 +413,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODcxMjU1MywxNjMyMzczNjU1LDE0Mz
+eyJoaXN0b3J5IjpbLTc0NDg5OTk3NiwxNjMyMzczNjU1LDE0Mz
 A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
 MSwxNzI5MzA4OTA3LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzND
 kyNTMxNjQsLTczMzc2NDk0Myw0MzA3NTY4MTksMTczMDExMzEy
