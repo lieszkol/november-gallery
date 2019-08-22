@@ -10,7 +10,7 @@ use ZenWare\NovemberGallery\Classes\GalleryItem;
 use October\Rain\Support\Collection;
 use Illuminate\Support\Str;
 
-use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+// use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
 abstract class NovemberGalleryComponentBase extends ComponentBase {
 
@@ -158,6 +158,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
     function loadMedia()
     {
 		$maxImages = $this->property('maxItems', 100);
+		$page = null;
+		if (property_exists($this, 'page')) $page = $this->page;
 
 		if (	!empty($this->property('mediaFolder')) 
 			&& 	$this->property('mediaFolder') == '<post>') 
@@ -169,28 +171,41 @@ abstract class NovemberGalleryComponentBase extends ComponentBase {
 			$pluginManager = PluginManager::instance()->findByIdentifier('Rainlab.Blog');
 			if (	$pluginManager
 				&& 	!$pluginManager->disabled
-				&& 	$this->page 
-				&& 	$this->page->post
+				&& 	isset($page)
+				&& 	!is_null($page->post)	// isset doesn't seem to work here, maybe it's a "magic getter" or some other Laravel/Eloquent voodoo?
+				&& 	$page->post instanceof \RainLab\Blog\Models\Post
 			)
 			{
+				$post = $page->post;
 				$images     = new Collection();
-				if ($this->page->post->novembergalleries) 
+				// Another method to check - but this doesn't work: isset($post->relations['novembergalleries'])
+				// Some reading: https://github.com/laravel/framework/blob/5.3/src/Illuminate/Database/Eloquent/Model.php#L3239
+				// https://stackoverflow.com/questions/23910553/laravel-check-if-related-model-exists
+				// https://laracasts.com/discuss/channels/eloquent/this-relationloaded-for-distant-relationships
+				if (	!is_null($post->novembergalleries)	// Could also use $post->relationLoaded('novembergalleries')
+					&&	$post->relationLoaded('novembergalleries')
+					&& 	$post->novembergalleries) 
 				{
-					foreach ($this->page->post->novembergalleries as $gallery) 
+					foreach ($post->novembergalleries as $gallery) 
 					{
 						foreach($gallery->images->take($maxImages) as $image) {
 							$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 						}
 					}
 				}
-				if (	$this->page->post->novembergalleryfields
-					&&	$this->page->post->novembergalleryfields->media_folder)
+				if (	!is_null($post->novembergalleryfields)
+					&&	$post->novembergalleryfields->exists()
+					&& 	$post->relationLoaded('novembergalleryfields')
+					&&	!is_null($post->novembergalleryfields->media_folder)
+					&& 	!empty($post->novembergalleryfields->media_folder))
 				{
-					Debugbar::info($this->page->post->novembergalleryfields->media_folder);
+					// Debugbar::info($this->page->post->novembergalleryfields->media_folder);
 					$baseMediaFolder = Settings::instance()->base_folder;
 					if (Settings::instance()->base_blogmedia_folder != '<inherit>') {
 						$baseMediaFolder = Settings::instance()->base_blogmedia_folder;
 					}
+					// Debugbar::info($this->page->post->novembergalleryfields);
+					// Debugbar::info($this->page->post->novembergalleryfields->media_folder);
 					$images = $images->merge($this->getImagesInMediaFolder($this->getGalleryPath($baseMediaFolder, $this->page->post->novembergalleryfields->media_folder), $maxImages));
 				}
 				return $images;

@@ -2,7 +2,7 @@
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
 {% endif %}
-
+{% if galleryitems|length > 0 %}
 <div style="visibility: collapse; display: hidden; height: 0; width: 0;">
 	<div id="{{__SELF__.id}}">
 		{% verbatim %}
@@ -49,3 +49,4 @@
 
 </script>
 {% endput %}
+{% endif %}

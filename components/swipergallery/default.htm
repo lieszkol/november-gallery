@@ -5,6 +5,7 @@
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
 {% endif %}
 
+{% if galleryitems|length > 0 %}
 {# Some opinionated styles, modify as needed: #}
 {% put styles %}
 <style>
@@ -84,3 +85,4 @@
 	});
 </script>
 {% endput %}
+{% endif %}
