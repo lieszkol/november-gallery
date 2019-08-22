@@ -16,7 +16,7 @@ A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
-This README is an abridged version of the full documentation that we call [The November Gallery Cookbook](For%20further%20usage%20examples%20and%20documentation%20please%20see%20%5BThe%20NovemberGallery%20Cookbook%5D%28https://its.zensoft.hu/books/november-gallery-cookbook%29).
+This README is an abridged version of the full documentation that we call [The November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook).
 
 # Features:
 
@@ -436,11 +436,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMTQyMT
-E3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1
-MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3OD
-Y2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcs
-MTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5MDcsLTYzND
-ExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2NCwtNzMzNzY0OTQz
-XX0=
+eyJoaXN0b3J5IjpbLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0Nz
+Y4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0
+MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMT
+I1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQx
+MywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
+kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
+NF19
 -->
