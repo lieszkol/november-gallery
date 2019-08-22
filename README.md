@@ -21,11 +21,7 @@ This README is an abridged version of the full documentation that we call [The N
 # Features:
 
 - ~~Four~~ Five components included: 
-	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts:
-		 - tiles - arranged in columns, justified, or laid out in a grid "masonry style"
-		 - carousel
-		 - slider 
-		 - combined (large image + lightbox)
+	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts: **tiles** (arranged in columns, justified, or laid out in a grid "masonry style"), **carousel**, **slider**, or **combined** (large image + lightbox)
 	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
@@ -439,7 +435,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjE2NDMzMywxNDIxMTc3MTksLTEyMD
+eyJoaXN0b3J5IjpbMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMD
 IyODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQx
 MCw4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMj
 M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
