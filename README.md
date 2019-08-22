@@ -19,15 +19,19 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 # Features:
 
 - ~~Four~~ Five components included: 
-	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page
+	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts:
+		 - tiles - arranged in columns, justified, or laid out in a grid "masonry style"
+		 - carousel
+		 - slider 
+		 - 
 	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects
- - Various options for the Embedded Gallery that can be configured in the back-end or overridden in the component inspector without writing a line of code: 
+ - Various options can be configured in the back-end or overridden in the component inspector without writing a line of code: 
 	 - tiles (arranged in columns, justified, or laid out in a grid)
 	 - carousel
-	 - slider
+	 - slider, swiper
 	 - combined (large image + lightbox)
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable OR set it in your RainLab blog entry
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
@@ -414,11 +418,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMD
-Q4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAx
-LDE3MjkzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OT
-I1MzE2NCwtNzMzNzY0OTQzLDQzMDc1NjgxOSwxNzMwMTEzMTIz
-LDMyMDQ4ODIxMywtMzI5NTYzMjk2LC0xNjQ0MjkwNzIxLC0xMT
-U4NjY4NjIwLDY2MzE0ODA2MSwtMTYzMjA5OTc5MywtNjMwMjUw
-NzY2XX0=
+eyJoaXN0b3J5IjpbLTY3MTcwMTMxOCw3Mjc4NjYwMDcsMTYzMj
+M3MzY1NSwxNDMwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYz
+LDE0NzMxMTk4MDEsMTcyOTMwODkwNywtNjM0MTExNTM3LC04ND
+A4Njc5ODAsMzQ5MjUzMTY0LC03MzM3NjQ5NDMsNDMwNzU2ODE5
+LDE3MzAxMTMxMjMsMzIwNDg4MjEzLC0zMjk1NjMyOTYsLTE2ND
+QyOTA3MjEsLTExNTg2Njg2MjAsNjYzMTQ4MDYxLC0xNjMyMDk5
+NzkzXX0=
 -->
