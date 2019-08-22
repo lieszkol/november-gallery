@@ -212,8 +212,9 @@ Gallery Type | Default Component Partial Path
 -- | --
 Embedded Gallery | [/plugins/zenware/novembergallery/components/embeddedgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/embeddedgallery/default.htm)
 Swiper | [/plugins/zenware/novembergallery/components/swipergallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/swipergallery/default.htm)
-Pop-up Lightbox | /plugins/zenware/novembergallery/components/popupgallery/default.htm
-Image List Only | /plugins/zenware/novembergallery/components/customgallery/default.htm
+Pop-up Lightbox | [/plugins/zenware/novembergallery/components/popupgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/popupgallery/default.htm)
+Video Gallery | [/plugins/zenware/novembergallery/components/videogallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/videogallery/default.htm)
+Image List Only | [/plugins/zenware/novembergallery/components/customgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/customgallery/default.htm)
 
 </details>
 <br>
@@ -438,11 +439,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTQzNTY5OSwtMzAwNzY1NDE3LDIwNT
-M5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYx
-LDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OT
-IwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3
-LC02MzQxMTE1MzcsLTg0MDg2Nzk4MCwzNDkyNTMxNjQsLTczMz
-c2NDk0Myw0MzA3NTY4MTksMTczMDExMzEyMywzMjA0ODgyMTNd
-fQ==
+eyJoaXN0b3J5IjpbLTEyMDIyODIzMTcsLTMwMDc2NTQxNywyMD
+UzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMTAxMjU5NzU2
+MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxNDMwNDgxNDEzLDEyND
+kyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4MDEsMTcyOTMwODkw
+NywtNjM0MTExNTM3LC04NDA4Njc5ODAsMzQ5MjUzMTY0LC03Mz
+M3NjQ5NDMsNDMwNzU2ODE5LDE3MzAxMTMxMjMsMzIwNDg4MjEz
+XX0=
 -->
