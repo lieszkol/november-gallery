@@ -260,14 +260,6 @@ Property | Inspector Name | Description
 `galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 `galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
 
-**Example Page**
-```html
-{% component 'popupLightbox' %}
-<button id="gallery-button">Click me!</button>
-```
-
-This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
-
 For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
 <br>
 <br>
@@ -411,7 +403,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIwMDU3ODgsODg1OTQxMDI3LDEwMT
+eyJoaXN0b3J5IjpbLTE0NzA5Njg5MTYsODg1OTQxMDI3LDEwMT
 I1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQx
 MywxMjQ5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3Mj
 kzMDg5MDcsLTYzNDExMTUzNywtODQwODY3OTgwLDM0OTI1MzE2
