@@ -115,6 +115,8 @@ Property | Inspector Name | Description
 `autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
 `autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
+`useDescriptionAsCSS` | Description is Style | Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.
+`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: `@media screen and (max-width: 766px) and (orientation: portrait)`
 
 
 **Example Page**
@@ -326,5 +328,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0MTU0ODYxXX0=
+eyJoaXN0b3J5IjpbLTEzODM4ODg5NzJdfQ==
 -->
