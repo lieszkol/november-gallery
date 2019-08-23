@@ -4,6 +4,7 @@ namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
 use October\Rain\Support\Collection;
+use Backend\Facades\BackendAuth;
 
 class PopupGallery extends NovemberGalleryComponentBase
 {
@@ -13,6 +14,8 @@ class PopupGallery extends NovemberGalleryComponentBase
 	public $defaultLightboxOptions;
 
 	public $customLightboxScript;
+
+	public $errorMessages;
 
 	/**
 	 * Name and description to display for this component in the backend "CMS" section in the 
@@ -52,7 +55,7 @@ class PopupGallery extends NovemberGalleryComponentBase
 			'attachTo' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to'),
 				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.attach_to_hint'),
-				'default'           => '#gallery-button'
+				'default'           => ''
 			],
 			'additionalLightboxOptions' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.additional_lightbox_options'),
@@ -105,6 +108,11 @@ class PopupGallery extends NovemberGalleryComponentBase
 	{
 		if (!empty($this->property('attachTo'))) {
 			$this->attachTo = $this->property('attachTo');
+		} else {
+			$user = BackendAuth::getUser();
+			if ($user) {
+				$this->error = \Lang::get('zenware.novembergallery::lang.error.nothing_to_attach_to');
+			}
 		}
 
 		$this->defaultLightboxOptions = $this->getDefaultLightboxOptions();
@@ -117,6 +125,11 @@ class PopupGallery extends NovemberGalleryComponentBase
 	 */
 	public function onRender()
 	{
+		$this->errorMessages = [
+			'nothing_to_attach_to' => \Lang::get('zenware.novembergallery::lang.error.nothing_to_attach_to'),
+			'cannot_find_element_with_id' => str_replace('[alias]', $this->alias, str_replace('[attachTo]', $this->attachTo, \Lang::get('zenware.novembergallery::lang.error.cannot_find_element_with_id')))
+		];
+
 		// This MUST be done here instead of in onRun(), because there we don't yet have a $this->id:
 		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script)) {
 			$this->customLightboxScript = $this->page['customLightboxScript'] = str_replace("#gallery", '#' . $this->id, Settings::instance()->custom_lightbox_script);

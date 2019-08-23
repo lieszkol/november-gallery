@@ -4,6 +4,8 @@ namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
 use October\Rain\Support\Collection;
+use Backend\Facades\BackendAuth;
+
 
 // use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
@@ -220,7 +222,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase
 	 */
 	public function getGalleryLayout()
 	{
-		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') {
+		if (!Settings::instance()->custom_gallery_script_enabled && !empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') {
 			return $this->property('galleryLayout');
 		} elseif (!empty(Settings::instance()->default_gallery)) {
 			return Settings::instance()->default_gallery;
@@ -233,7 +235,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase
 	 */
 	public function getTilesLayout()
 	{
-		if (!empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') {
+		if (!Settings::instance()->custom_gallery_script_enabled && !empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') {
 			return $this->property('tilesLayout');
 		} elseif (!empty(Settings::instance()->default_gallery_tiles_layout)) {
 			return Settings::instance()->default_gallery_tiles_layout;
@@ -246,7 +248,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase
 	 */
 	public function getCombinedLayout()
 	{
-		if (!empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default') {
+		if (!Settings::instance()->custom_gallery_script_enabled && !empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default') {
 			return $this->property('combinedLayout');
 		} elseif (!empty(Settings::instance()->gallery_combined_layout)) {
 			return Settings::instance()->gallery_combined_layout;
@@ -259,6 +261,25 @@ class EmbeddedGallery extends NovemberGalleryComponentBase
 	 */
 	public function onRun()
 	{
+		$user = BackendAuth::getUser();
+		if ($user) {
+			if (
+				Settings::instance()->custom_gallery_script_enabled && !empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default'
+				&& $this->property('galleryLayout') != Settings::instance()->default_gallery
+			) {
+				$this->error =  str_replace('[galleryLayout]', $this->property('galleryLayout'), str_replace('[default_gallery]', Settings::instance()->default_gallery, \Lang::get('zenware.novembergallery::lang.error.component_default_gallery_mismatch')));
+			} elseif (
+				Settings::instance()->custom_gallery_script_enabled && !empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default'
+				&& $this->property('tilesLayout') != Settings::instance()->default_gallery_tiles_layout
+			) {
+				$this->error =  str_replace('[tilesLayout]', $this->property('tilesLayout'), str_replace('[default_gallery_tiles_layout]', Settings::instance()->default_gallery_tiles_layout, \Lang::get('zenware.novembergallery::lang.error.component_default_gallery_tiles_layout_mismatch')));
+			} elseif (
+				Settings::instance()->custom_gallery_script_enabled && !empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default'
+				&& $this->property('combinedLayout') != Settings::instance()->gallery_combined_layout
+			) {
+				$this->error =  str_replace('[combinedLayout]', $this->property('combinedLayout'), str_replace('[gallery_combined_layout]', Settings::instance()->gallery_combined_layout, \Lang::get('zenware.novembergallery::lang.error.component_default_gallery_combined_layout_mismatch')));
+			}
+		}
 		$this->defaultGalleryOptions = $this->getDefaultGalleryOptions();
 		parent::onRun();
 	}

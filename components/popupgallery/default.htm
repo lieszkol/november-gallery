@@ -4,7 +4,17 @@
 {# You can map any component property to a local page variable this way:{% set galleryitems = __SELF__.gallery.items %} #}
 
 {% if __SELF__.error %}
-	<div class="alert zen-alert">{{ __SELF__.error }}</div>
+	<div class="alert zen-alert">{{ __SELF__.error|raw }}</div>
+{% else %}
+	{# Let's make sure that there actually is an element to attach to: #}
+	<div class="alert zen-alert" id="november-gallery-nothing-to-attach-to" style="display: none;">{{ __SELF__.errorMessages.cannot_find_element_with_id|raw }}</div>
+	{% put scripts %}
+	<script type="text/javascript"> 
+		if(jQuery("{{ __SELF__.attachTo|raw }}").length == 0) {
+			jQuery("#november-gallery-nothing-to-attach-to").show(600);
+		}
+	</script>
+	{% endput %}
 {% endif %}
 
 {% if gallery.items|length > 0 %}

@@ -255,7 +255,7 @@
 		
 		// Pop-up lightbox-specific options:
 		'attach_to' => 'Attach to',
-		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox.',
+		'attach_to_hint' => 'JQuery selector for the element(s) that the user can click on to open the lightbox; for example: #gallery-button',
 
 		// Swiper-specific options:
 		'effect_label' => 'Transition Effect',
@@ -303,6 +303,13 @@
         'tab' => 'November Gallery',
 		'label' => 'Manage Settings',
 		'access_galleries' => 'Manage Galleries'
+	],
+	'error' => [
+		'nothing_to_attach_to' => 'NovemberGallery error: when using the Popup Lightbox component, you have to manually create an element on the page and set the "Attach To" property to the ID of that element. This element can be as simple as a button, for example: <pre class="inline"><code>&lt;button id="gallery-button"&gt;Click me!&lt;/button&gt;</code></pre>',
+		'cannot_find_element_with_id' => 'NovemberGallery error: Cannot find element with ID <pre class="inline"><code>[attachTo]</code></pre> while rendering popup gallery with alias <i>[alias]</i>!',
+		'component_default_gallery_mismatch' => 'NovemberGallery warning: you\'ve turned on the "Custom Embedded Gallery Script" option in the November Gallery backend settings, however, the default Gallery Layout you selected there ([default_gallery]) does not match the gallery layout you selected in the component inspector ([galleryLayout]). The default layout will be used instead. Either turn off the "Custom Embedded Gallery Script" option in the plugin configuration page, or set the Gallery Layout to "Default" in the component inspector.',
+		'component_default_gallery_tiles_layout_mismatch' => 'NovemberGallery warning: you\'ve turned on the "Custom Embedded Gallery Script" option in the November Gallery backend settings, however, the default Tile Layout you selected there ([default_gallery_tiles_layout]) does not match the gallery layout you selected in the component inspector ([tilesLayout]). The default layout will be used instead. Either turn off the "Custom Embedded Gallery Script" option in the plugin configuration page, or set the Gallery Layout to "Default" in the component inspector.',
+		'component_default_gallery_combined_layout_mismatch' => 'NovemberGallery warning: you\'ve turned on the "Custom Embedded Gallery Script" option in the November Gallery backend settings, however, the default Tile Layout you selected there ([gallery_combined_layout]) does not match the gallery layout you selected in the component inspector ([combinedLayout]). The default layout will be used instead. Either turn off the "Custom Embedded Gallery Script" option in the plugin configuration page, or set the Gallery Layout to "Default" in the component inspector.'
 	],
 	'miscellanous' => [
         'switch_on' => 'On',
