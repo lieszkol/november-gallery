@@ -30,7 +30,7 @@ This is an abridged version of the full documentation that we call [The November
 
 You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager. 
 
-> Hint: The dedicated backend Gallery page gives you more options for giving your images titles and subtitles, and you can also arrange the order easily; on the other hand, if you ever end up deleting the plugin, October will also delete all of your albums created there. Use the October built-in Media Manager to upload your images if you don't need the extra features provided by the November Gallery backend page.
+> Hint: The dedicated back-end November Gallery management page gives you more options for giving your images titles and subtitles, and you can also arrange the order easily; on the other hand, if you ever end up deleting the plugin, October will also delete all of your albums created there. Use the October built-in Media Manager to upload your images if you don't need the extra features provided by the November Gallery management page. Using the Media Manager also allows you to upload hundreds of images using an FTP .
 
 #### Uploading through the Media Manager
 
@@ -117,5 +117,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjg0MDUwNiwtNjUxNDAyN119
+eyJoaXN0b3J5IjpbLTE2NDI5NTA1MDYsLTY1MTQwMjddfQ==
 -->
