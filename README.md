@@ -305,7 +305,7 @@ The image list component does not have any options other than the [Shared Option
 **Example Page 1**
 ```html
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-{% for galleryitem in customGallery.galleryitems %}
+{% for galleryitem in customGallery.gallery.items %}
     <div>
         <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
             <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
@@ -319,7 +319,7 @@ This example assumes that your gallery component has the alias "customGallery". 
 **Example Page 2**
 ```html
 <div class="container-fluid">
-{% for galleryitemchunk in customGallery.galleryitems.sortBy('relativeMediaFilePath').chunk(3) %}
+{% for galleryitemchunk in customGallery.gallery.items.sortBy('relativeMediaFilePath').chunk(3) %}
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
@@ -338,7 +338,26 @@ Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-onl
 
 ### Page Properties
 
-**`__SELF__.galleryitems`**<br>
+**`__SELF__.gallery.items`**<br>
+Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
+also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
+
+Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
+```html
+{% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
+   <img src="{{ galleryitem.url }}" />
+{% endfor %}
+```
+<details>
+<summary>Read more...</summary>
+
+#### __SELF__.gallery Properties
+
+Property | Type | Description
+--|--|--
+`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
+
+**`__SELF__.gallery.items`**<br>
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
 also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
 
@@ -436,11 +455,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOT
-M5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcx
-OSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMj
-EwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAw
-NywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OT
-QxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3LC02MzQxMTE1
-MzddfQ==
+eyJoaXN0b3J5IjpbLTY2NjAzNjMxMywtOTYwNjg3OTM1LC01Nj
+M5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4Mjgy
+NDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMj
+A1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1
+NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMj
+Q5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5
+MDddfQ==
 -->
