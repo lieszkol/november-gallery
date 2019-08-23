@@ -66,8 +66,9 @@ To install from the  [Marketplace](https://octobercms.com/plugins): click `Add t
 Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
+`mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid. Options are: (1) title/Title (2) description/Description (3) sortOrder 
 `maxItems`|Max Images|The maximum number of images to display
-`mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
+`maxItems`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page!
 
 
 ## Component 1: Embedded Gallery
@@ -325,5 +326,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTkzNTQ4MDVdfQ==
+eyJoaXN0b3J5IjpbMjEwNDQ4NzIxMF19
 -->
