@@ -338,11 +338,9 @@ Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-onl
 
 ### Page Properties
 
-**`__SELF__.gallery.items`**<br>
-Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
-also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
-
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
+**`__SELF__.gallery`**<br>
+Type: [ZenWare\NovemberGallery\Classes\Gallery](https://github.com/lieszkol/november-gallery/blob/master/classes/Gallery.php)<br>
+Gallery class, . Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```html
 {% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
    <img src="{{ galleryitem.url }}" />
@@ -351,7 +349,7 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 <details>
 <summary>Read more...</summary>
 
-#### __SELF__.gallery Properties
+#### Gallery Properties
 
 Property | Type | Description
 --|--|--
@@ -455,11 +453,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjAzNjMxMywtOTYwNjg3OTM1LC01Nj
-M5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4Mjgy
-NDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMj
-A1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1
-NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMj
-Q5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5
-MDddfQ==
+eyJoaXN0b3J5IjpbNDczNzA2MzEsLTk2MDY4NzkzNSwtNTYzOT
+A1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQy
+LDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LDIwNT
+M5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYx
+LDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OT
+IwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3
+XX0=
 -->
