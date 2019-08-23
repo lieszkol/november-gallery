@@ -70,14 +70,12 @@ To install from [the repository](https://github.com/lieszkol/november-gallery) (
 Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
 
 ```bash
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
 Cloning into 'plugins/toughdeveloper/imageresizer'...
 ...
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
+USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
 Cloning into 'plugins/zenware/novembergallery'...
 ...
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo chown -R www-data:www-data plugins/toughdeveloper/
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo chown -R www-data:www-data plugins/zenware/
 USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer
 Rolled back: ToughDeveloper.ImageResizer
 Reinstalling plugin...
@@ -89,6 +87,8 @@ Reinstalling plugin...
 ZenWare.NovemberGallery
 - v1.0.1:  First version of NovemberGallery
 ```
+
+You can also install the image resizer plugin if you wish to use that for thumbnail gene
 
 </details>
 
@@ -447,11 +447,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NT
-A2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5
-NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMT
-IwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2
-NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNj
-MyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgy
-NjNdfQ==
+eyJoaXN0b3J5IjpbMTMxOTI5NTYzMiwtMTY2MTA0Mjk5NSw2Mj
+czMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUx
+NzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMT
+QyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1Mzkx
+MTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNz
+I3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAy
+MjddfQ==
 -->
