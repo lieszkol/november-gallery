@@ -202,7 +202,7 @@ The image list component does not have any options other than the [Shared Option
 {% endfor %}
 </div>
 ```
-This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the [Image Resizer Plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
+This example assumes that your gallery component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. Thumbnails are generated for the images and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
 
 **Example Page 2**
@@ -212,8 +212,8 @@ This example assumes that your gallery component has the alias "customGallery". 
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
-                <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
-                    <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
+                <a href="{{ galleryitem.url }}" target="_blank">
+                    <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
                 </a>
             </div>
         {% endfor %}
@@ -221,7 +221,7 @@ This example assumes that your gallery component has the alias "customGallery". 
 {% endfor %}
 </div>
 ```
-Again, we are assuming that your component has the alias "customGallery." The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
+Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 
 Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
@@ -340,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQ3MzQxNV19
+eyJoaXN0b3J5IjpbMTI0Nzg5MjM4MF19
 -->
