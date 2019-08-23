@@ -82,6 +82,10 @@ ZenWare.NovemberGallery
 
 You can also install the image resizer plugin if you wish to use that for thumbnail generation, for that you can run `sudo -u www-data git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer` and `sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer`.
 
+### Updates
+
+For plugins installed from the marketplace, you can just do **Settings → Updates & Plugins
+
 </details>
 
 # Usage
@@ -439,11 +443,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODE5MTU5NCwtMTY2MTA0Mjk5NSw2Mj
-czMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUx
-NzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMT
-QyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1Mzkx
-MTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNz
-I3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAy
-MjddfQ==
+eyJoaXN0b3J5IjpbLTE3NTg3NDAwMDEsLTc2ODE5MTU5NCwtMT
+Y2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3
+OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLD
+E0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3
+NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LD
+EwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4
+MTQxM119
 -->
