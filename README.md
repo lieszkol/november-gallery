@@ -140,8 +140,9 @@ The plugin provides four components that you can drop onto your CMS Pages/Partia
 Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
-`maxItems`|Max Images|The maximum number of images to display
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
+`maxItems`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page!
+`sortBy`|Max Images|The maximum number of images to display
 <br>
 <br>
 
@@ -444,11 +445,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MD
-Y4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2Nzcx
-MywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMz
-AwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAy
-NywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0Mz
-A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
-MV19
+eyJoaXN0b3J5IjpbLTIwMDQ3NjU2NDUsNjI3MzM4MDA2LC01NT
+A2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5
+NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMT
+IwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2
+NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNj
+MyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgy
+NjNdfQ==
 -->
