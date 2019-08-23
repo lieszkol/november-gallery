@@ -349,7 +349,7 @@ This example assumes that your gallery component has the alias "customGallery" a
 {% endfor %}
 </div>
 ```
-Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
+Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
 
@@ -465,11 +465,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNTkzNjIxLDE3MjgzNTk4ODYsLTY5ND
-U1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC0xNjYxMDQy
-OTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5MzUsLT
-U2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMTQ3Njgy
-ODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMwMDc2NTQxNy
-wyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMTAxMjU5
-NzU2MV19
+eyJoaXN0b3J5IjpbLTE0MDQ2NzI3MTksMTcyODM1OTg4NiwtNj
+k0NTUyODU5LC0xODI1NjU4NjM2LC03NjgxOTE1OTQsLTE2NjEw
+NDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4NzkzNS
+wtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2
+ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1ND
+E3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEy
+NTk3NTYxXX0=
 -->
