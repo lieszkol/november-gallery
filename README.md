@@ -70,16 +70,8 @@ To install from [the repository](https://github.com/lieszkol/november-gallery) (
 Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
 
 ```bash
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer
-Cloning into 'plugins/toughdeveloper/imageresizer'...
-...
 USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
 Cloning into 'plugins/zenware/novembergallery'...
-...
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer
-Rolled back: ToughDeveloper.ImageResizer
-Reinstalling plugin...
-ToughDeveloper.ImageResizer
 ...
 USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
 Rolled back: ZenWare.NovemberGallery
@@ -88,7 +80,7 @@ ZenWare.NovemberGallery
 - v1.0.1:  First version of NovemberGallery
 ```
 
-You can also install the image resizer plugin if you wish to use that for thumbnail gene
+You can also install the image resizer plugin if you wish to use that for thumbnail generation, for that you can run `sudo -u www-data git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer` and `sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer`.
 
 </details>
 
@@ -447,7 +439,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTI5NTYzMiwtMTY2MTA0Mjk5NSw2Mj
+eyJoaXN0b3J5IjpbLTc2ODE5MTU5NCwtMTY2MTA0Mjk5NSw2Mj
 czMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUx
 NzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMT
 QyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1Mzkx
