@@ -39,6 +39,10 @@ Also, make sure that your photos are in a format that web browsers understand, s
 
 Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 
+#### Uploading through the back-end Gallery management page
+
+This is fairly self-explanatory. Log into your site back-end and find the "Gallery" button at the top. Create an album, and upload your pictures!
+
 #### Uploading through the Media Manager
 
 Images must be organized into folders. Although you can use any folder structure that you'd like, we recommend that you create a "root" folder and create separate folders underneath it to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
@@ -51,8 +55,9 @@ Images must be organized into folders. Although you can use any folder structure
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-#### Uploading through the Media Manager
+#### Uploading using FTP
 
+This is the most robust way for uploading many pict
 
 ### (2) Configure The Plugin
 Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
@@ -121,5 +126,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDcyMTIsLTY1MTQwMjddfQ==
+eyJoaXN0b3J5IjpbNTE1MDYzMjM3LC02NTE0MDI3XX0=
 -->
