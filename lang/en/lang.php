@@ -170,7 +170,7 @@
 		'section_imager_resizer_label' => 'Image Resizer Settings',
         'use_image_resizer_label' => 'Use Image Resizer for image galleries',
         'use_image_resizer_comment' => 'Use the October Image Resizer plugin, which automatically creates a resized and compressed thumbnail of your original image.',
-        'use_image_resizer_disabled' => 'Image resizer seems to be missing or disabled. You must install it manually from the OctoberCMS Plugin Marketplace!',
+        'use_image_resizer_disabled' => 'Image resizer seems to be missing or disabled. You must <a href="https://octobercms.com/plugin/toughdeveloper-imageresizer">install it manually</a> from the OctoberCMS Plugin Marketplace!',
         'image_resizer_width_label' => 'Default Width',
         'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height; you can override this in the component inspector',
         'image_resizer_height_label' => 'Default Height',
