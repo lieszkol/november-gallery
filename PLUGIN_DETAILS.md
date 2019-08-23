@@ -32,6 +32,8 @@ This is an abridged version of the full documentation that we call [The November
 
 > Hint: Use the Embedded Gallery for fix-size galleries or for showing clickable thumbnails arranged as tiles
 
+#### Uploading using
+
 If you are going to use the Media Manager, then you may also want to create folders for your images. Although you can use any folder structure that you'd like, we recommend that you create a "root" folder and create separate folders underneath it to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
 
 - my_galleries
@@ -42,11 +44,9 @@ If you are going to use the Media Manager, then you may also want to create fold
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Regardless of how you upload your images, we highly recommend resizing your images before uploading them to your site. Next, prepare your pictures for display on the WWW. Make sure that your photos are in a format that web browsers understand, such as .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, we ♥ [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), and [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). There are great options out there for Mac as well. A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're looking to allow your users to see your pictures in top quality full-screen, then resize them to fit within these constraints.
 
-Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's also a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, we ♥ [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), and [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). There are great options out there for Mac as well.
-
-A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're looking to allow your users to see your pictures in top quality full-screen, then resize them to fit within these constraints.
+Also, make sure that your photos are in a format that web browsers understand, such as .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
 
 Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 
@@ -117,5 +117,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MzQ5MDE4NywtNjUxNDAyN119
+eyJoaXN0b3J5IjpbMTI0Nzc1MTY2OCwtNjUxNDAyN119
 -->
