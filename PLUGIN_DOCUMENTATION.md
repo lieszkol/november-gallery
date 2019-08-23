@@ -267,7 +267,6 @@ Property | Type | Description
 `filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1`
 `fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`relativeMediaFilePath` | string | Path to file relative to the media folder, for example: `/my-galleries/gallery-1/picture-1.jpg`
 `relativeFilePath` | string | Path to file relative to the website, for example: `/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
 `uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: `$currentTime->format( 'c' );`
 `url` | string | URL to file, for example: `https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
@@ -340,5 +339,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTc1NDEzNiwxMjQ3ODkyMzgwXX0=
+eyJoaXN0b3J5IjpbNTc3NjcyMzEyLDEyNDc4OTIzODBdfQ==
 -->
