@@ -251,7 +251,7 @@ also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collec
 
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```
-{% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
+{% for galleryitem in customGallery.gallery.items.sortBy('fileName') %}
    <img src="{{ galleryitem.url }}" />
 {% endfor %}
 ```
@@ -340,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjQ2NTE2Ml19
+eyJoaXN0b3J5IjpbMTQ4NDYzMjE3OF19
 -->
