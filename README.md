@@ -32,9 +32,7 @@ This README is an abridged version of the full documentation that we call [The N
 
 ### Limitations / ToDo:
  
- - [X] Get the demo page up and running
- - [X] Ability to add to static pages (not just CMS)
- - [ ] Handle gallery of videos uploaded to the site
+ - [ ] Improve handling of videos uploaded to the site
  - [ ] Expand docs with example for "dynamic" gallery via path variables
  - [ ] Expand this README with links to default component templates
  - [ ] Add alternative lightbox/carousel gallery script support
@@ -448,11 +446,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01Nj
-M5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4Mjgy
-NDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMj
-A1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1
-NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMj
-Q5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5
-MDddfQ==
+eyJoaXN0b3J5IjpbLTEwMzE1NzcxOCwtNTUwNjQ3NzgxLC05Nj
+A2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3
+MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLT
+MwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEw
+MjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxND
+MwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4
+MDFdfQ==
 -->
