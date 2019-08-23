@@ -324,14 +324,14 @@ The image list component does not have any options other than the [Shared Option
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.gallery.items %}
     <div>
-        <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
-            <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
+        <a href="{{ galleryitem.url }}" target="_blank">
+            <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
         </a>
     </div>
 {% endfor %}
 </div>
 ```
-This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images using the [Image Resizer Plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
+This example assumes that your gallery component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. Thumbnails are generated for the images and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
 **Example Page 2**
 ```html
@@ -465,11 +465,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xOD
-I1NjU4NjM2LC03NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4
-MDA2LC01NTA2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC
-0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjEx
-NzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NT
-EsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2
-NjAwN119
+eyJoaXN0b3J5IjpbMTA4NDk5NjkzOSwxNzI4MzU5ODg2LC02OT
+Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
+Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
+01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
+MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
+csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
+OTc1NjFdfQ==
 -->
