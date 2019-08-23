@@ -57,7 +57,7 @@ Images must be organized into folders. Although you can use any folder structure
 
 #### Uploading using FTP
 
-This is the most robust way for uploading many pictures at once to your site. Use an FTP client such as [FileZilla](https://filezilla-project.org/) (Windows) or [WinSCP](https://winscp.net/)  (Windows) or P
+This is the most robust way for uploading many pictures at once to your site. Use an FTP client such as [FileZilla](https://filezilla-project.org/) (Windows) or [WinSCP](https://winscp.net/)  (Windows) or [Panic Transmit 5](https://panic.com/transmit/) (Mac) and connect to your server. You'll 
 
 ### (2) Configure The Plugin
 Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
@@ -126,5 +126,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzNDcyNDQ2LC02NTE0MDI3XX0=
+eyJoaXN0b3J5IjpbLTUwNzI0NTI4MiwtNjUxNDAyN119
 -->
