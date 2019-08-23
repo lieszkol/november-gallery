@@ -34,9 +34,7 @@ This README is an abridged version of the full documentation that we call [The N
  
  - [ ] Improve handling of videos uploaded to the site
  - [ ] Expand docs with example for "dynamic" gallery via path variables
- - [ ] Expand this README with links to default component templates
  - [ ] Add alternative lightbox/carousel gallery script support
- - [ ] Add option to sort the displayed images by file date, date taken, or filename (this is currently possible by overriding the partial)
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploading through the backend "Gallery" page)
  - [ ] Cache image data in database instead of reading it all in from the filesystem every time
 
@@ -446,11 +444,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE1NzcxOCwtNTUwNjQ3NzgxLC05Nj
-A2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3
-MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLT
-MwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEw
-MjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxND
-MwNDgxNDEzLDEyNDkyMDIyNywxOTk0MTM4MjYzLDE0NzMxMTk4
-MDFdfQ==
+eyJoaXN0b3J5IjpbMzM1MDAyNTg0LC01NTA2NDc3ODEsLTk2MD
+Y4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2Nzcx
+MywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMz
+AwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAy
+NywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0Mz
+A0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgw
+MV19
 -->
