@@ -70,10 +70,10 @@ To install from [the repository](https://github.com/lieszkol/november-gallery) (
 Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
 
 ```bash
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
+USER@SERVER:/var/www/vhost/public_html# sudo -u www-data git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
 Cloning into 'plugins/zenware/novembergallery'...
 ...
-USER@SERVER:/var/www/novembergallery.zenware.io/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
+USER@SERVER:/var/www/vhost/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
 Rolled back: ZenWare.NovemberGallery
 Reinstalling plugin...
 ZenWare.NovemberGallery
@@ -84,7 +84,12 @@ You can also install the image resizer plugin if you wish to use that for thumbn
 
 ### Updates
 
-For plugins installed from the marketplace, you can just do **Settings → Updates & Plugins
+For plugins installed from the marketplace, you can just do **Settings → Updates & Plugins → Check for Updates.
+
+For plugin installed manually, you can run the following from your project root directory:
+
+```bash 
+ sudo -u www-data git -C plugins/zenware/novembergallery/ pull
 
 </details>
 
@@ -443,11 +448,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg3NDAwMDEsLTc2ODE5MTU5NCwtMT
-Y2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3
-OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLD
-E0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3
-NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LD
-EwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4
-MTQxM119
+eyJoaXN0b3J5IjpbLTY1Nzg3MzY5MywtNzY4MTkxNTk0LC0xNj
+YxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5
+MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMT
+Q3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMwMDc2
+NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMT
+AxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxNDMwNDgx
+NDEzXX0=
 -->
