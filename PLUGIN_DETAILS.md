@@ -30,7 +30,14 @@ This is an abridged version of the full documentation that we call [The November
 
 You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager. 
 
-> Hint: The dedicated back-end November Gallery management page gives you more options for giving your images titles and subtitles, and you can also arrange the order easily; on the other hand, if you ever end up deleting the plugin, October will also delete all of your albums created there. Use the October built-in Media Manager to upload your images if you don't need the extra features provided by the November Gallery management page. Using the Media Manager also allows you to upload hundreds of images using an FTP .
+> Hint: The dedicated back-end November Gallery management page gives you more options for giving your images titles and subtitles, and you can also arrange the order easily; on the other hand, if you ever end up deleting the plugin, October will also delete all of your albums created there. Use the October built-in Media Manager to upload your images if you don't need the extra features provided by the November Gallery management page. Going the Media Manager route also allows you to upload hundreds of images using an FTP client or other file manager; this is not possible through the Gallery page.
+
+
+Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, we ♥ [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), and [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). There are great options out there for Mac as well. A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're looking to allow your users to see your pictures in top quality full-screen, then resize them to fit within these constraints.
+
+Also, make sure that your photos are in a format that web browsers understand, such as .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+
+Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 
 #### Uploading through the Media Manager
 
@@ -44,11 +51,8 @@ Images must be organized into folders. Although you can use any folder structure
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, we ♥ [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), and [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). There are great options out there for Mac as well. A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're looking to allow your users to see your pictures in top quality full-screen, then resize them to fit within these constraints.
+#### Uploading through the Media Manager
 
-Also, make sure that your photos are in a format that web browsers understand, such as .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
-
-Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 
 ### (2) Configure The Plugin
 Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
@@ -117,5 +121,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI5NTA1MDYsLTY1MTQwMjddfQ==
+eyJoaXN0b3J5IjpbMTQwNDcyMTIsLTY1MTQwMjddfQ==
 -->
