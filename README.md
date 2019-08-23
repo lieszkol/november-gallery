@@ -142,7 +142,7 @@ Property | Inspector Name | Description
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 `maxItems`|Max Images|The maximum number of images to display
-`sortBy`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page! Options are: <br><small>-  `title` / Image Title<br>- `description` / Image Description<br>- `sortOrder` / Image Order in Gallery<br>- `width` / Image Width (5) `height` / Image Height (6) `orientation` / Image Orientation (7) `fileName` / Filename (8) `fileSize` / File Size (9) `uploaded` / Date/Time Uploaded; and all options are also available in reverse order (append DESC onto the option code).
+`sortBy`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page! Options are: <br><small>-  `title` / Image Title<br>- `description` / Image Description<br>- `sortOrder` / Image Order in Gallery<br>- `width` / Image Width<br>- `height` / Image Height<br>- `orientation` / Image Orientation<br>- `fileName` / Filename<br>- `fileSize` / File Size <br>- `uploaded` / Date/Time Uploaded;</small> <br>and all options are also available in reverse order (append DESC onto the option code).
 <br>
 <br>
 
@@ -231,6 +231,7 @@ Property | Inspector Name | Description
 `addNavigation` | Add navigation? | Toggle ON to show previous-slide and next-slide navigational arrows.
 `autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
 `autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
+`useDescriptionAsCSS` | 
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
 
 
@@ -445,11 +446,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDk4NzQwNzksNjI3MzM4MDA2LC01NT
-A2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5
-NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMT
-IwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2
-NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNj
-MyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgy
-NjNdfQ==
+eyJoaXN0b3J5IjpbLTk3ODkxMTI3Miw2MjczMzgwMDYsLTU1MD
+Y0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0
+MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMj
+AyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0
+MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2Mz
+IzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2
+M119
 -->
