@@ -193,7 +193,7 @@ The image list component does not have any options other than the [Shared Option
 **Example Page 1**
 ```
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-{% for galleryitem in customGallery.galleryitems %}
+{% for galleryitem in customGallery.gallery.items %}
     <div>
         <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
             <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
@@ -208,7 +208,7 @@ This example assumes that your gallery component has the alias "customGallery". 
 **Example Page 2**
 ```
 <div class="container-fluid">
-{% for galleryitemchunk in customGallery.galleryitems.sortBy('relativeMediaFilePath').chunk(3) %}
+{% for galleryitemchunk in customGallery.gallery.items.sortBy('relativeMediaFilePath').chunk(3) %}
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
@@ -229,8 +229,20 @@ Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-onl
 
 ## Page Properties
 
+**`__SELF__.gallery`**<br>
+Type: [ZenWare\NovemberGallery\Classes\Gallery](https://github.com/lieszkol/november-gallery/blob/master/classes/Gallery.php)<br>
+Gallery class, holds the various properties of the gallery instance.
 
-**`__SELF__.galleryitems`**
+#### Gallery Properties
+
+Property | Type | Description
+--|--|--
+`items` | [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) | Collection of gallery items, see below.
+`orderBy` | string | The GalleryItem property by which the gallery should be sorted (as set in the component inspector)
+
+
+
+**`__SELF__.gallery.items`**
 
 
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) 
@@ -328,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODM4ODg5NzJdfQ==
+eyJoaXN0b3J5IjpbMjEzNjQ2NTE2Ml19
 -->
