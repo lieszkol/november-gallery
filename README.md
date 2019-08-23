@@ -384,7 +384,10 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 
 Property | Type | Description
 --|--|--
-`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
+`title` | string | Image title metadata, available for images uploaded using the backend gallery page only
+`description` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
+`fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
+`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object, only available for files uploaded using the Media Manager
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
 `fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
@@ -464,11 +467,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTI4NTk1NiwxNzI4MzU5ODg2LC02OT
-Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
-Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
-01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
-MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
-csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
-OTc1NjFdfQ==
+eyJoaXN0b3J5IjpbNjA3NjY1MDIzLDE3MjgzNTk4ODYsLTY5ND
+U1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC0xNjYxMDQy
+OTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5MzUsLT
+U2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMTQ3Njgy
+ODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMwMDc2NTQxNy
+wyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMTAxMjU5
+NzU2MV19
 -->
