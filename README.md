@@ -454,11 +454,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMT
-Y2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3
-OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLD
-E0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3
-NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LD
-EwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4
-MTQxM119
+eyJoaXN0b3J5IjpbLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNz
+Y4MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3
+NzgxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOS
+wzNDUwNjc3MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIy
+ODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMC
+w4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3
+MzY1NV19
 -->
