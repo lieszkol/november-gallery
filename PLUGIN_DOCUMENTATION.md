@@ -195,8 +195,8 @@ The image list component does not have any options other than the [Shared Option
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.gallery.items %}
     <div>
-        <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
-            <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
+        <a href="{{ galleryitem. }}" target="_blank">
+            <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
         </a>
     </div>
 {% endfor %}
@@ -284,7 +284,7 @@ Type: string
 Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: 'tiles', tiles_type: 'justified'`)
 
 
-**`__SELF__.defaultLightboxOptions`**
+**`__SELF__.defaultLightboxptions`**
 Type: string
 Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: 'lightbox'`
 
@@ -294,7 +294,7 @@ Type: string
 The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
 
 
-**`__SELF__.customLightboxScript`**
+**`__SELF__.customLightboxcript`**
 Type: string
 The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
 
@@ -340,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQzNTIxMjRdfQ==
+eyJoaXN0b3J5IjpbLTE5MTQ3MzQxNV19
 -->
