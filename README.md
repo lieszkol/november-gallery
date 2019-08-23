@@ -6,7 +6,7 @@
 
 Check out the [live demo site](https://novembergallery.zenware.io)!
 
-A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
+A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
  3. Drop November Gallery onto your page or partial* or static page
@@ -472,11 +472,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTM1NzkxNCwxNzI4MzU5ODg2LC02OT
-Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
-Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
-01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
-MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
-csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
-OTc1NjFdfQ==
+eyJoaXN0b3J5IjpbLTEwNjA2NDYxNTUsLTk0OTM1NzkxNCwxNz
+I4MzU5ODg2LC02OTQ1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5
+MTU5NCwtMTY2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MS
+wtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1
+MDY3NzEzLDE0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMz
+E3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1
+OTQxMDI3XX0=
 -->
