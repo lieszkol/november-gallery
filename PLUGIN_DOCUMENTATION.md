@@ -325,5 +325,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzY0NzEyNV19
+eyJoaXN0b3J5IjpbLTE3NTkzNTQ4MDVdfQ==
 -->
