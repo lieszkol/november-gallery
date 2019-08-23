@@ -284,7 +284,7 @@ Type: string
 Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: 'tiles', tiles_type: 'justified'`)
 
 
-**`__SELF__.defaultlightboxoptions`**
+**`__SELF__.defaultLightboxOptions`**
 Type: string
 Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: 'lightbox'`
 
@@ -294,7 +294,7 @@ Type: string
 The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
 
 
-**`__SELF__.customlightboxscript`**
+**`__SELF__.customLightboxScript`**
 Type: string
 The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
 

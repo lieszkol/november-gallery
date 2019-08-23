@@ -14,43 +14,76 @@
 			case 'gallery_tiles':
 				switch ($('#Form-field-Settings-default_gallery_tiles_layout').val()) {
 					case 'gallery_tiles_columns':
-						editor.setValue('jQuery("#gallery").unitegallery({});');
+						editor.setValue([
+							'jQuery("#gallery").unitegallery({',
+							'	gallery_theme: "tiles",',
+							'	tiles_col_width: 200',
+							'});'].join('\n'));
 						break;
 					case 'gallery_tiles_justified':
 						editor.setValue([
 							'jQuery("#gallery").unitegallery({',
-							'	tiles_type:"justified"',
+							'	gallery_theme: "tiles",',
+							'	tiles_type:"justified",',
+							'	tiles_justified_row_height: 200',
 							'});'].join('\n'));
 						break;
 					case 'gallery_tiles_nested':
 						editor.setValue([
 							'jQuery("#gallery").unitegallery({',
-							'	tiles_type:"nested"',
+							'	gallery_theme: "tiles",',
+							'	tiles_type:"nested",',
+							'	tiles_nested_optimal_tile_width: 200',
 							'});'].join('\n'));
 						break;
 					case 'gallery_tiles_grid':
-						editor.setValue('jQuery("#gallery").unitegallery({});');
+						editor.setValue([
+							'jQuery("#gallery").unitegallery({',
+							'	gallery_theme: "tilesgrid",',
+							'	tiles_col_width: 200,',
+							'	tile_width: 200,',
+							'	tile_height: 200',
+							'});'].join('\n'));
 						break;
 				}
 				break;
 			case 'gallery_carousel':
-				editor.setValue('jQuery("#gallery").unitegallery({});');
+				editor.setValue([
+					'jQuery("#gallery").unitegallery({',
+					'	gallery_theme: "carousel",',
+					'	tile_width: 200,',
+					'	tile_height: 200',
+					'});'].join('\n'));
 				break;
 			case 'gallery_combined':
 				switch ($('#Form-field-Settings-gallery_combined_layout').val()) {
 					case 'gallery_combined_default':
-						editor.setValue('jQuery("#gallery").unitegallery({});');
+						editor.setValue([
+							'jQuery("#gallery").unitegallery({',
+							'	thumb_width: 100,',
+							'	thumb_height: 100,',
+							'	gallery_width: 800,',
+							'	gallery_height: 600',
+							'});'].join('\n'));
 						break;
 					case 'gallery_combined_compact':
 						editor.setValue([
 							'jQuery("#gallery").unitegallery({',
-							'	gallery_theme: "compact"',
+							'	gallery_theme: "compact",',
+							'	thumb_width: 100,',
+							'	thumb_height: 100,',
+							'	gallery_width: 800,',
+							'	gallery_height: 600',
 							'});'].join('\n'));
 						break;
 					case 'gallery_combined_grid':
 						editor.setValue([
 							'jQuery("#gallery").unitegallery({',
-							'	gallery_theme: "grid"',
+							'	gallery_theme: "grid",',
+							'	thumb_width: 100,',
+							'	thumb_height: 100,',
+							'	gallery_width: 800,',
+							'	gallery_height: 600',
 							'});'].join('\n'));
 						break;
 				}
@@ -58,7 +91,9 @@
 			case 'gallery_slider':
 				editor.setValue([
 					'jQuery("#gallery").unitegallery({',
-					'	gallery_theme: "slider"',
+					'	gallery_theme: "slider",',
+					'	gallery_width: 800,',
+					'	gallery_height: 600,',
 					'});'].join('\n'));
 				break;
 			case 'gallery_swiper':

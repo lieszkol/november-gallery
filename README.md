@@ -388,14 +388,14 @@ Property | Type | Description
 <br>
 <blockquote><p><strong>Hint:</strong> To dig into the <code>gallery.items</code> (or any other) variable/collection, you have two options. You can simply add <code>{{ dump(embeddedGallery.gallery.items.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.gallery.items) }}</code> to your page to show debug information in the Laravel debugbar. To see all public properties of a galleryItem, do: <code>{{ debug(embeddedGallery.gallery.items.first.toArray) }}</code>. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
 <br>
-
+customLightboxScript
 **Additional Page Properties**
 
 **`__SELF__.defaultgalleryoptions`**
 Type: string
 Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
 
-**`__SELF__.defaultlightboxoptions`**
+**`__SELF__.defaultLightboxOptions`**
 Type: string
 Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: "lightbox"`
 

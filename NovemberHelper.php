@@ -60,7 +60,7 @@ class NovemberHelper
 	public static function trimEnd($string, $endString)
 	{
 		$len = strlen($endString);
-		if ($len == 0 || !$this::endsWith($string, $endString)) {
+		if ($len == 0 || !self::endsWith($string, $endString)) {
 			return $string;
 		}
 		return substr($string, 0, -$len);

@@ -1,8 +1,7 @@
 {##}
 {# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
 
-{# Assign component property to page variable for convenience: #}
-{% set gallery = __SELF__.gallery %}
+{# You can map any component property to a local page variable this way:{% set galleryitems = __SELF__.gallery.items %} #}
 
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
@@ -36,13 +35,13 @@
 		jQuery(document).ready(function(){ 
 		
 		{# If we have a custom script set (in the November Gallery backend configuration page), then simply o/p that: #}
-		{% if __SELF__.customvideogalleryscript %}
-			{{ __SELF__.customvideogalleryscript|raw }}
+		{% if __SELF__.customVideoGalleryScript %}
+			{{ __SELF__.customVideoGalleryScript|raw }}
 		{% else %}
 			
-			uniteGalleryApi = jQuery("{{ __SELF__.videogalleryitemsselector ?: __SELF__.id }}").unitegallery({
+			uniteGalleryApi = jQuery("{{ __SELF__.videoGalleryItemsSelector ?: __SELF__.id }}").unitegallery({
 
-				{{ __SELF__.defaultvideogalleryoptions|raw }}
+				{{ __SELF__.defaultVideoGalleryOptions|raw }}
 
 				// Add additional options here!
 				// See: http://unitegallery.net/index.php?page=tiles-columns-options

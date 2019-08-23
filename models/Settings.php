@@ -9,7 +9,9 @@ use Model;
 //https://octobercms.com/docs/api/system/behaviors/settingsmodel
 class Settings extends Model
 {
-	public $implement = ['System.Behaviors.SettingsModel'];
+	public $implement = [
+		\System\Behaviors\SettingsModel::class
+	];
 
 	// Path to media
 	public $mediaPath = '';
@@ -30,17 +32,46 @@ class Settings extends Model
 	}
 
 	/**
+     * Initialize the seed data for this model. This only executes when the
+     * model is first created or reset to default.
+	 * 
 	 * Set default settings data, necessary in addition to setting defaults in fields.yaml
 	 * See https://github.com/octobercms/october/issues/2094
 	 * > The `default` value controls the form field, when the form renders as a user 
 	 * > interface (when the `<input />` is displayed). It does not control the PHP API 
 	 * > (via the `::get` call), so this is expected.
 	 * https://stackoverflow.com/questions/37640717/setting-a-default-value-on-settings-form-return-null-in-octobercms
+	 * 
+     * @return void
 	 */
 	public function initSettingsData()
 	{
 		// $this->base_folder = "/assets";
 		// $this->allowed_extensions3 = 'ogv';
+		$this->default_gallery = 'gallery_tiles';
+		$this->default_gallery_tiles_layout = 'gallery_tiles_columns';
+		$this->gallery_combined_layout = 'gallery_combined_default';
+		$this->custom_gallery_script_enabled = false;
+		$this->default_gallery_options = 'jQuery("#gallery").unitegallery({});';
+		$this->default_swiper_effect = 'slide';
+		$this->custom_lightbox_script_enabled = false;
+		$this->custom_lightbox_script = 'jQuery("#gallery").unitegallery({});';
+		$this->base_video_folder = '<inherit>';
+		$this->default_video_gallery_layout = 'video_gallery_right_thumb';
+		$this->custom_video_gallery_script_enabled = false;
+		$this->custom_video_gallery_script = 'jQuery("#gallery").unitegallery({});';
+		$this->base_blogmedia_folder = '<inherit>';
+		$this->image_resizer_width = 200;
+		$this->use_image_resizer = true;
+		$this->image_resizer_mode = 'auto';
+		$this->image_resizer_quality = 95;
+		$this->allowed_extensions_jpg = true;
+		$this->allowed_extensions_gif = true;
+		$this->allowed_extensions_png = true;
+		$this->inject_unitegallery_assets = true;
+		$this->inject_swiper_assets = true;
+		$this->inject_jquery = true;
+
 		$this->inject_unitegallery_js = true;
 	}
 

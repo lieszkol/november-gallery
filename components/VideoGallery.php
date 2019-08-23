@@ -9,9 +9,11 @@ use ZenWare\NovemberGallery\NovemberHelper;
 class VideoGallery extends NovemberGalleryComponentBase
 {
 
-	public $videogalleryitemsselector;
-	public $defaultvideogalleryoptions;
-	public $customvideogalleryscript;
+	public $videoGalleryItemsSelector;
+
+	public $defaultVideoGalleryOptions;
+
+	public $customVideoGalleryScript;
 
 	/**
 	 * Name and description to display for this component in the backend "CMS" section in the 
@@ -159,16 +161,24 @@ class VideoGallery extends NovemberGalleryComponentBase
 	public function onRun()
 	{
 		if (!empty($this->property('videoGalleryItemsSelector'))) {
-			$this->videogalleryitemsselector = $this->property('videoGalleryItemsSelector');
+			$this->videoGalleryItemsSelector = $this->property('videoGalleryItemsSelector');
 		}
 
-		$this->defaultvideogalleryoptions = $this->getDefaultVideoGalleryOptions();
-
-		if (Settings::instance()->custom_video_gallery_script_enabled && !empty(Settings::instance()->custom_video_gallery_script)) {
-			$this->customvideogalleryscript = str_replace("#gallery", $this->id, Settings::instance()->custom_video_gallery_script);
-		}
+		$this->defaultVideoGalleryOptions = $this->getDefaultVideoGalleryOptions();
 
 		parent::onRun();
+	}
+
+	/**
+	 * Inject page variables
+	 */
+	public function onRender()
+	{
+		// This MUST be done here instead of in onRun(), because there we don't yet have a $this->id:
+		if (Settings::instance()->custom_video_gallery_script_enabled && !empty(Settings::instance()->custom_video_gallery_script)) {
+			$this->customVideoGalleryScript = $this->page['customVideoGalleryScript'] = str_replace("#gallery", '#' . $this->id, Settings::instance()->custom_video_gallery_script);
+		}
+		parent::onRender();
 	}
 
 	/**

@@ -1,8 +1,7 @@
 {##}
 {# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
 
-{# Assign component property to page variable for convenience: #}
-{% set gallery = __SELF__.gallery %}
+{# You can map any component property to a local page variable this way:{% set galleryitems = __SELF__.gallery.items %} #}
 
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>

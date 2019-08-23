@@ -5,6 +5,8 @@ namespace ZenWare\NovemberGallery\Components;
 use ZenWare\NovemberGallery\Models\Settings;
 use October\Rain\Support\Collection;
 
+// use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+
 class EmbeddedGallery extends NovemberGalleryComponentBase
 {
 
@@ -258,19 +260,20 @@ class EmbeddedGallery extends NovemberGalleryComponentBase
 	public function onRun()
 	{
 		$this->defaultGalleryOptions = $this->getDefaultGalleryOptions();
-
-		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options)) {
-			$this->customGalleryScript = $this->page['customGalleryScript'] = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
-		}
-
 		parent::onRun();
 	}
 
-	// Could inject variables into the page this way: https://stackoverflow.com/questions/48180951/octobercms-how-to-pass-variable-from-page-to-component
-	// public function onRender()
-	// {
-	// 	$this->page['record'] = $this->page->components['builderDetails']->record;
-	// }
+	/**
+	 * Inject page variables
+	 */
+	public function onRender()
+	{
+		// This MUST be done here instead of in onRun(), because there we don't yet have a $this->id:
+		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options)) {
+			$this->customGalleryScript = $this->page['customGalleryScript'] = str_replace("#gallery", '#' . $this->id, Settings::instance()->default_gallery_options);
+		}
+		parent::onRender();
+	}
 
 	/**
 	 * Get default options used in the default.htm layout for initialising the gallery.

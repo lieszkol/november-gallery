@@ -8,9 +8,11 @@ use October\Rain\Support\Collection;
 class PopupGallery extends NovemberGalleryComponentBase
 {
 
-	public $attachto;
-	public $defaultlightboxoptions;
-	public $customlightboxscript;
+	public $attachTo;
+
+	public $defaultLightboxOptions;
+
+	public $customLightboxScript;
 
 	/**
 	 * Name and description to display for this component in the backend "CMS" section in the 
@@ -102,16 +104,24 @@ class PopupGallery extends NovemberGalleryComponentBase
 	public function onRun()
 	{
 		if (!empty($this->property('attachTo'))) {
-			$this->attachto = $this->property('attachTo');
+			$this->attachTo = $this->property('attachTo');
 		}
 
-		$this->defaultlightboxoptions = $this->getDefaultLightboxOptions();
-
-		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script)) {
-			$this->customlightboxscript = str_replace("#gallery", $this->id, Settings::instance()->custom_lightbox_script);
-		}
+		$this->defaultLightboxOptions = $this->getDefaultLightboxOptions();
 
 		parent::onRun();
+	}
+
+	/**
+	 * Inject page variables
+	 */
+	public function onRender()
+	{
+		// This MUST be done here instead of in onRun(), because there we don't yet have a $this->id:
+		if (Settings::instance()->custom_lightbox_script_enabled && !empty(Settings::instance()->custom_lightbox_script)) {
+			$this->customLightboxScript = $this->page['customLightboxScript'] = str_replace("#gallery", '#' . $this->id, Settings::instance()->custom_lightbox_script);
+		}
+		parent::onRender();
 	}
 
 	/**

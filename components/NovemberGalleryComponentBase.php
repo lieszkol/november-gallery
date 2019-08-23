@@ -12,7 +12,7 @@ use ZenWare\NovemberGallery\Classes\Gallery;
 use October\Rain\Support\Collection;
 use Illuminate\Support\Str;
 
-//  use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+//    use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
 abstract class NovemberGalleryComponentBase extends ComponentBase
 {
@@ -123,8 +123,20 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 		if (Settings::instance()->allowed_extensions_png) {
 			$this->allowedExtensions[] = 'png';
 		}
+		// DebugbarDebugbar::info(Settings::instance());
+		$this->gallery = new Gallery($this->loadMedia(), $this->getSortBy());
+		// Do NOT do this here, because if we have several galleries on the same page, they will all end up rendering the gallery selected in the last component on the page:
+		// $this->page['gallery'] = $this->gallery;
+	}
 
-		$this->gallery = $this->page['novemberGallery_' . $this->alias] = $this->page['gallery'] = new Gallery($this->loadMedia(), $this->getSortBy());
+	/**
+	 * Inject page variables
+	 */
+	public function onRender()
+	{
+		// Could inject variables into the page this way: https://stackoverflow.com/questions/48180951/octobercms-how-to-pass-variable-from-page-to-component
+		$this->page['novemberGallery_' . $this->alias] = $this->page['gallery'] = $this->gallery;
+		parent::onRender();
 	}
 
 	/** 

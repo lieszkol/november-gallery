@@ -1,8 +1,7 @@
 {##}
 {# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
 
-{# Assign component property to page variable for convenience: #}
-{% set gallery = __SELF__.gallery %}
+{# You can map any component property to a local page variable this way:{% set galleryitems = __SELF__.gallery.items %} #}
 
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
@@ -29,13 +28,13 @@
 		jQuery(document).ready(function(){ 
 			
 		{# If we have a custom script set (in the November Gallery backend configuration page), then simply o/p that: #}
-		{% if __SELF__.customlightboxscript %}
-			{{ __SELF__.customlightboxscript|raw }}
+		{% if __SELF__.customLightboxScript %}
+			{{ __SELF__.customLightboxScript|raw }}
 		{% else %}
 			
 			uniteGalleryApi_{{__SELF__.id}} = jQuery("#{{__SELF__.id}}").unitegallery({
 
-				{{ __SELF__.defaultlightboxoptions|raw }}
+				{{ __SELF__.defaultLightboxOptions|raw }}
 
 				// Add additional options here!
 				// See: http://unitegallery.net/index.php?page=tiles-columns-options
@@ -43,7 +42,7 @@
 				// tiles_col_width: 280,                   //column width - exact or base according the settings
 			}); 
 
-			jQuery("{{ __SELF__.attachto|raw }}").click(function() {
+			jQuery("{{ __SELF__.attachTo|raw }}").click(function() {
 				uniteGalleryApi_{{__SELF__.id}}.openLightbox(0);
 			});
 

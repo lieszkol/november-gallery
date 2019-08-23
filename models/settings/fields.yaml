@@ -37,7 +37,7 @@ tabs:
                 'gallery_carousel': zenware.novembergallery::lang.settings.default_gallery_carousel
                 'gallery_combined': zenware.novembergallery::lang.settings.default_gallery_combined
                 'gallery_slider': zenware.novembergallery::lang.settings.default_gallery_slider
-            default: 'default_gallery_tiles'
+            default: 'gallery_tiles'
             span: storm
             cssClass: col-xs-12 col-sm-8 col-md-6 col-lg-5
             containerAttributes: 
@@ -321,6 +321,7 @@ tabs:
                 'portrait': zenware.novembergallery::lang.settings.image_resizer_mode_portrait
                 'landscape': zenware.novembergallery::lang.settings.image_resizer_mode_landscape
                 'crop': zenware.novembergallery::lang.settings.image_resizer_mode_crop
+            default: 'auto'
             span: left
             trigger:
                 action: show
@@ -334,7 +335,7 @@ tabs:
             step: 1
             min: 0
             max: 100
-            default: 90
+            default: 95
             span: left
             trigger:
                 action: show

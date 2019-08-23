@@ -6,7 +6,7 @@ use ZenWare\NovemberGallery\Models\Settings;
 use System\Classes\PluginManager;
 use Config;
 
- use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
+//  use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
 /**
  * GalleryItem Model
