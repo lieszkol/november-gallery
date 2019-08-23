@@ -208,7 +208,7 @@ This example assumes that your gallery component has the alias "customGallery" a
 **Example Page 2**
 ```
 <div class="container-fluid">
-{% for galleryitemchunk in customGallery.gallery.items.sortBy('relativeMediaFilePath').chunk(3) %}
+{% for galleryitemchunk in customGallery.gallery.items.sortBy('fileName').chunk(3) %}
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
@@ -340,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Nzg5MjM4MF19
+eyJoaXN0b3J5IjpbLTM1NTc1NDEzNiwxMjQ3ODkyMzgwXX0=
 -->
