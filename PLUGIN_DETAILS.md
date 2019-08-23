@@ -1,6 +1,6 @@
 Check out the [live demo site](https://novembergallery.zenware.io)!
 
-A gallery plugin for OctoberCMS that tries to Keep It Simple and Stupid.
+A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
  3. Drop November Gallery onto your page or partial or static page
@@ -126,5 +126,6 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4OTM5MjYwLC02NTE0MDI3XX0=
+eyJoaXN0b3J5IjpbLTI2Mzc1OTY2NywzMTg5MzkyNjAsLTY1MT
+QwMjddfQ==
 -->
