@@ -340,20 +340,15 @@ Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-onl
 
 **`__SELF__.gallery`**<br>
 Type: [ZenWare\NovemberGallery\Classes\Gallery](https://github.com/lieszkol/november-gallery/blob/master/classes/Gallery.php)<br>
-Gallery class, . Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
-```html
-{% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
-   <img src="{{ galleryitem.url }}" />
-{% endfor %}
-```
-<details>
-<summary>Read more...</summary>
+Gallery class, holds the various properties of the gallery instance.
 
 #### Gallery Properties
 
 Property | Type | Description
 --|--|--
-`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
+`items` | [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) | Collection of gallery items, see below.
+`items` | [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) | Collection of gallery items, see below.
+
 
 **`__SELF__.gallery.items`**<br>
 Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
@@ -453,11 +448,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczNzA2MzEsLTk2MDY4NzkzNSwtNTYzOT
-A1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQy
-LDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LDIwNT
-M5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYx
-LDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMTI0OT
-IwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4OTA3
-XX0=
+eyJoaXN0b3J5IjpbMTk3NTYzNjYyMiwtOTYwNjg3OTM1LC01Nj
+M5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4Mjgy
+NDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMj
+A1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1
+NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMj
+Q5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5
+MDddfQ==
 -->
