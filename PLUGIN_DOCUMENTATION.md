@@ -66,9 +66,9 @@ To install from the  [Marketplace](https://octobercms.com/plugins): click `Add t
 Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
-`mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid. Options are: (1) `title` / Image Title (2) `description` / Image Description (3) `sortOrder` / Image Order in Gallery (4) `width` / Image Width (5) `height` / Image Height (6) `orientation` / Image Orientation (7) `fileName` / Filename (8) `fileSize` / File Size (9) `uploaded` / Date/Time Uploaded; and all options are also available in reverse order (append DESC onto the option code).
+`mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
 `maxItems`|Max Images|The maximum number of images to display
-`maxItems`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page!
+`sortBy`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page! Options are: (1) `title` / Image Title (2) `description` / Image Description (3) `sortOrder` / Image Order in Gallery (4) `width` / Image Width (5) `height` / Image Height (6) `orientation` / Image Orientation (7) `fileName` / Filename (8) `fileSize` / File Size (9) `uploaded` / Date/Time Uploaded; and all options are also available in reverse order (append DESC onto the option code).
 
 
 ## Component 1: Embedded Gallery
@@ -326,5 +326,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTI5NDYxOF19
+eyJoaXN0b3J5IjpbNjI0MTU0ODYxXX0=
 -->
