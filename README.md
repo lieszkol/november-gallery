@@ -89,8 +89,11 @@ For plugins installed from the marketplace, you can just do **Settings → Updat
 For plugin installed manually, you can run the following from your project root directory:
 
 ```bash 
- sudo -u www-data git -C plugins/zenware/novembergallery/ pull
-
+USER@SERVER:/var/www/vhost/public_html# sudo -u www-data git -C plugins/zenware/novembergallery/ pull
+remote: Enumerating objects: 14, done.
+USER@SERVER:/var/www/vhost/public_html# suphp artisan october:up
+...
+```
 </details>
 
 # Usage
@@ -448,11 +451,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Nzg3MzY5MywtNzY4MTkxNTk0LC0xNj
-YxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5
-MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMT
-Q3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMwMDc2
-NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMT
-AxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3MzY1NSwxNDMwNDgx
-NDEzXX0=
+eyJoaXN0b3J5IjpbMTg2OTM5OTUyLC03NjgxOTE1OTQsLTE2Nj
+EwNDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4Nzkz
+NSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxND
+c2ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1
+NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMD
+EyNTk3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0
+MTNdfQ==
 -->
