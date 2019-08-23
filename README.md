@@ -340,8 +340,8 @@ This example assumes that your gallery component has the alias "customGallery" a
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
-                <a href="{{ galleryitem.relativeMediaFilePath | media }}" target="_blank">
-                    <img src="{{ galleryitem.relativeMediaFilePath | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
+                <a href="{{ galleryitem.url }}" target="_blank">
+                    <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
                 </a>
             </div>
         {% endfor %}
@@ -349,7 +349,7 @@ This example assumes that your gallery component has the alias "customGallery" a
 {% endfor %}
 </div>
 ```
-Again, we are assuming that your component has the alias "customGallery." The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
+Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
 
@@ -465,11 +465,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDk5NjkzOSwxNzI4MzU5ODg2LC02OT
-Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
-Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
-01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
-MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
-csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
-OTc1NjFdfQ==
+eyJoaXN0b3J5IjpbODMxNTkzNjIxLDE3MjgzNTk4ODYsLTY5ND
+U1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC0xNjYxMDQy
+OTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5MzUsLT
+U2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMTQ3Njgy
+ODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMwMDc2NTQxNy
+wyMDUzOTExNDUxLDIxMDA5NjQxMCw4ODU5NDEwMjcsMTAxMjU5
+NzU2MV19
 -->
