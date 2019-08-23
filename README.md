@@ -336,7 +336,7 @@ This example assumes that your gallery component has the alias "customGallery" a
 **Example Page 2**
 ```html
 <div class="container-fluid">
-{% for galleryitemchunk in customGallery.gallery.items.sortBy('relativeMediaFilePath').chunk(3) %}
+{% for galleryitemchunk in customGallery.gallery.items.sortBy('fileName').chunk(3) %}
     <div class="row">
         {% for galleryitem in galleryitemchunk %}
             <div class="col-xs-4" style="text-align: center;">
@@ -391,7 +391,6 @@ Property | Type | Description
 `filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
 `fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`relativeMediaFilePath` | string | Path to file relative to the media folder, for example: <small>/my-galleries/gallery-1/picture-1.jpg</small>
 `relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 `uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: $currentTime->format( 'c' );
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
@@ -465,11 +464,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDQ2NzI3MTksMTcyODM1OTg4NiwtNj
-k0NTUyODU5LC0xODI1NjU4NjM2LC03NjgxOTE1OTQsLTE2NjEw
-NDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4NzkzNS
-wtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2
-ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1ND
-E3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEy
-NTk3NTYxXX0=
+eyJoaXN0b3J5IjpbLTM5MTI4NTk1NiwxNzI4MzU5ODg2LC02OT
+Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
+Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
+01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
+MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
+csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
+OTc1NjFdfQ==
 -->
