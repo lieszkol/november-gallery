@@ -23,7 +23,7 @@ A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're
 Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
 
 ### (2) Configure The Plugin
-Log into your "backend" and go to Settings → November Gallery to configure your defaults. Things to look out for:
+Well, you are already looking at the plugin settings page. Things to look out for:
 
  - `Settings` Tab: Select the folder that you created your galleries under from the Base Media Folder drop-down, you can also select a default layout for your galleries. 
 - `Thumbnails` Tab: It is recommended to use the image resizer to automatically generate thumbnails of your pictures. For this, make sure that the "Use Image Resizer" option is ON on the Thumbnails plugin configuration tab. You can also set either the width or the height for your thumbnails here.
@@ -77,11 +77,8 @@ Again, this makes use of UniteGallery JS. Use it to display videos inline. You c
 
 Well, we probably could have given this component a better name. This component only loads the list of image files into a page variable, without rendering a gallery. Use this if you wish to write your own code for displaying the images, or if you wish to make use of some other JS library to render them.
 
-# Where to now?
+# Further Reading
 
-Install the plugin and give it a test drive! 
-
-You can also read:
    
 - The [November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
 - The [November Gallery Demo Site](https://novembergallery.zenware.io/)
@@ -89,6 +86,6 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTQ5NDc2OSwxMDAxNzkwNDA2LC0xNz
-Q4MzY4NDBdfQ==
+eyJoaXN0b3J5IjpbMTkyMzQ4NzUxOSwyMDk5NDk0NzY5LDEwMD
+E3OTA0MDYsLTE3NDgzNjg0MF19
 -->
