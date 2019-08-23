@@ -273,7 +273,7 @@ Property | Type | Description
 `url` | string | URL to file, for example: `https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
 
 
-> Hint: To dig into the `galleryItems` (or any other) variable/collection, you have two options. You can simply add `{{ dump(embeddedGallery.galleryitems.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the [Debugbar plugin](https://github.com/scottbedard/oc-debugbar-plugin) and then add `{{ debug(embeddedGallery.galleryitems) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
+> Hint: To dig into the `gallery.items` (or any other) variable/collection, you have two options. You can simply add `{{ dump(embeddedGallery.gallery.items.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the [Debugbar plugin](https://github.com/scottbedard/oc-debugbar-plugin) and then add `{{ debug(embeddedGallery.gallery.items) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
 
 
 **Additional Page Properties**
@@ -340,5 +340,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDYzMjE3OF19
+eyJoaXN0b3J5IjpbLTE2ODQzNTIxMjRdfQ==
 -->
