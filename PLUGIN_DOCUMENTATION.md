@@ -260,15 +260,23 @@ Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it 
 
 Property | Type | Description
 --|--|--
-`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object
+`title` | string | Image title metadata, available for images uploaded using the backend gallery page only
+`description` | string | Description metadata, available for images uploaded using the backend gallery page only
+`sortOrder` | string | Image sort order, available for images uploaded using the backend gallery page only
+`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object, only available for files uploaded using the Media Manager
+`octoberImageFile` | [System\Models\File](https://github.com/octobercms/october/blob/master/modules/system/models/File.php) | A standard php file information object, only available for files uploaded using the Media Manager
+`width` | integer| Image width, see https://www.php.net/manual/en/function.getimagesize.php
+`height` | integer| Image height, see https://www.php.net/manual/en/function.getimagesize.php
+`type` | string | Image type, see https://www.php.net/manual/en/function.getimagesize.php
+`orientation` | string | Will be "horizontal", "vertical", or "square" depending on whether the image is wider than it is tall
+`fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
-`fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
 `filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1`
 `fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
 `fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
 `relativeFilePath` | string | Path to file relative to the website, for example: `/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
-`uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: `$currentTime->format( 'c' );`
+`uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: $currentTime->format( 'c' );
 `url` | string | URL to file, for example: `https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
 
 
@@ -339,5 +347,5 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3NjcyMzEyLDEyNDc4OTIzODBdfQ==
+eyJoaXN0b3J5IjpbMTk3NjE1MjYwMCwxMjQ3ODkyMzgwXX0=
 -->
