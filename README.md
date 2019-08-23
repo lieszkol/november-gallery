@@ -141,8 +141,8 @@ Property | Inspector Name | Description
 --|--|--
 `alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
 `mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
-`maxItems`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page!
-`sortBy`|Max Images|The maximum number of images to display
+`maxItems`|Max Images|The maximum number of images to display
+`sortBy`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page! Options are: <br><small>-  `title` / Image Title<br>- `description` / Image Description<br>- `sortOrder` / Image Order in Gallery<br>- `width` / Image Width (5) `height` / Image Height (6) `orientation` / Image Orientation (7) `fileName` / Filename (8) `fileSize` / File Size (9) `uploaded` / Date/Time Uploaded; and all options are also available in reverse order (append DESC onto the option code).
 <br>
 <br>
 
@@ -445,7 +445,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQ3NjU2NDUsNjI3MzM4MDA2LC01NT
+eyJoaXN0b3J5IjpbLTE4NDk4NzQwNzksNjI3MzM4MDA2LC01NT
 A2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5
 NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMT
 IwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2
