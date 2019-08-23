@@ -103,14 +103,29 @@ ZenWare.NovemberGallery
 
 For further usage examples and documentation please see [The NovemberGallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
 
+
 ### (1) Prepare and Upload your Images
 
-**You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager**. In either case, we highly recommend resizing your images before uploading them to your site. If you are going to use the Media Manager, then you may also want to create folders for your images. 
+You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager. 
+
+> Hint: The dedicated back-end November Gallery management page gives you more options for giving your images titles and subtitles, and you can also arrange the order easily; on the other hand, if you ever end up deleting the plugin, October will also delete all of your albums created there. Use the October built-in Media Manager to upload your images if you don't need the extra features provided by the November Gallery management page. Going the Media Manager route also allows you to upload hundreds of images using an FTP client or other file manager; this is not possible through the Gallery page.
 
 <details>
 <summary>Read more...</summary>
 
-Although you can use any folder structure that you'd like, we recommend that you create a folder and create separate folders underneath that folder to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
+Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, we ♥ [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), and [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). There are great options out there for Mac as well. A typical screen resolution nowadays is around 1920 x 1680 pixels - so if you're looking to allow your users to see your pictures in top quality full-screen, then resize them to fit within these constraints.
+
+Also, make sure that your photos are in a format that web browsers understand, such as .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+
+Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
+
+#### Uploading through the back-end Gallery management page
+
+This is fairly self-explanatory. Log into your site back-end and find the "Gallery" button at the top. Create an album, and upload your pictures!
+
+#### Uploading through the Media Manager
+
+Images must be organized into folders. Although you can use any folder structure that you'd like, we recommend that you create a "root" folder and create separate folders underneath it to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
 
 - my_galleries
 	- my_travels
@@ -120,13 +135,9 @@ Although you can use any folder structure that you'd like, we recommend that you
 	- cat_pictures
 	- awesome_vacuum_cleaners
 
-Next, prepare your pictures for display on the WWW. First, make sure that your photos are in a format that web browsers understand. This can be .jpg or .png, or .gif (the latter is more suitable for graphics with fewer colors and geometric lines, such as charts or icons).
+#### Uploading using FTP
 
-Although the plugin will automatically generate thumbnails of your pictures, the full-size images will be displayed as-is. Therefore, it's also a good idea to resize all of your pictures before uploading them to the gallery. A plethora of free options exist to help you with that, I highly recommend [FastStone Image Viewer](https://www.faststone.org) (Windows), [Fast Image Resizer](https://adionsoft.net/) (Windows), or [Image Resizer for Windows](http://www.bricelam.net/ImageResizer/). I'm sure there are great options for Mac as well - but [watch a little Louis Rossmann](https://www.youtube.com/user/rossmanngroup) to understand why Macs are evil so if you're on a Mac I'm sorry but I can't help you :-(
-
-A typical screen resolution nowadays is around 1600x1200 (or 1920x1680) pixels - so if you're looking to allow your users to see your pictures in decent quality full-screen, then resize them to fit within these constraints.
-
-Finally, upload your pictures using the "Gallery" admin area, or through the October Media manager into the folders you created earlier.
+This is the most robust way for uploading many pictures at once to your site. Use an FTP client such as [FileZilla](https://filezilla-project.org/) (Windows) or [WinSCP](https://winscp.net/)  (Windows) or [Panic Transmit 5](https://panic.com/transmit/) (Mac) and connect to your server. Your media files will be located in `public_html/storage/app/media`. You can create new folders through FTP as well, and if you then use the back-end media manager, you'll see them. 
 </details>
 
 ### (2) Configure The Plugin
@@ -454,11 +465,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNz
-Y4MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3
-NzgxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOS
-wzNDUwNjc3MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIy
-ODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIxMDA5NjQxMC
-w4ODU5NDEwMjcsMTAxMjU5NzU2MSw3Mjc4NjYwMDcsMTYzMjM3
-MzY1NV19
+eyJoaXN0b3J5IjpbMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xOD
+I1NjU4NjM2LC03NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4
+MDA2LC01NTA2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC
+0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjEx
+NzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NT
+EsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2
+NjAwN119
 -->
