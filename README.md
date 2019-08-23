@@ -389,6 +389,9 @@ Property | Type | Description
 `sortOrder` | string | Image sort order, available for images uploaded using the backend gallery page only
 `file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object, only available for files uploaded using the Media Manager
 `octoberImageFile` | [System\Models\File](https://github.com/octobercms/october/blob/master/modules/system/models/File.php) | A standard php file information object, only available for files uploaded using the Media Manager
+`width` | integer| Image width, see https://www.php.net/manual/en/function.getimagesize.php
+`height` | integer| Image height, see https://www.php.net/manual/en/function.getimagesize.php
+`type` | string | Image type, see https://www.php.net/manual/en/function.getimagesize.php
 `fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
 `fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
 `fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
@@ -468,11 +471,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjE0MDYwMiwxNzI4MzU5ODg2LC02OT
-Q1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0
-Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC
-01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4
-MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MT
-csMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1
-OTc1NjFdfQ==
+eyJoaXN0b3J5IjpbLTE3MjkxNTkxNTQsMTcyODM1OTg4NiwtNj
+k0NTUyODU5LC0xODI1NjU4NjM2LC03NjgxOTE1OTQsLTE2NjEw
+NDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4NzkzNS
+wtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2
+ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1ND
+E3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEy
+NTk3NTYxXX0=
 -->
