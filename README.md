@@ -91,7 +91,10 @@ For plugin installed manually, you can run the following from your project root 
 ```bash 
 USER@SERVER:/var/www/vhost/public_html# sudo -u www-data git -C plugins/zenware/novembergallery/ pull
 remote: Enumerating objects: 14, done.
-USER@SERVER:/var/www/vhost/public_html# suphp artisan october:up
+...
+USER@SERVER:/var/www/vhost/public_html# sudo -u www-data php artisan october:up
+ZenWare.NovemberGallery
+- v1.0.4:  Extend Rainlab Blog integration with support for images in media folders
 ...
 ```
 </details>
@@ -451,11 +454,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTM5OTUyLC03NjgxOTE1OTQsLTE2Nj
-EwNDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4Nzkz
-NSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxND
-c2ODI4MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1
-NDE3LDIwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMD
-EyNTk3NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0
-MTNdfQ==
+eyJoaXN0b3J5IjpbLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMT
+Y2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3
+OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLD
+E0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3
+NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LD
+EwMTI1OTc1NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4
+MTQxM119
 -->
