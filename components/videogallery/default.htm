@@ -1,69 +1,59 @@
-{% set galleryitems = __SELF__.galleryitems %}
+{##}
+{# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
+
+{# Assign component property to page variable for convenience: #}
+{% set gallery = __SELF__.gallery %}
+
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
 {% endif %}
 
-{% if galleryitems|length > 0 %}
-<div>
-	<div id="{{__SELF__.id}}" style="display:none;">
-		{% verbatim %}
-		<!-- Note that if you are replacing this with your own template, you can use a straight twig filter as follows: 
-			<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" ... -->
-		{% endverbatim %}
-		{% for galleryitem in galleryitems.sortBy('fileName') %}
-		<img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
-			data-image="{{ galleryitem.url }}"
-			data-description="{{ galleryitem.description }}"
-			data-title="{{ galleryitem.title }}" />
-		<div 	data-type="html5video"
-				data-image="http://video-js.zencoder.com/oceans-clip.png"
-				data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
-				data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
-				data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
-				data-title="Birds"
-				data-description="html5 video description"></div>
+{% if gallery.items|length > 0 %}
+	<div>
+		<div id="{{__SELF__.id}}" style="display:none;">
+		{# If you are replacing this with your own template, you can use a straight twig filter as follows: 
+		<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}"></img>
+		#}
+		{% for galleryitem in gallery.items.sortBy(gallery.sortBy, SORT_REGULAR, gallery.sortDirection == 'DESC' ? true : false) %}
+			<img alt="{{ galleryitem.title }}" src="{{ galleryitem.galleryItemSrc }}"
+				data-image="{{ galleryitem.url }}"
+				data-description="{{ galleryitem.description }}"
+				data-title="{{ galleryitem.title }}" />
+			<div 	data-type="html5video"
+					data-image="http://video-js.zencoder.com/oceans-clip.png"
+					data-videoogv="http://video-js.zencoder.com/oceans-clip.ogv"
+					data-videowebm="http://video-js.zencoder.com/oceans-clip.webm"
+					data-videomp4="http://video-js.zencoder.com/oceans-clip.mp4"
+					data-title="Birds"
+					data-description="html5 video description"></div>
 		{% endfor %}
+		</div>
 	</div>
-</div>
 
-{% put scripts %}
-<script type="text/javascript"> 
-    // UniteGallery: https://github.com/vvvmax/unitegallery/
-	jQuery(document).ready(function(){ 
-
+	{% put scripts %}
+	<script type="text/javascript"> 
+		// UniteGallery: https://github.com/vvvmax/unitegallery/
+		jQuery(document).ready(function(){ 
+		
+		{# If we have a custom script set (in the November Gallery backend configuration page), then simply o/p that: #}
 		{% if __SELF__.customvideogalleryscript %}
-
-		{{ __SELF__.customvideogalleryscript|raw }}
-		
-		{% elseif __SELF__.videogalleryitemsselector %}
-		
-		uniteGalleryApi = jQuery("{{__SELF__.videogalleryitemsselector}}").unitegallery({
-
-			{{ __SELF__.defaultvideogalleryoptions|raw }}
-
-			// Add additional options here!
-			// See: http://unitegallery.net/index.php?page=tiles-columns-options
-			// For example: 
-			// tiles_col_width: 280,                   //column width - exact or base according the settings
-			
-		}); 
-		
+			{{ __SELF__.customvideogalleryscript|raw }}
 		{% else %}
-		
-		uniteGalleryApi = jQuery("#{{__SELF__.id}}").unitegallery({
-
-			{{ __SELF__.defaultvideogalleryoptions|raw }}
-
-			// Add additional options here!
-			// See: http://unitegallery.net/index.php?page=tiles-columns-options
-			// For example: 
-			// tiles_col_width: 280,                   //column width - exact or base according the settings
 			
-		}); 
+			uniteGalleryApi = jQuery("{{ __SELF__.videogalleryitemsselector ?: __SELF__.id }}").unitegallery({
+
+				{{ __SELF__.defaultvideogalleryoptions|raw }}
+
+				// Add additional options here!
+				// See: http://unitegallery.net/index.php?page=tiles-columns-options
+				// For example: 
+				// tiles_col_width: 280,                   //column width - exact or base according the settings
+				
+			}); 
 
 		{% endif %}
-	}); 
+		}); 
 
-</script>
-{% endput %}
+	</script>
+	{% endput %}
 {% endif %}

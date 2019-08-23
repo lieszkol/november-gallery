@@ -1,83 +1,76 @@
 <?php
+
 namespace ZenWare\NovemberGallery\Components;
 
 use ZenWare\NovemberGallery\Models\Settings;
-use ToughDeveloper\ImageResizer\Classes\Image;
 use October\Rain\Support\Collection;
 
-class EmbeddedGallery extends NovemberGalleryComponentBase {
-	
-	public $defaultgalleryoptions;
+class EmbeddedGallery extends NovemberGalleryComponentBase
+{
 
-	public $customgalleryscript;
+	public $defaultGalleryOptions;
 
-    /**
-     * Name and description to display for this component in the backend "CMS" section in the 
-     * Components list.
-     * 
-     * @return array ['name' => '...', 'description' => '...']
-     */
-    public function componentDetails() {
-        return [
-            'name' => 'zenware.novembergallery::lang.plugin.embedded_gallery_component_name',
-            'description' => 'zenware.novembergallery::lang.plugin.embedded_gallery_component_description'
-        ];
-    }
+	public $customGalleryScript;
 
-    /**
-     * Configuration options that can be set on the component properties page after 
-     * being dropped into a CMS page, this is in addition to any properties defined 
-     * in NovemberGalleryComponentBase.
-     * 
-     * @return array Component properties page configuration options
-     */
-    public function defineProperties()
-    {
-        return array_merge(parent::defineProperties(), [
-            'mediaFolder' => [
-                'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_hint'),
-                'default'           => '',
-                'type'              => 'dropdown',
-                'placeholder'       => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_placeholder'),
-                // 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
-                // 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
-            ],
+	/**
+	 * Name and description to display for this component in the backend "CMS" section in the 
+	 * Components list.
+	 * 
+	 * @return array ['name' => '...', 'description' => '...']
+	 */
+	public function componentDetails()
+	{
+		return [
+			'name' => 'zenware.novembergallery::lang.plugin.embedded_gallery_component_name',
+			'description' => 'zenware.novembergallery::lang.plugin.embedded_gallery_component_description'
+		];
+	}
+
+	/**
+	 * Configuration options that can be set on the component properties page after 
+	 * being dropped into a CMS page, this is in addition to any properties defined 
+	 * in NovemberGalleryComponentBase.
+	 * 
+	 * @return array Component properties page configuration options
+	 */
+	public function defineProperties()
+	{
+		return array_merge(parent::defineProperties(), [
 			'galleryLayout' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_layout_label'),
 				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_layout_hint'),
-                'type'        => 'dropdown',
+				'type'        => 'dropdown',
 				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'options'     => [
 					'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 					'gallery_tiles' => \Lang::get('zenware.novembergallery::lang.settings.default_gallery_tiles'),
-					'gallery_carousel'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_carousel'),
-					'gallery_combined'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_combined'),
-					'gallery_slider'=> \Lang::get('zenware.novembergallery::lang.settings.default_gallery_slider'),
+					'gallery_carousel' => \Lang::get('zenware.novembergallery::lang.settings.default_gallery_carousel'),
+					'gallery_combined' => \Lang::get('zenware.novembergallery::lang.settings.default_gallery_combined'),
+					'gallery_slider' => \Lang::get('zenware.novembergallery::lang.settings.default_gallery_slider'),
 				]
 			],
 			'tilesLayout' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_tiles_layout_label'),
 				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_tiles_layout_hint'),
-                'type'        => 'dropdown',
+				'type'        => 'dropdown',
 				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'depends'     => ['galleryLayout']
 			],
 			'combinedLayout' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_combined_layout_label'),
 				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_combined_layout_hint'),
-                'type'        => 'dropdown',
+				'type'        => 'dropdown',
 				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'depends'     => ['galleryLayout']
 			],
 			'additionalGalleryOptions' => [
-                'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.additional_gallery_options'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.additional_gallery_options_hint'),
-                'default'           => ''
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.additional_gallery_options'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.additional_gallery_options_hint'),
+				'default'           => ''
 			],
 			'imageResizerWidth' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_width_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_width_comment'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_width_comment'),
 				'default'           => '',
 				'type'              => 'string',
 				'validationPattern' => '^[0-9]+$',
@@ -86,7 +79,7 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 			],
 			'imageResizerHeight' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_height_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_height_comment'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_height_comment'),
 				'default'           => '',
 				'type'              => 'string',
 				'validationPattern' => '^[0-9]+$',
@@ -95,22 +88,22 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 			],
 			'imageResizerMode' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_mode_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_mode_hint'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.image_resizer_mode_hint'),
 				'type'        		=> 'dropdown',
 				'placeholder' 		=> \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'options'     		=> [
 					'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 					'auto' => \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_auto'),
-					'exact'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_exact'),
-					'portrait'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_portrait'),
-					'landscape'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_landscape'),
-					'crop'=> \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_crop'),
+					'exact' => \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_exact'),
+					'portrait' => \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_portrait'),
+					'landscape' => \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_landscape'),
+					'crop' => \Lang::get('zenware.novembergallery::lang.settings.image_resizer_mode_crop'),
 				],
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_thumbnails_label')
 			],
 			'galleryWidth' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_comment'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_width_comment'),
 				'default'           => '',
 				'type'              => 'string',
 				'validationPattern' => '^[0-9\%]+$',
@@ -119,65 +112,69 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 			],
 			'galleryHeight' => [
 				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_label'),
-                'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_comment'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.gallery_height_comment'),
 				'default'           => '',
 				'type'              => 'string',
 				'validationPattern' => '^[0-9\%]+$',
 				'validationMessage' => 'The Gallery Height property can only contain numbers and an optional percent sign!',
 				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_gallery_dimensions_label')
 			]
-        ]);
-    }
+		]);
+	}
 
+	/**
+	 * Dynamic options for tilesLayout, options are only available if Gallery Layout is "Tiles"
+	 */
 	public function getTilesLayoutOptions()
 	{
 		if (\Request::input('galleryLayout') === 'gallery_tiles') {
 			return [
 				'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
-				'gallery_tiles_columns'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_columns'),
-                'gallery_tiles_justified'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_justified'),
-                'gallery_tiles_nested'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_nested'),
-                'gallery_tiles_grid'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_grid')
+				'gallery_tiles_columns' => \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_columns'),
+				'gallery_tiles_justified' => \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_justified'),
+				'gallery_tiles_nested' => \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_nested'),
+				'gallery_tiles_grid' => \Lang::get('zenware.novembergallery::lang.settings.gallery_tiles_layout_grid')
 			];
 		}
-		
+
 		return [
 			'not_applicable' => \Lang::get('zenware.novembergallery::lang.miscellanous.not_applicable')
 		];
 	}
 
+	/**
+	 * Dynamic options for combinedLayout, options are only available if Gallery Layout is "Combined"
+	 */
 	public function getCombinedLayoutOptions()
 	{
 		if (\Request::input('galleryLayout') === 'gallery_combined') {
 			return [
 				'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
-				'gallery_combined_default'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_default'),
-                'gallery_combined_compact'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_compact'),
-                'gallery_combined_grid'=> \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_grid')
+				'gallery_combined_default' => \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_default'),
+				'gallery_combined_compact' => \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_compact'),
+				'gallery_combined_grid' => \Lang::get('zenware.novembergallery::lang.settings.gallery_combined_layout_grid')
 			];
 		}
-		
+
 		return [
 			'not_applicable' => \Lang::get('zenware.novembergallery::lang.miscellanous.not_applicable')
 		];
 	}
 
-    /**
-     * Load CSS and JS assets
-     */
-    public function InjectScripts() {
-		if (Settings::instance()->inject_unitegallery_assets) 
-		{
+	/**
+	 * Load CSS and JS assets
+	 */
+	public function InjectScripts()
+	{
+		if (Settings::instance()->inject_unitegallery_assets) {
 			$this->addCss('assets/unitegallery/dist/css/unite-gallery.css');
 			$this->addJs('assets/unitegallery/dist/js/unitegallery.min.js');
-			switch($this->getGalleryLayout()) 
-			{
+			switch ($this->getGalleryLayout()) {
 				case 'gallery_tiles':
-					switch($this->getTilesLayout()) 
-					{
-						case 'gallery_tiles_columns': 
-						case 'gallery_tiles_justified': 
-						case 'gallery_tiles_nested': 
+					switch ($this->getTilesLayout()) {
+						case 'gallery_tiles_columns':
+						case 'gallery_tiles_justified':
+						case 'gallery_tiles_nested':
 							$this->addJs('assets/unitegallery/dist/themes/tiles/ug-theme-tiles.js');
 							break;
 						case 'gallery_tiles_grid':
@@ -189,13 +186,12 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 					$this->addJs('assets/unitegallery/dist/themes/carousel/ug-theme-carousel.js');
 					break;
 				case 'gallery_combined':
-					switch($this->getCombinedLayout()) 
-					{
-						case 'gallery_combined_default': 
+					switch ($this->getCombinedLayout()) {
+						case 'gallery_combined_default':
 							$this->addJs('assets/unitegallery/dist/themes/default/ug-theme-default.js');
 							$this->addCss('assets/unitegallery/dist/themes/default/ug-theme-default.css');
 							break;
-						case 'gallery_combined_compact': 
+						case 'gallery_combined_compact':
 							$this->addJs('assets/unitegallery/dist/themes/compact/ug-theme-compact.js');
 							break;
 						case 'gallery_combined_grid':
@@ -217,52 +213,54 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 		}
 	}
 
-	public function getGalleryLayout() 
+	/**
+	 * Load Gallery Layout set on component inspector, with fallback to option set on the plugin configuration page
+	 */
+	public function getGalleryLayout()
 	{
-		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') 
-		{
+		if (!empty($this->property('galleryLayout')) && $this->property('galleryLayout') !== 'not_applicable' && $this->property('galleryLayout') !== 'default') {
 			return $this->property('galleryLayout');
-		}
-		elseif (!empty(Settings::instance()->default_gallery))
-		{
+		} elseif (!empty(Settings::instance()->default_gallery)) {
 			return Settings::instance()->default_gallery;
 		}
 		return 'gallery_tiles';
 	}
 
-	public function getTilesLayout() 
+	/**
+	 * Load Tiles Layout set on component inspector, with fallback to option set on the plugin configuration page
+	 */
+	public function getTilesLayout()
 	{
-		if (!empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') 
-		{
+		if (!empty($this->property('tilesLayout')) && $this->property('tilesLayout') !== 'not_applicable' && $this->property('tilesLayout') !== 'default') {
 			return $this->property('tilesLayout');
-		}
-		elseif (!empty(Settings::instance()->default_gallery_tiles_layout))
-		{
+		} elseif (!empty(Settings::instance()->default_gallery_tiles_layout)) {
 			return Settings::instance()->default_gallery_tiles_layout;
 		}
 		return 'gallery_tiles_columns';
 	}
 
-	public function getCombinedLayout() 
+	/**
+	 * Load Combined Layout set on component inspector, with fallback to option set on the plugin configuration page
+	 */
+	public function getCombinedLayout()
 	{
-		if (!empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default') 
-		{
+		if (!empty($this->property('combinedLayout')) && $this->property('combinedLayout') !== 'not_applicable' && $this->property('combinedLayout') !== 'default') {
 			return $this->property('combinedLayout');
-		}
-		elseif (!empty(Settings::instance()->gallery_combined_layout))
-		{
+		} elseif (!empty(Settings::instance()->gallery_combined_layout)) {
 			return Settings::instance()->gallery_combined_layout;
 		}
 		return 'gallery_combined_default';
 	}
-		
-	public function onRun() {
 
-		$this->defaultgalleryoptions = $this->getDefaultGalleryOptions();
+	/**
+	 * Load page variables etc.
+	 */
+	public function onRun()
+	{
+		$this->defaultGalleryOptions = $this->getDefaultGalleryOptions();
 
-		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options))
-		{
-			$this->customgalleryscript = $this->page['customgalleryscript'] = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
+		if (Settings::instance()->custom_gallery_script_enabled && !empty(Settings::instance()->default_gallery_options)) {
+			$this->customGalleryScript = $this->page['customGalleryScript'] = str_replace("#gallery", $this->id, Settings::instance()->default_gallery_options);
 		}
 
 		parent::onRun();
@@ -273,27 +271,26 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 	// {
 	// 	$this->page['record'] = $this->page->components['builderDetails']->record;
 	// }
-	
+
 	/**
-     * Get default options used in the default.htm layout for initialising the gallery.
-     */
-    public function getDefaultGalleryOptions() {
+	 * Get default options used in the default.htm layout for initialising the gallery.
+	 */
+	public function getDefaultGalleryOptions()
+	{
 		$additionalOptions = new Collection();
-		switch($this->getGalleryLayout()) 
-		{
+		switch ($this->getGalleryLayout()) {
 			case 'gallery_tiles':
-				switch($this->getTilesLayout()) 
-				{
+				switch ($this->getTilesLayout()) {
 					case 'gallery_tiles_columns':
 						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_col_width',  $this->getThumbnailWidth());
 						$additionalOptions->put('gallery_theme', '"tiles"');
 						break;
-					case 'gallery_tiles_justified': 
+					case 'gallery_tiles_justified':
 						if ($this->getThumbnailHeight() !== false) $additionalOptions->put('tiles_justified_row_height', $this->getThumbnailHeight());
 						$additionalOptions->put('gallery_theme', '"tiles"');
 						$additionalOptions->put('tiles_type', '"justified"');
 						break;
-					case 'gallery_tiles_nested': 
+					case 'gallery_tiles_nested':
 						if ($this->getThumbnailWidth() !== false) $additionalOptions->put('tiles_nested_optimal_tile_width', $this->getThumbnailWidth());
 						$additionalOptions->put('gallery_theme', '"tiles"');
 						$additionalOptions->put('tiles_type', '"nested"');
@@ -312,11 +309,10 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 				$additionalOptions->put('gallery_theme', '"carousel"');
 				break;
 			case 'gallery_combined':
-				switch($this->getCombinedLayout()) 
-				{
-					case 'gallery_combined_default': 
+				switch ($this->getCombinedLayout()) {
+					case 'gallery_combined_default':
 						break;
-					case 'gallery_combined_compact': 
+					case 'gallery_combined_compact':
 						$additionalOptions->put('gallery_theme', '"compact"');
 						break;
 					case 'gallery_combined_grid':
@@ -337,10 +333,9 @@ class EmbeddedGallery extends NovemberGalleryComponentBase {
 
 		$additionalOptions = $additionalOptions->map(function ($item, $key) {
 			return $key . ':' . $item;
-		})->implode(', '); 
+		})->implode(', ');
 
-		if (!empty($this->property('additionalGalleryOptions'))) 
-		{
+		if (!empty($this->property('additionalGalleryOptions'))) {
 			if (!empty($additionalOptions)) $additionalOptions = $additionalOptions . ', ';
 			$additionalOptions = $additionalOptions . rtrim($this->property('additionalGalleryOptions'), ', \t\n\r');
 		}

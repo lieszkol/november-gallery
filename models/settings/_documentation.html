@@ -1,1 +1,4 @@
-<h1>Help!</h1>
+<?php 
+$markdown = File::get(dirname(__FILE__) . '/_documentation.md');
+echo Markdown::parse($markdown);
+?>

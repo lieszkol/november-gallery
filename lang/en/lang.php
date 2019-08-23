@@ -2,7 +2,7 @@
     'plugin' => [
         'name' => 'November Gallery',
         'long_name' => 'UniteGallery.js + OctoberCMS Media Manager + Image Resizer = NovemberGallery',
-        'description' => 'Upload your photos using the October Media manager and display them on your page as an embedded gallery or a pop-up lightbox!',
+        'description' => 'Display your photos in an embedded gallery, as thumbnails "masonry-style", in a responsive "swiper", or as a pop-up lightbox! Upload your photos using the October Media Manager or the Gallery back-end page dedicated to managing your albums.',
         'long_description' => 'OctoberCMS Media manager + vvvmax/unitegallery + Image Resizer plugin = a highly customizable yet reliable way to display your photos in a gallery. The plugin reads images uploaded using October\'s built-in Media manager, uses the ImageResizer plugin to automatically generate thumbnails, and presents them in a gallery either as tiles (arranged in columns, justified, or laid out in a grid), as a carousel, as a slider, or as a pop-up lightbox that can be opened from a link/button. Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.',
         
 		// Components
@@ -170,9 +170,10 @@
 		'section_imager_resizer_label' => 'Image Resizer Settings',
         'use_image_resizer_label' => 'Use Image Resizer for image galleries',
         'use_image_resizer_comment' => 'Use the October Image Resizer plugin, which automatically creates a resized and compressed thumbnail of your original image.',
-        'image_resizer_width_label' => 'Width',
+        'use_image_resizer_disabled' => 'Image resizer seems to be missing or disabled. You must install it manually from the OctoberCMS Plugin Marketplace!',
+        'image_resizer_width_label' => 'Default Width',
         'image_resizer_width_comment' => 'Leave empty or set to 0 to only constrain the image by height; you can override this in the component inspector',
-        'image_resizer_height_label' => 'Height',
+        'image_resizer_height_label' => 'Default Height',
         'image_resizer_height_comment' => 'Leave empty or set to 0 to only constrain the image by width; you can override this in the component inspector',
         
         'image_resizer_mode_label' => 'Mode',
@@ -204,6 +205,21 @@
 	],
 	
     'component_properties' => [
+		// Shared options:
+		'max_items_label' => 'Max Images',
+		'max_items_hint' => 'The maximum number of images/videos to display',
+		'max_items_validation' => 'The Max Images property can only contain numbers!',
+		'order_images_by_label' => 'Order by',
+		'order_images_by_label_hint' => 'Note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page!',
+		'order_images_by_option_title' => 'Image Title',
+		'order_images_by_option_description' => 'Image Description',
+		'order_images_by_option_sort_order' => 'Image Order in Gallery',
+		'order_images_by_option_width' => 'Image Width',
+		'order_images_by_option_height' => 'Image Height',
+		'order_images_by_option_orientation' => 'Image Orientation',
+		'order_images_by_option_file_name' => 'Filename',
+		'order_images_by_option_file_size' => 'File Size',
+		'order_images_by_option_uploaded' => 'Date/Time Uploaded',
 
 		// Image gallery options:
 		'gallery_layout_label' => 'Gallery Layout',
@@ -266,6 +282,11 @@
 		'autoplaydelay_validation_message' => 'The Autoplay Delay property can only contain numbers!',
 		'additional_swiper_options' => 'Additional Swiper Options',
 		'additional_swiper_options_hint' => 'Additional JS options that you want passed onto the Swiper script, for example: fadeEffect: {crossFade: true}',
+		'group_css_label' => 'CSS',
+		'usedescriptionascss_label' => 'Description is Style',
+		'usedescriptionascss_hint' => 'Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.',
+		'mediaquery_label' => 'Media Query',
+		'mediaquery_hint' => 'You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: @media screen and (max-width: 766px) and (orientation: portrait)',
 
 		// Video-gallery-specific options: 
 		'video_gallery_items_selector' => 'Gallery Selector/ID',
@@ -287,6 +308,9 @@
         'switch_on' => 'On',
         'switch_off' => 'Off',
 		'not_applicable' => 'Not applicable',
-		'default' => 'Default'
+		'default' => 'Default',
+		'sort_descending_string' => 'Z->A',
+		'sort_descending_number' => '9->0',
+		'sort_descending_date' => 'Newest First'
 	]
 ];

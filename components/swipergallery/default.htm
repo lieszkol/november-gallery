@@ -1,88 +1,103 @@
-{# Note that this isn't actually required because galleryitems is already set by the component: #}
-{% set galleryitems = __SELF__.galleryitems %}
+{##}
+{# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
+
+{# Assign component property to page variable for convenience: #}
+{% set gallery = __SELF__.gallery %}
 
 {% if __SELF__.error %}
 	<div class="alert zen-alert">{{ __SELF__.error }}</div>
 {% endif %}
 
-{% if galleryitems|length > 0 %}
-{# Some opinionated styles, modify as needed: #}
-{% put styles %}
-<style>
-	#{{__SELF__.id}} {
-		width: 100%;
-		height: 100%;
-	}
-	.swiper-slide {
-		background-size: contain;
-		background-color: black;
-		background-position: center center;
-		background-repeat: no-repeat;
-	}
-</style>
-{% endput %}
+{% if gallery.items|length > 0 %}
+	{# Some opinionated styles, modify as needed: #}
+	{% put styles %}
+	<style>
+		#{{__SELF__.id}} {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			background-size: contain;
+			background-color: black;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	</style>
+	{% endput %}
 
-{# This particular implementation is based on the following, but there are many other examples here: 
-	https://github.com/nolimits4web/Swiper/blob/master/demos/370-lazy-load-images.html #}
-<div id="{{__SELF__.id}}" class="swiper-container">
-	<div class="swiper-wrapper">
-	{% for galleryitem in galleryitems.sortBy('fileName') %}
-		<div data-background="{{ galleryitem.url }}" style="background-image:url({{ galleryitem.url }})" class="swiper-slide {{ __SELF__.lazyload ? 'swiper-lazy' : '' }} fn_{{ galleryitem.fileNameWithoutExtension }} swiper-slide-{{ galleryitem.orientation }}">
-			{% if __SELF__.lazyload %}<div class="swiper-lazy-preloader"></div>{% endif %}
+	{# This particular implementation is based on the following, but there are many other examples here: 
+		https://github.com/nolimits4web/Swiper/blob/master/demos/370-lazy-load-images.html #}
+	<div id="{{__SELF__.id}}" class="swiper-container">
+		<div class="swiper-wrapper">
+		{% for galleryitem in gallery.items.sortBy(gallery.sortBy, SORT_REGULAR, gallery.sortDirection == 'DESC' ? true : false) %}
+			<div data-background="{{ galleryitem.url }}" style="background-image:url({{ galleryitem.url }})" class="swiper-slide {{ __SELF__.lazyload ? 'swiper-lazy' : '' }} fn_{{ galleryitem.fileNameWithoutExtension }} swiper-slide-{{ galleryitem.orientation }}">
+				{% if __SELF__.lazyload %}<div class="swiper-lazy-preloader"></div>{% endif %}
+			</div>
+
+			{#  This enables you to put any CSS into the gallery item description and have it 
+				attached to the particular image. You can do something simple like: 
+				
+				filter: grayscale(100%);
+				
+				Or this is particularly useful if you are developing for a mobile-optimized site where full-screen images need to be shifted 
+				for mobile phones held in "portrait" orientation, then you can do something like 
+				this to shift the background: 
+				
+				background-position: 64% center;
+			#}
+			{% if __SELF__.useDescriptionAsCSS and galleryitem.description %}
+				{# In this example the CSS is only applied on small-screen devices in portrait mode: #}
+				{% put styles %}
+				<style>
+				{{ __SELF__.mediaQuery ? __SELF__.mediaQuery ~ ' {': '' }}
+					#{{__SELF__.id}} .swiper-slide.fn_{{ galleryitem.fileNameWithoutExtension }} {
+						{{ galleryitem.description }}
+					}
+				{{ __SELF__.mediaQuery ? '}' : '' }}
+				</style>
+				{% endput %}
+			{% endif %}
+
+		{% endfor %}	
 		</div>
-		{# This enables you to put any CSS into the gallery item description and have it attached to the particular image: #}
-		{% if galleryitem.description %}
-			{# In this example the CSS is only applied on small-screen devices in portrait mode: #}
-			{% put styles %}
-			<style>
-			@media screen and (max-width: 766px) and (orientation: portrait) {
-				#{{__SELF__.id}} .swiper-slide.fn_{{ galleryitem.fileNameWithoutExtension }} {
-					{{ galleryitem.description }}
-				}
-			}
-			</style>
-			{% endput %}
+		
+		<!-- Add Pagination -->
+		{% if __SELF__.addpagination %}
+		<div class="swiper-pagination swiper-pagination-white"></div>
 		{% endif %}
-	{% endfor %}	
+		
+		<!-- Navigation -->
+		{% if __SELF__.addnavigation %}
+		<div class="swiper-button-next swiper-button-white"></div>
+		<div class="swiper-button-prev swiper-button-white"></div>
+		{% endif %}
 	</div>
-	
-	<!-- Add Pagination -->
-	{% if __SELF__.addpagination %}
-	<div class="swiper-pagination swiper-pagination-white"></div>
-	{% endif %}
-	
-	<!-- Navigation -->
-	{% if __SELF__.addnavigation %}
-	<div class="swiper-button-next swiper-button-white"></div>
-	<div class="swiper-button-prev swiper-button-white"></div>
-	{% endif %}
-</div>
 
-{% put scripts %}
-<!-- Initialize Swiper -->
-{# You can override the options passed to Swiper below: #}
-<script>
-	var swiper = new Swiper('#{{__SELF__.id}}', {
-		effect: '{{ __SELF__.effect ?? "fade" }}',
-		direction: '{{ __SELF__.direction ?? "horizontal" }}',
-		speed: {{ __SELF__.speed ?? "300" }},
-		{% if __SELF__.lazyload %}lazy: {
-			loadPrevNext: true,
-		},{% endif %}
-		{% if __SELF__.addpagination %}pagination: {
-			el: '#{{__SELF__.id}} .swiper-pagination',
-			clickable: true,
-		},{% endif %}
-		{% if __SELF__.addnavigation %}navigation: {
-			nextEl: '#{{__SELF__.id}} .swiper-button-next',
-			prevEl: '#{{__SELF__.id}} .swiper-button-prev',
-		},{% endif %}
-		{% if __SELF__.autoplay %}autoplay: {
-			delay: {{ self.autoplaydelay ?? 5000 }},
-		},{% endif %}
+	{% put scripts %}
+	<!-- Initialize Swiper -->
+	{# You can override the options passed to Swiper below: #}
+	<script>
+		var swiper = new Swiper('#{{__SELF__.id}}', {
+			effect: '{{ __SELF__.effect ?? "fade" }}',
+			direction: '{{ __SELF__.direction ?? "horizontal" }}',
+			speed: {{ __SELF__.speed ?? "300" }},
+			{% if __SELF__.lazyload %}lazy: {
+				loadPrevNext: true,
+			},{% endif %}
+			{% if __SELF__.addpagination %}pagination: {
+				el: '#{{__SELF__.id}} .swiper-pagination',
+				clickable: true,
+			},{% endif %}
+			{% if __SELF__.addnavigation %}navigation: {
+				nextEl: '#{{__SELF__.id}} .swiper-button-next',
+				prevEl: '#{{__SELF__.id}} .swiper-button-prev',
+			},{% endif %}
+			{% if __SELF__.autoplay %}autoplay: {
+				delay: {{ self.autoplaydelay ?? 5000 }},
+			},{% endif %}
 
-		{{ __SELF__.defaultgalleryoptions|raw }}
-	});
-</script>
-{% endput %}
+			{{ __SELF__.defaultGalleryOptions|raw }}
+		});
+	</script>
+	{% endput %}
 {% endif %}

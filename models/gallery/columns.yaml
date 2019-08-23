@@ -21,6 +21,10 @@ columns:
         searchable: true
         type: strong
 
+    description:
+        label: zenware.novembergallery::lang.entities.gallery.description_label
+        searchable: true
+
     images:
         label: zenware.novembergallery::lang.entities.gallery.attached_images_count_label
         type: attached_images_count
@@ -41,3 +45,4 @@ columns:
         type: record_image_preview
         width: 30px
         cssClass: text-center
+        sortable: false

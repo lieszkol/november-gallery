@@ -274,18 +274,6 @@ tabs:
         ##
         #   Image Resizer Settings
         #
-        imager_resizer_section:
-            tab: zenware.novembergallery::lang.settings.tab_imageresizer
-            label: zenware.novembergallery::lang.settings.section_imager_resizer_label
-            type: section
-        use_image_resizer:
-            tab: zenware.novembergallery::lang.settings.tab_imageresizer
-            label: zenware.novembergallery::lang.settings.use_image_resizer_label
-            comment: zenware.novembergallery::lang.settings.use_image_resizer_comment
-            type: switch
-            on: zenware.novembergallery::lang.miscellanous.switch_on
-            off: zenware.novembergallery::lang.miscellanous.switch_off
-            default: true
         image_resizer_width:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.image_resizer_width_label
@@ -296,10 +284,6 @@ tabs:
             max: 5000
             span: left
             default: 200
-            trigger:
-                action: show
-                field: use_image_resizer
-                condition: checked
         image_resizer_height:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.image_resizer_height_label
@@ -309,10 +293,23 @@ tabs:
             min: 0   # defaults to not present
             max: 100 # defaults to not present
             span: left
-            trigger:
-                action: show
-                field: use_image_resizer
-                condition: checked
+        imager_resizer_section:
+            tab: zenware.novembergallery::lang.settings.tab_imageresizer
+            label: zenware.novembergallery::lang.settings.section_imager_resizer_label
+            type: section
+        image_resizer_disabled_hint:
+            tab: zenware.novembergallery::lang.settings.tab_imageresizer
+            type: partial
+            path: $/zenware/novembergallery/models/settings/_image_resizer_disabled_hint.html
+            hidden: true
+        use_image_resizer:
+            tab: zenware.novembergallery::lang.settings.tab_imageresizer
+            label: zenware.novembergallery::lang.settings.use_image_resizer_label
+            comment: zenware.novembergallery::lang.settings.use_image_resizer_comment
+            type: switch
+            on: zenware.novembergallery::lang.miscellanous.switch_on
+            off: zenware.novembergallery::lang.miscellanous.switch_off
+            default: true
         image_resizer_mode:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.image_resizer_mode_label
