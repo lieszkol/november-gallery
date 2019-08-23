@@ -233,7 +233,7 @@ Property | Inspector Name | Description
 `autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
 `useDescriptionAsCSS` | Description is Style | Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.
-`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: <br><small>@media screen and (max-width: 766px) and (orientation: portrait)</small>
+`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: <br><small><code>@media screen and (max-width: 766px) and (orientation: portrait)</code></small>
 
 
 **Example Page**
@@ -447,11 +447,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Mzk2NzQ0MCw2MjczMzgwMDYsLTU1MD
-Y0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0
-MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMj
-AyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0
-MTAsODg1OTQxMDI3LDEwMTI1OTc1NjEsNzI3ODY2MDA3LDE2Mz
-IzNzM2NTUsMTQzMDQ4MTQxMywxMjQ5MjAyMjcsMTk5NDEzODI2
-M119
+eyJoaXN0b3J5IjpbLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NT
+A2NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5
+NDI5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMT
+IwMjI4MjMxNywtMzAwNzY1NDE3LDIwNTM5MTE0NTEsMjEwMDk2
+NDEwLDg4NTk0MTAyNywxMDEyNTk3NTYxLDcyNzg2NjAwNywxNj
+MyMzczNjU1LDE0MzA0ODE0MTMsMTI0OTIwMjI3LDE5OTQxMzgy
+NjNdfQ==
 -->
