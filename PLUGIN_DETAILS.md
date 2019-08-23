@@ -2,6 +2,8 @@ Check out the [live demo site](https://novembergallery.zenware.io)!
 
 A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
+> November Gallery enables you to display folders of images that you've uploaded to your website as galleries. This greatly helps digital publishers since they no longer have to rely on a clunky "Gallery" interface to upload their images, they can use FTP or whatever tool of their choice. BUT a "Clunky" back-end gallery interface is still provided if you wish to add titles and subtitles to your images, and it adds some other features not available with "folder-based" galleries. Once uploaded, you can select from many different ways to present your images to your visitors, such as: in-page gallery, clickable tiles laid out masonry style, a pop-up "light-box" type gallery, a responsive "swiper", etc. You can also show videos.
+
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
  3. Drop November Gallery onto your page or partial or static page
  4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
@@ -126,6 +128,6 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mzc1OTY2NywzMTg5MzkyNjAsLTY1MT
-QwMjddfQ==
+eyJoaXN0b3J5IjpbNjc3NDg0Njk0LDMxODkzOTI2MCwtNjUxND
+AyN119
 -->
