@@ -231,8 +231,9 @@ Property | Inspector Name | Description
 `addNavigation` | Add navigation? | Toggle ON to show previous-slide and next-slide navigational arrows.
 `autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
 `autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
-`useDescriptionAsCSS` | 
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
+`useDescriptionAsCSS` | Description is Style | Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.
+`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: <br><small>@media screen and (max-width: 766px) and (orientation: portrait)</small>
 
 
 **Example Page**
@@ -446,7 +447,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODkxMTI3Miw2MjczMzgwMDYsLTU1MD
+eyJoaXN0b3J5IjpbLTY0Mzk2NzQ0MCw2MjczMzgwMDYsLTU1MD
 Y0Nzc4MSwtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0
 MjksMzQ1MDY3NzEzLDE0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMj
 AyMjgyMzE3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0
