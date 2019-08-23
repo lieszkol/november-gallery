@@ -28,13 +28,13 @@ This is an abridged version of the full documentation that we call [The November
 
 ### (1) Prepare and Upload your Images
 
-**You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager**. 
+You can choose to upload your images either using the "Gallery" page in the October back-end, or you can use the built-in Media Manager. 
 
-> Hint: Use the Embedded Gallery for fix-size galleries or for showing clickable thumbnails arranged as tiles
+> Hint: The dedicated backend Gallery page gives you more options for giving your images titles and subtitles, and you can also 
 
-#### Uploading using
+#### Uploading through the Media Manager
 
-If you are going to use the Media Manager, then you may also want to create folders for your images. Although you can use any folder structure that you'd like, we recommend that you create a "root" folder and create separate folders underneath it to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
+Images must be organized into folders. Although you can use any folder structure that you'd like, we recommend that you create a "root" folder and create separate folders underneath it to store your albums. You can optionally create separate "root" folders to store your images, videos, and blog pictures. Avoid using spaces or special characters in your folder names. Your folder structure may look like this:
 
 - my_galleries
 	- my_travels
@@ -117,5 +117,5 @@ You can also read:
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Nzc1MTY2OCwtNjUxNDAyN119
+eyJoaXN0b3J5IjpbNzc2MTYyMTIzLC02NTE0MDI3XX0=
 -->
