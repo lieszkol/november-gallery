@@ -356,7 +356,7 @@ also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collec
 
 Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
 ```html
-{% for galleryitem in customGallery.galleryitems.sortBy('fileName') %}
+{% for galleryitem in customGallery.gallery.items.sortBy('fileName') %}
    <img src="{{ galleryitem.url }}" />
 {% endfor %}
 ```
@@ -380,7 +380,7 @@ Property | Type | Description
 `url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
 
 <br>
-<blockquote><p><strong>Hint:</strong> To dig into the <code>galleryItems</code> (or any other) variable/collection, you have two options. You can simply add <code>{{ dump(embeddedGallery.galleryitems.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.galleryitems) }}</code> to your page to show debug information in the Laravel debugbar. To see all public properties of a galleryItem, do: <code>{{ debug(embeddedGallery.galleryitems.first.toArray) }}</code>. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
+<blockquote><p><strong>Hint:</strong> To dig into the <code>gallery.items</code> (or any other) variable/collection, you have two options. You can simply add <code>{{ dump(embeddedGallery.gallery.items.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.gallery.items) }}</code> to your page to show debug information in the Laravel debugbar. To see all public properties of a galleryItem, do: <code>{{ debug(embeddedGallery.gallery.items.first.toArray) }}</code>. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
 <br>
 
 **Additional Page Properties**
@@ -448,11 +448,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDA5MzMwNTEsLTk2MDY4NzkzNSwtNT
-YzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywxNDc2ODI4
-MjQyLDE0MjExNzcxOSwtMTIwMjI4MjMxNywtMzAwNzY1NDE3LD
-IwNTM5MTE0NTEsMjEwMDk2NDEwLDg4NTk0MTAyNywxMDEyNTk3
-NTYxLDcyNzg2NjAwNywxNjMyMzczNjU1LDE0MzA0ODE0MTMsMT
-I0OTIwMjI3LDE5OTQxMzgyNjMsMTQ3MzExOTgwMSwxNzI5MzA4
-OTA3XX0=
+eyJoaXN0b3J5IjpbLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01Nj
+M5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4Mjgy
+NDIsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMj
+A1MzkxMTQ1MSwyMTAwOTY0MTAsODg1OTQxMDI3LDEwMTI1OTc1
+NjEsNzI3ODY2MDA3LDE2MzIzNzM2NTUsMTQzMDQ4MTQxMywxMj
+Q5MjAyMjcsMTk5NDEzODI2MywxNDczMTE5ODAxLDE3MjkzMDg5
+MDddfQ==
 -->
