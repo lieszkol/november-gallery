@@ -1,7 +1,7 @@
-# Help!
+# November Gallery Quick Start
 
 
 ## Hi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTY3MzM5Ml19
+eyJoaXN0b3J5IjpbLTg1MzcyNzQ3NV19
 -->
