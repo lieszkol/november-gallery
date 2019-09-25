@@ -28,7 +28,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 	 * 
 	 * @return array ['name' => '...', 'description' => '...']
 	 */
-	abstract public function componentDetails();
+	// This is already declared in ComponentBase.php, so do not redeclare it, 
+	// doing so causes a bug in previous versions of php.
+	// abstract public function componentDetails();
 
 	/**
 	 * Inject gallery scripts and styles. This should be overridden on the component implementation level.
