@@ -195,7 +195,7 @@ The image list component does not have any options other than the [Shared Option
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.gallery.items %}
     <div>
-        <a href="{{ galleryitem. }}" target="_blank">
+        <a href="{{ galleryitem.url }}" target="_blank">
             <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
         </a>
     </div>
@@ -347,6 +347,6 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4NDk2MTA3LDE5NzYxNTI2MDAsMTI0Nz
-g5MjM4MF19
+eyJoaXN0b3J5IjpbLTEzNjIwNTQ5NzIsNjA4NDk2MTA3LDE5Nz
+YxNTI2MDAsMTI0Nzg5MjM4MF19
 -->
