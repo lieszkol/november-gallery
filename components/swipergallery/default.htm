@@ -33,7 +33,7 @@
 	<div id="{{__SELF__.id}}" class="swiper-container">
 		<div class="swiper-wrapper">
 		{% for galleryitem in gallery.items.sortBy(gallery.sortBy, SORT_REGULAR, gallery.sortDirection == 'DESC' ? true : false) %}
-			<div data-background="{{ galleryitem.url }}" style="background-image:url({{ galleryitem.url }})" class="swiper-slide {{ __SELF__.lazyload ? 'swiper-lazy' : '' }} fn_{{ galleryitem.fileNameWithoutExtension }} swiper-slide-{{ galleryitem.orientation }}">
+			<div data-background="{{ galleryitem.url }}" style="background-image:url({{ galleryitem.url }})" class="swiper-slide {{ __SELF__.lazyload ? 'swiper-lazy' : '' }} fn_{{ galleryitem.fileNameWithoutExtension }} swiper-slide-{{ galleryitem.orientation }} {{ __SELF__.useDescriptionAsCSS and galleryitem.description and ':' not in galleryitem.description ? galleryitem.description }}">
 				{% if __SELF__.lazyload %}<div class="swiper-lazy-preloader"></div>{% endif %}
 			</div>
 
@@ -48,7 +48,7 @@
 				
 				background-position: 64% center;
 			#}
-			{% if __SELF__.useDescriptionAsCSS and galleryitem.description %}
+			{% if __SELF__.useDescriptionAsCSS and galleryitem.description and ':' in galleryitem.description %}
 				{# In this example the CSS is only applied on small-screen devices in portrait mode: #}
 				{% put styles %}
 				<style>

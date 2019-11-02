@@ -11,3 +11,5 @@
     - create_blog_fields_table.php
 1.0.5:
     - Bugfix for PHP <= 5.3
+1.0.6:
+    - Ability to set a custom CSS class (in addition to style) for each image via the image description field

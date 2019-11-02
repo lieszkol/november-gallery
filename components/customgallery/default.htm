@@ -7,7 +7,15 @@
 
 {#
 
-Drop your own code here.
+Drop your own code here. For example:
+
+{% for galleryitem in customGallery.gallery.items %}
+	<div>
+		<a href="{{ galleryitem.url }}" target="_blank">
+			<img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
+		</a>
+	</div>
+{% endfor %}
 
 Hint: To dig into the gallery (or any other) variable/collection, you have two options. 
 You can simply add 

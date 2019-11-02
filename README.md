@@ -1,6 +1,6 @@
 
 
-![NovemberGallery Banner](/media/november-gallery-octobercms-banner.jpg)
+![NovemberGallery Banner](https://novembergallery.zenware.io/storage/app/media/november-gallery-octobercms-banner.jpg)
 
 <div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
 
