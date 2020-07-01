@@ -19,6 +19,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 
 	public $gallery;
 
+	private $galleryRow;
+
 	public $allowedExtensions = array();
 
 	public $error;
@@ -237,6 +239,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 		$page = null;
 		if (property_exists($this, 'page')) $page = $this->page;
 
+		
+			
+
 		if (
 			!empty($this->property('mediaFolder'))
 			&& 	$this->property('mediaFolder') == '<post>'
@@ -289,22 +294,22 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 			// We have a gallery uploaded using the NovemberGallery backend menu
 
 			$images     = new Collection();
-			$gallery = Galleries::find(substr($this->property('mediaFolder'), 1, strlen($this->property('mediaFolder')) - 2));
-			if ($gallery) // && $gallery->count() == 1 does not work for some reason, I am getting "2"??
+
+			if ($this->galleryRow) // && $gallery->count() == 1 does not work for some reason, I am getting "2"??
 			{
-				foreach ($gallery->images->take($maxImages) as $image) {
+				foreach ($this->galleryRow->images->take($maxImages) as $image) {
 					$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 				}
+				$this->gallery->name = $this->galleryRow->name;
+				$this->gallery->slug = $this->galleryRow->slug;
+				$this->gallery->description = $this->galleryRow->description;
+				$this->gallery->publishedAt = $this->galleryRow->published_at;
+				$this->gallery->published = $this->galleryRow->published;
+				$this->gallery->createdAt = $this->galleryRow->created_at;
+				$this->gallery->updatedAt = $this->galleryRow->updated_at;
+				$this->gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $this->galleryRow->preview_image);
 			}
 			$this->gallery->items = $images;
-			$this->gallery->name = $gallery->name;
-			$this->gallery->slug = $gallery->slug;
-			$this->gallery->description = $gallery->description;
-			$this->gallery->publishedAt = $gallery->published_at;
-			$this->gallery->published = $gallery->published;
-			$this->gallery->createdAt = $gallery->created_at;
-			$this->gallery->updatedAt = $gallery->updated_at;
-			$this->gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $gallery->preview_image);
 			/*
 			"id" => 7
 			"name" => "Budapest"
@@ -338,6 +343,11 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 			&& NovemberHelper::startsWith($this->property('mediaFolder'), '[')
 			&& NovemberHelper::endsWith($this->property('mediaFolder'), ']')
 		) {
+			$this->galleryRow = Galleries::find(substr($this->property('mediaFolder'), 1, strlen($this->property('mediaFolder')) - 2));
+		} else {
+			$this->galleryRow = Galleries::where('slug', $this->property('mediaFolder'))->first();
+		}
+		if ($this->galleryRow != null){
 			return self::GALLERYTYPE_BACKENDGALLERY;
 		}
 		return self::GALLERYTYPE_OCTOBERMEDIAMANAGER;
