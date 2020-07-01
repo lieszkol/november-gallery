@@ -97,65 +97,6 @@ The plugin provides four components that you can drop onto your CMS Pages/Partia
 <small><i>*please read the Known Issues section regarding usage in partials!</i></small>
 
 
-## Component 2: Swiper
-
-Use this component to create a modern, responsive "swiper" that can be controlled easily from any device. Note that you can control any of the galleries by touch (or click-and-swipe using a mouse). Various transitions are available: "fade", "slide", "flip", "cube", etc..
-
-### [Options]
-The following are available in addition to the [Shared Options](#shared-options) described above:
-
-Property | Inspector Name | Description
--- | -- | --
-`effect` | Transition Effect | Tranisition effect. Can be "slide", "fade", "cube", "coverflow" or "flip"
-`direction` | Direction | Can be "horizontal" or "vertical"
-`speed` | Transition Speed | How long the transition effect lasts, in milliseconds. 1000 = 1 seconds.
-`lazyLoad` | Lazy-load images? | Toggle ON to only load the images the user is looking at. Previous and next images are set to pre-load automatically.
-`addPagination` | Add pagination? | Toggle ON to show bullets (or anything else) that enable to user to jump to any specific slide.
-`addNavigation` | Add navigation? | Toggle ON to show previous-slide and next-slide navigational arrows.
-`autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
-`autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
-`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
-`useDescriptionAsCSS` | Description is Style | Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.
-`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: <br><small><code>@media screen and (max-width: 766px) and (orientation: portrait)</code></small>
-
-
-**Example Page**
-```html
-<div style="width: 100%; height: calc(100vh - 70px);">
-	{% component 'swiperGallery' %}
-</div>
-```
-
-The swiper component by default fills whatever space it is in, in this case we set the container DIV to take up 100% of the viewport and be 100vh tall.
-
-For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
-<br>
-<br>
-
-## Component 3: Pop-up Lightbox
-
-Use this if you wish to add a lightbox-style 'pop-up' gallery to your page that is only shown when the user clicks on an element (such as a link/button/image).
-
-### [Options]
-The following are available in addition to the [Shared Options](#shared-options) described above:
-
-Property | Inspector Name | Description
--- | -- | --
-`attachTo` | Attach to | JQuery selector for the element(s) that the user can click on to open the lightbox; for example: `#gallery-button`
-`additionalLightboxOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
-
-
-**Example Page**
-```html
-{% component 'popupLightbox' %}
-<button id="gallery-button">Click me!</button>
-```
-
-This is a simple example where you place a button onto the page. Select a folder of images from the "Media Folder" drop-down in your inspector, and set the gallery "Attach to" option to `#gallery-button`. Your button should then serve to open a lightbox gallery of all of the images in the selected folder.
-
-For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
-<br>
-<br>
 
 ## Component 4: Video Gallery
 
@@ -337,7 +278,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjcyNjcxOSwtNTc4MTEzODc2LDY4Nz
+eyJoaXN0b3J5IjpbMTY1MzA0Mjc4NCwtNTc4MTEzODc2LDY4Nz
 c3MDk5OCwxNjk4MDgxODQ1LC0xMDYwNjQ2MTU1LC05NDkzNTc5
 MTQsMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xODI1NjU4NjM2LC
 03NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NTA2
