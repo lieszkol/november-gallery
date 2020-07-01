@@ -38,66 +38,9 @@ This README is an abridged version of the full documentation that we call [The N
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploading through the backend "Gallery" page)
  - [ ] Cache image data in database instead of reading it all in from the filesystem every time
 
-# Deployment
+# Deployment & Installation
 
-<blockquote>
-<p><strong>Note</strong>: You must have a <code>{% styles %}</code> and <code>{% scripts %}</code> tag in your page header/footer so that the plugin can inject the required assets.</p>
-</blockquote>
-
-```html
-<head>
-    ...
-    {% styles %}
-</head>
-<body>
-    ...
-    {% scripts %}
-</body>
-```
 For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
-
-### Installation
-
-To install from your site "backend": go to  **Settings → Updates & Plugins → Install Plugins**  and then search for  "November Gallery".
-
-To install from the  [Marketplace](https://octobercms.com/plugins): click `Add to Project` and select the project you wish to use the plugin on. Once the plugin has been added to your project, from the backend area of your site click the `Check for updates` button on the **Settings → Updates & Plugins** page to pull in the plugin.
-
-To install from [the repository](https://github.com/lieszkol/november-gallery) (not recommended), you'd have to first install the imageresizer plugin.
-
-<details>
-<summary>Read more...</summary>
-
-Here's an actual (abridged) transcript of an installation into a fresh install of October (all commands for Ubuntu, make sure adjust to your environment): 
-
-```bash
-USER@SERVER:/var/www/vhost/public_html# sudo -u www-data git clone https://github.com/lieszkol/november-gallery.git plugins/zenware/novembergallery
-Cloning into 'plugins/zenware/novembergallery'...
-...
-USER@SERVER:/var/www/vhost/public_html# sudo -u www-data php artisan plugin:refresh zenware.novembergallery
-Rolled back: ZenWare.NovemberGallery
-Reinstalling plugin...
-ZenWare.NovemberGallery
-- v1.0.1:  First version of NovemberGallery
-```
-
-You can also install the image resizer plugin if you wish to use that for thumbnail generation, for that you can run `sudo -u www-data git clone https://github.com/toughdeveloper/oc-imageresizer-plugin.git plugins/toughdeveloper/imageresizer` and `sudo -u www-data php artisan plugin:refresh toughdeveloper.imageresizer`.
-
-### Updates
-
-For plugins installed from the marketplace, you can just do **Settings → Updates & Plugins → Check for Updates.
-
-For plugin installed manually, you can run the following from your project root directory:
-
-```bash 
-USER@SERVER:/var/www/vhost/public_html# sudo -u www-data git -C plugins/zenware/novembergallery/ pull
-remote: Enumerating objects: 14, done.
-...
-USER@SERVER:/var/www/vhost/public_html# sudo -u www-data php artisan october:up
-ZenWare.NovemberGallery
-- v1.0.4:  Extend Rainlab Blog integration with support for images in media folders
-...
-```
-</details>
 
 # Usage
 
@@ -472,11 +415,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3NzcwOTk4LDE2OTgwODE4NDUsLTEwNj
-A2NDYxNTUsLTk0OTM1NzkxNCwxNzI4MzU5ODg2LC02OTQ1NTI4
-NTksLTE4MjU2NTg2MzYsLTc2ODE5MTU5NCwtMTY2MTA0Mjk5NS
-w2MjczMzgwMDYsLTU1MDY0Nzc4MSwtOTYwNjg3OTM1LC01NjM5
-MDUxNzcsLTE5Mzk2OTk0MjksMzQ1MDY3NzEzLDE0NzY4MjgyND
-IsMTQyMTE3NzE5LC0xMjAyMjgyMzE3LC0zMDA3NjU0MTcsMjA1
-MzkxMTQ1MV19
+eyJoaXN0b3J5IjpbMTY5MjE5OTI3OSw2ODc3NzA5OTgsMTY5OD
+A4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3OTE0LDE3MjgzNTk4
+ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC
+0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2
+ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MT
+MsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMw
+MDc2NTQxN119
 -->
