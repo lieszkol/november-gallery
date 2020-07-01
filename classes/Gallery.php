@@ -9,6 +9,52 @@ use ZenWare\NovemberGallery\NovemberHelper;
  */
 class Gallery
 {
+	
+	/**
+	 * @var string Gallery name (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $dbg;
+
+	/**
+	 * @var string Gallery name (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $name;
+
+	/**
+	 * @var string Gallery slug (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $slug;
+
+	/**
+	 * @var string Gallery description (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $description;
+
+	/**
+	 * @var string Gallery published on date (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $publishedAt;
+
+	/**
+	 * @var string Gallery created on date (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $createdAt;
+
+	/**
+	 * @var string Gallery updated on date (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $updatedAt;
+
+	/**
+	 * @var string Gallery preview image (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $previewImage;
+
+	/**
+	 * @var string Gallery active (or not) (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $published;
+
 	/**
 	 * @var array All gallery items
 	 */
@@ -24,9 +70,8 @@ class Gallery
 	 */
 	public $sortDirection = "ASC";
 
-	public function __construct($galleryItems, $sortBy)
+	public function __construct($sortBy)
 	{
-		$this->items = $galleryItems;
 		if (NovemberHelper::endsWith($sortBy, "DESC")) {
 			$this->sortBy = NovemberHelper::trimEnd($sortBy, "DESC");
 			$this->sortDirection = "DESC";

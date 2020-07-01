@@ -126,7 +126,8 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 			$this->allowedExtensions[] = 'png';
 		}
 		// DebugbarDebugbar::info(Settings::instance());
-		$this->gallery = new Gallery($this->loadMedia(), $this->getSortBy());
+		$this->gallery = new Gallery($this->getSortBy());
+		$this->loadMedia();
 		// Do NOT do this here, because if we have several galleries on the same page, they will all end up rendering the gallery selected in the last component on the page:
 		// $this->page['gallery'] = $this->gallery;
 	}
@@ -282,7 +283,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 					}
 					$images = $images->merge($this->getImagesInMediaFolder($this->getGalleryPath($baseMediaFolder, $this->page->post->novembergalleryfields->media_folder), $maxImages));
 				}
-				return $images;
+				$this->gallery->items = $images;
 			}
 		} elseif ($this->getGalleryType() == self::GALLERYTYPE_BACKENDGALLERY) {
 			// We have a gallery uploaded using the NovemberGallery backend menu
@@ -295,13 +296,31 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 					$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 				}
 			}
-			return $images;
+			$this->gallery->items = $images;
+			$this->gallery->name = $gallery->name;
+			$this->gallery->slug = $gallery->slug;
+			$this->gallery->description = $gallery->description;
+			$this->gallery->publishedAt = $gallery->published_at;
+			$this->gallery->published = $gallery->published;
+			$this->gallery->createdAt = $gallery->created_at;
+			$this->gallery->updatedAt = $gallery->updated_at;
+			$this->gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $gallery->preview_image);
+			/*
+			"id" => 7
+			"name" => "Budapest"
+			"slug" => "budapest"
+			"description" => "Europe's most beautiful capital!"
+			"sort_order" => null
+			"published_at" => null
+			"published" => 1
+			"created_at" => "2019-08-22 11:26:48"
+			"updated_at" => "2019-08-22 11:26:48"
+			*/;
 		} else {
 			// We have a gallery uploaded using the MediaManager
 
-			return $this->getImagesInMediaFolder($this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder()), $maxImages);
+			$this->gallery->items = $this->getImagesInMediaFolder($this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder()), $maxImages);
 		}
-		return new Collection();
 	}
 
 	const GALLERYTYPE_BACKENDGALLERY = 0;
