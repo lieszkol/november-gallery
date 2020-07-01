@@ -98,83 +98,6 @@ The plugin provides four components that you can drop onto your CMS Pages/Partia
 
 
 
-### Page Properties
-
-**`__SELF__.gallery`**<br>
-Type: [ZenWare\NovemberGallery\Classes\Gallery](https://github.com/lieszkol/november-gallery/blob/master/classes/Gallery.php)<br>
-Gallery class, holds the various properties of the gallery instance.
-
-#### Gallery Properties
-
-Property | Type | Description
---|--|--
-`items` | [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) | Collection of gallery items, see below.
-`orderBy` | string | The GalleryItem property by which the gallery should be sorted (as set in the component inspector)
-
-
-**`__SELF__.gallery.items`**<br>
-Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections)<br>
-also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
-
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
-```html
-{% for galleryitem in customGallery.gallery.items.sortBy('fileName') %}
-   <img src="{{ galleryitem.url }}" />
-{% endfor %}
-```
-<details>
-<summary>Read more...</summary>
-
-#### GalleryItem Properties
-
-Property | Type | Description
---|--|--
-`title` | string | Image title metadata, available for images uploaded using the backend gallery page only
-`description` | string | Description metadata, available for images uploaded using the backend gallery page only
-`sortOrder` | string | Image sort order, available for images uploaded using the backend gallery page only
-`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object, only available for files uploaded using the Media Manager
-`octoberImageFile` | [System\Models\File](https://github.com/octobercms/october/blob/master/modules/system/models/File.php) | A standard php file information object, only available for files uploaded using the Media Manager
-`width` | integer| Image width, see https://www.php.net/manual/en/function.getimagesize.php
-`height` | integer| Image height, see https://www.php.net/manual/en/function.getimagesize.php
-`type` | string | Image type, see https://www.php.net/manual/en/function.getimagesize.php
-`orientation` | string | Will be "horizontal", "vertical", or "square" depending on whether the image is wider than it is tall
-`fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
-`fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
-`fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
-`filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1</small>
-`fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: <small>/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-`fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`relativeFilePath` | string | Path to file relative to the website, for example: <small>/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-`uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: $currentTime->format( 'c' );
-`url` | string | URL to file, for example: <small>https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg</small>
-
-<br>
-<blockquote><p><strong>Hint:</strong> To dig into the <code>gallery.items</code> (or any other) variable/collection, you have two options. You can simply add <code>{{ dump(embeddedGallery.gallery.items.toArray) }}</code> on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the <a href="https://github.com/scottbedard/oc-debugbar-plugin">Debugbar plugin</a> and then add <code>{{ debug(embeddedGallery.gallery.items) }}</code> to your page to show debug information in the Laravel debugbar. To see all public properties of a galleryItem, do: <code>{{ debug(embeddedGallery.gallery.items.first.toArray) }}</code>. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!</p></blockquote>
-<br>
-customLightboxScript
-**Additional Page Properties**
-
-**`__SELF__.defaultgalleryoptions`**
-Type: string
-Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: "tiles", tiles_type: "justified"`)
-
-**`__SELF__.defaultLightboxOptions`**
-Type: string
-Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: "lightbox"`
-
-**`__SELF__.customgalleryscript`**
-Type: string
-The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
-
-**`__SELF__.customlightboxscript`**
-Type: string
-The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
-
-**`__SELF__.error`**
-Type: string
-If the plugin encounters an error, you can find the error description here.
-</details>
-
 # Known Issues
 
 ### Issue including CSS when used in a partial
@@ -217,11 +140,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIxNDk0NDAsLTU3ODExMzg3Niw2OD
-c3NzA5OTgsMTY5ODA4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3
-OTE0LDE3MjgzNTk4ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNi
-wtNzY4MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUw
-NjQ3NzgxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OT
-QyOSwzNDUwNjc3MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEy
-MDIyODIzMTddfQ==
+eyJoaXN0b3J5IjpbLTE1MzY2MjI2MTksLTE5MzIxNDk0NDAsLT
+U3ODExMzg3Niw2ODc3NzA5OTgsMTY5ODA4MTg0NSwtMTA2MDY0
+NjE1NSwtOTQ5MzU3OTE0LDE3MjgzNTk4ODYsLTY5NDU1Mjg1OS
+wtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC0xNjYxMDQyOTk1LDYy
+NzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2ODc5MzUsLTU2MzkwNT
+E3NywtMTkzOTY5OTQyOSwzNDUwNjc3MTMsMTQ3NjgyODI0Miwx
+NDIxMTc3MTldfQ==
 -->
