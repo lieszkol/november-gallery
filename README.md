@@ -98,67 +98,6 @@ The plugin provides four components that you can drop onto your CMS Pages/Partia
 
 
 
-## Component 4: Video Gallery
-
-Use this gallery to display videos inline. You can choose to upload your videos to your website or to show videos hosted on YouTube/Vimeo/Wistia.
-
-### [Options]
-The following are available in addition to the [Shared Options](#shared-options) described above:
-
-Property | Inspector Name | Description
--- | -- | --
-`videoGalleryItemsSelector` | Gallery Selector/ID | JQuery selector for the element that holds the video items; for example: `#videos`
-`videoGalleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `video_gallery_right_thumb` / Thumbnails <br>- `video_gallery_right_title_only` / Titles Only<br>- `video_gallery_right_no_thumb` / No Thumbnails<br>Check out <a href="https://novembergallery.zenware.io/demo/video-gallery" target="_blank">the demo site</a> for live examples of each layout.</small>
-`additionalVideoGalleryOptions` | Script Options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_autoplay: true`
-`imageResizerHeight` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`imageResizerMode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
-`galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
-`galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
-
-For examples on how to customize the gallery, see [Customize the Gallery](#customizing-the-gallery) above.
-<br>
-<br>
-
-## Component 5: Image List Only
-
-Use this if you wish to write your own Twig script for displaying your images, and only need a list of images (that can be found in a given folder) to be loaded into a page variable. 
-
-The image list component does not have any options other than the [Shared Options](#shared-options) described above.
-
-**Example Page 1**
-```html
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-{% for galleryitem in customGallery.gallery.items %}
-    <div>
-        <a href="{{ galleryitem.url }}" target="_blank">
-            <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
-        </a>
-    </div>
-{% endfor %}
-</div>
-```
-This example assumes that your gallery component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. Thumbnails are generated for the images and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
-
-**Example Page 2**
-```html
-<div class="container-fluid">
-{% for galleryitemchunk in customGallery.gallery.items.sortBy('fileName').chunk(3) %}
-    <div class="row">
-        {% for galleryitem in galleryitemchunk %}
-            <div class="col-xs-4" style="text-align: center;">
-                <a href="{{ galleryitem.url }}" target="_blank">
-                    <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" />
-                </a>
-            </div>
-        {% endfor %}
-    </div>
-{% endfor %}
-</div>
-```
-Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
-
-Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
-
 ### Page Properties
 
 **`__SELF__.gallery`**<br>
@@ -278,11 +217,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MzA0Mjc4NCwtNTc4MTEzODc2LDY4Nz
-c3MDk5OCwxNjk4MDgxODQ1LC0xMDYwNjQ2MTU1LC05NDkzNTc5
-MTQsMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xODI1NjU4NjM2LC
-03NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NTA2
-NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5ND
-I5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMTIw
-MjI4MjMxN119
+eyJoaXN0b3J5IjpbLTE5MzIxNDk0NDAsLTU3ODExMzg3Niw2OD
+c3NzA5OTgsMTY5ODA4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3
+OTE0LDE3MjgzNTk4ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNi
+wtNzY4MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUw
+NjQ3NzgxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OT
+QyOSwzNDUwNjc3MTMsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEy
+MDIyODIzMTddfQ==
 -->
