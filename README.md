@@ -459,7 +459,7 @@ This plugin is available in two editions:
 	 1. A website selling or promoting products or services
 	 2. Use by a for-profit organization
 
-Both versions are available from the OctoberCMS Marketplace.
+ professional edition is available from the OctoberCMS Marketplace. If you fit the criteria for the personal edition, then you are welcome to download it from GitHub and deploy it manually - as a free product we do not offer any support either with deployment or any issues you might encounter during use.
 
 Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https://octobercms.com/help/license/regular)
 
@@ -472,11 +472,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA2NDYxNTUsLTk0OTM1NzkxNCwxNz
-I4MzU5ODg2LC02OTQ1NTI4NTksLTE4MjU2NTg2MzYsLTc2ODE5
-MTU5NCwtMTY2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nzc4MS
-wtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0MjksMzQ1
-MDY3NzEzLDE0NzY4MjgyNDIsMTQyMTE3NzE5LC0xMjAyMjgyMz
-E3LC0zMDA3NjU0MTcsMjA1MzkxMTQ1MSwyMTAwOTY0MTAsODg1
-OTQxMDI3XX0=
+eyJoaXN0b3J5IjpbMTY5ODA4MTg0NSwtMTA2MDY0NjE1NSwtOT
+Q5MzU3OTE0LDE3MjgzNTk4ODYsLTY5NDU1Mjg1OSwtMTgyNTY1
+ODYzNiwtNzY4MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNi
+wtNTUwNjQ3NzgxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkz
+OTY5OTQyOSwzNDUwNjc3MTMsMTQ3NjgyODI0MiwxNDIxMTc3MT
+ksLTEyMDIyODIzMTcsLTMwMDc2NTQxNywyMDUzOTExNDUxLDIx
+MDA5NjQxMF19
 -->
