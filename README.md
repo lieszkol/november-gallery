@@ -96,84 +96,6 @@ The plugin provides four components that you can drop onto your CMS Pages/Partia
 
 <small><i>*please read the Known Issues section regarding usage in partials!</i></small>
 
-### [Shared Options]
-
-Property | Inspector Name | Description
---|--|--
-`alias`|Alias|Standard OctoberCMS stuff, you refer to the component in  your page via this unique identifier, the default is "embeddedGallery" but you can change it to anything you want (don't use spaces or special characters though!)
-`mediaFolder`|Media Folder|Select the folder that you uploaded the images to in the OctoberCMS Media manager. Only folders under the "Base Media Folder" set on the November Gallery settings page are valid.
-`maxItems`|Max Images|The maximum number of images to display
-`sortBy`|Order by|Order to display the gallery items in; note: Image Title, Description, and Sort Order only work for images uploaded using the Galleries page! Options are: <br><small>-  `title` / Image Title<br>- `description` / Image Description<br>- `sortOrder` / Image Order in Gallery<br>- `width` / Image Width<br>- `height` / Image Height<br>- `orientation` / Image Orientation<br>- `fileName` / Filename<br>- `fileSize` / File Size <br>- `uploaded` / Date/Time Uploaded;</small> <br>and all options are also available in reverse order (append DESC onto the option code).
-<br>
-<br>
-
-## Component 1: Embedded Gallery
-
-Use this if you wish to show a gallery of images within your page using various layouts, with optional full-screen (lightbox-style) viewing.
-
-### [Options]
-The following are available in addition to the [Shared Options](#shared-options) described above:
-
-Property | Inspector Name | Description
--- | -- | --
-`galleryLayout` | Gallery Layout | Select a gallery layout; possible values are:<br><small>- `default` / Default (use the gallery layout set on the plugin settings page)<br>- `gallery_tiles` / Tiles<br>- `gallery_carousel` / Carousel<br>- `gallery_combined` / Combined<br>- `gallery_slider` / Slider<br>Check out <a href="https://novembergallery.zenware.io/demo/embedded-gallery-tiles" target="_blank">the demo site</a> for live examples of each layout.</small>
-`tilesLayout` | Tile Layout | Only applicable if the *Gallery Layout* is set to "Tiles"; possible values are:<br><small>- `default` / Default (use the default gallery layout set on the plugin settings page)<br>- `gallery_tiles_columns` / Columns<br>- `gallery_tiles_justified` / Justified<br>- `gallery_tiles_nested` /  Nested<br>- `gallery_tiles_grid` / Grid</small>
-`combinedLayout` | Thumbnails Layout | Only applicable if the *Gallery Layout* is set to "Combined"; possible values are:<br><small>- `default` / Default (use the default thumbnails layout set on the plugin settings page)<br>- `gallery_combined_default` / Normal (default)<br>- `gallery_combined_compact` / Compact<br>- `gallery_combined_grid` /  Grid</small>
-`additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the UniteGallery script, for example: `theme_panel_position: "bottom"`
-`imageResizerWidth` | Thumbnail Width | Width of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`imageResizerHeight` | Thumbnail Height | Height of the generated thumbnail; Leave empty or set to 0 to only constrain the image by height; leave both width and height empty to fall back on the values set on the backend plugin configuration page
-`imageResizerMode` | Thumbnail Mode | Select how to resize your images into thumbnails, or select "default" to use the thumbnail mode set on the plugin settings page; possible values are: <small><br>- Default<br>- Exact<br>- Portrait<br>- Landscape<br>- Auto<br>- Crop</small>
-`galleryWidth` | Gallery Width | Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
-`galleryHeight` | Gallery Height| Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page
-
-For an explanation of page propreties, see [Component: Image List Only](#component-image-list-only). For a more in-depth explanation as well as examples, see [The NovemberGallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
-
-### [Customizing the Gallery]
-
-You have several options to customize how your gallery looks and behaves, depending on how deep you are willing to go down the rabbit hole:
-
- 1. You can customize the gallery to some extent through the inspector; for example, you can set the gallery layout
- 2. You can also add some CSS to control how the thumbnails are displayed
- 3. You can add some custom options that will be passed onto the UniteGallery script via the inspector
- 4. You can override the component partial
-
-<details>
-<summary>Read more...</summary>
-
-**Example 1: Set the thumbnail size for all galleries**
-
-You can set the thumbnail size on the plugin backend settings page: **Settings → November Gallery → Thumbnails**. If you want more control, go to **Settings → Image Resizer Settings**
-
-**Example 2: Set the thumbnail size for an individual gallery**
-
-You can set the thumbnail size for a specific gallery on the component properties page (a.k.a. "Inspector").
-
-**Example 3: Set the gallery dimensions for the "combined" gallery**
-
-In the combined gallery, a large image is displayed along with a row of thumbnails. First, set your thumbnail size using the inspector let's say to 100. 
-Then check the [relevant options available](http://unitegallery.net/index.php?page=default-options) for the combined gallery on the UniteGallery plugin page. You can see that the "gallery_width" and "gallery_height" options control the overall size of the gallery. So enter something like the following into the *Script options* component option: `gallery_width:900,gallery_height:700,thumb_fixed_size:false`
-
-The thumbnail size you defined using the inspector will control the size of the generated thumbnails, it will also automatically add a "thumb_height" option to the gallery. You can override this if you wish by manually adding a "thumb_height" option under *Script options*, but this should not be necessary. The `thumb_fixed_size:false` setting enables dynamically sized thumbnails.
-
-**Example 4: Set the spacing between tiled images**
-
-First, review [what options you have for the various tiled galleries](http://unitegallery.net/index.php?page=tiles-columns-options) on the UniteGallery website. You can see that for the Tiles - Columns layout,  you can control the spacing between the columns with the `tiles_space_between_cols:  3` option -- so add it to the *Script options* NovemberGallery component option!
-
-**Example 5: Override the component partial**
-
-It is easy to override the default partial by following the [OctoberCMS documentation](https://octobercms.com/docs/cms/components#overriding-partials). All you have to do is go to your `Partials` and create a folder with the same name as the alias of your gallery. Create a "default.htm" file in that directory and copy the contents of the default component partial for the given gallery type into this folder. 
-
-Gallery Type | Default Component Partial Path
--- | --
-Embedded Gallery | [/plugins/zenware/novembergallery/components/embeddedgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/embeddedgallery/default.htm)
-Swiper | [/plugins/zenware/novembergallery/components/swipergallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/swipergallery/default.htm)
-Pop-up Lightbox | [/plugins/zenware/novembergallery/components/popupgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/popupgallery/default.htm)
-Video Gallery | [/plugins/zenware/novembergallery/components/videogallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/videogallery/default.htm)
-Image List Only | [/plugins/zenware/novembergallery/components/customgallery/default.htm](https://github.com/lieszkol/november-gallery/blob/master/components/customgallery/default.htm)
-
-</details>
-<br>
-<br>
 
 ## Component 2: Swiper
 
@@ -415,11 +337,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3ODExMzg3Niw2ODc3NzA5OTgsMTY5OD
-A4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3OTE0LDE3MjgzNTk4
-ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC
-0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2
-ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwzNDUwNjc3MT
-MsMTQ3NjgyODI0MiwxNDIxMTc3MTksLTEyMDIyODIzMTcsLTMw
-MDc2NTQxN119
+eyJoaXN0b3J5IjpbMTM5MjcyNjcxOSwtNTc4MTEzODc2LDY4Nz
+c3MDk5OCwxNjk4MDgxODQ1LC0xMDYwNjQ2MTU1LC05NDkzNTc5
+MTQsMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xODI1NjU4NjM2LC
+03NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NTA2
+NDc3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5ND
+I5LDM0NTA2NzcxMywxNDc2ODI4MjQyLDE0MjExNzcxOSwtMTIw
+MjI4MjMxN119
 -->
