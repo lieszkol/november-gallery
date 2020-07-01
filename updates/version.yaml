@@ -17,3 +17,5 @@
     - Added additional gallery properties as requested by scott56276 on 7/1/2020
 1.0.8:
     - Added ability to pass gallery slug via URL parameter as requested by scott56276 on 7/1/2020
+1.0.9:
+    - Bugfix affecting 1.0.7 when a gallery uploaded using the Gallery back-end page has now "preview image" set

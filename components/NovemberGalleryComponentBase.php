@@ -307,7 +307,10 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 				$this->gallery->published = $this->galleryRow->published;
 				$this->gallery->createdAt = $this->galleryRow->created_at;
 				$this->gallery->updatedAt = $this->galleryRow->updated_at;
-				$this->gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $this->galleryRow->preview_image);
+				if ($this->galleryRow->preview_image)
+				{
+					$this->gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $this->galleryRow->preview_image);
+				}
 			}
 			$this->gallery->items = $images;
 			/*
