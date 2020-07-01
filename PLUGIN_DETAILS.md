@@ -10,8 +10,6 @@ A gallery plugin for professional Photographers, Media Artists, Bloggers and Con
 
 Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
-This is an abridged version of the full documentation that we call [The November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook).
-
 *Please note that November Gallery is in no way affiliated with OctoberCMS, I just really liked the idea of naming things after months and November is one of my favorites!*
 
 # Features:

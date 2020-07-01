@@ -4,6 +4,7 @@
 >
 > ![Me myself and I](https://www.generalcomputing.com/2019/lll_2016_round_120.png)
 
+This is an abridged version of the full documentation that we call [The November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook).
 
 # November Gallery Pro vs. Personal
 
