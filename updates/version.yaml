@@ -13,3 +13,5 @@
     - Bugfix for PHP <= 5.3
 1.0.6:
     - Ability to set a custom CSS class (in addition to style) for each image via the image description field
+1.0.7:
+    - Added additional gallery properties as requested by scott56276 on 7/1/2020
