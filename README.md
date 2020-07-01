@@ -40,7 +40,7 @@ This README is an abridged version of the full documentation that we call [The N
 
 # Deployment & Installation
 
-For more information see the [OctoberCMS docs](https://octobercms.com/docs/cms/pages#injecting-assets)!
+Please see the [NovemberGallery manual](https://its.zensoft.hu/books/november-gallery-cookbook/page/installation-deployment)!
 
 # Usage
 
@@ -415,7 +415,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjE5OTI3OSw2ODc3NzA5OTgsMTY5OD
+eyJoaXN0b3J5IjpbLTU3ODExMzg3Niw2ODc3NzA5OTgsMTY5OD
 A4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3OTE0LDE3MjgzNTk4
 ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4MTkxNTk0LC
 0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3NzgxLC05NjA2
