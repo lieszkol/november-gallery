@@ -9,6 +9,19 @@ use ZenWare\NovemberGallery\NovemberHelper;
  */
 class Gallery
 {
+	public const GALLERYTYPE_BACKENDGALLERY = 'NOVEMBER_GALLERY';
+	public const GALLERYTYPE_OCTOBERMEDIAMANAGER = 'OCTOBER_MEDIA_MANAGER_FOLDER';
+	public const GALLERYTYPE_BLOGPOST = 'BLOG_POST';
+
+	/**
+	 * @var string Gallery type (indicates how the images were upladed & where they are stored)
+	 */
+	public $type;
+
+	/**
+	 * @var string Folder where the images can be found (available for galleries created using the OctoberCMS "Media Manager")
+	 */
+	public $folder;
 	
 	/**
 	 * @var string Gallery name (available for galleries created on the "Galleries" back-end page)
@@ -29,6 +42,11 @@ class Gallery
 	 * @var string Gallery description (available for galleries created on the "Galleries" back-end page)
 	 */
 	public $description;
+
+	/**
+	 * @var string Gallery keywords (available for galleries created on the "Galleries" back-end page)
+	 */
+	public $keywords;
 
 	/**
 	 * @var string Gallery published on date (available for galleries created on the "Galleries" back-end page)

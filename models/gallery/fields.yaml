@@ -53,6 +53,15 @@ tabs:
             tab: zenware.novembergallery::lang.forms.tabs.advanced_label
             placeholder: zenware.novembergallery::lang.entities.gallery.description_placeholder
 
+        keywords:
+            label: zenware.novembergallery::lang.entities.gallery.keywords_label
+            span: storm
+            cssClass: col-xs-12 col-sm-8 col-lg-6
+            type: textarea
+            size: small
+            tab: zenware.novembergallery::lang.forms.tabs.advanced_label
+            placeholder: zenware.novembergallery::lang.entities.gallery.keywords_placeholder
+
         published_at:
             label: zenware.novembergallery::lang.entities.gallery.published_at_label
             type: datepicker

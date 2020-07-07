@@ -289,6 +289,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 					$images = $images->merge($this->getImagesInMediaFolder($this->getGalleryPath($baseMediaFolder, $this->page->post->novembergalleryfields->media_folder), $maxImages));
 				}
 				$this->gallery->items = $images;
+				$this->gallery->type = Gallery::GALLERYTYPE_BLOGPOST;
 			}
 		} elseif ($this->getGalleryType() == self::GALLERYTYPE_BACKENDGALLERY) {
 			// We have a gallery uploaded using the NovemberGallery backend menu
@@ -300,6 +301,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 				foreach ($this->galleryRow->images->take($maxImages) as $image) {
 					$images->push(GalleryItem::createFromOctoberImageFile($this, $image));
 				}
+				$this->gallery->type = Gallery::GALLERYTYPE_BACKENDGALLERY;
 				$this->gallery->name = $this->galleryRow->name;
 				$this->gallery->slug = $this->galleryRow->slug;
 				$this->gallery->description = $this->galleryRow->description;
@@ -327,7 +329,9 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 		} else {
 			// We have a gallery uploaded using the MediaManager
 
-			$this->gallery->items = $this->getImagesInMediaFolder($this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder()), $maxImages);
+			$this->gallery->folder = $this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder());
+			$this->gallery->items = $this->getImagesInMediaFolder($this->gallery->folder, $maxImages);
+			$this->gallery->type = Gallery::GALLERYTYPE_OCTOBERMEDIAMANAGER;
 		}
 	}
 

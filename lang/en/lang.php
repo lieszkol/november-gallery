@@ -15,7 +15,9 @@
         'video_gallery_component_name' => 'Video Gallery',
         'video_gallery_component_description' => 'Show a gallery of YouTube/Vimeo/Wistia videos, or ogv/webm/mp4 videos uploaded to your site.',
         'custom_gallery_component_name' => 'Image List Only',
-        'custom_gallery_component_description' => 'Load the list of image files only, without rendering a gallery. Use this if you wish to write your own code for displaying the images.'
+		'custom_gallery_component_description' => 'Load the list of image files only, without rendering a gallery. Use this if you wish to write your own code for displaying the images.',
+		'gallery_hub_component_name' => 'Gallery Hub',
+		'gallery_hub_component_description' => 'Gallery of galleries (or sub-folders).'
 	],
 	
 	'menu' => [
@@ -44,6 +46,8 @@
 			'images_label' => 'Images',
 			'description_label' => 'Description',
 			'description_placeholder' => 'Enter Description',
+			'keywords_label' => 'Keywords',
+			'keywords_placeholder' => 'Enter a list of words, separated by commas',
 			'published_label' => 'Active',
 			'published_at_label' => 'Published On',
 			'attached_images_count_label' => '# of Images',
@@ -297,7 +301,26 @@
 		'gallery_width_label' => 'Gallery Width',
         'gallery_width_comment' => 'Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page',
         'gallery_height_label' => 'Gallery Height',
-        'gallery_height_comment' => 'Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page'
+		'gallery_height_comment' => 'Only applies to "Combined" and "Slider" galleries! Can be a number (pixel lenght) or a percent (of the parent container). Leave empty to fall back on the values set on the backend plugin configuration page',
+		
+		// Gallery Hub:
+		'hub_type_label' => 'Hub Type',
+		'hub_type_label_hint' => 'Leave blank to show a hub of all galleries, or select one of the options to only show certain galleries.',
+		'hub_type_label_placeholder' => 'Select hub type',
+		//'hub_type_label_validation_message' => 'The Media Folder can contain only letters, numbers, or the following URL-safe characters: $-_.+!*\'(),/',
+		'hub_type_option_all' => 'All Galleries',
+
+		'hub_max_galleries_label' => 'Max Galleries',
+		'hub_max_galleries_label_hint' => 'The maximum number of galleries to display (leave blank to show all)',
+		'hub_max_galleries_validation' => 'The Max Galleries property can only contain numbers!',
+
+		'hub_order_galleries_by_label' => 'Order by',
+		'hub_order_galleries_by_label_hint' => 'Note: Gallery Slug, Gallery Description, and Published On only work for images uploaded using the Galleries page!',
+		'hub_order_galleries_by_option_title' => 'Gallery Title or Folder Name (default)',
+		'hub_order_galleries_by_option_description' => 'Gallery Description',
+		'hub_order_galleries_by_option_slug' => 'Gallery Slug',
+		'hub_order_galleries_by_option_published_on' => 'Published On or Folder Creation Date'
+		
 	],
     'permission' => [
         'tab' => 'November Gallery',

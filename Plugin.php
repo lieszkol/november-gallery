@@ -28,7 +28,8 @@ class Plugin extends PluginBase
 			'ZenWare\NovemberGallery\Components\SwiperGallery' => 'swiperGallery',
 			'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
 			'ZenWare\NovemberGallery\Components\CustomGallery' => 'customGallery',
-			'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
+			'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery',
+			'ZenWare\NovemberGallery\Components\GalleryHub' => 'galleryHub'
 		];
 	}
 
@@ -44,7 +45,8 @@ class Plugin extends PluginBase
 			'ZenWare\NovemberGallery\Components\EmbeddedGallery' => 'embeddedGallery',
 			'ZenWare\NovemberGallery\Components\SwiperGallery' => 'swiperGallery',
 			'ZenWare\NovemberGallery\Components\PopupGallery' => 'popupLightbox',
-			'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery'
+			'ZenWare\NovemberGallery\Components\VideoGallery' => 'videoGallery',
+			'ZenWare\NovemberGallery\Components\GalleryHub' => 'galleryHub'
 		];
 	}
 
@@ -96,7 +98,7 @@ class Plugin extends PluginBase
 				'icon'        => 'icon-camera-retro',
 				'permissions' => ['zenware.novembergallery.*'],
 				'order'       => 200,
-				// This is how we would do a side-menu, but relaly it's unnecessary:
+				// This is how we would do a side-menu, but really it's unnecessary:
 				// 'sideMenu' => [
 				// 	'galleries' => [
 				// 		'label'       => 'zenware.novembergallery::lang.menu.galleries.sidemenu.galleries_label',

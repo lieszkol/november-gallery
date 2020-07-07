@@ -25,6 +25,10 @@ columns:
         label: zenware.novembergallery::lang.entities.gallery.description_label
         searchable: true
 
+    keywords:
+        label: zenware.novembergallery::lang.entities.gallery.keywords_label
+        searchable: true
+
     images:
         label: zenware.novembergallery::lang.entities.gallery.attached_images_count_label
         type: attached_images_count

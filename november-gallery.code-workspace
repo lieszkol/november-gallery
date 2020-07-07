@@ -3,5 +3,15 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"workbench.editor.highlightModifiedTabs": true,
+		"favorites.resources": [
+			"lang\\en\\lang.php",
+			"components\\GalleryHub.php",
+			"components\\galleryHub\\default.htm",
+			"components\\NovemberGalleryComponentBase.php",
+			"classes\\GalleryHub.php"
+		]
+	}
 }
