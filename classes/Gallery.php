@@ -88,6 +88,11 @@ class Gallery
 	 */
 	public $sortDirection = "ASC";
 
+	/**
+	 * @var array Gallery URL (only available for galleries in the "Gallery Hub" component)
+	 */
+	public $url;
+
 	public function __construct($sortBy)
 	{
 		if (NovemberHelper::endsWith($sortBy, "DESC")) {

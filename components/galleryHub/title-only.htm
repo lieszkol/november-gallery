@@ -1,0 +1,19 @@
+{##}
+{# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
+
+{# The following line isn't actually required, it just shows you how you can assign a property of this component 
+   instance to a page variable: #}
+{#{% set galleries = __SELF__.galleries %}#}
+
+{% if __SELF__.error %}
+	<div class="alert zen-alert">{{ __SELF__.error }}</div>
+{% endif %}
+
+{% if galleries|length > 0 %}
+	<ul id="{{__SELF__.id}}">
+		{% for gallery in galleries %}
+			<li><a href="{{ gallery.url }}" class="november-gallery-name" {{ __SELF__.openInNewTab ? 'target="_blank"' : '' }}>{{ gallery.name }}</a></li>
+		{% endfor %}
+	</ul>
+
+{% endif %}

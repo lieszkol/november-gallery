@@ -1,0 +1,46 @@
+{##}
+{# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
+
+{# The following line shows you how you can assign a property of this component instance to a page variable: #}
+{% set galleries = __SELF__.galleries %}
+
+{# Please leave the following in the template, it allows the component to show error messages to the user: #}
+{% if __SELF__.error %}
+	<div class="alert zen-alert">{{ __SELF__.error }}</div>
+{% endif %}
+
+{#
+
+Drop your own code here. For example:
+
+{% if galleries|length > 0 %}
+
+	<div id="{{__SELF__.id}}">
+		{% for gallery in galleries %}
+			<img alt="{{ gallery.name }}" 
+				src="{{ gallery.previewImage.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" 
+				style="margin: 20px;"
+				/>
+		{% endfor %}
+	</div>
+
+{% endif %}
+
+Hint: To dig into the galleries (or any other) variable/collection, you have two options. 
+You can simply add 
+
+{{ dump(galleryHub.galleries.toArray) }} 
+
+on your page after the component definition and it will print debug information about that 
+variable straight in your page. Alternatively, you can install the Debugbar plugin and then add 
+
+{{ debug(galleryHub.galleries) }} 
+
+to your page to show debug information in the Laravel debugbar. To see all public properties 
+of a gallery, do: 
+
+{{ debug(galleryHub.galleries.first.toArray) }}. 
+
+Make sure to replace "galleryHub" with the alias of your component as set in the component options!
+
+#}

@@ -33,6 +33,14 @@ class GalleryHub extends ComponentBase
 	public $sortDir;
 
 	public $maxItems;
+
+	public $linkUrl;
+
+	public $openInNewTab;
+
+	public $visualization;
+
+	public $visualizationTemplate;
 		
 	public function componentDetails()
 	{
@@ -61,14 +69,6 @@ class GalleryHub extends ComponentBase
 				// 'validationPattern' => '^[a-zA-Z0-9$\-_.+!*\'(),/]+$',   // https://perishablepress.com/stop-using-unsafe-characters-in-urls/
 				// 'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.folder_label_validation_message'),
 			],
-			'maxItems' => [
-				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_label'),
-				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_label_hint'),
-				'default'           => 100,
-				'type'              => 'string',
-				'validationPattern' => '^[0-9]+$',
-				'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_validation')
-			],
 			'sortBy' => [
 				'title'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_label'),
 				'description' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_label_hint'),
@@ -87,8 +87,49 @@ class GalleryHub extends ComponentBase
 					'publishedOn' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_published_on'),
 					'publishedOnDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_published_on')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number')
-				]
-			]
+				],
+			],
+			'maxItems' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_label'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_label_hint'),
+				'default'           => 100,
+				'type'              => 'string',
+				'validationPattern' => '^[0-9]+$',
+				'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_max_galleries_validation')
+			],
+			'linkUrl' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_link_url_label'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_link_url_hint'),
+				'default'           => '',
+				'required'			=> true,
+				'validationMessage' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_link_url_required'),
+			],
+			'openInNewTab' => [
+				'title'				=> \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_open_in_new_tab_label'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_open_in_new_tab_label_hint'),
+				'type'				=> 'checkbox',
+				'default'			=> false,
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_visualization_label')
+			],
+			'visualization' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_label'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_label_hint'),
+				'type'        => 'dropdown',
+				'placeholder' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_option_preview_image'),
+				'options'     => [
+					'default' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_option_preview_image'),
+					'titleOnly' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_option_title'),
+					'template' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_option_template'),
+					'custom' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_option_custom')
+				],
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_visualization_label')
+			],
+			'template' => [
+				'title'             => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_template'),
+				'description'       => \Lang::get('zenware.novembergallery::lang.component_properties.hub_visualization_template_hint'),
+				'default'           => '',
+				'group' 			=> \Lang::get('zenware.novembergallery::lang.component_properties.group_visualization_label')
+			],
 		];
 	}
 
@@ -107,11 +148,36 @@ class GalleryHub extends ComponentBase
 
 		$this->hubType = $this->property('hubType');
 
-		if (!empty($this->property('hubType'))
-			&& $this->property('hubType') != '[ALL]'
+		if (!empty($this->property('hubType')) && $this->property('hubType') != '[ALL]'
 			)
 		{
 			$this->keyword = $this->property('hubType');
+		}
+
+		$this->linkUrl = '';
+		if (!empty($this->property('linkUrl')) && $this->property('linkUrl') != 'default')
+		{
+			$this->linkUrl = $this->property('linkUrl');
+		} else {
+			$this->error = "November Gallery: Please set the link URL in the component inspector!";
+		}
+
+		$this->openInNewTab = false;
+		if (!empty($this->property('openInNewTab')) && $this->property('openInNewTab') != 'default')
+		{
+			$this->openInNewTab = (bool)$this->property('openInNewTab');
+		}
+
+		$this->visualization = 'title';
+		if (!empty($this->property('visualization')) && $this->property('visualization') != 'default')
+		{
+			$this->visualization = $this->property('visualization');
+		}
+
+		$this->visualizationTemplate = '';
+		if (!empty($this->property('template')) && $this->property('template') != 'default')
+		{
+			$this->visualizationTemplate = $this->property('template');
 		}
 
 		$this->maxItems = 100;
@@ -141,6 +207,43 @@ class GalleryHub extends ComponentBase
 		// Do NOT do this here, because if we have several galleries on the same page, they will all end up rendering the gallery selected in the last component on the page:
 		// $this->page['gallery'] = $this->gallery;
 	}
+
+	/**
+	 * Inject page variables
+	 */
+	public function onRender()
+	{
+		// Could inject variables into the page this way: https://stackoverflow.com/questions/48180951/octobercms-how-to-pass-variable-from-page-to-component
+		$this->page['novemberGallery_' . $this->alias] = $this->page['galleries'] = $this->galleries;
+		
+		$result = '';
+
+		switch ($this->visualization) {
+			case 'titleOnly':
+				$result = $this->renderPartial('@title-only.htm');
+				break;
+			
+			case 'template':
+				$result = $this->renderPartial('@custom-template.htm');
+				break;
+
+			case 'custom':
+				$result = $this->renderPartial('@blank.htm');
+				break;
+				
+			default:
+				$result = $this->renderPartial('@default.htm');
+				break;
+		}
+
+		return $result;
+	}
+
+	/**
+	 * Load CSS and JS assets
+	 */
+	public function InjectScripts()
+	{ }
 
 	/**
 	 * Get the base media folder
@@ -193,8 +296,9 @@ class GalleryHub extends ComponentBase
 				$subdir = substr($dir, strlen($galleryPath));
 				$gallery = new Gallery('default');
 				$gallery->folder = $dir;
-				$gallery->name = $dir;
+				$gallery->name = $subdir;
 				$gallery->type = Gallery::GALLERYTYPE_OCTOBERMEDIAMANAGER;
+				$gallery->url =  str_replace('%slug%', $dir, $this->linkUrl);
 				$this->galleries = $this->galleries->merge([$subdir => $gallery]);
 				if ($i >= $this->maxItems) break;
 				$i++;
@@ -226,10 +330,12 @@ class GalleryHub extends ComponentBase
 			$gallery->name = $galleryRow->name;
 			$gallery->slug = $galleryRow->slug;
 			$gallery->description = $galleryRow->description;
+			$gallery->keywords = $galleryRow->keywords;
 			$gallery->publishedAt = $galleryRow->published_at;
 			$gallery->published = $galleryRow->published;
 			$gallery->createdAt = $galleryRow->created_at;
 			$gallery->updatedAt = $galleryRow->updated_at;
+			$gallery->url =  str_replace('%slug%', $galleryRow->slug, $this->linkUrl);
 			if ($galleryRow->preview_image)
 			{
 				$gallery->previewImage = GalleryItem::createFromOctoberImageFile($this, $galleryRow->preview_image);
@@ -240,21 +346,6 @@ class GalleryHub extends ComponentBase
 			if ($this->galleries->count() >= $this->maxItems) break;
 		}
 	}
-
-	/**
-	 * Inject page variables
-	 */
-	public function onRender()
-	{
-		// Could inject variables into the page this way: https://stackoverflow.com/questions/48180951/octobercms-how-to-pass-variable-from-page-to-component
-		$this->page['novemberGallery_' . $this->alias] = $this->page['galleries'] = $this->galleries;
-	}
-
-	/**
-	 * Load CSS and JS assets
-	 */
-	public function InjectScripts()
-	{ }
 
 	/**
 	 * Populate the "Hub Type" property with options.
@@ -291,5 +382,22 @@ class GalleryHub extends ComponentBase
 		$options = $options->merge($galleryKeywords); //->pluck('name', 'id'));
 
 		return $options->toArray();
+	}
+
+	/**
+	 * Converts the item data to an array, enables end-users to do
+	 * {{ dump(embeddedGallery.gallery.toArray) }} or
+	 * {{ debug(embeddedGallery.gallery.toArray) }} (with debugbar installed)
+	 * @return array Returns the item data as array
+	 */
+	public function toArray()
+	{
+		$result = [];
+		$properties = (new \ReflectionObject($this))->getProperties(\ReflectionProperty::IS_PUBLIC);
+		foreach ($properties as $property) {
+			$propertyName = $property->name;
+			$result[$propertyName] = $this->$propertyName;
+		}
+		return $result;
 	}
 }

@@ -305,6 +305,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 				$this->gallery->name = $this->galleryRow->name;
 				$this->gallery->slug = $this->galleryRow->slug;
 				$this->gallery->description = $this->galleryRow->description;
+				$this->gallery->keywords = $this->galleryRow->keywords;
 				$this->gallery->publishedAt = $this->galleryRow->published_at;
 				$this->gallery->published = $this->galleryRow->published;
 				$this->gallery->createdAt = $this->galleryRow->created_at;
@@ -328,7 +329,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 			*/;
 		} else {
 			// We have a gallery uploaded using the MediaManager
-
+			$this->gallery->name = $this->getRelativeMediaFolder();
 			$this->gallery->folder = $this->getGalleryPath($this->getBaseMediaFolder(), $this->getRelativeMediaFolder());
 			$this->gallery->items = $this->getImagesInMediaFolder($this->gallery->folder, $maxImages);
 			$this->gallery->type = Gallery::GALLERYTYPE_OCTOBERMEDIAMANAGER;

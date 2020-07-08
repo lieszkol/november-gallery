@@ -319,7 +319,26 @@
 		'hub_order_galleries_by_option_title' => 'Gallery Title or Folder Name (default)',
 		'hub_order_galleries_by_option_description' => 'Gallery Description',
 		'hub_order_galleries_by_option_slug' => 'Gallery Slug',
-		'hub_order_galleries_by_option_published_on' => 'Published On or Folder Creation Date'
+		'hub_order_galleries_by_option_published_on' => 'Published On or Folder Creation Date',
+
+		'group_visualization_label' => 'Visualization',
+
+		'hub_visualization_link_url_label' => 'Link URL',
+		'hub_visualization_link_url_hint' => 'Set the URL of your galleries. Include the following placeholder, which will be replaced with the "slug" of your gallery: %SLUG%',
+		'hub_visualization_link_url_required' => 'The link URL is required!',
+
+		'hub_visualization_open_in_new_tab_label' => 'Open in new tab?',
+		'hub_visualization_open_in_new_tab_label_hint' => 'Should the link open in a new tab or in the current one?',
+	
+		'hub_visualization_label' => 'Display as',
+		'hub_visualization_label_hint' => 'Choose one of the presets, or "template" if you wish to define your own template, or "custom" if you will write your own Twig code to render the gallery links!',
+		'hub_visualization_option_preview_image' => 'Links with Preview Image',
+		'hub_visualization_option_title' => 'List of Links with Title Only',
+		'hub_visualization_option_template' => 'Set the Template Below',
+		'hub_visualization_option_custom' => 'Write your own Twig Code (links are not rendered)',
+
+		'hub_visualization_template' => 'Link Template',
+		'hub_visualization_template_hint' => 'Choose "Set the Template Below" in "Display as" and set your template, tags such as %GALLERY_NAME%, %PREVIEW_IMAGE_URL%, %GALLERY_DESCRIPTION% will be replaced with the name of the given gallery etc.'
 		
 	],
     'permission' => [

@@ -1,0 +1,20 @@
+{##}
+{# You only need the previous line if you use the OctoberCMS Template Language extension in VS Code #}
+
+{# The following line isn't actually required, it just shows you how you can assign a property of this component 
+   instance to a page variable: #}
+{#{% set galleries = __SELF__.galleries %}#}
+
+{% if __SELF__.error %}
+	<div class="alert zen-alert">{{ __SELF__.error }}</div>
+{% endif %}
+
+{% if galleries|length > 0 %}
+
+	<div id="{{__SELF__.id}}">
+		{% for gallery in galleries %}
+			{{ __SELF__.visualizationTemplate|replace({'%type%': gallery.type, '%url%': gallery.url, '%slug%': gallery.slug, '%folder%': gallery.folder, '%name%': gallery.name, '%description%': gallery.description, '%keywords%': gallery.keywords, '%created_at%': gallery.createdAt, '%updated_at%': gallery.updatedAt, '%preview_image_url%': gallery.previewImage.url, '%published%': gallery.published, '%preview_image_title%': gallery.previewImage.title, '%preview_image_description%': gallery.previewImage.description, '%preview_image_width%': gallery.previewImage.width, '%preview_image_height%': gallery.previewImage.height, '%preview_image_filename%': gallery.previewImage.fileName, '%preview_image_filesize%': gallery.previewImage.fileSize, '%items_count%': gallery.items.length})|raw }}
+		{% endfor %}
+	</div>
+
+{% endif %}

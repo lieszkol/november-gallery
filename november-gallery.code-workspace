@@ -12,6 +12,7 @@
 			"components\\galleryHub\\default.htm",
 			"components\\NovemberGalleryComponentBase.php",
 			"classes\\GalleryHub.php"
-		]
+		],
+		"editor.autoClosingBrackets": "never"
 	}
 }
