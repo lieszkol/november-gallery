@@ -36,7 +36,7 @@ This README is an abridged version of the full documentation that we call [The N
  - [ ] Improve handling of videos uploaded to the site
  - [ ] Add alternative lightbox/carousel gallery script support
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploading through the backend "Gallery" page)
- - [ ] ~~Cache image data in database instead of reading it all in from the filesystem every time~~ → now that the back-end gallery page is available, 
+ - [ ] ~~Cache image data in database instead of reading it all in from the filesystem every time~~ → the new back-end Gallery page is a good alternative to the Media Manager and it makes use of the database
 
 # Deployment, Installation & Usage
 
@@ -85,11 +85,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI4NzUxMjQ4LDEyMTg0OTUwMTQsLTE1Mz
-Y2MjI2MTksLTE5MzIxNDk0NDAsLTU3ODExMzg3Niw2ODc3NzA5
-OTgsMTY5ODA4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3OTE0LD
-E3MjgzNTk4ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4
-MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3Nz
-gxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwz
-NDUwNjc3MTNdfQ==
+eyJoaXN0b3J5IjpbLTEwNzgwNzI0NDcsMTIxODQ5NTAxNCwtMT
+UzNjYyMjYxOSwtMTkzMjE0OTQ0MCwtNTc4MTEzODc2LDY4Nzc3
+MDk5OCwxNjk4MDgxODQ1LC0xMDYwNjQ2MTU1LC05NDkzNTc5MT
+QsMTcyODM1OTg4NiwtNjk0NTUyODU5LC0xODI1NjU4NjM2LC03
+NjgxOTE1OTQsLTE2NjEwNDI5OTUsNjI3MzM4MDA2LC01NTA2ND
+c3ODEsLTk2MDY4NzkzNSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5
+LDM0NTA2NzcxM119
 -->
