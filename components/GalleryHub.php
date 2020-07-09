@@ -20,26 +20,59 @@ class GalleryHub extends ComponentBase
 {
 	public $dbg;
 
+	/**
+	 * @var October\Rain\Support\Collection Collection of matching galleries. Each item in the collection is an instance of the Gallery class (see above).
+	 */
 	public $galleries;
 
+	/**
+	 * @var string[] This is the result of the File::directories() call that retrieves all subdirectories underneath your gallery root folder. Only populated when the "Hub Type" is set to "All Galleries".
+	 */
 	public $dirs;
 
+	/**
+	 * @var string As set by the user in the component inspector, will be [ALL] if the user selected "All Galleries", or a keyword (which is used to limit the galleries shown)
+	 */
 	public $hubType;
 
+	/**
+	 * @var string If the hub type is set to search by keywords, then this will be set to the selected keyword.
+	 */
 	public $keyword = false;
 
+	/**
+	 * @var string As set in the component inspector, can be one of: default, title, description, slug, publishedon
+	 */
 	public $sortBy;
 
+	/**
+	 * @var string As set in the component inspector, can be either "ASC" or "DESC"
+	 */
 	public $sortDir;
 
+	/**
+	 * @var int Maximum number of galleries to show, as set in the component inspector
+	 */
 	public $maxItems;
 
+	/**
+	 * @var string Link URL template, as set in the component inspector. The placeholder %slug% will be replaced with the slug of the given gallery
+	 */
 	public $linkUrl;
 
+	/**
+	 * @var bool As set in the component inspector
+	 */
 	public $openInNewTab;
 
+	/** 
+	 * @var string How the galleries should be rendered, can be one of: default (unordered list of preview images), titleOnly (unordered list of gallery names), template (use a custom template), custom (no code is generated)
+	 */
 	public $visualization;
 
+	/**
+	 * @var string If "visualization" is set to "template", then the gallery items will be rendered using the template given here. The following placeholders are replaced with actual values: %type%, %url%, %slug%, %folder%, %name%, %description%, %keywords%, %created_at%, %updated_at%, %preview_image_url%, %published%, %preview_image_title%, %preview_image_description%, %preview_image_width%, %preview_image_height%, %preview_image_filename%, %preview_image_filesize%, %items_count%
+	 */
 	public $visualizationTemplate;
 		
 	public function componentDetails()
@@ -294,11 +327,12 @@ class GalleryHub extends ComponentBase
 			$i = 1;
 			foreach ($this->dirs as $dir) {
 				$subdir = substr($dir, strlen($galleryPath));
+				$subdir = substr($subdir, 1);
 				$gallery = new Gallery('default');
 				$gallery->folder = $dir;
 				$gallery->name = $subdir;
 				$gallery->type = Gallery::GALLERYTYPE_OCTOBERMEDIAMANAGER;
-				$gallery->url =  str_replace('%slug%', $dir, $this->linkUrl);
+				$gallery->url =  str_replace('%slug%', $subdir, $this->linkUrl);
 				$this->galleries = $this->galleries->merge([$subdir => $gallery]);
 				if ($i >= $this->maxItems) break;
 				$i++;

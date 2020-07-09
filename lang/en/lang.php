@@ -324,7 +324,7 @@
 		'group_visualization_label' => 'Visualization',
 
 		'hub_visualization_link_url_label' => 'Link URL',
-		'hub_visualization_link_url_hint' => 'Set the URL of your galleries. Include the following placeholder, which will be replaced with the "slug" of your gallery: %SLUG%',
+		'hub_visualization_link_url_hint' => 'Set the URL of your galleries. Include the following placeholder, which will be replaced with the "slug" of your gallery: %slug%',
 		'hub_visualization_link_url_required' => 'The link URL is required!',
 
 		'hub_visualization_open_in_new_tab_label' => 'Open in new tab?',
@@ -338,7 +338,7 @@
 		'hub_visualization_option_custom' => 'Write your own Twig Code (links are not rendered)',
 
 		'hub_visualization_template' => 'Link Template',
-		'hub_visualization_template_hint' => 'Choose "Set the Template Below" in "Display as" and set your template, tags such as %GALLERY_NAME%, %PREVIEW_IMAGE_URL%, %GALLERY_DESCRIPTION% will be replaced with the name of the given gallery etc.'
+		'hub_visualization_template_hint' => 'Choose "Set the Template Below" in "Display as" and set your template, tags such as %type%, %url%, %slug%, %folder%, %name%, %description%, %keywords%, %created_at%, %updated_at%, %preview_image_url% will be replaced with actual values.'
 		
 	],
     'permission' => [

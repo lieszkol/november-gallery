@@ -14,7 +14,7 @@ class Gallery
 	public const GALLERYTYPE_BLOGPOST = 'BLOG_POST';
 
 	/**
-	 * @var string Gallery type (indicates how the images were upladed & where they are stored)
+	 * @var string Gallery type (indicates how the images were upladed & where they are stored), possible values are: NOVEMBER_GALLERY, OCTOBER_MEDIA_MANAGER_FOLDER, BLOG_POST
 	 */
 	public $type;
 
@@ -29,7 +29,7 @@ class Gallery
 	public $dbg;
 
 	/**
-	 * @var string Gallery name (available for galleries created on the "Galleries" back-end page)
+	 * @var string Gallery name as set on the Gallery form for galleries uploaded using the "Galleries" back-end page, for galleries uploaded using the OctoberCMS Media Manager this is set to the folder name
 	 */
 	public $name;
 
