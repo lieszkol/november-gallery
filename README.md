@@ -9,7 +9,7 @@ Check out the [live demo site](https://novembergallery.zenware.io)!
 A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
- 3. Drop November Gallery onto your page or partial* or static page
+ 3. Drop November Gallery onto your CMS page, partial*, static page, or blog post
  4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
 
 <small><i>*please read the Known Issues section regarding usage in partials!</i></small>
@@ -21,12 +21,13 @@ This README is an abridged version of the full documentation that we call [The N
 # Features:
 
 - Works in Pages, Partials, "Static" Pages, and Blog Posts!
-- Five components included: 
+- Six components included: 
 	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts: **tiles** (arranged in columns, justified, or laid out in a grid "masonry style"), **carousel**, **slider**, or **combined** (large image + lightbox)
 	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects
+	 - **Gallery Hub** 
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable OR set it in your RainLab blog entry
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
@@ -85,11 +86,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODQ5NTAxNCwtMTUzNjYyMjYxOSwtMT
-kzMjE0OTQ0MCwtNTc4MTEzODc2LDY4Nzc3MDk5OCwxNjk4MDgx
-ODQ1LC0xMDYwNjQ2MTU1LC05NDkzNTc5MTQsMTcyODM1OTg4Ni
-wtNjk0NTUyODU5LC0xODI1NjU4NjM2LC03NjgxOTE1OTQsLTE2
-NjEwNDI5OTUsNjI3MzM4MDA2LC01NTA2NDc3ODEsLTk2MDY4Nz
-kzNSwtNTYzOTA1MTc3LC0xOTM5Njk5NDI5LDM0NTA2NzcxMywx
-NDc2ODI4MjQyXX0=
+eyJoaXN0b3J5IjpbMTE3MTA2ODAxMCwxMjE4NDk1MDE0LC0xNT
+M2NjIyNjE5LC0xOTMyMTQ5NDQwLC01NzgxMTM4NzYsNjg3Nzcw
+OTk4LDE2OTgwODE4NDUsLTEwNjA2NDYxNTUsLTk0OTM1NzkxNC
+wxNzI4MzU5ODg2LC02OTQ1NTI4NTksLTE4MjU2NTg2MzYsLTc2
+ODE5MTU5NCwtMTY2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nz
+c4MSwtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0Mjks
+MzQ1MDY3NzEzXX0=
 -->
