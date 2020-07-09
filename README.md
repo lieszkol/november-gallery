@@ -27,17 +27,16 @@ This README is an abridged version of the full documentation that we call [The N
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects
-	 - **Gallery Hub** 
+	 - **Gallery Hub** to generate a page with links to all (or only some) of your galleries
  - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable OR set it in your RainLab blog entry
  - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
 ### Limitations / ToDo:
  
  - [ ] Improve handling of videos uploaded to the site
- - [ ] Expand docs with example for "dynamic" gallery via path variables
  - [ ] Add alternative lightbox/carousel gallery script support
  - [ ] Support titles & captions embedded into the image files, or in sidecar files (with support for multiple languages) (titles & captions are only supported when uploading through the backend "Gallery" page)
- - [ ] Cache image data in database instead of reading it all in from the filesystem every time
+ - [ ] ~~Cache image data in database instead of reading it all in from the filesystem every time~~ → now that the back-end gallery page is available, 
 
 # Deployment, Installation & Usage
 
@@ -86,11 +85,11 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTA2ODAxMCwxMjE4NDk1MDE0LC0xNT
-M2NjIyNjE5LC0xOTMyMTQ5NDQwLC01NzgxMTM4NzYsNjg3Nzcw
-OTk4LDE2OTgwODE4NDUsLTEwNjA2NDYxNTUsLTk0OTM1NzkxNC
-wxNzI4MzU5ODg2LC02OTQ1NTI4NTksLTE4MjU2NTg2MzYsLTc2
-ODE5MTU5NCwtMTY2MTA0Mjk5NSw2MjczMzgwMDYsLTU1MDY0Nz
-c4MSwtOTYwNjg3OTM1LC01NjM5MDUxNzcsLTE5Mzk2OTk0Mjks
-MzQ1MDY3NzEzXX0=
+eyJoaXN0b3J5IjpbMjI4NzUxMjQ4LDEyMTg0OTUwMTQsLTE1Mz
+Y2MjI2MTksLTE5MzIxNDk0NDAsLTU3ODExMzg3Niw2ODc3NzA5
+OTgsMTY5ODA4MTg0NSwtMTA2MDY0NjE1NSwtOTQ5MzU3OTE0LD
+E3MjgzNTk4ODYsLTY5NDU1Mjg1OSwtMTgyNTY1ODYzNiwtNzY4
+MTkxNTk0LC0xNjYxMDQyOTk1LDYyNzMzODAwNiwtNTUwNjQ3Nz
+gxLC05NjA2ODc5MzUsLTU2MzkwNTE3NywtMTkzOTY5OTQyOSwz
+NDUwNjc3MTNdfQ==
 -->
