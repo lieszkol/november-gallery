@@ -15,12 +15,13 @@ Behind the scenes, November Gallery makes use of the [Image Resizer plugin](http
 # Features:
 
 - Works in Pages, Partials, "Static" Pages, and Blog Posts!
-- Five components included: 
+- Six components included: 
 	 - **Embedded Gallery** if you wish to show a gallery of images or thumbnails in your page, arranged in various layouts: **tiles** (arranged in columns, justified, or laid out in a grid "masonry style"), **carousel**, **slider**, or **combined** (large image + lightbox)
 	 - **Swiper Gallery** for responsive, multi-platform galleries
 	 - **Popup Lightbox** for galleries that can be opened from a link or button on your page, with several available styles (wide, compact)
 	 - **Video Gallery** for...videos, again, with several "styles" available (thumbs / titles + subtitles / titles only)
 	 - **Image List Only** if you want to handle the display of the images yourself and only need a list of image objects
+	 - **Gallery Hub** to generate a page with links to all (or only some) of your galleries
 - Set which folder of images to display in the component configuration panel OR pass it dynamically as a page-variable OR set it in your RainLab blog entry
 - Responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.
 
@@ -114,6 +115,10 @@ Again, this makes use of UniteGallery JS. Use it to display videos inline. You c
 
 Well, we probably could have given this component a better name. This component only loads the list of image files into a page variable, without rendering a gallery. Use this if you wish to write your own code for displaying the images, or if you wish to make use of some other JS library to render them.
 
+### Gallery Hub Component
+
+This component loads a list of galleries without actually rendering any galleries. Use this if you wish to show a "hub" page with a link to all of your galleries. If you have many galleries, you can assign keywords to them and then create hubs that only display those galleries that match a certain keyword. By default the component creates an unordered list of the preview images set for each gallery, you can override this either by setting a custom template or by writing your own logic using Twig.
+
 # Where to now?
 
 Install the plugin and give it a test drive! 
@@ -125,7 +130,3 @@ You can also read:
 - The [November Gallery Source Code on GitHub](https://github.com/lieszkol/november-gallery)
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NDg0Njk0LDMxODkzOTI2MCwtNjUxND
-AyN119
--->

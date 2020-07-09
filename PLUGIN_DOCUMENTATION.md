@@ -1,10 +1,12 @@
-> Aloha! I am Laszlo, the main developer of this plugin. I've worked hard to make this plugin available for you, and you are welcome to use the "Personal" edition for free for non-commercial purposes. I would like to ask you for a favor in return. *Please don't leave a negative review if you encounter issues or find that something is missing.* Contact me first, and give me chance to make it into a five-star product for you.
+> Aloha! I am Laszlo, the main developer of this plugin. I've worked hard to make this plugin available for you, and I've made it open-source so that if you are using the plugin for non-commercial purposes, you can grab the code from GitHub and use it for free. I would like to ask you for a favor in return. *Please don't leave a negative review if you encounter issues or find that something is missing.* Contact me first, and give me chance to make it into a five-star product for you.
 > 
->  You can reach out to me by clicking "Product Support" on the left, or by raising an issue on [GitHub](https://github.com/lieszkol/november-gallery). Give me a few days to respond - I may get busy with other stuff but I will get back to you and I will genuinely appreciate that you took the time to help me improve this plugin. And if you end up using it on a commercial project, consider purchasing the professional edition - you will be supporting not only my work but October as well. 
+>  You can reach out to me by clicking "Product Support" on the left, or by raising an issue on [GitHub](https://github.com/lieszkol/november-gallery). You can also chat with me on [Gitter](https://gitter.im/november-gallery/community). Give me a few days to respond - I may get busy with other stuff but I will get back to you and I will genuinely appreciate that you took the time to help me improve this plugin. And if you end up using it on a commercial project, consider purchasing the professional edition - you will be supporting not only my work but October as well. 
 >
 > ![Me myself and I](https://www.generalcomputing.com/2019/lll_2016_round_120.png)
 
+
 This is an abridged version of the full documentation that we call [The November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook).
+
 
 # November Gallery Pro vs. Personal
 
@@ -29,7 +31,7 @@ The Personal Edition is available from [GitHub](https://github.com/lieszkol/nove
 # What is November Gallery?
 
 
-November Gallery is essentially a scaffolding over various Javascript-based visualization libraries. JS is great for displaying the images because it runs in the user's browser and can immediately react to changes in its environment, for example, a user turning their phone from vertical to horizontal, or resizing their browser. What November Gallery does is provide a framework within OctoberCMS for managing your images and building templates that include gallery "definitions". From an admin's/site content editor's perspective, you (1) get a "Gallery" page in your "backend" (that sounds wrong) and (2) you get various components that you can drag-and-drop onto your CMS pages/partials. Additionally, it also provides (3) "Snippets" to use in your "Static" pages (if you have the [Static Pages plugin](https://octobercms.com/plugin/rainlab-pages) installed), and (4) it also integrates with the [RainLab Blog Component](https://octobercms.com/plugin/rainlab-blog), if you have it.
+November Gallery is essentially a scaffolding over various Javascript-based visualization libraries. JS is great for displaying the images because it runs in the user's browser and can immediately react to changes in its environment, for example, a user turning their phone from vertical to horizontal, or resizing their browser. What November Gallery does is provide a framework within OctoberCMS for managing your images and building templates that include gallery "definitions". From an admin's/site content editor's perspective, you (1) get a "Gallery" page in your "backend" and (2) you get various components that you can drag-and-drop onto your CMS pages/partials. Additionally, it also provides (3) "Snippets" to use in your "Static" pages (if you have the [Static Pages plugin](https://octobercms.com/plugin/rainlab-pages) installed), and (4) it also integrates with the [RainLab Blog Component](https://octobercms.com/plugin/rainlab-blog), if you have it.
    
 For rendering your galleries, November Gallery provides you with various options, but it makes use of two JS libraries to do so. The various components it makes available to you really just help with configuring how the JS scripts are run so that you get a "swiper" or a "popup" gallery etc. You do not have to understand how these JS libraries work, but reading about the available configuration options will enable you to customize your galleries further than if you just use the options available through the November Gallery component property pages. 
 
@@ -116,8 +118,8 @@ Property | Inspector Name | Description
 `autoplay` | Auto-play? | Toggle ON to enable automatic advance on the slides. Set the delay below.
 `autoplayDelay` | Auto-play Delay | How long each image is shown for, in milliseconds. 1000 = 1 seconds.
 `additionalGalleryOptions` | Script options | Additional JS options that you want passed onto the Swiper script, for example: `fadeEffect: {crossFade: true}`
-`useDescriptionAsCSS` | Description is Style | When "on" and the image description contains one or more colons, then the image description is injected as CSS for that image. If the image description does not contain a colon, it is injected as a CSS class. Note that this only works for images uploaded through the backend Gallery page.
-`mediaQuery` | Media Query | Use in conjunction with "Description is Style". You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: `@media screen and (max-width: 766px) and (orientation: portrait)`
+`useDescriptionAsCSS` | Description is Style | Inject the image description as CSS for that image; only works for images uploaded through the backend Gallery page.
+`mediaQuery` | Media Query | You can set a media query to only apply the style in certain circumstances. Do not include a trailing "{". For example: `@media screen and (max-width: 766px) and (orientation: portrait)`
 
 
 **Example Page**
@@ -196,7 +198,7 @@ The image list component does not have any options other than the [Shared Option
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
 {% for galleryitem in customGallery.gallery.items %}
     <div>
-        <a href="{{ galleryitem.url }}" target="_blank">
+        <a href="{{ galleryitem. }}" target="_blank">
             <img src="{{ galleryitem.url | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' }) }}" alt="{{ galleryitem.fileName }}" style="margin: 20px;" />
         </a>
     </div>
@@ -225,92 +227,19 @@ This example assumes that your gallery component has the alias "customGallery" a
 Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 
+## Component 6: Gallery Hub
+
+
+This component loads a list of galleries without actually rendering any galleries. Use this if you wish to show a "hub" page with a link to all of your galleries.
+
+Please [see the documentation](https://its.zensoft.hu/books/november-gallery-cookbook/page/component-6-gallery-hub) to learn about all available options.
+
 Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
 
 
 ## Page Properties
 
-**`__SELF__.gallery`**<br>
-Type: [ZenWare\NovemberGallery\Classes\Gallery](https://github.com/lieszkol/november-gallery/blob/master/classes/Gallery.php)<br>
-Gallery class, holds the various properties of the gallery instance.
-
-#### Gallery Properties
-
-Property | Type | Description
---|--|--
-`items` | [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) | Collection of gallery items, see below.
-`orderBy` | string | The GalleryItem property by which the gallery should be sorted (as set in the component inspector)
-
-
-
-**`__SELF__.gallery.items`**
-
-
-Type: [October\Rain\Support\Collection](https://octobercms.com/docs/services/collections) 
-also see [API Docs](https://octobercms.com/docs/api/october/rain/database/collection),  [Illuminate\Database\Eloquent\Collection](https://laravel.com/api/5.5/Illuminate/Database/Eloquent/Collection.html) and [Illuminate\Support\Collection](https://laravel.com/api/5.5/Illuminate/Support/Collection.html)
-
-
-Collection of `ZenWare\NovemberGallery\Classes\GalleryItem` classes. Serving it as a collection gives access to a ton functionality that is not available with a simple array. For example, you could choose to sort the images by filename:
-```
-{% for galleryitem in customGallery.gallery.items.sortBy('fileName') %}
-   <img src="{{ galleryitem.url }}" />
-{% endfor %}
-```
-#### GalleryItem Properties
-
-
-Property | Type | Description
---|--|--
-`title` | string | Image title metadata, available for images uploaded using the backend gallery page only
-`description` | string | Description metadata, available for images uploaded using the backend gallery page only
-`sortOrder` | string | Image sort order, available for images uploaded using the backend gallery page only
-`file` | [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) | A standard php file information object, only available for files uploaded using the Media Manager
-`octoberImageFile` | [System\Models\File](https://github.com/octobercms/october/blob/master/modules/system/models/File.php) | A standard php file information object, only available for files uploaded using the Media Manager
-`width` | integer| Image width, see https://www.php.net/manual/en/function.getimagesize.php
-`height` | integer| Image height, see https://www.php.net/manual/en/function.getimagesize.php
-`type` | string | Image type, see https://www.php.net/manual/en/function.getimagesize.php
-`orientation` | string | Will be "horizontal", "vertical", or "square" depending on whether the image is wider than it is tall
-`fileNameWithoutExtension` | string | Base name of the file without extension, for example: picture-1
-`fileExtension` | string | [File extension](https://www.php.net/manual/en/splfileinfo.getextension.php), for example: jpg
-`fileName` | string | [Filename](https://www.php.net/manual/en/splfileinfo.getfilename.php), for example: picture-1.jpg
-`filePath` | string | [Path without filename](https://www.php.net/manual/en/splfileinfo.getpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1`
-`fileRealPath` | string | [Absolute path to file](https://www.php.net/manual/en/splfileinfo.getrealpath.php), for example: `/var/www/mywebsite.com/public_html/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
-`fileSize` | string | [File size](https://www.php.net/manual/en/splfileinfo.getsize.php), in bytes, for example: 404779
-`relativeFilePath` | string | Path to file relative to the website, for example: `/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
-`uploaded` | string | [Last modified time](https://www.php.net/manual/en/splfileinfo.getmtime.php) for files uploaded using the Media Manager, or the upload time for files uploaded using the back-end gallery tab, you can then: $currentTime->format( 'c' );
-`url` | string | URL to file, for example: `https://www.mywebsite.com/storage/app/media/my-galleries/gallery-1/picture-1.jpg`
-
-
-> Hint: To dig into the `gallery.items` (or any other) variable/collection, you have two options. You can simply add `{{ dump(embeddedGallery.gallery.items.toArray) }}` on your page after the component definition and it will print debug information about that variable straight in your page. Alternatively, you can install the [Debugbar plugin](https://github.com/scottbedard/oc-debugbar-plugin) and then add `{{ debug(embeddedGallery.gallery.items) }}` to your page to show debug information in the Laravel debugbar. Make sure to replace "embeddedGallery" with the alias of your component as set in the component options!
-
-
-**Additional Page Properties**
-
-
-**`__SELF__.defaultgalleryoptions`**
-Type: string
-Used in the embedded gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with any generated options (for example: `gallery_theme: 'tiles', tiles_type: 'justified'`)
-
-
-**`__SELF__.defaultLightboxptions`**
-Type: string
-Used in the lightbox gallery default template, this holds any custom script options set for the component in the "Script Options" property, along with the following: `gallery_theme: 'lightbox'`
-
-
-**`__SELF__.customgalleryscript`**
-Type: string
-The "Custom Gallery Script" set on the plugin backend settings page, if the "Custom Gallery Script" toggle switch is set to "ON".
-
-
-**`__SELF__.customLightboxcript`**
-Type: string
-The "Custom Lightbox Script" set on the plugin backend settings page, if the "Custom Lightbox Script" toggle switch is set to "ON".
-
-
-**`__SELF__.error`**
-Type: string
-If the plugin encounters an error, you can find the error description here.
-</details>
+Please [refer to the documentation](https://its.zensoft.hu/books/november-gallery-cookbook/page/page-properties) for detailed information on each available component property.
 
 
 # Known Issues
@@ -347,7 +276,3 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
 
 Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTk5NzA0MSwtMTM2MjA1NDk3Miw2MD
-g0OTYxMDcsMTk3NjE1MjYwMCwxMjQ3ODkyMzgwXX0=
--->
