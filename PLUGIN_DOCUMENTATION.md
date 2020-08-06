@@ -234,7 +234,7 @@ This component loads a list of galleries without actually rendering any gallerie
 
 Please [see the documentation](https://its.zensoft.hu/books/november-gallery-cookbook/page/component-6-gallery-hub) to learn about all available options.
 
-Check out the [Demo Site](https://novembergallery.zenware.io/demo/image-list-only) for live examples of the above.
+Check out the [Demo Site](https://novembergallery.zenware.hu/demo/image-list-only) for live examples of the above.
 
 
 ## Page Properties
@@ -275,4 +275,4 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
 
-Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zenware.io)
+Made with ♥ in Budapest, Hungary by [László Lieszkovszky](https://www.lieszkovszky.com) ❖ [ZenSoft Hungary](https://www.zensoft.hu)

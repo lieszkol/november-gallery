@@ -1,4 +1,4 @@
-Check out the [live demo site](https://novembergallery.zenware.io)!
+Check out the [live demo site](https://novembergallery.zenware.hu)!
 
 A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
@@ -126,7 +126,7 @@ Install the plugin and give it a test drive!
 You can also read:
    
 - The [November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
-- The [November Gallery Demo Site](https://novembergallery.zenware.io/)
+- The [November Gallery Demo Site](https://novembergallery.zenware.hu/)
 - The [November Gallery Source Code on GitHub](https://github.com/lieszkol/november-gallery)
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)

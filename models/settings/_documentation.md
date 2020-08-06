@@ -81,7 +81,7 @@ Well, we probably could have given this component a better name. This component 
 
    
 - The [November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook)
-- The [November Gallery Demo Site](https://novembergallery.zenware.io/)
+- The [November Gallery Demo Site](https://novembergallery.zenware.hu/)
 - The [November Gallery Source Code on GitHub](https://github.com/lieszkol/november-gallery)
 - Our [OctoberCMS Blog Quick Start Guide](https://kb.zensoft.hu/octobercms-blog-quick-start-guide/)
 - Our introduction to [The OctoberCMS Ecosystem](https://kb.zensoft.hu/the-octobercms-ecosystem/)
