@@ -22,3 +22,5 @@
 1.0.10:
     - New "Gallery Hub" component
     - add_gallery_keywords.php
+1.0.11:
+    - Bugfix of issue #2: Problem with galleryHub integration
