@@ -1,0 +1,9 @@
+{
+    "name": "zenware/novembergallery-plugin",
+    "type": "october-plugin",
+    "description": "An OctoberCMS gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.",
+    "require": {
+        "composer/installers": "~1.0",
+		"october/system": ">=2.1"
+    }
+}

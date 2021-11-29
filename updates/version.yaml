@@ -24,3 +24,5 @@
     - add_gallery_keywords.php
 1.0.11:
     - Bugfix of issue #2: Problem with galleryHub integration
+1.0.12:
+    - Upgrade for compatibility with OctoberCMS v2.0+ and composer
