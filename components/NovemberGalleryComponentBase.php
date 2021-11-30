@@ -420,7 +420,7 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 			return array();
 		}
 
-		$files     = \File::allFiles($galleryPath);
+		$files     = \File::files($galleryPath);
 		// Debugbar::info("NovemberGallery found files: " . count($files));
 		$i = 1;
 		foreach ($files as $file) {

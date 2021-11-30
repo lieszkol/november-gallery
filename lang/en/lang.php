@@ -3,7 +3,7 @@
         'name' => 'November Gallery',
         'long_name' => 'UniteGallery.js + OctoberCMS Media Manager + Image Resizer = NovemberGallery',
         'description' => 'Display your photos in an embedded gallery, as thumbnails "masonry-style", in a responsive "swiper", or as a pop-up lightbox!',
-        'long_description' => 'OctoberCMS Media manager + vvvmax/unitegallery + Image Resizer plugin = a highly customizable yet reliable way to display your photos in a gallery. The plugin reads images uploaded using October\'s built-in Media manager, uses the ImageResizer plugin to automatically generate thumbnails, and presents them in a gallery either as tiles (arranged in columns, justified, or laid out in a grid), as a carousel, as a slider, or as a pop-up lightbox that can be opened from a link/button. Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.',
+        'long_description' => 'OctoberCMS Media manager + vvvmax/unitegallery + Image Resizer plugin = a highly customizable yet reliable way to display your photos in a gallery. The plugin reads images uploaded using October\'s built-in Media manager, automatically generates thumbnails, and presents them in a gallery either as tiles (arranged in columns, justified, or laid out in a grid), as a carousel, as a slider, or as a pop-up lightbox that can be opened from a link/button. Some of its awesome features: responsive/touch enabled/skinnable/themable/gallery buttons/keyboard control etc.',
         
 		// Components
 		'embedded_gallery_component_name' => 'Embedded Gallery',
@@ -186,7 +186,7 @@
         'image_resizer_mode_landscape' => 'Landscape',
         'image_resizer_mode_auto' => 'Auto',
         'image_resizer_mode_crop' => 'Crop',
-        'image_resizer_mode_emptyoption' => 'Default (as set in ImageResizer)',
+        'image_resizer_mode_emptyoption' => 'Default',
 
         'image_resizer_quality_label' => 'Quality',
         'image_resizer_quality_comment' => 'The quality of compression *requires cache clear',

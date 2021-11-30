@@ -26,3 +26,6 @@
     - Bugfix of issue #2: Problem with galleryHub integration
 1.0.12:
     - Upgrade for compatibility with OctoberCMS v2.0+ and composer
+2.0.0:
+    - BREAKING CHANGES! Plugin is no longer compatible with OctoberCMS v1.x! Upgrade for compatibility with OctoberCMS v2.1+
+    - Removed dependency on unmaintained "Image Resizer" plugin

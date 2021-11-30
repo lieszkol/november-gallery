@@ -5,6 +5,7 @@ namespace ZenWare\NovemberGallery\Classes;
 use ZenWare\NovemberGallery\Models\Settings;
 use System\Classes\PluginManager;
 use Config;
+use October\Rain\Resize\Resizer;
 
 //  use Debugbar;   // http://wiltonsoftware.nz/blog/post/debug-october-cms-plugin
 
@@ -110,6 +111,11 @@ class GalleryItem
 	public $relativeFilePath;
 
 	/**
+	 * @var string Path to file relative to the website, for example: /storage/app/media/my-galleries/gallery-1/
+	 */
+	public $relativePath;
+
+	/**
 	 * @var string Gets the time the file was uploaded (or last changed) using filemtime as a PHP DateTime object, you can then: $currentTime->format( 'c' );
 	 * See: https://www.php.net/manual/en/splfileinfo.getctime.php
 	 */
@@ -138,9 +144,10 @@ class GalleryItem
 		$galleryItem->fileRealPath = $file->getRealPath();
 		$galleryItem->fileSize = $file->getSize();
 		$relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getRealPath());
-		$galleryItem->relativeFilePath = Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath;
+		$galleryItem->relativePath = Config::get('system.storage.media.path') . '/' . str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPath());
+		$galleryItem->relativeFilePath = Config::get('system.storage.media.path') . '/' . $relativeMediaFilePath;
 		$galleryItem->uploaded = \DateTime::createFromFormat('U', $file->getMTime());
-		$galleryItem->url = url(Config::get('cms.storage.media.path') . '/' . $relativeMediaFilePath);
+		$galleryItem->url = url(Config::get('system.storage.media.path') . '/' . $relativeMediaFilePath);
 
 		list($galleryItem->width, $galleryItem->height, $galleryItem->type, $attr) = getimagesize($galleryItem->fileRealPath);
 
@@ -191,7 +198,8 @@ class GalleryItem
 		$galleryItem->filePath = substr($octoberImageFile->getLocalPath(), 0, strlen($octoberImageFile->getLocalPath()) - strlen($octoberImageFile->disk_name) - 1);
 		$galleryItem->fileRealPath = $octoberImageFile->getLocalPath();	// "/var/www/yesinbudapest.com/public_html/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
 		$galleryItem->fileSize = $octoberImageFile->file_size;
-		$galleryItem->relativeFilePath = Config::get('cms.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')));	// /storage/app/media/my-galleries/gallery-1/picture-1.jpg
+		$galleryItem->relativePath = Config::get('system.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')), -1*strlen($octoberImageFile->disk_name));
+		$galleryItem->relativeFilePath = Config::get('system.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')));	// /storage/app/media/my-galleries/gallery-1/picture-1.jpg
 		$galleryItem->uploaded = new \DateTime($octoberImageFile->created_at->toDateTimeString());	// created_at is "Argon": https://octobercms.com/docs/api/october/rain/argon/argon
 		$galleryItem->url = $octoberImageFile->getPath();		// "https://www.yesinbudapest.com/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
 		$galleryItem->title = $octoberImageFile->title;
@@ -222,26 +230,51 @@ class GalleryItem
 		//galleryitem | media | resize(280, false,  { mode: 'portrait', quality: '90', extension: 'png' })
 		// Debugbar::info("$this->component->getThumbnailWidth(): " . $this->component->getThumbnailWidth());
 
-		$pluginManager = PluginManager::instance()->findByIdentifier('ToughDeveloper.ImageResizer');
-		if (Settings::instance()->use_image_resizer && $pluginManager && !$pluginManager->disabled) {
-			$image = new \ToughDeveloper\ImageResizer\Classes\Image($this->relativeFilePath);
-			// https://github.com/toughdeveloper/oc-imageresizer-plugin/blob/master/classes/Image.php
+		// $pluginManager = PluginManager::instance()->findByIdentifier('ToughDeveloper.ImageResizer');
+		// if (Settings::instance()->use_image_resizer && $pluginManager && !$pluginManager->disabled) {
+		if (Settings::instance()->use_image_resizer) {
+
+			$mode = '';
 			$options = [];
 			if (!empty($this->component->property('imageResizerMode')) && $this->component->property('imageResizerMode') !== 'default') {
-				$options['mode'] = $this->component->property('imageResizerMode');
+				$mode = $options['mode'] = $this->component->property('imageResizerMode');
 			} elseif (!empty(Settings::instance()->image_resizer_mode)) {
-				$options['mode'] = Settings::instance()->image_resizer_mode;
+				$mode = $options['mode'] = Settings::instance()->image_resizer_mode;
 			}
 
+			$quality = '';
 			if (!empty(Settings::instance()->image_resizer_quality)) {
-				$options['quality'] = Settings::instance()->image_resizer_quality;
+				$quality = $options['quality'] = Settings::instance()->image_resizer_quality;
 			}
 
-			return $image->resize(
-				$this->component->getThumbnailWidth(),
-				$this->component->getThumbnailHeight(),
-				$options
-			);
+			$width = $this->component->getThumbnailWidth();
+			$height = $this->component->getThumbnailHeight();
+
+			$thumbFileName = 'thumb__' . $this->fileNameWithoutExtension . '_' . $width . '_' . $height . '_' . $mode . '_' . $quality . '.jpg';
+			$cachedImageDir = $this->filePath . DIRECTORY_SEPARATOR . 'thumbnails';
+			$cachedImagePath = $cachedImageDir . DIRECTORY_SEPARATOR . $thumbFileName;
+			$cachedImageUrl = $this->relativePath . DIRECTORY_SEPARATOR . 'thumbnails' . DIRECTORY_SEPARATOR . $thumbFileName;
+
+			if (!is_file($cachedImagePath) 
+				|| filemtime($this->fileRealPath) !== filemtime($cachedImagePath)) {
+
+				if(!\File::isDirectory($cachedImageDir)){
+					\File::makeDirectory($cachedImageDir, 0755, true, true);
+				}
+
+				$image = Resizer::open($this->fileRealPath);
+				$image->resize(
+					$width,
+					$height,
+					$options
+				)->save($cachedImagePath);
+
+				touch($cachedImagePath, filemtime($this->fileRealPath));
+
+			}
+
+			return $cachedImageUrl;
+
 		} elseif (isset($this->octoberImageFile)) {
 			return $this->octoberImageFile->getThumb($this->component->getThumbnailWidth(), $this->component->getThumbnailHeight(), ['mode' => 'crop']);
 		} else {

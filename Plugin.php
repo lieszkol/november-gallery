@@ -14,8 +14,6 @@ use ZenWare\NovemberGallery\Models\Settings;
 
 class Plugin extends PluginBase
 {
-	// public $require = ['ToughDeveloper.ImageResizer'];
-
 	/**
 	 * Registers all components provided by this blugin.
 	 *
@@ -122,7 +120,7 @@ class Plugin extends PluginBase
 	 */
 	public function registerListColumnTypes()
 	{
-		// $mediaPath = url(Config::get('cms.storage.media.path'));
+		// $mediaPath = url(Config::get('system.storage.media.path'));
 		return [
 			'strong' => function ($value) {
 				return '<strong>' . $value . '</strong>';

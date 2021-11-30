@@ -14,7 +14,7 @@ A gallery plugin for professional Photographers, Media Artists, Bloggers and Con
 
 <small><i>*please read the Known Issues section regarding usage in partials!</i></small>
 
-Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
+Behind the scenes, November Gallery makes use of the [Image Resizer functionality](https://octobercms.com/docs/services/resizer) built into OctoberCMS v2+ to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
 This README is an abridged version of the full documentation that we call [The November Gallery Cookbook](https://its.zensoft.hu/books/november-gallery-cookbook).
 
@@ -80,7 +80,7 @@ Commercial Use governed by the  [OctoberCMS Marketplace Purchased License](https
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - [Swiper](https://idangero.us/swiper/)
- - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
+ - OctoberCMS [Image Resizer functionality](https://octobercms.com/docs/services/resizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
 <p align="center">Created by <a href="http://www.lieszkovszky.com/" rel="nofollow">László Lieszkovszky</a> ❖ <a href="http://www.zensoft.hu/" rel="nofollow">ZenSoft Hungary</a></p>

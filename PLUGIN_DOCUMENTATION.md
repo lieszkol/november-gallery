@@ -205,7 +205,7 @@ The image list component does not have any options other than the [Shared Option
 {% endfor %}
 </div>
 ```
-This example assumes that your gallery component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. Thumbnails are generated for the images and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
+This example assumes that your gallery component has the alias "customGallery". Thumbnails are generated for the images and displayed in a flexbox, with each thumbnail providing a link to the full-resolution image.
 
 
 **Example Page 2**
@@ -224,7 +224,7 @@ This example assumes that your gallery component has the alias "customGallery" a
 {% endfor %}
 </div>
 ```
-Again, we are assuming that your component has the alias "customGallery" and that you have the [Image Resizer](https://octobercms.com/plugin/toughdeveloper-imageresizer) plugin installed. The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
+Again, we are assuming that your component has the alias "customGallery". The images are [sorted](https://octobercms.com/docs/services/collections#method-sortby) by filename and "[chunked](https://octobercms.com/docs/services/collections#method-chunk)" into groups of 3 images, which are then displayed using the [Bootstrap grid layout](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 
 ## Component 6: Gallery Hub
@@ -271,7 +271,7 @@ If there's anything you'd like to chat about, please join the NovemberGallery  [
 
  - [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery)
  - [Swiper](https://idangero.us/swiper/)
- - OctoberCMS [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer)
+ - OctoberCMS [Image Resizer functionality](https://octobercms.com/docs/services/resizer)
  - [OctoberCMS]([https://github.com/octobercms/october](https://github.com/octobercms/october)) :-)
 
 

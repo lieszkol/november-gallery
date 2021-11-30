@@ -8,7 +8,7 @@ A gallery plugin for professional Photographers, Media Artists, Bloggers and Con
  3. Drop November Gallery onto your page or partial or static page
  4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
 
-Behind the scenes, November Gallery makes use of the [Image Resizer plugin](https://octobercms.com/plugin/toughdeveloper-imageresizer) to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
+Behind the scenes, November Gallery makes use of the [Image Resizer functionality](https://octobercms.com/docs/services/resizer) built into OctoberCMS v2+ to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
 *Please note that November Gallery is in no way affiliated with OctoberCMS, I just really liked the idea of naming things after months and November is one of my favorites!*
 

@@ -297,11 +297,11 @@ tabs:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.section_imager_resizer_label
             type: section
-        image_resizer_disabled_hint:
-            tab: zenware.novembergallery::lang.settings.tab_imageresizer
-            type: partial
-            path: $/zenware/novembergallery/models/settings/_image_resizer_disabled_hint.html
-            hidden: true
+        #image_resizer_disabled_hint:
+        #    tab: zenware.novembergallery::lang.settings.tab_imageresizer
+        #    type: partial
+        #    path: $/zenware/novembergallery/models/settings/_image_resizer_disabled_hint.html
+        #    hidden: true
         use_image_resizer:
             tab: zenware.novembergallery::lang.settings.tab_imageresizer
             label: zenware.novembergallery::lang.settings.use_image_resizer_label
@@ -341,14 +341,14 @@ tabs:
                 action: show
                 field: use_image_resizer
                 condition: checked
-        image_resizer_hint:
-            tab: zenware.novembergallery::lang.settings.tab_imageresizer
-            type: partial
-            path: $/zenware/novembergallery/models/settings/_image_resizer_hint.html
-            trigger:
-                action: show
-                field: use_image_resizer
-                condition: checked
+        #image_resizer_hint:
+        #    tab: zenware.novembergallery::lang.settings.tab_imageresizer
+        #    type: partial
+        #    path: $/zenware/novembergallery/models/settings/_image_resizer_hint.html
+        #    trigger:
+        #        action: show
+        #        field: use_image_resizer
+        #        condition: checked
         
         ##
         #   Custom extensions

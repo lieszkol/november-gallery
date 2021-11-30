@@ -77,7 +77,7 @@ class Settings extends Model
 
 	public function filterFields($fields, $context = null)
     {
-		if ($fields->use_image_resizer) {
+/*		if ($fields->use_image_resizer) {
 			$pluginManager = PluginManager::instance()->findByIdentifier('ToughDeveloper.ImageResizer');
 			if (!$pluginManager || $pluginManager->disabled) {
 				// $fields->use_image_resizer->readOnly = true;
@@ -87,6 +87,7 @@ class Settings extends Model
 				$fields->image_resizer_quality->hidden = true;
 			}
 		}
+*/
     }
 
 	/**
