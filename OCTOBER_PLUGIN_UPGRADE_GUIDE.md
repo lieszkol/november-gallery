@@ -1,4 +1,6 @@
-**OctoberCMS v2+:** Make sure the plugin is added to your project and then run `php artisan project:sync`. Alternatively, you can update only the plugin (provided you've previously added it to your project) using: `composer update zenware/novembergallery-plugins`. Afterwards run `php artisan october:migrate` to run any migrations.
+> **Upgrading from OctoberCMS v1.x to v2.x:** please make sure to also upgrade to version 2 of this plugin. Additionally, disable or remove the "Image Resizer" plugin if you have it installed.
+
+**OctoberCMS v2+:** Make sure the plugin is added to your project and then run `php artisan project:sync`. Alternatively, you can update only the plugin (provided you've previously added it to your project) using: `composer update zenware/novembergallery-plugin`. Afterwards run `php artisan october:migrate` to run any migrations.
 
 **OctoberCMS v1+ & WinterCMS:** For plugins installed from the marketplace, you can just do *Settings → Updates & Plugins → Check for Updates*.
 

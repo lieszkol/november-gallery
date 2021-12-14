@@ -29,3 +29,5 @@
 2.0.0:
     - BREAKING CHANGES! Plugin is no longer compatible with OctoberCMS v1.x! Upgrade for compatibility with OctoberCMS v2.1+
     - Removed dependency on unmaintained "Image Resizer" plugin
+2.0.1:
+    - Correction to documentation
