@@ -20,10 +20,12 @@ columns:
         label: zenware.novembergallery::lang.entities.gallery.name_label
         searchable: true
         type: strong
+        sortable: true
 
     description:
         label: zenware.novembergallery::lang.entities.gallery.description_label
         searchable: true
+        sortable: true
 
     keywords:
         label: zenware.novembergallery::lang.entities.gallery.keywords_label
@@ -38,11 +40,19 @@ columns:
         label: zenware.novembergallery::lang.entities.gallery.created_at_label
         type: datetime
         invisible: true
+        sortable: true
 
     updated_at:
         label: zenware.novembergallery::lang.entities.gallery.updated_at_label
         type: datetime
         invisible: true
+        sortable: true
+
+    published_at:
+        label: zenware.novembergallery::lang.entities.gallery.published_at_label
+        type: datetime
+        invisible: true
+        sortable: true
 
     preview_image:
         label: zenware.novembergallery::lang.entities.gallery.preview_image_label

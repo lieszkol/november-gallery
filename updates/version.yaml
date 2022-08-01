@@ -33,3 +33,5 @@
     - Correction to documentation
 2.0.2:
     - Fixed "Order By" functionality on the Gallery Hub component
+2.0.3:
+    - Fix issue where sorting no longer works on the backend Galleries page

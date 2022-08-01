@@ -27,11 +27,12 @@ showCheckboxes: true
 showSetup: true
 
 # Show list as tree
-showTree: false
-treeExpanded: false
+# Don't do this, for some reason this disables sorting:
+# showTree: false
+# treeExpanded: false
 
 # Sorting
-showSorting: 1
+showSorting: true
 
 defaultSort:
     column: name
