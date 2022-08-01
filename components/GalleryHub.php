@@ -41,7 +41,7 @@ class GalleryHub extends ComponentBase
 	public $keyword = false;
 
 	/**
-	 * @var string As set in the component inspector, can be one of: default, title, description, slug, publishedon
+	 * @var string As set in the component inspector, can be one of: default, title, description, slug, published_at
 	 */
 	public $sortBy;
 
@@ -307,6 +307,28 @@ class GalleryHub extends ComponentBase
 		return $galleryPath;
 	}
 
+	/** 
+	 * The sort order values presented on the plugin config dialog is not consistent with the 
+	 * available database columns (for historical reasons), so we must translate it. 
+	 * 
+	 * @return string GalleryItem property name
+	 */
+	public function getSortBy()
+	{
+		$sortBy = $this->sortBy;
+		switch ($sortBy) 
+		{
+			case 'publishedOn':
+				$sortBy = 'published_at';
+				break;
+			case 'title':
+				$sortBy = 'name';
+				break;
+			}
+
+		return $sortBy;
+	}
+
 	/**
 	 * Retrieve a list of all gallery items (images and videos) under the gallery path.
 	 * 
@@ -339,14 +361,15 @@ class GalleryHub extends ComponentBase
 			}
 		}
 
-		
-		$galleryRows = Galleries::orderBy($this->sortBy, $this->sortDir)
-				->take($this->maxItems);
-
 		if (!empty($this->keyword))
 		{
 			$galleryRows = Galleries::where('keywords', 'like', '%' . $this->keyword . '%')
-				->orderBy($this->sortBy, $this->sortDir)
+				->orderBy($this->getSortBy(), $this->sortDir)
+				->take($this->maxItems);
+		}
+		else
+		{
+			$galleryRows = Galleries::orderBy($this->getSortBy(), $this->sortDir)
 				->take($this->maxItems);
 		}
 
