@@ -18,7 +18,7 @@ class Gallery extends Model
      * Validation
      */
 	public $rules = [
-		'name' => 'required|between:3,64',
+		'name' => 'required|between:3,190',
 		'slug' => ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:zenware_novembergallery_gallery'],
 	];
 

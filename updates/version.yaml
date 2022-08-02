@@ -35,3 +35,5 @@
     - Fixed "Order By" functionality on the Gallery Hub component
 2.0.3:
     - Fix issue where sorting no longer works on the backend Galleries page
+2.0.4:
+    - Increase limit on gallery name to 190 characters
