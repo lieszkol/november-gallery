@@ -358,8 +358,11 @@
         'switch_off' => 'Off',
 		'not_applicable' => 'Not applicable',
 		'default' => 'Default',
-		'sort_descending_string' => 'Z->A',
-		'sort_descending_number' => '9->0',
-		'sort_descending_date' => 'Newest First'
+		'sort_ascending_string' => '(A→Z)',
+		'sort_ascending_number' => '(0→9)',
+		'sort_ascending_date' => '(oldest first)',
+		'sort_descending_string' => '(Z→A)',
+		'sort_descending_number' => '(9→0)',
+		'sort_descending_date' => '(newest first)'
 	]
 ];

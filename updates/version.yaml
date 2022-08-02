@@ -39,3 +39,5 @@
     - Increase limit on gallery name to 190 characters
 2.0.5:
     - Enable sorting in reverse on Gallery Hub component
+2.0.6:
+    - Improve wording regarding sorting

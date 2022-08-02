@@ -73,29 +73,37 @@ abstract class NovemberGalleryComponentBase extends ComponentBase
 				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'options'     => [
 					'default' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
-					'title' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_title'),
+					'title' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_title')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'titleDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_title')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
-					'description' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_description'),
+					'description' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_description')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'descriptionDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_description')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
 					'sortOrder' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_sort_order'),
-					'width' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_width'),
+					'width' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_width')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_number'),
 					'widthDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_width')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number'),
-					'height' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_height'),
+					'height' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_height')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_number'),
 					'heightDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_height')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number'),
-					'orientation' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_orientation'),
+					'orientation' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_orientation')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'orientationDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_orientation')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
-					'fileName' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_name'),
+					'fileName' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_name')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'fileNameDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_name')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
-					'fileSize' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_size'),
+					'fileSize' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_size')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_number'),
 					'fileSizeDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_file_size')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number'),
-					'uploaded' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_uploaded'),
+					'uploaded' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_uploaded')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_date'),
 					'uploadedDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.order_images_by_option_uploaded')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_date'),
 				]

@@ -108,18 +108,22 @@ class GalleryHub extends ComponentBase
 				'type'        => 'dropdown',
 				'placeholder' => \Lang::get('zenware.novembergallery::lang.miscellanous.default'),
 				'options'     => [
-					'default' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_title'),
+					'default' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_title')
+						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'titleDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_title')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
-					'description' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_description'),
+					'description' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_description')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_string'),
 					'descriptionDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_description')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_string'),
-					'slug' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_slug'),
+					'slug' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_slug')
+					. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_number'),
 					'slugDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_slug')
 						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number'),
-					'publishedOn' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_published_on'),
+					'publishedOn' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_published_on')
+						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_ascending_date'),
 					'publishedOnDESC' => \Lang::get('zenware.novembergallery::lang.component_properties.hub_order_galleries_by_option_published_on')
-						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_number')
+						. ' ' . \Lang::get('zenware.novembergallery::lang.miscellanous.sort_descending_date'),
 				],
 			],
 			'maxItems' => [
