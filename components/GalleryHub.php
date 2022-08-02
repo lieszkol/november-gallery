@@ -48,7 +48,7 @@ class GalleryHub extends ComponentBase
 	/**
 	 * @var string As set in the component inspector, can be either "ASC" or "DESC"
 	 */
-	public $sortDir;
+	public $sortDirection;
 
 	/**
 	 * @var int Maximum number of galleries to show, as set in the component inspector
@@ -219,7 +219,7 @@ class GalleryHub extends ComponentBase
 			$this->maxItems = (int)$this->property('maxItems');
 		}
 		$this->sortBy = 'name';
-		$this->sortDir = 'ASC';
+		$this->sortDirection = 'ASC';
 		if (!empty($this->property('sortBy'))
 			&& 	$this->property('sortBy') != 'default'
 		) 
@@ -364,12 +364,12 @@ class GalleryHub extends ComponentBase
 		if (!empty($this->keyword))
 		{
 			$galleryRows = Galleries::where('keywords', 'like', '%' . $this->keyword . '%')
-				->orderBy($this->getSortBy(), $this->sortDir)
+				->orderBy($this->getSortBy(), $this->sortDirection)
 				->take($this->maxItems);
 		}
 		else
 		{
-			$galleryRows = Galleries::orderBy($this->getSortBy(), $this->sortDir)
+			$galleryRows = Galleries::orderBy($this->getSortBy(), $this->sortDirection)
 				->take($this->maxItems);
 		}
 

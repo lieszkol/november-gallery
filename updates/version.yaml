@@ -37,3 +37,5 @@
     - Fix issue where sorting no longer works on the backend Galleries page
 2.0.4:
     - Increase limit on gallery name to 190 characters
+2.0.5:
+    - Enable sorting in reverse on Gallery Hub component
