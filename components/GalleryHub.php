@@ -338,6 +338,45 @@ class GalleryHub extends ComponentBase
 	 * 
 	 * @return array Array of filenames (with extension, without path)
 	 */
+	/**
+	 * Build the list of allowed image extensions from the plugin settings.
+	 *
+	 * @return array
+	 */
+	protected function getAllowedExtensions()
+	{
+		$extensions = array();
+		if (Settings::instance()->allowed_extensions_jpg) { $extensions[] = 'jpg'; $extensions[] = 'jpeg'; }
+		if (Settings::instance()->allowed_extensions_gif) { $extensions[] = 'gif'; }
+		if (Settings::instance()->allowed_extensions_png) { $extensions[] = 'png'; }
+		return $extensions;
+	}
+
+	/**
+	 * Load the images inside a Media Manager folder gallery so that folder
+	 * galleries in the hub expose items and a preview image, like backend
+	 * galleries do. Capped at maxItems, consistent with the backend branch.
+	 *
+	 * @return \October\Rain\Support\Collection
+	 */
+	protected function getFolderImages($galleryPath)
+	{
+		$extensions = $this->getAllowedExtensions();
+		$images = new Collection();
+		if (!\File::exists($galleryPath)) {
+			return $images;
+		}
+		$i = 1;
+		foreach (\File::files($galleryPath) as $file) {
+			if ($file->isFile() && $file->isReadable() && in_array($file->getExtension(), $extensions)) {
+				$images->push(GalleryItem::createFromPhpFile($this, $file));
+			}
+			if ($i >= $this->maxItems) break;
+			$i++;
+		}
+		return $images;
+	}
+
 	function loadGalleries()
 	{
 		$this->galleries = new Collection();
@@ -359,6 +398,10 @@ class GalleryHub extends ComponentBase
 				$gallery->name = $subdir;
 				$gallery->type = Gallery::GALLERYTYPE_OCTOBERMEDIAMANAGER;
 				$gallery->url =  str_replace('%slug%', $subdir, $this->linkUrl);
+				$gallery->items = $this->getFolderImages($dir);
+				if ($gallery->items->count() > 0) {
+					$gallery->previewImage = $gallery->items->first();
+				}
 				$this->galleries = $this->galleries->merge([$subdir => $gallery]);
 				if ($i >= $this->maxItems) break;
 				$i++;
