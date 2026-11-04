@@ -144,10 +144,10 @@ class GalleryItem
 		$galleryItem->fileRealPath = $file->getRealPath();
 		$galleryItem->fileSize = $file->getSize();
 		$relativeMediaFilePath = str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getRealPath());
-		$galleryItem->relativePath = Config::get('system.storage.media.path') . '/' . str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPath());
-		$galleryItem->relativeFilePath = Config::get('system.storage.media.path') . '/' . $relativeMediaFilePath;
+		$galleryItem->relativePath = Config::get('system.storage.media.path', '/storage/app/media') . '/' . str_replace(Settings::instance()->mediaPath . DIRECTORY_SEPARATOR, '', $file->getPath());
+		$galleryItem->relativeFilePath = Config::get('system.storage.media.path', '/storage/app/media') . '/' . $relativeMediaFilePath;
 		$galleryItem->uploaded = \DateTime::createFromFormat('U', $file->getMTime());
-		$galleryItem->url = url(Config::get('system.storage.media.path') . '/' . $relativeMediaFilePath);
+		$galleryItem->url = url(Config::get('system.storage.media.path', '/storage/app/media') . '/' . $relativeMediaFilePath);
 
 		list($galleryItem->width, $galleryItem->height, $galleryItem->type, $attr) = getimagesize($galleryItem->fileRealPath);
 
@@ -198,8 +198,8 @@ class GalleryItem
 		$galleryItem->filePath = substr($octoberImageFile->getLocalPath(), 0, strlen($octoberImageFile->getLocalPath()) - strlen($octoberImageFile->disk_name) - 1);
 		$galleryItem->fileRealPath = $octoberImageFile->getLocalPath();	// "/var/www/yesinbudapest.com/public_html/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
 		$galleryItem->fileSize = $octoberImageFile->file_size;
-		$galleryItem->relativePath = Config::get('system.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')), -1*strlen($octoberImageFile->disk_name));
-		$galleryItem->relativeFilePath = Config::get('system.storage.uploads.path') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')));	// /storage/app/media/my-galleries/gallery-1/picture-1.jpg
+		$galleryItem->relativePath = Config::get('system.storage.uploads.path', '/storage/app/uploads') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')), -1*strlen($octoberImageFile->disk_name));
+		$galleryItem->relativeFilePath = Config::get('system.storage.uploads.path', '/storage/app/uploads') . '/' . substr($octoberImageFile->getLocalPath(), strlen(storage_path('app/uploads/')));	// /storage/app/media/my-galleries/gallery-1/picture-1.jpg
 		$galleryItem->uploaded = new \DateTime($octoberImageFile->created_at->toDateTimeString());	// created_at is "Argon": https://octobercms.com/docs/api/october/rain/argon/argon
 		$galleryItem->url = $octoberImageFile->getPath();		// "https://www.yesinbudapest.com/storage/app/uploads/public/5d4/84a/039/5d484a03960a1707954439.jpg"
 		$galleryItem->title = $octoberImageFile->title;

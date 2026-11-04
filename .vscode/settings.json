@@ -1,4 +1,17 @@
 {
 	"editor.autoClosingBrackets": "never",
-	"editor.autoClosingQuotes": "never"
+	"editor.autoClosingQuotes": "never",
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#223204",
+		"titleBar.activeBackground": "#85C710",
+		"titleBar.activeForeground": "#131C02",
+		"titleBar.inactiveBackground": "#223204",
+		"titleBar.inactiveForeground": "#131C02",
+		"statusBar.background": "#2E4506",
+		"statusBar.foreground": "#F4FDE5",
+		"statusBar.debuggingBackground": "#2E4506",
+		"statusBar.debuggingForeground": "#F4FDE5",
+		"statusBar.noFolderBackground": "#2E4506",
+		"statusBar.noFolderForeground": "#F4FDE5"
+	}
 }

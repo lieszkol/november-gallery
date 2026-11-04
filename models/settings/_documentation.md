@@ -31,7 +31,7 @@ Well, you are already looking at the plugin settings page. Things to look out fo
 
 ### (3) Drop the Plugin Onto your CMS Page(s)
 
-The plugin provides four components that you can drop onto your CMS Pages/Partials/Layouts, it also works as a "Snippet" in static pages. Each option on the component inspector comes with (i) hints, so you should have no trouble understanding how to use it. Please see the *Documentation* tab for a description of each component option.
+The plugin provides six components that you can drop onto your CMS Pages/Partials/Layouts, it also works as a "Snippet" in static pages. Each option on the component inspector comes with (i) hints, so you should have no trouble understanding how to use it. Please see the *Documentation* tab for a description of each component option.
 
 ## Components
 
@@ -76,6 +76,10 @@ Again, this makes use of UniteGallery JS. Use it to display videos inline. You c
 ### Image List Only Component
 
 Well, we probably could have given this component a better name. This component only loads the list of image files into a page variable, without rendering a gallery. Use this if you wish to write your own code for displaying the images, or if you wish to make use of some other JS library to render them.
+
+### The Gallery Hub Component
+
+This component loads a *list* of your galleries without rendering any of them. Use it to build a "hub" page that links to all of your galleries.
 
 # Further Reading
 

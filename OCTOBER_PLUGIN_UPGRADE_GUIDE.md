@@ -1,3 +1,13 @@
+**Upgrading to OctoberCMS v4.x (Laravel 13 / PHP 8.2+):**
+
+> November Gallery **v3.0.1 or later** is required for OctoberCMS v4. Earlier versions break under v4 because the Swiper component was missing a property declaration, and gallery image URLs were built from the `system.storage.media.path` config value, which OctoberCMS v4 no longer sets explicitly (core now reads it with a built-in default). On v3 and earlier these produced working galleries; on v4 they cause a 500 on swiper pages and 404s on every gallery image.
+
+1. Update the plugin to v3.0.1+ (marketplace: *Settings → Updates & Plugins → Check for Updates*; or `composer require zenware/novembergallery-plugin ^3.0`).
+2. Run `php artisan october:migrate`.
+3. **Re-check your plugin settings after the upgrade.** A major OctoberCMS upgrade can clear the `system_settings` table. If galleries show "cannot find the path" or images 404, go to *Settings → November Gallery* and re-set **Base Media Folder** (and the video base folder) to the folder that contains your galleries — this is backend configuration and is not restored by composer or migrations.
+
+---
+
 **Upgrading from OctoberCMS v1.x to v2.x:** 
 
 > Please make sure to also upgrade to version 2 of this plugin. Additionally, disable or remove the "Image Resizer" plugin if you have it installed. 
