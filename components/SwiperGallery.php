@@ -18,6 +18,7 @@ class SwiperGallery extends NovemberGalleryComponentBase
 	public $customGalleryScript;
 	public $useDescriptionAsCSS;
 	public $mediaQuery;
+	public $defaultGalleryOptions;
 
 	/**
 	 * Name and description to display for this component in the backend "CMS" section in the 
