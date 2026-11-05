@@ -1,6 +1,6 @@
 > Aloha! I am Laszlo, the main developer of this plugin. I've worked hard to make this plugin available for you, and I've made it open-source so that if you are using the plugin for non-commercial purposes, you can grab the code from GitHub and use it for free. I would like to ask you for a favor in return. *Please don't leave a negative review if you encounter issues or find that something is missing.* Contact me first, and give me chance to make it into a five-star product for you.
 > 
->  You can reach out to me by clicking "Product Support" on the left, or by raising an issue on [GitHub](https://github.com/lieszkol/november-gallery). You can also chat with me on [Gitter](https://gitter.im/november-gallery/community). Give me a few days to respond - I may get busy with other stuff but I will get back to you and I will genuinely appreciate that you took the time to help me improve this plugin. And if you end up using it on a commercial project, consider purchasing the professional edition - you will be supporting not only my work but October as well. 
+>  You can reach out to me by clicking "Product Support" on the left, or by raising an issue on [GitHub](https://github.com/lieszkol/november-gallery). Give me a few days to respond - I may get busy with other stuff but I will get back to you and I will genuinely appreciate that you took the time to help me improve this plugin. And if you end up using it on a commercial project, consider purchasing the professional edition - you will be supporting not only my work but October as well. 
 >
 > ![Me myself and I](https://www.generalcomputing.com/2019/lll_2016_round_120.png)
 
@@ -252,7 +252,7 @@ OctoberCMS has a [known issue](https://stackoverflow.com/questions/53815815/on-o
 Workarounds:
 
 
- - Add your `{% styles %}` *after* your `{% partial "..." %}`
+ - Add your `{% styles %}` *after* your `{% partial "..." %}` (the same applies when a gallery is used as a Snippet in a Static Page: add a `{% styles %}` *after* the `{% component 'staticPage' %}` tag, not only in the `<head>`)
  - OR Put your partial inside of a page, and include the page in the layout
  - OR Manually add the required CSS to your layout
 
@@ -261,9 +261,6 @@ Workarounds:
 
 
 Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome.
-
-
-If there's anything you'd like to chat about, please join the NovemberGallery  [Gitter chat](https://gitter.im/november-gallery/community)!
 
 
 # Credits / Major Dependencies

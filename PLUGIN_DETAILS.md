@@ -2,11 +2,13 @@ Check out the [live demo site](https://novembergallery.zenware.hu)!
 
 A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
 
+**Now compatible with the latest version of OctoberCMS (v4)!** It also works with OctoberCMS v2.1+ and v3.
+
 > November Gallery enables you to display folders of images that you've uploaded to your website as galleries. This greatly helps digital publishers since they no longer have to rely on a clunky "Gallery" interface to upload their images, they can use FTP or whatever tool of their choice. BUT a "Clunky" back-end gallery interface is still provided if you wish to add titles and subtitles to your images, and it adds some other features not available with "folder-based" galleries. Once uploaded, you can select from many different ways to present your images to your visitors, such as: in-page gallery, clickable tiles laid out masonry style, a pop-up "light-box" type gallery, a responsive "swiper", etc. You can also show videos.
 
  1. Upload your images either using the Media Manager built into OctoberCMS or through the dedicated galleries backend page
- 3. Drop November Gallery onto your page or partial or static page
- 4. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
+ 2. Drop November Gallery onto your page, partial, or static page
+ 3. Select the folder you uploaded your images to and how you want them displayed using the component inspector, or in your RainLab blog entry
 
 Behind the scenes, November Gallery makes use of the [Image Resizer functionality](https://octobercms.com/docs/services/resizer) built into OctoberCMS v2+ to generate thumbnails of your images, and the excellent [UniteGallery jQuery Gallery Plugin](https://github.com/vvvmax/unitegallery) as well as [Swiper](https://idangero.us/swiper/). 
 
@@ -69,7 +71,7 @@ Log into your "backend" and go to Settings → November Gallery to configure you
 
 ### (3) Drop the Plugin Onto your CMS Page(s)
 
-The plugin provides four components that you can drop onto your CMS Pages/Partials/Layouts, it also works as a "Snippet" in static pages. Each option on the component inspector comes with (i) hints, so you should have no trouble understanding how to use it. Please see the *Documentation* tab for a description of each component option.
+The plugin provides six components that you can drop onto your CMS Pages/Partials/Layouts, and they also work as "Snippets" in static pages. Each option on the component inspector comes with (i) hints, so you should have no trouble understanding how to use it. Please see the *Documentation* tab for a description of each component option.
 
 ## Components
 

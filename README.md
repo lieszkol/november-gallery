@@ -2,8 +2,6 @@
 
 ![NovemberGallery Banner](https://novembergallery.zenware.hu/storage/app/media/november-gallery-octobercms-banner.jpg)
 
-<div align="right"><a href="https://gitter.im/november-gallery/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/november-gallery/community.svg" alt="Join the chat at https://gitter.im/november-gallery/community"></a></div>
-
 Check out the [live demo site](https://novembergallery.zenware.hu)!
 
 A gallery plugin for professional Photographers, Media Artists, Bloggers and Content Publishers.
@@ -57,8 +55,6 @@ Workarounds:
 # Support
 
 Feel free to [file an issue](https://github.com/lieszkol/november-gallery/issues/new). Feature requests are always welcome.
-
-If there's anything you'd like to chat about, please join the NovemberGallery  [Gitter chat](https://gitter.im/november-gallery/community)!
 
 # License
 
