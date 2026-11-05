@@ -42,8 +42,8 @@
 2.0.6:
     - Improve wording regarding sorting
 3.0.1:
-    - Declare $defaultGalleryOptions on SwiperGallery (fixes undefined-property 500 on swiper galleries under OctoberCMS v4 / PHP 8.2+)
+    - 'Declare $defaultGalleryOptions on SwiperGallery (fixes undefined-property 500 on swiper galleries under OctoberCMS v4 / PHP 8.2+)'
 4.0.1:
-    - OctoberCMS v4 compatibility: declare SwiperGallery::$defaultGalleryOptions, and fall back to default media/uploads storage paths so gallery image URLs resolve on v4
+    - 'OctoberCMS v4 compatibility: declare SwiperGallery::$defaultGalleryOptions, and fall back to default media/uploads storage paths so gallery image URLs resolve on v4'
 4.0.2:
-    - Gallery Hub: load items + preview image for Media-folder galleries
+    - 'Gallery Hub: load items + preview image for Media-folder galleries'
